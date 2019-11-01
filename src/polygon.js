@@ -128,7 +128,7 @@ class Polygon {
         do {
             points.push(v);
             v = v.next;
-        } while (v !== this.first);
+        } while (!v.equals(this.first));
         return points;
     }
 
@@ -144,7 +144,7 @@ class Polygon {
             }
             prev = cur;
             cur = cur.next;
-        } while (cur !== this.first);
+        } while (!cur.equals(this.first));
         return lines;
     }
 
@@ -155,7 +155,7 @@ class Polygon {
         do {
             total += v.x * v.next.y - v.y * v.next.x;
             v = v.next;
-        } while (v !== this.first);
+        } while (!v.equals(this.first));
 
         let area = total / 2;
         if (this.children && this.children.length) {
