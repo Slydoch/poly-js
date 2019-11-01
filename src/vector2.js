@@ -179,8 +179,9 @@ class Vector2 {
         const sin = Math.sin(angle);
         const x = this.x * 1;
         const y = this.y * 1;
-        this.x = Math.round(10000 * (x * cos - y * sin)) / 10000;
-        this.y = Math.round(10000 * (x * sin + y * cos)) / 10000;
+        this.x = (x * cos - y * sin);
+        this.y = (x * sin + y * cos);
+        this.approximate();
         return this;
     }
 
@@ -201,9 +202,12 @@ class Vector2 {
     isInside(polygon) {
         return polygon.pointIsInside(this);
     }
-
+    approximate() {
+        this.setX(Math.round(this.x * 10000) / 10000).setY(Math.round(this.y * 10000) / 10000);
+        return this;
+    }
     get approximated() {
-        return this.clone.setX(Math.round(this.x * 10000) / 10000).setY(Math.round(this.y * 10000) / 10000);
+        return this.clone.approximate();
     }
     get normalized() {
         return this.divide(this.magnitude);
