@@ -155,7 +155,7 @@ class Polygon {
         do {
             total += v.x * v.next.y - v.y * v.next.x;
             v = v.next;
-        } while (v.next !== this.first);
+        } while (v !== this.first);
 
         let area = total / 2;
         if (this.children && this.children.length) {
