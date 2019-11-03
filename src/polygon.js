@@ -1,7 +1,9 @@
 'use strict';
 
-const Vector2 = require('./vector2');
+const PolyBool = require('polybooljs');
+
 const Line = require('./line');
+const Vector2 = require('./vector2');
 
 class Polygon {
     constructor(vertices = []) {
@@ -9,6 +11,7 @@ class Polygon {
         this.children = [];
         this.first = null;
         this._lastUnprocessed = null;
+        this._firstIntersect = null;
         for (let i = 0, len = vertices.length; i < len; i++) {
             this.addVertex(vertices[i]);
         }
@@ -23,7 +26,7 @@ class Polygon {
 
         do {
             if ((vertex.y < y && next.y >= y ||
-                    next.y < y && vertex.y >= y) &&
+                next.y < y && vertex.y >= y) &&
                 (vertex.x <= x || next.x <= x)) {
                 oddNodes ^= (vertex.x + (y - vertex.y) /
                     (next.y - vertex.y) * (next.x - vertex.x) < x);
@@ -92,6 +95,26 @@ class Polygon {
         return c;
     }
 
+    intersect(p) {
+        return Polygon.Intersect(this, p);
+    }
+
+    difference(p) {
+        return Polygon.Difference(this, p);
+    }
+
+    union(p) {
+        return Polygon.Union(this, p);
+    }
+
+    xor(p) {
+        return Polygon.Xor(this, p);
+    }
+
+
+
+    /** GETTERS */
+
     get firstIntersect() {
         let v = this._firstIntersect || this.first;
 
@@ -121,6 +144,13 @@ class Polygon {
         return false;
     }
 
+    get region() {
+        return this.points.map((p) => {
+            return [p.x, p.y];
+        });
+    }
+    
+
     get points() {
         const points = [];
         let v = this.first;
@@ -131,9 +161,7 @@ class Polygon {
         } while (!v.equals(this.first));
         return points;
     }
-
-
-    /** GETTERS */
+    
     get lines() {
         const lines = [];
         let prev = null;
@@ -163,7 +191,79 @@ class Polygon {
                 area -= child.area;
             }
         }
-        return area;
+        return Math.abs(area);
+    }
+
+    static FromRegion(region) {
+        return new Polygon(region.map((p) => {
+            return new Vector2(p[0], p[1]);
+        }));
+    }
+
+    static Intersect(p1, p2) {
+        const operation = PolyBool.intersect({
+            regions: [
+                p1.region
+            ],
+            inverted: false
+        }, {
+            regions:[
+                p2.region
+            ],
+            inverted: false
+        });
+        return operation.regions.map((r) => {
+            return Polygon.FromRegion(r);
+        });
+    }
+
+    static Union(p1, p2) {
+        const operation = PolyBool.union({
+            regions: [
+                p1.region
+            ],
+            inverted: false
+        }, {
+            regions:[
+                p2.region
+            ],
+            inverted: false
+        });
+        return operation.regions.map((r) => {
+            return Polygon.FromRegion(r);
+        });
+    }
+    static Difference(p1, p2) {
+        const operation = PolyBool.difference({
+            regions: [
+                p1.region
+            ],
+            inverted: false
+        }, {
+            regions:[
+                p2.region
+            ],
+            inverted: false
+        });
+        return operation.regions.map((r) => {
+            return Polygon.FromRegion(r);
+        });
+    }
+    static Xor(p1, p2) {
+        const operation = PolyBool.xor({
+            regions: [
+                p1.region
+            ],
+            inverted: false
+        }, {
+            regions:[
+                p2.region
+            ],
+            inverted: false
+        });
+        return operation.regions.map((r) => {
+            return Polygon.FromRegion(r);
+        });
     }
 }
 

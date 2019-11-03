@@ -10,7 +10,8 @@
   "private": true,
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "polybooljs": "^1.2.0"
   },
   "devDependencies": {
     "mocha": "^6.2.2"
