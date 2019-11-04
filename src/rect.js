@@ -68,12 +68,12 @@ class Rect extends Polygon {
     }
 
     _calcPoly() {
-        this.points = [
+        this.setVertexes([
             this._position,
             this._position.clone.add(new Vector2(this._size.x, 0)),
             this._position.clone.add(this._size),
             this._position.clone.add(new Vector2(0, this._size.y))
-        ];
+        ]);
     }
 
     static Box(p) {

@@ -54,6 +54,15 @@ class Polygon {
         this.children.push(polygon);
         return this;
     }
+    
+    setVertexes(vertices) {
+        this.first = null;
+        for(const v of vertices) {
+            this.addVertex(v);
+        }
+    }
+
+
 
     addVertex(vertex) {
         if (this.first === null) {

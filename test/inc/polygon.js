@@ -3,6 +3,7 @@
 const Test = require('./test');
 const Vector2 = require('../../src/vector2');
 const Polygon = require('../../src/polygon');
+const Circle = require('../../src/circle');
 
 class PolygonTest extends Test {
     constructor() {
@@ -19,8 +20,18 @@ class PolygonTest extends Test {
         this.testPointInside();
         this.testArea();
         this.testBooleanOperations();
+        this.testCircles();
     }
 
+    testCircles() {
+        describe('#Circle', () => {
+            it('Should work', () => {
+                const circle = new Circle(new Vector2(50, 50), 10, 1024);
+                const a = Math.floor(circle.area * 100) / 100;
+                this.assert.equal(a, 314.15);
+            });
+        });
+    }
 
     testBooleanOperations() {
         describe('#intersect()', () => {
