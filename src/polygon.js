@@ -39,12 +39,6 @@ class Polygon {
         return oddNodes;
     }
 
-
-    isLeft(P0, P1, P2) {
-        return ((P1.x - P0.x) * (P2.y - P0.y) -
-            (P2.x - P0.x) * (P1.y - P0.y));
-    }
-
     setChildren(polygons) {
         this.children = polygons;
         return this;
@@ -102,6 +96,10 @@ class Polygon {
         let c = v;
         while (c._isIntersection) c = c.next;
         return c;
+    }
+
+    colliding(p) {
+        return Polygon.Colliding(this, p);
     }
 
     intersect(p) {
@@ -201,6 +199,22 @@ class Polygon {
             }
         }
         return Math.abs(area);
+    }
+
+    static Colliding(p1, p2) {
+        const p1Points = p1.points;
+        const p2Points = p2.points;
+        for(const pt1 of p1Points) {
+            if(p2.pointIsInside(pt1)) {
+                return true;
+            }
+        }
+        for(const pt2 of p2Points) {
+            if(p1.pointIsInside(pt2)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     static FromRegion(region) {
