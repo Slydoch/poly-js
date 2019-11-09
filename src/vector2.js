@@ -7,22 +7,10 @@ class Vector2 {
         const pos = this._checkParams(arguments);
         this.x = pos.x;
         this.y = pos.y;
-        this._corresponding = null;
-        this._visited = false;
-        this._isIntersection = false;
-        this._isEntry = true;
-        this._distance = 0;
         this.next = null;
         this.prev = null;
     }
 
-
-    visit() {
-        this._visited = true;
-        if (this._corresponding !== null && !this._corresponding._visited) {
-            this._corresponding.visit();
-        }
-    }
 
     floor(v = 1) {
         this.floorX(v);
@@ -268,14 +256,6 @@ class Vector2 {
         return v1.clone.add(diffV);
     }
 
-    
-    static createIntersection(x, y, distance) {
-        const v = new Vector2(x, y);
-        v._distance = distance;
-        v._isIntersection = true;
-        v._isEntry = false;
-        return v;
-    }
 
     toString() {
         return `{x: ${this.x}, y: ${this.y}}`;

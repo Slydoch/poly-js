@@ -56,8 +56,6 @@ class Polygon {
         }
     }
 
-
-
     addVertex(vertex) {
         if (this.first === null) {
             this.first = vertex;
@@ -73,29 +71,6 @@ class Polygon {
             prev.next = vertex;
         }
         this.vertices++;
-    }
-
-    insertVertex(vertex, start, end) {
-        let prev, curr = start;
-
-        while (!curr.equals(end) && curr._distance < vertex._distance) {
-            curr = curr.next;
-        }
-
-        vertex.next = curr;
-        prev = curr.prev;
-
-        vertex.prev = prev;
-        prev.next = vertex;
-        curr.prev = vertex;
-
-        this.vertices++;
-    }
-
-    getNext(v) {
-        let c = v;
-        while (c._isIntersection) c = c.next;
-        return c;
     }
 
     colliding(p) {
@@ -121,35 +96,6 @@ class Polygon {
 
 
     /** GETTERS */
-
-    get firstIntersect() {
-        let v = this._firstIntersect || this.first;
-
-        do {
-            if (v._isIntersection && !v._visited) break;
-
-            v = v.next;
-        } while (!v.equals(this.first));
-
-        this._firstIntersect = v;
-        return v;
-    }
-
-
-    get hasUnprocessed() {
-        let v = this._lastUnprocessed || this.first;
-        do {
-            if (v._isIntersection && !v._visited) {
-                this._lastUnprocessed = v;
-                return true;
-            }
-
-            v = v.next;
-        } while (!v.equals(this.first));
-
-        this._lastUnprocessed = null;
-        return false;
-    }
 
     get region() {
         return this.points.map((p) => {

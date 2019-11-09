@@ -1,5 +1,5 @@
 {
-  "name": "polyjs",
+  "name": "@slydock/poly-js",
   "version": "0.0.0",
   "description": "Library for polygons operations",
   "main": "index.js",
@@ -7,11 +7,14 @@
     "test": "mocha"
   },
   "author": "Slydoch",
-  "private": true,
+  "private": false,
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.4.0",
     "polybooljs": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Slydoch/polyjs.git"
   },
   "devDependencies": {
     "mocha": "^6.2.2"
