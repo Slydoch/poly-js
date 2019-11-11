@@ -4,8 +4,8 @@ const Vector2 = require('./vector2');
 
 class Line {
     constructor() {
-        this.start = Vector2.zero;
-        this.end = Vector2.zero;
+        this.start = Vector2.Zero();
+        this.end = Vector2.Zero();
         this._checkParams(arguments);
     }
 
@@ -47,7 +47,7 @@ class Line {
         const s = (-s1_y * (p0_x - p2_x) + s1_x * (p0_y - p2_y)) / (-s2_x * s1_y + s1_x * s2_y);
         const t = ( s2_x * (p0_y - p2_y) - s2_y * (p0_x - p2_x)) / (-s2_x * s1_y + s1_x * s2_y);
     
-        const p = Vector2.zero;
+        const p = Vector2.Zero();
         if (s >= 0 && s <= 1 && t >= 0 && t <= 1)
         {
             p.x = p0_x + (t * s1_x);

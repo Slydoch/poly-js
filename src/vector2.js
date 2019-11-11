@@ -346,6 +346,34 @@ class Vector2 {
         return this;
     }
 
+
+    /**
+     * Dividing values to the the Vector2
+     * @param {Vector2|float|null} p1 Vector2: copy, float: assign
+     * @param {float|null} p2 float: assign, null: 0
+     * @example
+     * const v1 = new Vector2(12, 9);
+     * // Dividing v1 Vector2 by 3
+     * v1.divide(3);
+     * // v1 values are now x:4 & y:3
+     * @example
+     * const v1 = new Vector2(10, 15);
+     * // Dividing v1 Vector2 by 2, 5
+     * v1.divide(2, 5);
+     * // v1 values are now x:5 & y:3
+     * @example
+     * const v1 = new Vector2(5, 8);
+     * // Dividing v1 Vector2 by 2, 4
+     * v1.divide({x:2, y:4});
+     * // v1 values are now x:2.5 & y:2
+     * @example
+     * const v1 = new Vector2(12, 10);
+     * const v2 = new Vector2(6, 2);
+     * // Dividing v1 Vector2 by 6, 2
+     * v1.divide(v2);
+     * // v1 values are now x:2 & y:5, v2 is unchanged
+     * @returns Vector2
+     */
     divide() {
         const pos = this._checkParams(arguments);
         this.divideX(pos.x);
@@ -353,32 +381,77 @@ class Vector2 {
         return this;
     }
 
+    /**
+     * Divinding x value of the Vector2 by v
+     * @param {float} v The divisor
+     * @returns Vector2
+     */
     divideX(v) {
         this.x /= v;
         return this;
     }
 
+    /**
+     * Divinding x value of the Vector2 by v
+     * @param {float} v The divisor
+     * @returns Vector2
+     */
     divideY(v) {
         this.y /= v;
         return this;
     }
 
+
+    /**
+     * Inverting the Vector2
+     * @example
+     * const v1 = new Vector2(3, 6);
+     * v1.invert();
+     * // v1 values are now x:-3 & y:-6
+     * @returns Vector2
+     */
     invert() {
         this.invertX();
         this.invertY();
         return this;
     }
 
+    /**
+     * Inverting the x value of the Vector2
+     * @example
+     * const v1 = new Vector2(3, 6);
+     * v1.invertX();
+     * // v1 values are now x:-3 & y:6
+     * @returns Vector2
+     */
     invertX() {
         this.x = 0 - this.x;
         return this;
     }
 
+    /**
+     * Inverting the y value of the Vector2
+     * @example
+     * const v1 = new Vector2(3, 6);
+     * v1.invertY();
+     * // v1 values are now x:3 & y:-6
+     * @returns Vector2
+     */
     invertY() {
         this.y = 0 - this.y;
         return this;
     }
 
+
+    /**
+     * Rotate the Vector2 arround zero by angle
+	 * @param {float} angle degrees angle
+     * @example
+     * const v1 = new Vector2(3, 6);
+     * v1.rotate(180);
+     * // v1 values are now x:-3 & y:-6
+     * @returns Vector2
+     */
     rotate(angle) {
         angle = angle * (Math.PI / 180);
         const cos = Math.cos(angle);
@@ -392,41 +465,135 @@ class Vector2 {
     }
 
 
+
+    /**
+     * Test if the Vector2 is equal to an other
+     * @example
+     * const v1 = new Vector2(3, 6);
+     * const v2 = new Vector2(4, 6);
+	 * return v1.equals(v2); // false
+     * @returns boolean
+     */
     equals() {
         const pos = this._checkParams(arguments);
         return this.equalsX(pos.x) && this.equalsY(pos.y);
     }
 
+    /**
+     * Test if the x value of the Vector2 is equal to an other
+     * @example
+     * const v1 = new Vector2(3, 6);
+     * const v2 = new Vector2(4, 6);
+	 * return v1.equalsX(v2); // false
+     * @returns boolean
+     */
     equalsX(v) {
         return this.x === v;
     }
 
+
+    /**
+     * Test if the y value of the Vector2 is equal to an other
+     * @example
+     * const v1 = new Vector2(3, 6);
+     * const v2 = new Vector2(4, 6);
+	 * return v1.equalsY(v2); // true
+     * @returns boolean
+     */
     equalsY(v) {
         return this.y === v;
     }
 
+
+    /**
+     * Test if the current Vector2 is inside a polygon
+	 * @param {Polygon} polygon The polygon to check
+     * @example
+	 * const polygon = new Polygon([
+	 * 	new Vector2(0,0),
+	 * 	new Vector2(10,0),
+	 * 	new Vector2(10,10),
+	 * 	new Vector2(0,10)
+	 * ]);
+	 * const v1 = new Vector2(5, 5);
+	 * return v1.isInside(polygon); // true
+     * @returns boolean
+     */
     isInside(polygon) {
         return polygon.pointIsInside(this);
     }
+    /**
+     * Modify the current Vector2 and get an approximated value
+	 * Can be usefull for removing near duplicate vertices
+	 * @see approximated
+	 * @example
+	 * const v1 = new Vector2(Math.PI, Math.PI);
+	 * console.log(v1.toString()); // {x: 3.141592653589793, y: 3.141592653589793}
+	 * console.log(v1.approximate().toString()); // {x: 3.1416, y: 3.1416}
+     * @returns Vector2
+     */
     approximate() {
         this.setX(Math.round(this.x * 10000) / 10000).setY(Math.round(this.y * 10000) / 10000);
         return this;
     }
+    /**
+     * Getter for approximate() method
+	 * @see approximate
+	 * @example
+	 * const v1 = new Vector2(Math.PI, Math.PI);
+	 * console.log(v1.toString()); // {x: 3.141592653589793, y: 3.141592653589793}
+	 * console.log(v1.approximate.toString()); // {x: 3.1416, y: 3.1416}
+     * @returns Vector2
+     */
     get approximated() {
         return this.clone.approximate();
-    }
+	}
+	
+    /**
+     * Normalize the Vector2
+	 * @see norm
+	 * @example
+	 * const v1 = new Vector2(1, 1);
+	 * console.log(v1.norm.toString()); // {x: 0.7071067811865476, y: 0.7071067811865476}
+     * @returns Vector2
+     */
     get normalized() {
         return this.divide(this.magnitude);
-    }
+	}
+	
+    /**
+     * Alias of normalized
+	 * @see normalized
+     * @returns Vector2
+     */
     get norm() {
         return this.normalized;
-    }
+	}
+
+    /**
+     * Get the magnitude of the Vector2
+	 * @example
+	 * const v1 = new Vector2(12, 32);
+	 * console.log(v1.magnitude); // 34.17601498127012
+     * @returns float
+     */
     get magnitude() {
         return Math.sqrt(this.x * this.x + this.y * this.y);
-    }
+	}
+	
+    /**
+     * Get a clone of this Vector2
+	 * useful for not modify a vector before operation
+	 * @example
+	 * const v1 = new Vector2(5, 5);
+	 * console.log(v1.clone.add(2, 3)); // {x: 7, y: 8}
+	 * // v1 is unchanged
+     * @returns Vector2
+     */
     get clone() {
         return new Vector2(this.x, this.y);
-    }
+	}
+	
     _checkParams(args) {
         const p1 = args[0];
         const p2 = args[1];
@@ -449,40 +616,108 @@ class Vector2 {
         return pos;
     }
 
+	/**
+	 * Getting the distance between two Vector2
+	 * @param {Vector2} v1 first Vector2
+	 * @param {Vector2} v2 second Vector2
+	 * @returns float
+	 */
     static Distance(v1, v2) {
         const dx = Math.abs(v1.x - v2.x);
         const dy = Math.abs(v1.y - v2.y);
         return Math.sqrt(dx * dx + dy * dy);
     }
 
+	/**
+	 * Getting the max values from two Vector2
+	 * @param {Vector2} v1 first Vector2
+	 * @param {Vector2} v2 second Vector2
+	 * @returns Vector2
+	 */
     static Max(v1, v2) {
         return new Vector2(Math.max(v1.x, v2.x), Math.max(v1.y, v2.y));
     }
 
+	/**
+	 * Getting the min values from two Vector2
+	 * @param {Vector2} v1 first Vector2
+	 * @param {Vector2} v2 second Vector2
+	 * @returns Vector2
+	 */
     static Min(v1, v2) {
         return new Vector2(Math.min(v1.x, v2.x), Math.min(v1.y, v2.y));
     }
 
+	/**
+	 * Getting a Lerp Vector2 from v1 to v2 with t time
+	 * @param {Vector2} v1 first Vector2
+	 * @param {Vector2} v2 second Vector2
+	 * @param {float} t time of lerp, value should be between 0 and 1
+	 * @returns Vector2
+	 */
     static Lerp(v1, v2, t) {
         if (t > 1) t = 1;
         if (t < 0) t = 0;
         return Vector2.LerpUnclamped(v1, v2, t);
     }
 
+	/**
+	 * Getting a Lerp Vector2 from v1 to v2 with t time (Unclamped version)
+	 * @param {Vector2} v1 first Vector2
+	 * @param {Vector2} v2 second Vector2
+	 * @param {float} t time of lerp, value should be between 0 and 1, but it can exceed this values
+	 * @returns Vector2
+	 */
     static LerpUnclamped(v1, v2, t) {
         const diffV = v2.clone.substract(v1).multiply(t);
         return v1.clone.add(diffV);
     }
 
 
+	/**
+	 * Getting JSON string version of the Vector2
+	 * @returns string
+	 */
     toString() {
-        return `{x: ${this.x}, y: ${this.y}}`;
-    }
+        return JSON.stringify({
+			x: this.x,
+			y: this.y
+		});
+	}
+	/**
+	 * A zero Vector2
+	 */
+	static Zero() {
+		return new Vector2(0, 0);
+	}
+	
+	/**
+	 * A top Vector2
+	 */
+	static Top() {
+		return new Vector2(0, -1);
+	}
+	
+	/**
+	 * A left Vector2
+	 */
+	static Left() {
+		return new Vector2(-1, 0);
+	}
+	
+	/**
+	 * A bottom Vector2
+	 */
+	static Bottom() {
+		return new Vector2(0, 1);
+	}
+	
+	/**
+	 * A right Vector2
+	 */
+	static Right() {
+		return new Vector2(1, 0);
+	}
 }
 
-Vector2.zero = new Vector2(0, 0);
-Vector2.top = new Vector2(0, -1);
-Vector2.left = new Vector2(-1, 0);
-Vector2.bottom = new Vector2(0, 1);
-Vector2.right = new Vector2(1, 0);
 module.exports = Vector2;

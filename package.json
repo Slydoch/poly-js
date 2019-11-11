@@ -17,6 +17,9 @@
     "url": "https://github.com/Slydoch/polyjs.git"
   },
   "devDependencies": {
+    "jsdoc": "^3.6.3",
+    "jsdoc-to-markdown": "^5.0.2",
+    "minami": "^1.2.3",
     "mocha": "^6.2.2"
   }
 }

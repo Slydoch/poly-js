@@ -24,12 +24,12 @@ class LineTest extends Test {
         describe('#constructor()', () => {
             it('Empty constructor should work', () => {
                 const l = new Line;
-                this.assertVector2(l.start, Vector2.zero);
-                this.assertVector2(l.end, Vector2.zero);
+                this.assertVector2(l.start, Vector2.Zero());
+                this.assertVector2(l.end, Vector2.Zero());
             });
             it('Constructor with on Vector2 should work', () => {
                 const l = new Line(new Vector2(42, 42));
-                this.assertVector2(l.start, Vector2.zero);
+                this.assertVector2(l.start, Vector2.Zero());
                 this.assertVector2(l.end, new Vector2(42, 42));
             });
             it('Constructor with two Vector2 should work', () => {
