@@ -1376,3 +1376,4 @@ A bottom Vector2
 A right Vector2
 
 **Kind**: static method of [<code>Vector2</code>](#Vector2)  
+ 
