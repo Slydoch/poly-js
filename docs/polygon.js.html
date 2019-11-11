@@ -1,0 +1,459 @@
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>polygon.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"@slydock/poly-js","systemSummary":"Polygon operations","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					@slydock/poly-js
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Line.html">Line</a></li>
+											<li><a href="Polygon.html">Polygon</a></li>
+											<li><a href="Rect.html">Rect</a></li>
+											<li><a href="Vector2.html">Vector2</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">polygon.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">'use strict';
+
+const PolyBool = require('polybooljs');
+
+const Line = require('./line');
+const Vector2 = require('./vector2');
+/**
+ * Polygon Class
+ * @property {Vector2} first The first point of the polygon, follow next on first to iterate
+ * @property {Array[]} region
+ * @property {Vector2[]} points
+ * @property {Line[]} points
+ * @property {Number} area
+ */
+class Polygon {
+	/**
+	 * Create a new Polygon
+	 * @param {Vector2[]} [vertices] Vertices of the polygon
+	 */
+	constructor(vertices = []) {
+		this.children = [];
+		this.first = null;
+		if (vertices &amp;&amp; vertices.length) {
+			for (const vertice of vertices) {
+				this.addVertex(vertice);
+			}
+		}
+	}
+
+	/**
+	 * Check if a point is inside a polygon
+	 * @param {Vector2} point Point to check
+	 * @returns {boolean}
+	 */
+	pointIsInside(point) {
+		let oddNodes = false;
+		let vertex = this.first;
+		let next = vertex.next;
+		const x = point.x;
+		const y = point.y;
+		do {
+			if (
+				(
+					(vertex.y &lt; y &amp;&amp; next.y >= y) ||
+					(next.y &lt; y &amp;&amp; vertex.y >= y)
+				) &amp;&amp;
+				(vertex.x &lt;= x || next.x &lt;= x)
+			) {
+				oddNodes ^= (vertex.x + ((y - vertex.y) /
+					(next.y - vertex.y) * (next.x - vertex.x)) &lt; x);
+			}
+			vertex = vertex.next;
+			next = vertex.next || this.first;
+		} while (!vertex.equals(this.first));
+		return oddNodes;
+	}
+
+	/**
+	 * Setting all children polygons (for holes)
+	 * @param {Polygon[]} polygons Children to set
+	 * @returns {Polygon}
+	 */
+	setChildren(polygons) {
+		this.children = polygons;
+		return this;
+	}
+
+	/**
+	 * Adding a child polygon (for hole)
+	 * @param {Polygon} polygon Child polygon to add
+	 * @returns {Polygon}
+	 */
+	addChild(polygon) {
+		this.children.push(polygon);
+		return this;
+	}
+
+	/**
+	 * Setting vertices of the polygon
+	 * @param {Vector2[]} vertices Vertices to set
+	 * @returns {Polygon}
+	 */
+	setVertexes(vertices) {
+		this.first = null;
+		for (const v of vertices) {
+			this.addVertex(v);
+		}
+		return this;
+	}
+
+
+	/**
+	 * Add a new vertices to the end
+	 * @param {Vector2} vertice the vertice to add
+	 * @returns {Polygon}
+	 */
+	addVertex(vertice) {
+		if (this.first === null) {
+			this.first = vertice;
+			this.first.next = vertice;
+			this.first.prev = vertice;
+		} else {
+			const next = this.first;
+			const prev = next.prev;
+
+			next.prev = vertice;
+			vertice.next = next;
+			vertice.prev = prev;
+			prev.next = vertice;
+		}
+		return this;
+	}
+
+	/**
+	 * Is the current polygon colliding with the given polygon
+	 * @param {Polygon} polygon the second polygon for the collision
+	 * @returns {Boolean}
+	 */
+	colliding(polygon) {
+		return Polygon.Colliding(this, polygon);
+	}
+
+	/**
+	 * Intersect boolean operation on this polygon with the given polygon
+	 * @param {Polygon} polygon the second polygon for the operation
+	 * @returns {Polygon[]}
+	 */
+	intersect(polygon) {
+		return Polygon.Intersect(this, polygon);
+	}
+
+	/**
+	 * Difference boolean operation on this polygon with the given polygon
+	 * @param {Polygon} polygon the second polygon for the operation
+	 * @returns {Polygon[]}
+	 */
+	difference(p) {
+		return Polygon.Difference(this, p);
+	}
+
+	/**
+	 * Union boolean operation on this polygon with the given polygon
+	 * @param {Polygon} polygon the second polygon for the operation
+	 * @returns {Polygon[]}
+	 */
+	union(p) {
+		return Polygon.Union(this, p);
+	}
+
+	/**
+	 * Xor boolean operation on this polygon with the given polygon
+	 * @param {Polygon} polygon the second polygon for the operation
+	 * @returns {Polygon[]}
+	 */
+	xor(p) {
+		return Polygon.Xor(this, p);
+	}
+
+
+	/* GETTERS */
+	/**
+	 * Get region for polybooljs plugin, can be also be used for GeoJson
+	 * Return a double level array ([[x, y], [x, y], ...])
+	 */
+	get region() {
+		return this.points.map((p) => {
+			return [p.x, p.y];
+		});
+	}
+
+	/**
+	 * Get points of the Polygon
+	 */
+	get points() {
+		const points = [];
+		let v = this.first;
+
+		do {
+			points.push(v);
+			v = v.next;
+		} while (!v.equals(this.first));
+		return points;
+	}
+
+	/**
+	 * Get lines of the Polygon
+	 */
+	get lines() {
+		const lines = [];
+		let prev = null;
+		let cur = this.first;
+		do {
+			if (prev !== null) {
+				lines.push(new Line(prev, cur));
+			}
+			prev = cur;
+			cur = cur.next;
+		} while (!cur.equals(this.first));
+		return lines;
+	}
+
+	/**
+	 * Get area of the Polygon
+	 */
+	get area() {
+		let total = 0;
+		let v = this.first;
+		do {
+			total += (v.x * v.next.y) - (v.y * v.next.x);
+			v = v.next;
+		} while (!v.equals(this.first));
+
+		let area = total / 2;
+		if (this.children &amp;&amp; this.children.length) {
+			for (const child of this.children) {
+				area -= child.area;
+			}
+		}
+		return Math.abs(area);
+	}
+
+	/**
+	 * Is the p1 polygon colliding with the p2 polygon
+	 * @param {Polygon} p1 the first polygon for the collision
+	 * @param {Polygon} p2 the second polygon for the collision
+	 * @returns {Boolean}
+	 */
+	static Colliding(p1, p2) {
+		const p1Points = p1.points;
+		const p2Points = p2.points;
+		for (const pt1 of p1Points) {
+			if (p2.pointIsInside(pt1)) {
+				return true;
+			}
+		}
+		for (const pt2 of p2Points) {
+			if (p1.pointIsInside(pt2)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * Convert region to polygon
+	 * @param {Array[]} region the region to convert
+	 * @returns {Polygon}
+	 */
+	static FromRegion(region) {
+		return new Polygon(region.map((p) => {
+			return new Vector2(p[0], p[1]);
+		}));
+	}
+
+
+	/**
+	 * Intersect boolean operation on the p1 polygon with the p2 polygon
+	 * @param {Polygon} polygon the first polygon for the operation
+	 * @param {Polygon} polygon the second polygon for the operation
+	 * @returns {Polygon[]}
+	 */
+	static Intersect(p1, p2) {
+		const operation = PolyBool.intersect({
+			regions: [
+				p1.region
+			],
+			inverted: false
+		}, {
+			regions: [
+				p2.region
+			],
+			inverted: false
+		});
+		return operation.regions.map((r) => {
+			return Polygon.FromRegion(r);
+		});
+	}
+
+
+	/**
+	 * Union boolean operation on the p1 polygon with the p2 polygon
+	 * @param {Polygon} polygon the first polygon for the operation
+	 * @param {Polygon} polygon the second polygon for the operation
+	 * @returns {Polygon[]}
+	 */
+	static Union(p1, p2) {
+		const operation = PolyBool.union({
+			regions: [
+				p1.region
+			],
+			inverted: false
+		}, {
+			regions: [
+				p2.region
+			],
+			inverted: false
+		});
+		return operation.regions.map((r) => {
+			return Polygon.FromRegion(r);
+		});
+	}
+
+
+	/**
+	 * Difference boolean operation on the p1 polygon with the p2 polygon
+	 * @param {Polygon} polygon the first polygon for the operation
+	 * @param {Polygon} polygon the second polygon for the operation
+	 * @returns {Polygon[]}
+	 */
+	static Difference(p1, p2) {
+		const operation = PolyBool.difference({
+			regions: [
+				p1.region
+			],
+			inverted: false
+		}, {
+			regions: [
+				p2.region
+			],
+			inverted: false
+		});
+		return operation.regions.map((r) => {
+			return Polygon.FromRegion(r);
+		});
+	}
+
+
+	/**
+	 * Xor boolean operation on the p1 polygon with the p2 polygon
+	 * @param {Polygon} polygon the first polygon for the operation
+	 * @param {Polygon} polygon the second polygon for the operation
+	 * @returns {Polygon[]}
+	 */
+	static Xor(p1, p2) {
+		const operation = PolyBool.xor({
+			regions: [
+				p1.region
+			],
+			inverted: false
+		}, {
+			regions: [
+				p2.region
+			],
+			inverted: false
+		});
+		return operation.regions.map((r) => {
+			return Polygon.FromRegion(r);
+		});
+	}
+}
+
+module.exports = Polygon;
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on 11th Nov 2019 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->
