@@ -1,12 +1,12 @@
 {
   "name": "@slydock/poly-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Library for polygons operations",
   "main": "index.js",
   "scripts": {
-	"test": "mocha",
-	"doc": "jsdoc index.js -c jsdoc.json",
-	"docmd": "jsdoc2md index.js -c jsdoc.json > doc/out.md"
+    "test": "mocha",
+    "doc": "jsdoc index.js -c jsdoc.json",
+    "docmd": "jsdoc2md index.js -c jsdoc.json > doc/out.md"
   },
   "author": "Slydoch",
   "private": false,
