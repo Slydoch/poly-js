@@ -33,6 +33,12 @@ class Rect extends Polygon {
         return false;
     }
 
+    get position() {
+        return this._position;
+    }
+    get size() {
+        return this._size;
+    }
     set position(value) {
         this._position = value;
         this._calcPoly();
@@ -63,8 +69,8 @@ class Rect extends Polygon {
             this._position.y = p2;
             this._size.x = p3;
             this._size.y = p4;
-            this._calcPoly();
         }
+        this._calcPoly();
     }
 
     _calcPoly() {
