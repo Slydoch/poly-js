@@ -3,11 +3,6 @@
  * Vector2 Class
  * @property {Number} x The x value of the vertice
  * @property {Number} y The y value of the vertice
- * @property {Vector2} approximated Approximated value of the Vector2 (used to remove duplicates)
- * @property {Vector2} normalized Normalized Vector2
- * @property {Vector2} norm Alias of normalized
- * @property {Number} magnitude Magnitude of the Vector2
- * @property {Vector2} clone A clone of the Vector2
  */
 class Vector2 {
 	/**
@@ -540,7 +535,9 @@ class Vector2 {
 	}
 
 	/**
+	 * Approximated value of the Vector2 (used to remove duplicates)
 	 * @see {@link approximate}
+	 * @type {Vector2}
 	 * @example
 	 * const v1 = new Vector2(Math.PI, Math.PI);
 	 * console.log(v1.toString()); // {x: 3.141592653589793, y: 3.141592653589793}
@@ -551,23 +548,29 @@ class Vector2 {
 	}
 
 	/**
+	 * Normalized Vector2
 	 * @see {@link norm}
+	 * @type {Vector2}
 	 * @example
 	 * const v1 = new Vector2(1, 1);
-	 * console.log(v1.norm.toString()); // {x: 0.7071067811865476, y: 0.7071067811865476}
+	 * console.log(v1.normalized.toString()); // {x: 0.7071067811865476, y: 0.7071067811865476}
 	 */
 	get normalized() {
 		return this.divide(this.magnitude);
 	}
 
 	/**
+	 * Alias of normalized
 	 * @see {@link normalized}
+	 * @type {Vector2}
 	 */
 	get norm() {
 		return this.normalized;
 	}
 
 	/**
+	 * Magnitude of the Vector2
+	 * @type {Number}
 	 * @example
 	 * const v1 = new Vector2(12, 32);
 	 * console.log(v1.magnitude); // 34.17601498127012
@@ -577,6 +580,8 @@ class Vector2 {
 	}
 
 	/**
+	 * A clone of the Vector2
+	 * @type {Vector2}
 	 * @example
 	 * const v1 = new Vector2(5, 5);
 	 * console.log(v1.clone.add(2, 3)); // {x: 7, y: 8}

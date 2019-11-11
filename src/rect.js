@@ -2,13 +2,24 @@
 
 const Vector2 = require('./vector2');
 const Polygon = require('./polygon');
-
+/**
+ * Rect Class
+ * @extends Polygon
+ * @property {Vector2} position
+ * @property {Vector2} size
+ */
 class Rect extends Polygon {
-	constructor() {
+	/**
+	 * @param {Vector2|Object|Number} [p1] Vector2 like object of the start position | position.x
+	 * @param {Vector2|Object|Number} [p2] Vector2 like object of the size | position.y
+	 * @param {Number} [p3] size.x
+	 * @param {Number} [p4] size.y
+	 */
+	constructor(...args) {
 		super();
 		this._position = Vector2.zero;
 		this._size = Vector2.zero;
-		this._checkParams(arguments);
+		this._checkParams(args);
 	}
 
 	pointIsInsideRect(point) {
@@ -36,26 +47,29 @@ class Rect extends Polygon {
 	get position() {
 		return this._position;
 	}
+
 	get size() {
 		return this._size;
 	}
+
 	set position(value) {
 		this._position = value;
 		this._calcPoly();
 	}
+
 	set size(value) {
 		this._size = value;
 		this._calcPoly();
 	}
 
 	_checkParams(args) {
-		const p1 = args[0];
-		const p2 = args[1];
+		const p1 = Vector2.IsVector2Like(args[0]) || args[0];
+		const p2 = Vector2.IsVector2Like(args[1]) || args[1];
 		const p3 = args[2];
 		const p4 = args[3];
 		if (
-			p1 && typeof p1 === 'object' && p1 instanceof Vector2 &&
-			p2 && typeof p2 === 'object' && p2 instanceof Vector2
+			p1 && typeof p1 === 'object' &&
+			p2 && typeof p2 === 'object'
 		) { // (Vector2 position, Vector2 size)
 			this._position = p1;
 			this._size = p2;

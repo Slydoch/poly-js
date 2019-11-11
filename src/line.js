@@ -9,8 +9,8 @@ const Vector2 = require('./vector2');
  */
 class Line {
 	/**
-	 * @param {Vector2|object} [p1] Vector2 like object of the start position
-	 * @param {Vector2|object} [p2] Vector2 like object of the end position
+	 * @param {Vector2|Object} [p1] Vector2 like object of the start position
+	 * @param {Vector2|Object} [p2] Vector2 like object of the end position
 	 */
 	constructor(...args) {
 		this.start = new Vector2.Zero();
@@ -19,8 +19,8 @@ class Line {
 	}
 
 	/**
-	 * Length of the line
-	 * @returns float
+	 * @readonly
+	 * @type {Number}
 	 */
 	get length() {
 		return Vector2.Distance(this.end, this.start);
