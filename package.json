@@ -8,6 +8,20 @@
     "doc": "jsdoc index.js -c jsdoc.json",
     "docmd": "jsdoc2md index.js -c jsdoc.json > doc/out.md"
   },
+  "keywords": [
+    "shape",
+    "polygon",
+    "point",
+    "vector2",
+    "vertice",
+    "2d",
+    "boolean",
+    "intersect",
+    "union",
+    "difference",
+    "xor",
+    "collision"
+  ],
   "author": "Slydoch",
   "private": false,
   "license": "ISC",
