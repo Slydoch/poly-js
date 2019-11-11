@@ -25,4 +25,6 @@ const {
 } =  require('@slydock/poly-js');
 ```
 
+# Documentation
 
+https://slydoch.github.io/polyjs/
