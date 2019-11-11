@@ -29,11 +29,6 @@ const {
 
 
 
-
-
-
-
-
 ## Classes
 
 <dl>
@@ -42,6 +37,9 @@ const {
 </dd>
 <dt><a href="#Polygon">Polygon</a></dt>
 <dd><p>Polygon Class</p>
+</dd>
+<dt><a href="#Rect">Rect</a> ⇐ <code><a href="#Polygon">Polygon</a></code></dt>
+<dd><p>Rect Class</p>
 </dd>
 <dt><a href="#Vector2">Vector2</a></dt>
 <dd><p>Vector2 Class</p>
@@ -65,7 +63,7 @@ Line Class
 * [Line](#Line)
     * [new Line([p1], [p2])](#new_Line_new)
     * _instance_
-        * [.length](#Line+length) ⇒
+        * [.length](#Line+length) : <code>Number</code>
         * [.intersect(line)](#Line+intersect) ⇒
     * _static_
         * [.Intersect(l1, l2)](#Line.Intersect) ⇒
@@ -76,16 +74,14 @@ Line Class
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [p1] | [<code>Vector2</code>](#Vector2) \| <code>object</code> | Vector2 like object of the start position |
-| [p2] | [<code>Vector2</code>](#Vector2) \| <code>object</code> | Vector2 like object of the end position |
+| [p1] | [<code>Vector2</code>](#Vector2) \| <code>Object</code> | Vector2 like object of the start position |
+| [p2] | [<code>Vector2</code>](#Vector2) \| <code>Object</code> | Vector2 like object of the end position |
 
 <a name="Line+length"></a>
 
-### line.length ⇒
-Length of the line
-
+### line.length : <code>Number</code>
 **Kind**: instance property of [<code>Line</code>](#Line)  
-**Returns**: float  
+**Read only**: true  
 <a name="Line+intersect"></a>
 
 ### line.intersect(line) ⇒
@@ -371,6 +367,198 @@ Xor boolean operation on the p1 polygon with the p2 polygon
 | polygon | [<code>Polygon</code>](#Polygon) | the first polygon for the operation |
 | polygon | [<code>Polygon</code>](#Polygon) | the second polygon for the operation |
 
+<a name="Rect"></a>
+
+## Rect ⇐ [<code>Polygon</code>](#Polygon)
+Rect Class
+
+**Kind**: global class  
+**Extends**: [<code>Polygon</code>](#Polygon)  
+**Properties**
+
+| Name | Type |
+| --- | --- |
+| position | [<code>Vector2</code>](#Vector2) | 
+| size | [<code>Vector2</code>](#Vector2) | 
+
+
+* [Rect](#Rect) ⇐ [<code>Polygon</code>](#Polygon)
+    * [new Rect([p1], [p2], [p3], [p4])](#new_Rect_new)
+    * [.region](#Polygon+region)
+    * [.points](#Polygon+points)
+    * [.lines](#Polygon+lines)
+    * [.area](#Polygon+area)
+    * [.pointIsInside(point)](#Polygon+pointIsInside) ⇒ <code>boolean</code>
+    * [.setChildren(polygons)](#Polygon+setChildren) ⇒ [<code>Polygon</code>](#Polygon)
+    * [.addChild(polygon)](#Polygon+addChild) ⇒ [<code>Polygon</code>](#Polygon)
+    * [.setVertexes(vertices)](#Polygon+setVertexes) ⇒ [<code>Polygon</code>](#Polygon)
+    * [.addVertex(vertice)](#Polygon+addVertex) ⇒ [<code>Polygon</code>](#Polygon)
+    * [.colliding(polygon)](#Polygon+colliding) ⇒ <code>Boolean</code>
+    * [.intersect(polygon)](#Polygon+intersect) ⇒ [<code>Array.&lt;Polygon&gt;</code>](#Polygon)
+    * [.difference(polygon)](#Polygon+difference) ⇒ [<code>Array.&lt;Polygon&gt;</code>](#Polygon)
+    * [.union(polygon)](#Polygon+union) ⇒ [<code>Array.&lt;Polygon&gt;</code>](#Polygon)
+    * [.xor(polygon)](#Polygon+xor) ⇒ [<code>Array.&lt;Polygon&gt;</code>](#Polygon)
+
+<a name="new_Rect_new"></a>
+
+### new Rect([p1], [p2], [p3], [p4])
+
+| Param | Type | Description |
+| --- | --- | --- |
+| [p1] | [<code>Vector2</code>](#Vector2) \| <code>Object</code> \| <code>Number</code> | Vector2 like object of the start position | position.x |
+| [p2] | [<code>Vector2</code>](#Vector2) \| <code>Object</code> \| <code>Number</code> | Vector2 like object of the size | position.y |
+| [p3] | <code>Number</code> | size.x |
+| [p4] | <code>Number</code> | size.y |
+
+<a name="Polygon+region"></a>
+
+### rect.region
+Get region for polybooljs plugin, can be also be used for GeoJson
+Return a double level array ([[x, y], [x, y], ...])
+
+**Kind**: instance property of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>region</code>](#Polygon+region)  
+<a name="Polygon+points"></a>
+
+### rect.points
+Get points of the Polygon
+
+**Kind**: instance property of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>points</code>](#Polygon+points)  
+<a name="Polygon+lines"></a>
+
+### rect.lines
+Get lines of the Polygon
+
+**Kind**: instance property of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>lines</code>](#Polygon+lines)  
+<a name="Polygon+area"></a>
+
+### rect.area
+Get area of the Polygon
+
+**Kind**: instance property of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>area</code>](#Polygon+area)  
+<a name="Polygon+pointIsInside"></a>
+
+### rect.pointIsInside(point) ⇒ <code>boolean</code>
+Check if a point is inside a polygon
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>pointIsInside</code>](#Polygon+pointIsInside)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| point | [<code>Vector2</code>](#Vector2) | Point to check |
+
+<a name="Polygon+setChildren"></a>
+
+### rect.setChildren(polygons) ⇒ [<code>Polygon</code>](#Polygon)
+Setting all children polygons (for holes)
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>setChildren</code>](#Polygon+setChildren)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| polygons | [<code>Array.&lt;Polygon&gt;</code>](#Polygon) | Children to set |
+
+<a name="Polygon+addChild"></a>
+
+### rect.addChild(polygon) ⇒ [<code>Polygon</code>](#Polygon)
+Adding a child polygon (for hole)
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>addChild</code>](#Polygon+addChild)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| polygon | [<code>Polygon</code>](#Polygon) | Child polygon to add |
+
+<a name="Polygon+setVertexes"></a>
+
+### rect.setVertexes(vertices) ⇒ [<code>Polygon</code>](#Polygon)
+Setting vertices of the polygon
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>setVertexes</code>](#Polygon+setVertexes)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| vertices | [<code>Array.&lt;Vector2&gt;</code>](#Vector2) | Vertices to set |
+
+<a name="Polygon+addVertex"></a>
+
+### rect.addVertex(vertice) ⇒ [<code>Polygon</code>](#Polygon)
+Add a new vertices to the end
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>addVertex</code>](#Polygon+addVertex)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| vertice | [<code>Vector2</code>](#Vector2) | the vertice to add |
+
+<a name="Polygon+colliding"></a>
+
+### rect.colliding(polygon) ⇒ <code>Boolean</code>
+Is the current polygon colliding with the given polygon
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>colliding</code>](#Polygon+colliding)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| polygon | [<code>Polygon</code>](#Polygon) | the second polygon for the collision |
+
+<a name="Polygon+intersect"></a>
+
+### rect.intersect(polygon) ⇒ [<code>Array.&lt;Polygon&gt;</code>](#Polygon)
+Intersect boolean operation on this polygon with the given polygon
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>intersect</code>](#Polygon+intersect)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| polygon | [<code>Polygon</code>](#Polygon) | the second polygon for the operation |
+
+<a name="Polygon+difference"></a>
+
+### rect.difference(polygon) ⇒ [<code>Array.&lt;Polygon&gt;</code>](#Polygon)
+Difference boolean operation on this polygon with the given polygon
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>difference</code>](#Polygon+difference)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| polygon | [<code>Polygon</code>](#Polygon) | the second polygon for the operation |
+
+<a name="Polygon+union"></a>
+
+### rect.union(polygon) ⇒ [<code>Array.&lt;Polygon&gt;</code>](#Polygon)
+Union boolean operation on this polygon with the given polygon
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>union</code>](#Polygon+union)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| polygon | [<code>Polygon</code>](#Polygon) | the second polygon for the operation |
+
+<a name="Polygon+xor"></a>
+
+### rect.xor(polygon) ⇒ [<code>Array.&lt;Polygon&gt;</code>](#Polygon)
+Xor boolean operation on this polygon with the given polygon
+
+**Kind**: instance method of [<code>Rect</code>](#Rect)  
+**Overrides**: [<code>xor</code>](#Polygon+xor)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| polygon | [<code>Polygon</code>](#Polygon) | the second polygon for the operation |
+
 <a name="Vector2"></a>
 
 ## Vector2
@@ -383,21 +571,16 @@ Vector2 Class
 | --- | --- | --- |
 | x | <code>Number</code> | The x value of the vertice |
 | y | <code>Number</code> | The y value of the vertice |
-| approximated | [<code>Vector2</code>](#Vector2) | Approximated value of the Vector2 (used to remove duplicates) |
-| normalized | [<code>Vector2</code>](#Vector2) | Normalized Vector2 |
-| norm | [<code>Vector2</code>](#Vector2) | Alias of normalized |
-| magnitude | <code>Number</code> | Magnitude of the Vector2 |
-| clone | [<code>Vector2</code>](#Vector2) | A clone of the Vector2 |
 
 
 * [Vector2](#Vector2)
     * [new Vector2([p1], [p2])](#new_Vector2_new)
     * _instance_
-        * [.approximated](#Vector2+approximated)
-        * [.normalized](#Vector2+normalized)
-        * [.norm](#Vector2+norm)
-        * [.magnitude](#Vector2+magnitude)
-        * [.clone](#Vector2+clone)
+        * [.approximated](#Vector2+approximated) : [<code>Vector2</code>](#Vector2)
+        * [.normalized](#Vector2+normalized) : [<code>Vector2</code>](#Vector2)
+        * [.norm](#Vector2+norm) : [<code>Vector2</code>](#Vector2)
+        * [.magnitude](#Vector2+magnitude) : <code>Number</code>
+        * [.clone](#Vector2+clone) : [<code>Vector2</code>](#Vector2)
         * [.floor(v)](#Vector2+floor) ⇒ [<code>Vector2</code>](#Vector2)
         * [.floorX([v])](#Vector2+floorX) ⇒ [<code>Vector2</code>](#Vector2)
         * [.floorY([v])](#Vector2+floorY) ⇒ [<code>Vector2</code>](#Vector2)
@@ -482,7 +665,9 @@ new Vector2(v1);
 ```
 <a name="Vector2+approximated"></a>
 
-### vector2.approximated
+### vector2.approximated : [<code>Vector2</code>](#Vector2)
+Approximated value of the Vector2 (used to remove duplicates)
+
 **Kind**: instance property of [<code>Vector2</code>](#Vector2)  
 **See**: [approximate](approximate)  
 **Example**  
@@ -493,22 +678,28 @@ console.log(v1.approximate.toString()); // {x: 3.1416, y: 3.1416}
 ```
 <a name="Vector2+normalized"></a>
 
-### vector2.normalized
+### vector2.normalized : [<code>Vector2</code>](#Vector2)
+Normalized Vector2
+
 **Kind**: instance property of [<code>Vector2</code>](#Vector2)  
 **See**: [norm](norm)  
 **Example**  
 ```js
 const v1 = new Vector2(1, 1);
-console.log(v1.norm.toString()); // {x: 0.7071067811865476, y: 0.7071067811865476}
+console.log(v1.normalized.toString()); // {x: 0.7071067811865476, y: 0.7071067811865476}
 ```
 <a name="Vector2+norm"></a>
 
-### vector2.norm
+### vector2.norm : [<code>Vector2</code>](#Vector2)
+Alias of normalized
+
 **Kind**: instance property of [<code>Vector2</code>](#Vector2)  
 **See**: [normalized](normalized)  
 <a name="Vector2+magnitude"></a>
 
-### vector2.magnitude
+### vector2.magnitude : <code>Number</code>
+Magnitude of the Vector2
+
 **Kind**: instance property of [<code>Vector2</code>](#Vector2)  
 **Example**  
 ```js
@@ -517,7 +708,9 @@ console.log(v1.magnitude); // 34.17601498127012
 ```
 <a name="Vector2+clone"></a>
 
-### vector2.clone
+### vector2.clone : [<code>Vector2</code>](#Vector2)
+A clone of the Vector2
+
 **Kind**: instance property of [<code>Vector2</code>](#Vector2)  
 **Example**  
 ```js
