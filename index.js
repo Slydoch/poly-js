@@ -7,9 +7,9 @@ const Rect = require('./src/rect');
 const Circle = require('./src/circle');
 
 module.exports = {
-    Vector2,
-    Line,
-    Polygon,
-    Rect,
-    Circle
+	Vector2,
+	Line,
+	Polygon,
+	Rect,
+	Circle
 };
