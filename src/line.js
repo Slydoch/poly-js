@@ -37,6 +37,24 @@ class Line {
 	}
 
 	/**
+	 * Get a point on the line from start to end at lerpValue
+	 * @param {Number} lerpValue The lerp value, should be between 0 and 1, and it will be clamped
+	 * @returns Vector2
+	 */
+	alongPoint(lerpValue) {
+		return Vector2.Lerp(this.start, this.end, lerpValue);
+	}
+
+	/**
+	 * Get a point on the line from start to end at lerpValue (Unclamped version)
+	 * @param {Number} lerpValue The lerp value, should be between 0 and 1, but can be out of bound
+	 * @returns Vector2
+	 */
+	alongPointUnclamped(lerpValue) {
+		return Vector2.LerpUnclamped(this.start, this.end, lerpValue);
+	}
+
+	/**
 	 * Get the intersection of two lines
 	 * Return false if lines does not intersect
 	 * @param {Line} l1 First line
