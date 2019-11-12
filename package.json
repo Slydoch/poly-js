@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "doc": "jsdoc index.js -c jsdoc.json -R README.md",
-    "docmd": "jsdoc2md index.js -c jsdoc.json > doc.md"
+    "doc": "jsdoc index.js -c jsdoc.json -R README.md"
   },
   "keywords": [
     "shape",
