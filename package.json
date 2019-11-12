@@ -1,12 +1,12 @@
 {
   "name": "@slydock/poly-js",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Library for polygons operations",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "doc": "jsdoc index.js -c jsdoc.json",
-    "docmd": "jsdoc2md index.js -c jsdoc.json > doc/out.md"
+    "doc": "jsdoc index.js -c jsdoc.json -R README.md",
+    "docmd": "jsdoc2md index.js -c jsdoc.json > doc.md"
   },
   "keywords": [
     "shape",
@@ -33,6 +33,7 @@
     "url": "https://github.com/Slydoch/polyjs.git"
   },
   "devDependencies": {
+    "eslint": "^6.6.0",
     "foodoc": "0.0.9",
     "jsdoc": "^3.6.3",
     "jsdoc-to-markdown": "^5.0.2",

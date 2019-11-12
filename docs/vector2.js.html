@@ -1,4 +1,77 @@
-'use strict';
+<!-- start:source.tmpl.hbs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+		<title>vector2.js</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="css/prism.min.css">
+		<link type="text/css" rel="stylesheet" href="css/template.min.css">
+		<script type="text/javascript">
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"@slydock/poly-js","systemSummary":"Polygon operations","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.DOCLET_TOC_ENABLED = false;
+			window.DOCLET_AFILTER_ENABLED = false;
+		</script>
+</head>
+<body>
+	<!-- start:navbar.hbs -->
+	<header class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					@slydock/poly-js
+				</a>
+				<!-- displayed on small devices -->
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse" id="topNavigation">
+				<ul class="nav navbar-nav">
+								<li class="dropdown">
+									<a href="list_class.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+									<ul class="dropdown-menu">
+											<li><a href="Circle.html">Circle</a></li>
+											<li><a href="Line.html">Line</a></li>
+											<li><a href="Polygon.html">Polygon</a></li>
+											<li><a href="Rect.html">Rect</a></li>
+											<li><a href="Vector2.html">Vector2</a></li>
+									</ul>
+								</li>
+				</ul>
+					<!-- start:lunr-search-navbar.hbs -->
+					<form class="navbar-form navbar-right" role="search">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" id="lunr-search-input">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="lunr-search-submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- start:lunr-search-navbar.hbs -->		</div>
+		</div>
+	</header>
+	<!-- end:navbar.hbs -->		<div class="page-header">
+			<div class="container">
+				<span class="kind">source</span>
+				<h1><span class="name">vector2.js</span></h1>
+			</div>
+		</div>
+	<div class="container content">
+		<div class="row">
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">'use strict';
 /**
  * Vector2 Class
  * @property {Number} x The x value of the vertice
@@ -9,19 +82,19 @@ class Vector2 {
 	 * @param {Vector2|Number} [p1] Vector2: copy, Number: assign
 	 * @param {Number} [p2] Number: assign
 	 * @example
-	 * // returns Vector2 with x:0 & y:0
+	 * // returns Vector2 with x:0 &amp; y:0
 	 * new Vector2()
 	 * @example
-	 * // returns Vector2 with x:2 & y:2
+	 * // returns Vector2 with x:2 &amp; y:2
 	 * new Vector2(2)
 	 * @example
-	 * // returns Vector2 with x:4 & y:5
+	 * // returns Vector2 with x:4 &amp; y:5
 	 * new Vector2(4, 5)
 	 * @example
-	 * // returns Vector2 with x:1 & y:3
+	 * // returns Vector2 with x:1 &amp; y:3
 	 * new Vector2({x: 1, y: 3})
 	 * @example
-	 * // returns Vector2 with x:6 & y:7
+	 * // returns Vector2 with x:6 &amp; y:7
 	 * const v1 = new Vector2(6, 7);
 	 * new Vector2(v1);
 	 * @constructor
@@ -136,20 +209,20 @@ class Vector2 {
 	 * @param {Number} [p2] Number: assign
 	 * @example
 	 * const v1 = new Vector2();
-	 * // change v1 Vector2 to x:3 & y:3
+	 * // change v1 Vector2 to x:3 &amp; y:3
 	 * v1.set(3);
 	 * @example
 	 * const v1 = new Vector2();
-	 * // change v1 Vector2 to x:3 & y:4
+	 * // change v1 Vector2 to x:3 &amp; y:4
 	 * v1.set(3, 4);
 	 * @example
 	 * const v1 = new Vector2();
-	 * // change v1 Vector2 to x:5 & y:6
+	 * // change v1 Vector2 to x:5 &amp; y:6
 	 * v1.set({x:5, y:6});
 	 * @example
 	 * const v1 = new Vector2();
 	 * const v2 = new Vector2(7, 8);
-	 * // change v1 Vector2 to x:7 & y:8
+	 * // change v1 Vector2 to x:7 &amp; y:8
 	 * v1.set(v2);
 	 * @returns {Vector2}
 	 */
@@ -188,23 +261,23 @@ class Vector2 {
 	 * const v1 = new Vector2(2, 3);
 	 * // add  3 to v1 Vector2
 	 * v1.add(3);
-	 * // v1 values are now x:5 & y:6
+	 * // v1 values are now x:5 &amp; y:6
 	 * @example
 	 * const v1 = new Vector2(2, 3);
 	 * // add 5, 7 to v1 Vector2
 	 * v1.add(5, 7);
-	 * // v1 values are now x:7 & y:10
+	 * // v1 values are now x:7 &amp; y:10
 	 * @example
 	 * const v1 = new Vector2(2, 3);
 	 * // add  3 to v1 Vector2
 	 * v1.add({x:1, y:2});
-	 * // v1 values are now x:3 & y:5
+	 * // v1 values are now x:3 &amp; y:5
 	 * @example
 	 * const v1 = new Vector2(2, 3);
 	 * const v2 = new Vector2(4, 1);
 	 * // add  3 to v1 Vector2
 	 * v1.add(v2);
-	 * // v1 values are now x:6 & y:4, v2 is unchanged
+	 * // v1 values are now x:6 &amp; y:4, v2 is unchanged
 	 * @returns {Vector2}
 	 */
 	add(...args) {
@@ -244,23 +317,23 @@ class Vector2 {
 	 * const v1 = new Vector2(2, 3);
 	 * // Substracting  3 to v1 Vector2
 	 * v1.substract(3);
-	 * // v1 values are now x:-1 & y:0
+	 * // v1 values are now x:-1 &amp; y:0
 	 * @example
 	 * const v1 = new Vector2(2, 3);
 	 * // Substracting 5, 7 to v1 Vector2
 	 * v1.substract(5, 7);
-	 * // v1 values are now x:-3 & y:-4
+	 * // v1 values are now x:-3 &amp; y:-4
 	 * @example
 	 * const v1 = new Vector2(2, 3);
 	 * // Substracting  3 to v1 Vector2
 	 * v1.substract({x:1, y:2});
-	 * // v1 values are now x:1 & y:1
+	 * // v1 values are now x:1 &amp; y:1
 	 * @example
 	 * const v1 = new Vector2(2, 3);
 	 * const v2 = new Vector2(4, 1);
 	 * // Substracting 3 to v1 Vector2
 	 * v1.substract(v2);
-	 * // v1 values are now x:-2 & y:2, v2 is unchanged
+	 * // v1 values are now x:-2 &amp; y:2, v2 is unchanged
 	 * @returns {Vector2}
 	 */
 	substract(...args) {
@@ -298,23 +371,23 @@ class Vector2 {
 	 * const v1 = new Vector2(2, 3);
 	 * // Multiply 3 to v1 Vector2
 	 * v1.multiply(3);
-	 * // v1 values are now x:6 & y:9
+	 * // v1 values are now x:6 &amp; y:9
 	 * @example
 	 * const v1 = new Vector2(2, 3);
 	 * // Multiply 5, 7 to v1 Vector2
 	 * v1.multiply(5, 7);
-	 * // v1 values are now x:10 & y:21
+	 * // v1 values are now x:10 &amp; y:21
 	 * @example
 	 * const v1 = new Vector2(2, 3);
 	 * // Multiply  1, 2 to v1 Vector2
 	 * v1.multiply({x:1, y:2});
-	 * // v1 values are now x:2 & y:6
+	 * // v1 values are now x:2 &amp; y:6
 	 * @example
 	 * const v1 = new Vector2(2, 3);
 	 * const v2 = new Vector2(4, 1);
 	 * // Multiply v2 to v1 Vector2
 	 * v1.multiply(v2);
-	 * // v1 values are now x:8 & y:3, v2 is unchanged
+	 * // v1 values are now x:8 &amp; y:3, v2 is unchanged
 	 * @returns {Vector2}
 	 */
 	multiply(...args) {
@@ -354,23 +427,23 @@ class Vector2 {
 	 * const v1 = new Vector2(12, 9);
 	 * // Dividing v1 Vector2 by 3
 	 * v1.divide(3);
-	 * // v1 values are now x:4 & y:3
+	 * // v1 values are now x:4 &amp; y:3
 	 * @example
 	 * const v1 = new Vector2(10, 15);
 	 * // Dividing v1 Vector2 by 2, 5
 	 * v1.divide(2, 5);
-	 * // v1 values are now x:5 & y:3
+	 * // v1 values are now x:5 &amp; y:3
 	 * @example
 	 * const v1 = new Vector2(5, 8);
 	 * // Dividing v1 Vector2 by 2, 4
 	 * v1.divide({x:2, y:4});
-	 * // v1 values are now x:2.5 & y:2
+	 * // v1 values are now x:2.5 &amp; y:2
 	 * @example
 	 * const v1 = new Vector2(12, 10);
 	 * const v2 = new Vector2(6, 2);
 	 * // Dividing v1 Vector2 by 6, 2
 	 * v1.divide(v2);
-	 * // v1 values are now x:2 & y:5, v2 is unchanged
+	 * // v1 values are now x:2 &amp; y:5, v2 is unchanged
 	 * @returns {Vector2}
 	 */
 	divide(...args) {
@@ -406,7 +479,7 @@ class Vector2 {
 	 * @example
 	 * const v1 = new Vector2(3, 6);
 	 * v1.invert();
-	 * // v1 values are now x:-3 & y:-6
+	 * // v1 values are now x:-3 &amp; y:-6
 	 * @returns {Vector2}
 	 */
 	invert() {
@@ -420,7 +493,7 @@ class Vector2 {
 	 * @example
 	 * const v1 = new Vector2(3, 6);
 	 * v1.invertX();
-	 * // v1 values are now x:-3 & y:6
+	 * // v1 values are now x:-3 &amp; y:6
 	 * @returns {Vector2}
 	 */
 	invertX() {
@@ -433,7 +506,7 @@ class Vector2 {
 	 * @example
 	 * const v1 = new Vector2(3, 6);
 	 * v1.invertY();
-	 * // v1 values are now x:3 & y:-6
+	 * // v1 values are now x:3 &amp; y:-6
 	 * @returns {Vector2}
 	 */
 	invertY() {
@@ -448,7 +521,7 @@ class Vector2 {
 	 * @example
 	 * const v1 = new Vector2(3, 6);
 	 * v1.rotate(180);
-	 * // v1 values are now x:-3 & y:-6
+	 * // v1 values are now x:-3 &amp; y:-6
 	 * @returns {Vector2}
 	 */
 	rotate(angle) {
@@ -475,7 +548,7 @@ class Vector2 {
 	 */
 	equals(...args) {
 		const pos = this._checkParams(args);
-		return this.equalsX(pos.x) && this.equalsY(pos.y);
+		return this.equalsX(pos.x) &amp;&amp; this.equalsY(pos.y);
 	}
 
 	/**
@@ -614,12 +687,12 @@ class Vector2 {
 			x: 0,
 			y: 0
 		};
-		if (p1 !== null && typeof p1 === 'object') {
-			if (typeof p1.x !== 'undefined' && typeof p1.y !== 'undefined') {
+		if (p1 !== null &amp;&amp; typeof p1 === 'object') {
+			if (typeof p1.x !== 'undefined' &amp;&amp; typeof p1.y !== 'undefined') {
 				pos.x = p1.x * 1;
 				pos.y = p1.y * 1;
 			}
-		} else if (typeof p1 !== 'undefined' && typeof p2 !== 'undefined') {
+		} else if (typeof p1 !== 'undefined' &amp;&amp; typeof p2 !== 'undefined') {
 			pos.x = p1 * 1;
 			pos.y = p2 * 1;
 		} else if (typeof p1 !== 'undefined') {
@@ -671,7 +744,7 @@ class Vector2 {
 	static Lerp(v1, v2, t) {
 		if (t > 1) {
 			t = 1;
-		} else if (t < 0) {
+		} else if (t &lt; 0) {
 			t = 0;
 		}
 		return Vector2.LerpUnclamped(v1, v2, t);
@@ -696,8 +769,8 @@ class Vector2 {
 	 */
 	static IsVector2Like(subject) {
 		if (
-			typeof subject === 'object' &&
-			typeof subject.x !== 'undefined' &&
+			typeof subject === 'object' &amp;&amp;
+			typeof subject.x !== 'undefined' &amp;&amp;
 			typeof subject.y !== 'undefined'
 		) {
 			if (subject instanceof Vector2) {
@@ -751,3 +824,38 @@ Vector2.Right = function() {
 };
 
 module.exports = Vector2;
+</code></pre>
+		</section>
+			</div>
+		</div>
+	</div>
+	<footer>
+				<div class="copyright">FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on 12th Nov 2019 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/template.min.js"></script>
+		<!-- start:lunr-search-modal.hbs -->
+		<div class="modal fade" id="lunr-search-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Search results</h4>
+					</div>
+					<div class="modal-body" id="lunr-search-body">
+					</div>
+					<div class="modal-footer" id="lunr-search-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div>
+		<!-- end:lunr-search-modal.hbs -->		<script src="js/lunr.min.js"></script>
+	
+</body>
+</html>
+<!-- end:source.tmpl.hbs -->
