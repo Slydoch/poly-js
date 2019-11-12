@@ -56,7 +56,7 @@ class Circle extends Polygon {
 	}
 
 	set sides(value) {
-		this._sides = parseInt(this._sides);
+		this._sides = parseInt(value);
 		if (this._sides < 3) {
 			this._sides = 3;
 		}
