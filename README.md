@@ -16,7 +16,7 @@ Poly-JS is a library for manipulating 2D polygons, shapes, points...
 
 For any component need, you'll need to import the plugin
 ```javascript
-const {
+const {élkjnb
 	Vector2,
 	Line,
 	Polygon,

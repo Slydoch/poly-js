@@ -538,6 +538,7 @@ class Vector2 {
 	 * Approximated value of the Vector2 (used to remove duplicates)
 	 * @see {@link approximate}
 	 * @type {Vector2}
+     * @readonly
 	 * @example
 	 * const v1 = new Vector2(Math.PI, Math.PI);
 	 * console.log(v1.toString()); // {x: 3.141592653589793, y: 3.141592653589793}
@@ -551,6 +552,7 @@ class Vector2 {
 	 * Normalized Vector2
 	 * @see {@link norm}
 	 * @type {Vector2}
+     * @readonly
 	 * @example
 	 * const v1 = new Vector2(1, 1);
 	 * console.log(v1.normalized.toString()); // {x: 0.7071067811865476, y: 0.7071067811865476}
@@ -562,6 +564,7 @@ class Vector2 {
 	/**
 	 * Alias of normalized
 	 * @see {@link normalized}
+     * @readonly
 	 * @type {Vector2}
 	 */
 	get norm() {
@@ -571,6 +574,7 @@ class Vector2 {
 	/**
 	 * Magnitude of the Vector2
 	 * @type {Number}
+     * @readonly
 	 * @example
 	 * const v1 = new Vector2(12, 32);
 	 * console.log(v1.magnitude); // 34.17601498127012
@@ -582,6 +586,7 @@ class Vector2 {
 	/**
 	 * A clone of the Vector2
 	 * @type {Vector2}
+     * @readonly
 	 * @example
 	 * const v1 = new Vector2(5, 5);
 	 * console.log(v1.clone.add(2, 3)); // {x: 7, y: 8}

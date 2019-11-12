@@ -9,9 +9,6 @@ module.exports = {
     "parserOptions": {
         "ecmaVersion": 2015
     },
-    "overrides": {
-        "files": ["shell/node/*.js", "web/js/ci/**/*.js"]
-    },
     "rules": {
 		"no-undef": "warn",
         "block-scoped-var": "error",

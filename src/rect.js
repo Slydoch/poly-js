@@ -22,6 +22,11 @@ class Rect extends Polygon {
 		this._checkParams(args);
 	}
 
+	/**
+     * Check if a point is inside a Rect
+     * @param {Vector2} point The Vector2 like object
+     * @returns {Boolean}
+     */
 	pointIsInsideRect(point) {
 		const ps = this._position;
 		const pe = this._position.clone.add(this._size);
@@ -44,10 +49,18 @@ class Rect extends Polygon {
 		return false;
 	}
 
+	/**
+	 * The start position of the rect
+     * @type {Vector2}
+     */
 	get position() {
 		return this._position;
 	}
 
+	/**
+	 * The size of the rect
+     * @type {Vector2}
+     */
 	get size() {
 		return this._size;
 	}
@@ -96,6 +109,11 @@ class Rect extends Polygon {
 		]);
 	}
 
+	/**
+     * Get the box around a polygon
+     * @param {Polygon} p The polygon to box
+     * @returns {Rect}
+     */
 	static Box(p) {
 		if (p && typeof p === 'object') {
 			if (p instanceof Polygon) {

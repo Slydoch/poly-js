@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Rect</title>
+		<title>Circle</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -62,7 +62,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">Rect</span></h1>
+				<h1><span class="name">Circle</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -71,7 +71,7 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">Rect</li>
+							<li class="active">Circle</li>
 						</ol>
 						<div class="access-filter">
 								<label class="checkbox-inline">
@@ -86,11 +86,11 @@
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class collapsible-symbol expanded">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Rect</span><span class="signature-params">( [&nbsp;<span class="signature-param">p1</span> [,&nbsp;<span class="signature-param">p2</span> [,&nbsp;<span class="signature-param">p3</span> [,&nbsp;<span class="signature-param">p4</span>&nbsp;]&nbsp;]&nbsp;]&nbsp;]&nbsp;)</span><span class="signature-type"></span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Circle</span><span class="signature-params">( <span class="signature-param">center</span>, <span class="signature-param">radius</span>, <span class="signature-param">sides</span>&nbsp;)</span><span class="signature-type"></span></h2>
 </dt>
 <dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc">Rect Class</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc">Circle Class</div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -98,67 +98,29 @@
 					<tr>
 							<th>Name</th>
 						<th>Type</th>
-							<th>Attributes</th>
 						<th class="last">Description</th>
 					</tr>
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>p1</code></td>
-							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span> | <span class="param-type">Object</span> | <span class="param-type">Number</span></td>
-								<td class="attributes">&lt;optional&gt;<br/></td>
-							<td class="last">
-									Vector2 like object of the start position | position.x
-							</td>
-						</tr>
-						<tr>
-								<td><code>p2</code></td>
-							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span> | <span class="param-type">Object</span> | <span class="param-type">Number</span></td>
-								<td class="attributes">&lt;optional&gt;<br/></td>
-							<td class="last">
-									Vector2 like object of the size | position.y
-							</td>
-						</tr>
-						<tr>
-								<td><code>p3</code></td>
-							<td><span class="param-type">Number</span></td>
-								<td class="attributes">&lt;optional&gt;<br/></td>
-							<td class="last">
-									size.x
-							</td>
-						</tr>
-						<tr>
-								<td><code>p4</code></td>
-							<td><span class="param-type">Number</span></td>
-								<td class="attributes">&lt;optional&gt;<br/></td>
-							<td class="last">
-									size.y
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-info">
-				<h5>Properties</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>position</code></td>
+								<td><code>center</code></td>
 							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span></td>
 							<td class="last">
+									The center of the circle
 							</td>
 						</tr>
 						<tr>
-								<td><code>size</code></td>
-							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span></td>
+								<td><code>radius</code></td>
+							<td><span class="param-type">Number</span></td>
 							<td class="last">
+									The radius of the circle
+							</td>
+						</tr>
+						<tr>
+								<td><code>sides</code></td>
+							<td><span class="param-type">Number</span></td>
+							<td class="last">
+									Sides count of the polygon circle
 							</td>
 						</tr>
 					</tbody>
@@ -191,7 +153,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="rect.js.html">rect.js</a>, <a href="rect.js.html#line-18">line 18</a></p>
+									<p class="form-control-static"><a href="circle.js.html">circle.js</a>, <a href="circle.js.html#line-17">line 17</a></p>
 								</div>
 							</div>
 			
@@ -207,18 +169,18 @@
 									<dl class="symbol">
 											<hr/>
 											<dt class="symbol-title member public collapsible-symbol">
-			<h4 id="position" class="member public"><span class="name">position</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
+			<h4 id="sides" class="member public"><span class="name">sides</span><span class="signature-type"> :Number</span></h4>
 		</dt>
 <dd class="symbol-details member public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">The start position of the rect</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Sides count of the circle</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Type</label>
 								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type"><a href="Vector2.html">Vector2</a></span></div>
+									<div class="form-control-static type-names"><span class="param-type">Number</span></div>
 								</div>
 							</div>
 			
@@ -239,7 +201,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="rect.js.html">rect.js</a>, <a href="rect.js.html#line-56">line 56</a></p>
+									<p class="form-control-static"><a href="circle.js.html">circle.js</a>, <a href="circle.js.html#line-35">line 35</a></p>
 								</div>
 							</div>
 			
@@ -251,11 +213,11 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title member public collapsible-symbol">
-			<h4 id="size" class="member public"><span class="name">size</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
+			<h4 id="center" class="member public"><span class="name">center</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
 		</dt>
 <dd class="symbol-details member public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">The size of the rect</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Center of the circle</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -283,7 +245,51 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="rect.js.html">rect.js</a>, <a href="rect.js.html#line-64">line 64</a></p>
+									<p class="form-control-static"><a href="circle.js.html">circle.js</a>, <a href="circle.js.html#line-52">line 52</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="radius" class="member public"><span class="name">radius</span><span class="signature-type"> :Number</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Radius of the circle</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Number</span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="circle.js.html">circle.js</a>, <a href="circle.js.html#line-65">line 65</a></p>
 								</div>
 							</div>
 			
@@ -500,72 +506,6 @@
 									</dl>
 									<h3>Methods</h3>
 									<dl class="symbol">
-											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id="pointIsInsideRect" class="function public"><span class="name">pointIsInsideRect</span><span class="signature-params">( <span class="signature-param">point</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{Boolean}</span></h4>
-		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Check if a point is inside a Rect</div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>point</code></td>
-							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span></td>
-							<td class="last">
-									The Vector2 like object
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type">Boolean</span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"></div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="rect.js.html">rect.js</a>, <a href="rect.js.html#line-30">line 30</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
 											<hr/>
 											<dt class="symbol-title function public inherited collapsible-symbol">
 			<h4 id="pointIsInside" class="function public inherited"><span class="name">pointIsInside</span><span class="signature-params">( <span class="signature-param">point</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{boolean}</span></h4>
@@ -957,72 +897,6 @@
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
 									<p class="form-control-static"><a href="polygon.js.html">polygon.js</a>, <a href="polygon.js.html#line-97">line 97</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id=".Box" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">Box</span><span class="signature-params">( <span class="signature-param">p</span>&nbsp;)</span><span class="signature-type"> &rarr;&nbsp;{<a href="Rect.html">Rect</a>}</span></h4>
-		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Get the box around a polygon</div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>p</code></td>
-							<td><span class="param-type"><a href="Polygon.html">Polygon</a></span></td>
-							<td class="last">
-									The polygon to box
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"><span class="param-type"><a href="Rect.html">Rect</a></span></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description"></div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="rect.js.html">rect.js</a>, <a href="rect.js.html#line-117">line 117</a></p>
 								</div>
 							</div>
 			

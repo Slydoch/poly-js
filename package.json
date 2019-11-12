@@ -33,6 +33,7 @@
     "url": "https://github.com/Slydoch/polyjs.git"
   },
   "devDependencies": {
+    "eslint": "^6.6.0",
     "foodoc": "0.0.9",
     "jsdoc": "^3.6.3",
     "jsdoc-to-markdown": "^5.0.2",

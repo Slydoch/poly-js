@@ -3,23 +3,83 @@
 const Polygon = require('./polygon');
 const Vector2 = require('./vector2');
 
+/**
+ * Circle Class
+ * @extends Polygon
+ */
 class Circle extends Polygon {
-    constructor(center, radius, sides) {
-        super();
-        this.center = center;
-        this.radius = Math.abs(radius);
-        this.sides = sides;
-        if(this.sides < 3) this.sides = 3;
-        if(this.radius <= 0) this.radius = 1;
-        this.calc();
-    }
+	/**
+     * Create a circle polygon
+     * @param {Vector2} center The center of the circle
+     * @param {Number} radius The radius of the circle
+     * @param {Number} sides Sides count of the polygon circle
+     */
+	constructor(center, radius, sides) {
+		super();
+		this._center = center;
+		this._radius = Math.abs(radius);
+		this._sides = parseInt(sides);
+		if (this._sides < 3) {
+			this._sides = 3;
+		}
+		if (this._radius <= 0) {
+			this._radius = 1;
+		}
+		this._calc();
+	}
 
-    calc() {
-        this.first = null;
-        for(let i = 0; i < this.sides; i++) {
-            this.addVertex(new Vector2(0, this.radius).rotate(i / this.sides * 360).add(this.center));
-        }
-    }
+	/**
+	 * Sides count of the circle
+	 * @type {Number}
+	 */
+	get sides() {
+		return this._sides;
+	}
+
+	set sides(value) {
+		this._sides = parseInt(this._sides);
+		if (this._sides < 3) {
+			this._sides = 3;
+		}
+		this._calc();
+	}
+
+
+	/**
+	 * Center of the circle
+	 * @type {Vector2}
+	 */
+	get center() {
+		return this._center;
+	}
+
+	set center(value) {
+		this._center = value;
+		this._calc();
+	}
+
+	/**
+	 * Radius of the circle
+	 * @type {Number}
+	 */
+	get radius() {
+		return this._radius;
+	}
+
+	set radius(value) {
+		this._radius = value;
+		if (this._radius <= 0) {
+			this._radius = 1;
+		}
+		this._calc();
+	}
+
+	_calc() {
+		this.first = null;
+		for (let i = 0; i < this._sides; i++) {
+			this.addVertex(new Vector2(0, this._radius).rotate(i / this._sides * 360).add(this._center));
+		}
+	}
 }
 
 module.exports = Circle;
