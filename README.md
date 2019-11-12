@@ -27,4 +27,4 @@ const {
 
 # Documentation
 
-https://slydoch.github.io/polyjs/
+https://slydoch.github.io/poly-js/
