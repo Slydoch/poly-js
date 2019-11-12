@@ -73,8 +73,9 @@ class Circle extends Polygon {
 	}
 
 	set center(value) {
+		const diff = value.clone.substract(this._center);
 		this._center = value;
-		this._calc();
+		this.moveBy(diff);
 	}
 
 	/**

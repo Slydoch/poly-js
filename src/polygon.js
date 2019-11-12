@@ -161,8 +161,22 @@ class Polygon {
 		return Polygon.Xor(this, p);
 	}
 
+	/**
+	 * Move all vertices of the polygon by a Vector2
+	 * @param {Vector2} value The value to move by
+	 * @returns {Vector2}
+	 */
+	moveBy(value) {
+		let v = this.first;
+		do {
+			v.add(value);
+			v = v.next;
+		} while (!v.equals(this.first));
+		return this;
+	}
 
 	/* GETTERS */
+
 	/**
 	 * Get region for polybooljs plugin, can be also be used for GeoJson.
 	 * Return a double level array ([[x, y], [x, y], ...])
