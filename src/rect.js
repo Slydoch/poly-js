@@ -120,8 +120,8 @@ class Rect extends Polygon {
 	}
 
 	/**
-     * Get the box around a polygon
-     * @param {Polygon} p The polygon to box
+     * Get the box around a polygon or around points
+     * @param {Polygon|Vector2[]} p The polygon, or array of Vector2
      * @returns {Rect}
      */
 	static Box(p) {
