@@ -89,368 +89,17 @@ window.lunrData = {
           "return",
           "two"
         ],
-        "Circle.html": [
-          "circl",
-          "class"
-        ],
-        "Circle.html#sides": [
-          "circl",
-          "circle#sid",
-          "count",
-          "member",
-          "number",
-          "side"
-        ],
-        "Circle.html#center": [
-          "center",
-          "circl",
-          "circle#cent",
-          "member",
-          "vector2"
-        ],
-        "Circle.html#radius": [
-          "circl",
-          "circle#radiu",
-          "member",
-          "number",
-          "radiu"
-        ],
-        "Circle.html#region": [
-          "array",
-          "circle#region",
-          "doubl",
-          "geojson",
-          "level",
-          "member",
-          "plugin",
-          "polyboolj",
-          "region",
-          "return",
-          "us",
-          "x",
-          "y"
-        ],
-        "Circle.html#points": [
-          "circle#point",
-          "member",
-          "point",
-          "polygon"
-        ],
-        "Circle.html#lines": [
-          "circle#lin",
-          "line",
-          "member",
-          "polygon"
-        ],
-        "Circle.html#area": [
-          "area",
-          "circle#area",
-          "member",
-          "polygon"
-        ],
-        "Circle.html#pointIsInside": [
-          "boolean",
-          "check",
-          "circl",
-          "circle#pointisinsid",
-          "function",
-          "insid",
-          "point",
-          "pointisinsid",
-          "wrapper"
-        ],
-        "Circle.html#pointIsInsidePolygon": [
-          "boolean",
-          "check",
-          "circle#pointisinsidepolygon",
-          "function",
-          "insid",
-          "point",
-          "pointisinsidepolygon",
-          "polygon"
-        ],
-        "Circle.html#pointIsInsideCircle": [
-          "boolean",
-          "check",
-          "circl",
-          "circle#pointisinsidecircl",
-          "function",
-          "insid",
-          "point",
-          "pointisinsidecircl"
-        ],
-        "Circle.html#setChildren": [
-          "children",
-          "circle#setchildren",
-          "function",
-          "hole",
-          "polygon",
-          "set",
-          "setchildren"
-        ],
-        "Circle.html#addChild": [
-          "ad",
-          "addchild",
-          "child",
-          "circle#addchild",
-          "function",
-          "hole",
-          "polygon"
-        ],
-        "Circle.html#setVertexes": [
-          "circle#setvertex",
-          "function",
-          "polygon",
-          "set",
-          "setvertex",
-          "vertic"
-        ],
-        "Circle.html#addVertex": [
-          "add",
-          "addvertex",
-          "circle#addvertex",
-          "end",
-          "function",
-          "new",
-          "polygon",
-          "vertic"
-        ],
-        "Circle.html#colliding": [
-          "boolean",
-          "circle#collid",
-          "collid",
-          "current",
-          "function",
-          "given",
-          "polygon"
-        ],
-        "Circle.html#intersect": [
-          "array.&lt;polygon&gt",
-          "boolean",
-          "circle#intersect",
-          "function",
-          "given",
-          "intersect",
-          "oper",
-          "polygon"
-        ],
-        "Circle.html#difference": [
-          "array.&lt;polygon&gt",
-          "boolean",
-          "circle#differ",
-          "differ",
-          "function",
-          "given",
-          "oper",
-          "polygon"
-        ],
-        "Circle.html#union": [
-          "array.&lt;polygon&gt",
-          "boolean",
-          "circle#union",
-          "function",
-          "given",
-          "oper",
-          "polygon",
-          "union"
-        ],
-        "Circle.html#xor": [
-          "array.&lt;polygon&gt",
-          "boolean",
-          "circle#xor",
-          "function",
-          "given",
-          "oper",
-          "polygon",
-          "xor"
-        ],
-        "Rect.html": [
-          "class",
-          "rect"
-        ],
-        "Rect.html#position": [
-          "member",
-          "posit",
-          "rect",
-          "rect#posit",
-          "start",
-          "vector2"
-        ],
-        "Rect.html#size": [
-          "member",
-          "rect",
-          "rect#siz",
-          "size",
-          "vector2"
-        ],
-        "Rect.html#region": [
-          "array",
-          "doubl",
-          "geojson",
-          "level",
-          "member",
-          "plugin",
-          "polyboolj",
-          "rect#region",
-          "region",
-          "return",
-          "us",
-          "x",
-          "y"
-        ],
-        "Rect.html#points": [
-          "member",
-          "point",
-          "polygon",
-          "rect#point"
-        ],
-        "Rect.html#lines": [
-          "line",
-          "member",
-          "polygon",
-          "rect#lin"
-        ],
-        "Rect.html#area": [
-          "area",
-          "member",
-          "polygon",
-          "rect#area"
-        ],
-        "Rect.html#pointIsInside": [
-          "boolean",
-          "check",
-          "function",
-          "insid",
-          "point",
-          "pointisinsid",
-          "rect",
-          "rect#pointisinsid",
-          "wrapper"
-        ],
-        "Rect.html#pointIsInsideRect": [
-          "boolean",
-          "check",
-          "function",
-          "insid",
-          "point",
-          "pointisinsiderect",
-          "rect",
-          "rect#pointisinsiderect"
-        ],
-        "Rect.html#pointIsInsidePolygon": [
-          "boolean",
-          "check",
-          "function",
-          "insid",
-          "point",
-          "pointisinsidepolygon",
-          "polygon",
-          "rect#pointisinsidepolygon"
-        ],
-        "Rect.html#setChildren": [
-          "children",
-          "function",
-          "hole",
-          "polygon",
-          "rect#setchildren",
-          "set",
-          "setchildren"
-        ],
-        "Rect.html#addChild": [
-          "ad",
-          "addchild",
-          "child",
-          "function",
-          "hole",
-          "polygon",
-          "rect#addchild"
-        ],
-        "Rect.html#setVertexes": [
-          "function",
-          "polygon",
-          "rect#setvertex",
-          "set",
-          "setvertex",
-          "vertic"
-        ],
-        "Rect.html#addVertex": [
-          "add",
-          "addvertex",
-          "end",
-          "function",
-          "new",
-          "polygon",
-          "rect#addvertex",
-          "vertic"
-        ],
-        "Rect.html#.Box": [
-          "around",
-          "box",
-          "function",
-          "lt;static&gt",
-          "p",
-          "polygon",
-          "rect",
-          "rect.box"
-        ],
-        "Rect.html#colliding": [
-          "boolean",
-          "collid",
-          "current",
-          "function",
-          "given",
-          "polygon",
-          "rect#collid"
-        ],
-        "Rect.html#intersect": [
-          "array.&lt;polygon&gt",
-          "boolean",
-          "function",
-          "given",
-          "intersect",
-          "oper",
-          "polygon",
-          "rect#intersect"
-        ],
-        "Rect.html#difference": [
-          "array.&lt;polygon&gt",
-          "boolean",
-          "differ",
-          "function",
-          "given",
-          "oper",
-          "polygon",
-          "rect#differ"
-        ],
-        "Rect.html#union": [
-          "array.&lt;polygon&gt",
-          "boolean",
-          "function",
-          "given",
-          "oper",
-          "polygon",
-          "rect#union",
-          "union"
-        ],
-        "Rect.html#xor": [
-          "array.&lt;polygon&gt",
-          "boolean",
-          "function",
-          "given",
-          "oper",
-          "polygon",
-          "rect#xor",
-          "xor"
-        ],
         "Polygon.html": [
           "class",
           "polygon"
         ],
         "Polygon.html#region": [
           "array",
+          "array.&lt;array&gt",
           "doubl",
           "geojson",
           "level",
+          "lt;readonly&gt",
           "member",
           "plugin",
           "polyboolj",
@@ -462,20 +111,26 @@ window.lunrData = {
           "y"
         ],
         "Polygon.html#points": [
+          "array.&lt;vector2&gt",
+          "lt;readonly&gt",
           "member",
           "point",
           "polygon",
           "polygon#point"
         ],
         "Polygon.html#lines": [
+          "array.&lt;line&gt",
           "line",
+          "lt;readonly&gt",
           "member",
           "polygon",
           "polygon#lin"
         ],
         "Polygon.html#area": [
           "area",
+          "lt;readonly&gt",
           "member",
+          "number",
           "polygon",
           "polygon#area"
         ],
@@ -650,6 +305,375 @@ window.lunrData = {
           "p2",
           "polygon",
           "polygon.xor",
+          "xor"
+        ],
+        "Circle.html": [
+          "circl",
+          "class"
+        ],
+        "Circle.html#sides": [
+          "circl",
+          "circle#sid",
+          "count",
+          "member",
+          "number",
+          "side"
+        ],
+        "Circle.html#center": [
+          "center",
+          "circl",
+          "circle#cent",
+          "member",
+          "vector2"
+        ],
+        "Circle.html#radius": [
+          "circl",
+          "circle#radiu",
+          "member",
+          "number",
+          "radiu"
+        ],
+        "Circle.html#region": [
+          "array",
+          "array.&lt;array&gt",
+          "circle#region",
+          "doubl",
+          "geojson",
+          "level",
+          "lt;readonly&gt",
+          "member",
+          "plugin",
+          "polyboolj",
+          "region",
+          "return",
+          "us",
+          "x",
+          "y"
+        ],
+        "Circle.html#points": [
+          "array.&lt;vector2&gt",
+          "circle#point",
+          "lt;readonly&gt",
+          "member",
+          "point",
+          "polygon"
+        ],
+        "Circle.html#lines": [
+          "array.&lt;line&gt",
+          "circle#lin",
+          "line",
+          "lt;readonly&gt",
+          "member",
+          "polygon"
+        ],
+        "Circle.html#area": [
+          "area",
+          "circle#area",
+          "lt;readonly&gt",
+          "member",
+          "number",
+          "polygon"
+        ],
+        "Circle.html#pointIsInside": [
+          "boolean",
+          "check",
+          "circl",
+          "circle#pointisinsid",
+          "function",
+          "insid",
+          "point",
+          "pointisinsid",
+          "wrapper"
+        ],
+        "Circle.html#pointIsInsidePolygon": [
+          "boolean",
+          "check",
+          "circle#pointisinsidepolygon",
+          "function",
+          "insid",
+          "point",
+          "pointisinsidepolygon",
+          "polygon"
+        ],
+        "Circle.html#pointIsInsideCircle": [
+          "boolean",
+          "check",
+          "circl",
+          "circle#pointisinsidecircl",
+          "function",
+          "insid",
+          "point",
+          "pointisinsidecircl"
+        ],
+        "Circle.html#setChildren": [
+          "children",
+          "circle#setchildren",
+          "function",
+          "hole",
+          "polygon",
+          "set",
+          "setchildren"
+        ],
+        "Circle.html#addChild": [
+          "ad",
+          "addchild",
+          "child",
+          "circle#addchild",
+          "function",
+          "hole",
+          "polygon"
+        ],
+        "Circle.html#setVertexes": [
+          "circle#setvertex",
+          "function",
+          "polygon",
+          "set",
+          "setvertex",
+          "vertic"
+        ],
+        "Circle.html#addVertex": [
+          "add",
+          "addvertex",
+          "circle#addvertex",
+          "end",
+          "function",
+          "new",
+          "polygon",
+          "vertic"
+        ],
+        "Circle.html#colliding": [
+          "boolean",
+          "circle#collid",
+          "collid",
+          "current",
+          "function",
+          "given",
+          "polygon"
+        ],
+        "Circle.html#intersect": [
+          "array.&lt;polygon&gt",
+          "boolean",
+          "circle#intersect",
+          "function",
+          "given",
+          "intersect",
+          "oper",
+          "polygon"
+        ],
+        "Circle.html#difference": [
+          "array.&lt;polygon&gt",
+          "boolean",
+          "circle#differ",
+          "differ",
+          "function",
+          "given",
+          "oper",
+          "polygon"
+        ],
+        "Circle.html#union": [
+          "array.&lt;polygon&gt",
+          "boolean",
+          "circle#union",
+          "function",
+          "given",
+          "oper",
+          "polygon",
+          "union"
+        ],
+        "Circle.html#xor": [
+          "array.&lt;polygon&gt",
+          "boolean",
+          "circle#xor",
+          "function",
+          "given",
+          "oper",
+          "polygon",
+          "xor"
+        ],
+        "Rect.html": [
+          "class",
+          "rect"
+        ],
+        "Rect.html#position": [
+          "member",
+          "posit",
+          "rect",
+          "rect#posit",
+          "start",
+          "vector2"
+        ],
+        "Rect.html#size": [
+          "member",
+          "rect",
+          "rect#siz",
+          "size",
+          "vector2"
+        ],
+        "Rect.html#region": [
+          "array",
+          "array.&lt;array&gt",
+          "doubl",
+          "geojson",
+          "level",
+          "lt;readonly&gt",
+          "member",
+          "plugin",
+          "polyboolj",
+          "rect#region",
+          "region",
+          "return",
+          "us",
+          "x",
+          "y"
+        ],
+        "Rect.html#points": [
+          "array.&lt;vector2&gt",
+          "lt;readonly&gt",
+          "member",
+          "point",
+          "polygon",
+          "rect#point"
+        ],
+        "Rect.html#lines": [
+          "array.&lt;line&gt",
+          "line",
+          "lt;readonly&gt",
+          "member",
+          "polygon",
+          "rect#lin"
+        ],
+        "Rect.html#area": [
+          "area",
+          "lt;readonly&gt",
+          "member",
+          "number",
+          "polygon",
+          "rect#area"
+        ],
+        "Rect.html#pointIsInside": [
+          "boolean",
+          "check",
+          "function",
+          "insid",
+          "point",
+          "pointisinsid",
+          "rect",
+          "rect#pointisinsid",
+          "wrapper"
+        ],
+        "Rect.html#pointIsInsideRect": [
+          "boolean",
+          "check",
+          "function",
+          "insid",
+          "point",
+          "pointisinsiderect",
+          "rect",
+          "rect#pointisinsiderect"
+        ],
+        "Rect.html#pointIsInsidePolygon": [
+          "boolean",
+          "check",
+          "function",
+          "insid",
+          "point",
+          "pointisinsidepolygon",
+          "polygon",
+          "rect#pointisinsidepolygon"
+        ],
+        "Rect.html#setChildren": [
+          "children",
+          "function",
+          "hole",
+          "polygon",
+          "rect#setchildren",
+          "set",
+          "setchildren"
+        ],
+        "Rect.html#addChild": [
+          "ad",
+          "addchild",
+          "child",
+          "function",
+          "hole",
+          "polygon",
+          "rect#addchild"
+        ],
+        "Rect.html#setVertexes": [
+          "function",
+          "polygon",
+          "rect#setvertex",
+          "set",
+          "setvertex",
+          "vertic"
+        ],
+        "Rect.html#addVertex": [
+          "add",
+          "addvertex",
+          "end",
+          "function",
+          "new",
+          "polygon",
+          "rect#addvertex",
+          "vertic"
+        ],
+        "Rect.html#colliding": [
+          "boolean",
+          "collid",
+          "current",
+          "function",
+          "given",
+          "polygon",
+          "rect#collid"
+        ],
+        "Rect.html#.Box": [
+          "around",
+          "box",
+          "function",
+          "lt;static&gt",
+          "p",
+          "polygon",
+          "rect",
+          "rect.box"
+        ],
+        "Rect.html#intersect": [
+          "array.&lt;polygon&gt",
+          "boolean",
+          "function",
+          "given",
+          "intersect",
+          "oper",
+          "polygon",
+          "rect#intersect"
+        ],
+        "Rect.html#difference": [
+          "array.&lt;polygon&gt",
+          "boolean",
+          "differ",
+          "function",
+          "given",
+          "oper",
+          "polygon",
+          "rect#differ"
+        ],
+        "Rect.html#union": [
+          "array.&lt;polygon&gt",
+          "boolean",
+          "function",
+          "given",
+          "oper",
+          "polygon",
+          "rect#union",
+          "union"
+        ],
+        "Rect.html#xor": [
+          "array.&lt;polygon&gt",
+          "boolean",
+          "function",
+          "given",
+          "oper",
+          "polygon",
+          "rect#xor",
           "xor"
         ],
         "Vector2.html": [
@@ -1178,14 +1202,6 @@ window.lunrData = {
                               "ref": "Line.html#.Intersect",
                               "tf": 689.2857142857143
                             },
-                            "Circle.html#intersect": {
-                              "ref": "Circle.html#intersect",
-                              "tf": 691.6666666666667
-                            },
-                            "Rect.html#intersect": {
-                              "ref": "Rect.html#intersect",
-                              "tf": 691.6666666666667
-                            },
                             "Polygon.html#intersect": {
                               "ref": "Polygon.html#intersect",
                               "tf": 691.6666666666667
@@ -1193,6 +1209,14 @@ window.lunrData = {
                             "Polygon.html#.Intersect": {
                               "ref": "Polygon.html#.Intersect",
                               "tf": 677.1428571428571
+                            },
+                            "Circle.html#intersect": {
+                              "ref": "Circle.html#intersect",
+                              "tf": 691.6666666666667
+                            },
+                            "Rect.html#intersect": {
+                              "ref": "Rect.html#intersect",
+                              "tf": 691.6666666666667
                             }
                           }
                         }
@@ -1208,6 +1232,14 @@ window.lunrData = {
                 "docs": {},
                 "d": {
                   "docs": {
+                    "Polygon.html#pointIsInside": {
+                      "ref": "Polygon.html#pointIsInside",
+                      "tf": 10
+                    },
+                    "Polygon.html#pointIsInsidePolygon": {
+                      "ref": "Polygon.html#pointIsInsidePolygon",
+                      "tf": 12.5
+                    },
                     "Circle.html#pointIsInside": {
                       "ref": "Circle.html#pointIsInside",
                       "tf": 10
@@ -1230,14 +1262,6 @@ window.lunrData = {
                     },
                     "Rect.html#pointIsInsidePolygon": {
                       "ref": "Rect.html#pointIsInsidePolygon",
-                      "tf": 12.5
-                    },
-                    "Polygon.html#pointIsInside": {
-                      "ref": "Polygon.html#pointIsInside",
-                      "tf": 10
-                    },
-                    "Polygon.html#pointIsInsidePolygon": {
-                      "ref": "Polygon.html#pointIsInsidePolygon",
                       "tf": 12.5
                     },
                     "Vector2.html#isInside": {
@@ -1383,38 +1407,6 @@ window.lunrData = {
                     "ref": "index.html",
                     "tf": 35
                   },
-                  "Circle.html#intersect": {
-                    "ref": "Circle.html#intersect",
-                    "tf": 8.333333333333332
-                  },
-                  "Circle.html#difference": {
-                    "ref": "Circle.html#difference",
-                    "tf": 8.333333333333332
-                  },
-                  "Circle.html#union": {
-                    "ref": "Circle.html#union",
-                    "tf": 8.333333333333332
-                  },
-                  "Circle.html#xor": {
-                    "ref": "Circle.html#xor",
-                    "tf": 8.333333333333332
-                  },
-                  "Rect.html#intersect": {
-                    "ref": "Rect.html#intersect",
-                    "tf": 8.333333333333332
-                  },
-                  "Rect.html#difference": {
-                    "ref": "Rect.html#difference",
-                    "tf": 8.333333333333332
-                  },
-                  "Rect.html#union": {
-                    "ref": "Rect.html#union",
-                    "tf": 8.333333333333332
-                  },
-                  "Rect.html#xor": {
-                    "ref": "Rect.html#xor",
-                    "tf": 8.333333333333332
-                  },
                   "Polygon.html#intersect": {
                     "ref": "Polygon.html#intersect",
                     "tf": 8.333333333333332
@@ -1446,6 +1438,38 @@ window.lunrData = {
                   "Polygon.html#.Xor": {
                     "ref": "Polygon.html#.Xor",
                     "tf": 7.142857142857142
+                  },
+                  "Circle.html#intersect": {
+                    "ref": "Circle.html#intersect",
+                    "tf": 8.333333333333332
+                  },
+                  "Circle.html#difference": {
+                    "ref": "Circle.html#difference",
+                    "tf": 8.333333333333332
+                  },
+                  "Circle.html#union": {
+                    "ref": "Circle.html#union",
+                    "tf": 8.333333333333332
+                  },
+                  "Circle.html#xor": {
+                    "ref": "Circle.html#xor",
+                    "tf": 8.333333333333332
+                  },
+                  "Rect.html#intersect": {
+                    "ref": "Rect.html#intersect",
+                    "tf": 8.333333333333332
+                  },
+                  "Rect.html#difference": {
+                    "ref": "Rect.html#difference",
+                    "tf": 8.333333333333332
+                  },
+                  "Rect.html#union": {
+                    "ref": "Rect.html#union",
+                    "tf": 8.333333333333332
+                  },
+                  "Rect.html#xor": {
+                    "ref": "Rect.html#xor",
+                    "tf": 8.333333333333332
                   }
                 }
               }
@@ -1579,6 +1603,90 @@ window.lunrData = {
                           "ref": "index.html",
                           "tf": 35
                         },
+                        "Polygon.html": {
+                          "ref": "Polygon.html",
+                          "tf": 1925
+                        },
+                        "Polygon.html#points": {
+                          "ref": "Polygon.html#points",
+                          "tf": 25
+                        },
+                        "Polygon.html#lines": {
+                          "ref": "Polygon.html#lines",
+                          "tf": 25
+                        },
+                        "Polygon.html#area": {
+                          "ref": "Polygon.html#area",
+                          "tf": 25
+                        },
+                        "Polygon.html#pointIsInside": {
+                          "ref": "Polygon.html#pointIsInside",
+                          "tf": 10
+                        },
+                        "Polygon.html#pointIsInsidePolygon": {
+                          "ref": "Polygon.html#pointIsInsidePolygon",
+                          "tf": 12.5
+                        },
+                        "Polygon.html#setChildren": {
+                          "ref": "Polygon.html#setChildren",
+                          "tf": 79.16666666666666
+                        },
+                        "Polygon.html#addChild": {
+                          "ref": "Polygon.html#addChild",
+                          "tf": 79.16666666666666
+                        },
+                        "Polygon.html#setVertexes": {
+                          "ref": "Polygon.html#setVertexes",
+                          "tf": 49.99999999999999
+                        },
+                        "Polygon.html#addVertex": {
+                          "ref": "Polygon.html#addVertex",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#colliding": {
+                          "ref": "Polygon.html#colliding",
+                          "tf": 53.33333333333333
+                        },
+                        "Polygon.html#intersect": {
+                          "ref": "Polygon.html#intersect",
+                          "tf": 49.99999999999999
+                        },
+                        "Polygon.html#difference": {
+                          "ref": "Polygon.html#difference",
+                          "tf": 49.99999999999999
+                        },
+                        "Polygon.html#union": {
+                          "ref": "Polygon.html#union",
+                          "tf": 49.99999999999999
+                        },
+                        "Polygon.html#xor": {
+                          "ref": "Polygon.html#xor",
+                          "tf": 49.99999999999999
+                        },
+                        "Polygon.html#.Colliding": {
+                          "ref": "Polygon.html#.Colliding",
+                          "tf": 20
+                        },
+                        "Polygon.html#.FromRegion": {
+                          "ref": "Polygon.html#.FromRegion",
+                          "tf": 41.666666666666664
+                        },
+                        "Polygon.html#.Intersect": {
+                          "ref": "Polygon.html#.Intersect",
+                          "tf": 54.285714285714285
+                        },
+                        "Polygon.html#.Union": {
+                          "ref": "Polygon.html#.Union",
+                          "tf": 54.285714285714285
+                        },
+                        "Polygon.html#.Difference": {
+                          "ref": "Polygon.html#.Difference",
+                          "tf": 54.285714285714285
+                        },
+                        "Polygon.html#.Xor": {
+                          "ref": "Polygon.html#.Xor",
+                          "tf": 54.285714285714285
+                        },
                         "Circle.html#points": {
                           "ref": "Circle.html#points",
                           "tf": 25
@@ -1663,13 +1771,13 @@ window.lunrData = {
                           "ref": "Rect.html#addVertex",
                           "tf": 33.33333333333333
                         },
-                        "Rect.html#.Box": {
-                          "ref": "Rect.html#.Box",
-                          "tf": 16.666666666666664
-                        },
                         "Rect.html#colliding": {
                           "ref": "Rect.html#colliding",
                           "tf": 53.33333333333333
+                        },
+                        "Rect.html#.Box": {
+                          "ref": "Rect.html#.Box",
+                          "tf": 16.666666666666664
                         },
                         "Rect.html#intersect": {
                           "ref": "Rect.html#intersect",
@@ -1686,90 +1794,6 @@ window.lunrData = {
                         "Rect.html#xor": {
                           "ref": "Rect.html#xor",
                           "tf": 49.99999999999999
-                        },
-                        "Polygon.html": {
-                          "ref": "Polygon.html",
-                          "tf": 1925
-                        },
-                        "Polygon.html#points": {
-                          "ref": "Polygon.html#points",
-                          "tf": 25
-                        },
-                        "Polygon.html#lines": {
-                          "ref": "Polygon.html#lines",
-                          "tf": 25
-                        },
-                        "Polygon.html#area": {
-                          "ref": "Polygon.html#area",
-                          "tf": 25
-                        },
-                        "Polygon.html#pointIsInside": {
-                          "ref": "Polygon.html#pointIsInside",
-                          "tf": 10
-                        },
-                        "Polygon.html#pointIsInsidePolygon": {
-                          "ref": "Polygon.html#pointIsInsidePolygon",
-                          "tf": 12.5
-                        },
-                        "Polygon.html#setChildren": {
-                          "ref": "Polygon.html#setChildren",
-                          "tf": 79.16666666666666
-                        },
-                        "Polygon.html#addChild": {
-                          "ref": "Polygon.html#addChild",
-                          "tf": 79.16666666666666
-                        },
-                        "Polygon.html#setVertexes": {
-                          "ref": "Polygon.html#setVertexes",
-                          "tf": 49.99999999999999
-                        },
-                        "Polygon.html#addVertex": {
-                          "ref": "Polygon.html#addVertex",
-                          "tf": 33.33333333333333
-                        },
-                        "Polygon.html#colliding": {
-                          "ref": "Polygon.html#colliding",
-                          "tf": 53.33333333333333
-                        },
-                        "Polygon.html#intersect": {
-                          "ref": "Polygon.html#intersect",
-                          "tf": 49.99999999999999
-                        },
-                        "Polygon.html#difference": {
-                          "ref": "Polygon.html#difference",
-                          "tf": 49.99999999999999
-                        },
-                        "Polygon.html#union": {
-                          "ref": "Polygon.html#union",
-                          "tf": 49.99999999999999
-                        },
-                        "Polygon.html#xor": {
-                          "ref": "Polygon.html#xor",
-                          "tf": 49.99999999999999
-                        },
-                        "Polygon.html#.Colliding": {
-                          "ref": "Polygon.html#.Colliding",
-                          "tf": 20
-                        },
-                        "Polygon.html#.FromRegion": {
-                          "ref": "Polygon.html#.FromRegion",
-                          "tf": 41.666666666666664
-                        },
-                        "Polygon.html#.Intersect": {
-                          "ref": "Polygon.html#.Intersect",
-                          "tf": 54.285714285714285
-                        },
-                        "Polygon.html#.Union": {
-                          "ref": "Polygon.html#.Union",
-                          "tf": 54.285714285714285
-                        },
-                        "Polygon.html#.Difference": {
-                          "ref": "Polygon.html#.Difference",
-                          "tf": 54.285714285714285
-                        },
-                        "Polygon.html#.Xor": {
-                          "ref": "Polygon.html#.Xor",
-                          "tf": 54.285714285714285
                         },
                         "Vector2.html#isInside": {
                           "ref": "Vector2.html#isInside",
@@ -2293,16 +2317,16 @@ window.lunrData = {
                         "docs": {},
                         "j": {
                           "docs": {
+                            "Polygon.html#region": {
+                              "ref": "Polygon.html#region",
+                              "tf": 3.8461538461538463
+                            },
                             "Circle.html#region": {
                               "ref": "Circle.html#region",
                               "tf": 3.8461538461538463
                             },
                             "Rect.html#region": {
                               "ref": "Rect.html#region",
-                              "tf": 3.8461538461538463
-                            },
-                            "Polygon.html#region": {
-                              "ref": "Polygon.html#region",
                               "tf": 3.8461538461538463
                             }
                           }
@@ -2319,9 +2343,21 @@ window.lunrData = {
                 "docs": {},
                 "t": {
                   "docs": {
+                    "Polygon.html#points": {
+                      "ref": "Polygon.html#points",
+                      "tf": 708.3333333333334
+                    },
+                    "Polygon.html#pointIsInside": {
+                      "ref": "Polygon.html#pointIsInside",
+                      "tf": 43.33333333333333
+                    },
+                    "Polygon.html#pointIsInsidePolygon": {
+                      "ref": "Polygon.html#pointIsInsidePolygon",
+                      "tf": 45.83333333333333
+                    },
                     "Circle.html#points": {
                       "ref": "Circle.html#points",
-                      "tf": 775
+                      "tf": 708.3333333333334
                     },
                     "Circle.html#pointIsInside": {
                       "ref": "Circle.html#pointIsInside",
@@ -2337,7 +2373,7 @@ window.lunrData = {
                     },
                     "Rect.html#points": {
                       "ref": "Rect.html#points",
-                      "tf": 775
+                      "tf": 708.3333333333334
                     },
                     "Rect.html#pointIsInside": {
                       "ref": "Rect.html#pointIsInside",
@@ -2349,18 +2385,6 @@ window.lunrData = {
                     },
                     "Rect.html#pointIsInsidePolygon": {
                       "ref": "Rect.html#pointIsInsidePolygon",
-                      "tf": 45.83333333333333
-                    },
-                    "Polygon.html#points": {
-                      "ref": "Polygon.html#points",
-                      "tf": 775
-                    },
-                    "Polygon.html#pointIsInside": {
-                      "ref": "Polygon.html#pointIsInside",
-                      "tf": 43.33333333333333
-                    },
-                    "Polygon.html#pointIsInsidePolygon": {
-                      "ref": "Polygon.html#pointIsInsidePolygon",
                       "tf": 45.83333333333333
                     }
                   },
@@ -2378,16 +2402,16 @@ window.lunrData = {
                               "docs": {},
                               "d": {
                                 "docs": {
+                                  "Polygon.html#pointIsInside": {
+                                    "ref": "Polygon.html#pointIsInside",
+                                    "tf": 683.3333333333334
+                                  },
                                   "Circle.html#pointIsInside": {
                                     "ref": "Circle.html#pointIsInside",
                                     "tf": 683.3333333333334
                                   },
                                   "Rect.html#pointIsInside": {
                                     "ref": "Rect.html#pointIsInside",
-                                    "tf": 683.3333333333334
-                                  },
-                                  "Polygon.html#pointIsInside": {
-                                    "ref": "Polygon.html#pointIsInside",
                                     "tf": 683.3333333333334
                                   }
                                 },
@@ -2407,16 +2431,16 @@ window.lunrData = {
                                               "docs": {},
                                               "n": {
                                                 "docs": {
+                                                  "Polygon.html#pointIsInsidePolygon": {
+                                                    "ref": "Polygon.html#pointIsInsidePolygon",
+                                                    "tf": 683.3333333333334
+                                                  },
                                                   "Circle.html#pointIsInsidePolygon": {
                                                     "ref": "Circle.html#pointIsInsidePolygon",
                                                     "tf": 683.3333333333334
                                                   },
                                                   "Rect.html#pointIsInsidePolygon": {
                                                     "ref": "Rect.html#pointIsInsidePolygon",
-                                                    "tf": 683.3333333333334
-                                                  },
-                                                  "Polygon.html#pointIsInsidePolygon": {
-                                                    "ref": "Polygon.html#pointIsInsidePolygon",
                                                     "tf": 683.3333333333334
                                                   }
                                                 }
@@ -2500,16 +2524,16 @@ window.lunrData = {
                   "docs": {},
                   "n": {
                     "docs": {
+                      "Polygon.html#region": {
+                        "ref": "Polygon.html#region",
+                        "tf": 3.8461538461538463
+                      },
                       "Circle.html#region": {
                         "ref": "Circle.html#region",
                         "tf": 3.8461538461538463
                       },
                       "Rect.html#region": {
                         "ref": "Rect.html#region",
-                        "tf": 3.8461538461538463
-                      },
-                      "Polygon.html#region": {
-                        "ref": "Polygon.html#region",
                         "tf": 3.8461538461538463
                       }
                     }
@@ -2567,16 +2591,16 @@ window.lunrData = {
                         "ref": "Line.html#.Intersect",
                         "tf": 7.142857142857142
                       },
+                      "Polygon.html#region": {
+                        "ref": "Polygon.html#region",
+                        "tf": 3.8461538461538463
+                      },
                       "Circle.html#region": {
                         "ref": "Circle.html#region",
                         "tf": 3.8461538461538463
                       },
                       "Rect.html#region": {
                         "ref": "Rect.html#region",
-                        "tf": 3.8461538461538463
-                      },
-                      "Polygon.html#region": {
-                        "ref": "Polygon.html#region",
                         "tf": 3.8461538461538463
                       },
                       "Vector2.html#.IsVector2Like": {
@@ -2596,21 +2620,21 @@ window.lunrData = {
                   "docs": {},
                   "n": {
                     "docs": {
-                      "Circle.html#region": {
-                        "ref": "Circle.html#region",
-                        "tf": 753.8461538461538
-                      },
-                      "Rect.html#region": {
-                        "ref": "Rect.html#region",
-                        "tf": 753.8461538461538
-                      },
                       "Polygon.html#region": {
                         "ref": "Polygon.html#region",
-                        "tf": 753.8461538461538
+                        "tf": 687.1794871794872
                       },
                       "Polygon.html#.FromRegion": {
                         "ref": "Polygon.html#.FromRegion",
                         "tf": 41.666666666666664
+                      },
+                      "Circle.html#region": {
+                        "ref": "Circle.html#region",
+                        "tf": 687.1794871794872
+                      },
+                      "Rect.html#region": {
+                        "ref": "Rect.html#region",
+                        "tf": 687.1794871794872
                       }
                     }
                   }
@@ -3206,35 +3230,18 @@ window.lunrData = {
               }
             }
           },
-          "i": {
-            "docs": {},
-            "d": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "Circle.html#sides": {
-                    "ref": "Circle.html#sides",
-                    "tf": 716.6666666666666
-                  }
-                }
-              }
-            },
-            "z": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "Rect.html#size": {
-                    "ref": "Rect.html#size",
-                    "tf": 725
-                  }
-                }
-              }
-            }
-          },
           "e": {
             "docs": {},
             "t": {
               "docs": {
+                "Polygon.html#setChildren": {
+                  "ref": "Polygon.html#setChildren",
+                  "tf": 12.5
+                },
+                "Polygon.html#setVertexes": {
+                  "ref": "Polygon.html#setVertexes",
+                  "tf": 16.666666666666664
+                },
                 "Circle.html#setChildren": {
                   "ref": "Circle.html#setChildren",
                   "tf": 12.5
@@ -3249,14 +3256,6 @@ window.lunrData = {
                 },
                 "Rect.html#setVertexes": {
                   "ref": "Rect.html#setVertexes",
-                  "tf": 16.666666666666664
-                },
-                "Polygon.html#setChildren": {
-                  "ref": "Polygon.html#setChildren",
-                  "tf": 12.5
-                },
-                "Polygon.html#setVertexes": {
-                  "ref": "Polygon.html#setVertexes",
                   "tf": 16.666666666666664
                 },
                 "Vector2.html#set": {
@@ -3288,16 +3287,16 @@ window.lunrData = {
                             "docs": {},
                             "n": {
                               "docs": {
+                                "Polygon.html#setChildren": {
+                                  "ref": "Polygon.html#setChildren",
+                                  "tf": 683.3333333333334
+                                },
                                 "Circle.html#setChildren": {
                                   "ref": "Circle.html#setChildren",
                                   "tf": 683.3333333333334
                                 },
                                 "Rect.html#setChildren": {
                                   "ref": "Rect.html#setChildren",
-                                  "tf": 683.3333333333334
-                                },
-                                "Polygon.html#setChildren": {
-                                  "ref": "Polygon.html#setChildren",
                                   "tf": 683.3333333333334
                                 }
                               }
@@ -3321,16 +3320,16 @@ window.lunrData = {
                         "docs": {},
                         "x": {
                           "docs": {
+                            "Polygon.html#setVertexes": {
+                              "ref": "Polygon.html#setVertexes",
+                              "tf": 683.3333333333334
+                            },
                             "Circle.html#setVertexes": {
                               "ref": "Circle.html#setVertexes",
                               "tf": 683.3333333333334
                             },
                             "Rect.html#setVertexes": {
                               "ref": "Rect.html#setVertexes",
-                              "tf": 683.3333333333334
-                            },
-                            "Polygon.html#setVertexes": {
-                              "ref": "Polygon.html#setVertexes",
                               "tf": 683.3333333333334
                             }
                           }
@@ -3353,6 +3352,31 @@ window.lunrData = {
                   "Vector2.html#setY": {
                     "ref": "Vector2.html#setY",
                     "tf": 683.3333333333334
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Circle.html#sides": {
+                    "ref": "Circle.html#sides",
+                    "tf": 716.6666666666666
+                  }
+                }
+              }
+            },
+            "z": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Rect.html#size": {
+                    "ref": "Rect.html#size",
+                    "tf": 725
                   }
                 }
               }
@@ -3500,16 +3524,16 @@ window.lunrData = {
                 "docs": {},
                 "l": {
                   "docs": {
+                    "Polygon.html#region": {
+                      "ref": "Polygon.html#region",
+                      "tf": 3.8461538461538463
+                    },
                     "Circle.html#region": {
                       "ref": "Circle.html#region",
                       "tf": 3.8461538461538463
                     },
                     "Rect.html#region": {
                       "ref": "Rect.html#region",
-                      "tf": 3.8461538461538463
-                    },
-                    "Polygon.html#region": {
-                      "ref": "Polygon.html#region",
                       "tf": 3.8461538461538463
                     }
                   }
@@ -3527,14 +3551,6 @@ window.lunrData = {
                   "docs": {},
                   "r": {
                     "docs": {
-                      "Circle.html#difference": {
-                        "ref": "Circle.html#difference",
-                        "tf": 691.6666666666667
-                      },
-                      "Rect.html#difference": {
-                        "ref": "Rect.html#difference",
-                        "tf": 691.6666666666667
-                      },
                       "Polygon.html#difference": {
                         "ref": "Polygon.html#difference",
                         "tf": 691.6666666666667
@@ -3542,6 +3558,14 @@ window.lunrData = {
                       "Polygon.html#.Difference": {
                         "ref": "Polygon.html#.Difference",
                         "tf": 677.1428571428571
+                      },
+                      "Circle.html#difference": {
+                        "ref": "Circle.html#difference",
+                        "tf": 691.6666666666667
+                      },
+                      "Rect.html#difference": {
+                        "ref": "Rect.html#difference",
+                        "tf": 691.6666666666667
                       }
                     }
                   }
@@ -3672,16 +3696,16 @@ window.lunrData = {
                     "docs": {},
                     "n": {
                       "docs": {
+                        "Polygon.html#region": {
+                          "ref": "Polygon.html#region",
+                          "tf": 3.8461538461538463
+                        },
                         "Circle.html#region": {
                           "ref": "Circle.html#region",
                           "tf": 3.8461538461538463
                         },
                         "Rect.html#region": {
                           "ref": "Rect.html#region",
-                          "tf": 3.8461538461538463
-                        },
-                        "Polygon.html#region": {
-                          "ref": "Polygon.html#region",
                           "tf": 3.8461538461538463
                         }
                       }
@@ -3727,6 +3751,26 @@ window.lunrData = {
                 "docs": {},
                 "n": {
                   "docs": {
+                    "Polygon.html#colliding": {
+                      "ref": "Polygon.html#colliding",
+                      "tf": 10
+                    },
+                    "Polygon.html#intersect": {
+                      "ref": "Polygon.html#intersect",
+                      "tf": 8.333333333333332
+                    },
+                    "Polygon.html#difference": {
+                      "ref": "Polygon.html#difference",
+                      "tf": 8.333333333333332
+                    },
+                    "Polygon.html#union": {
+                      "ref": "Polygon.html#union",
+                      "tf": 8.333333333333332
+                    },
+                    "Polygon.html#xor": {
+                      "ref": "Polygon.html#xor",
+                      "tf": 8.333333333333332
+                    },
                     "Circle.html#colliding": {
                       "ref": "Circle.html#colliding",
                       "tf": 10
@@ -3766,26 +3810,6 @@ window.lunrData = {
                     "Rect.html#xor": {
                       "ref": "Rect.html#xor",
                       "tf": 8.333333333333332
-                    },
-                    "Polygon.html#colliding": {
-                      "ref": "Polygon.html#colliding",
-                      "tf": 10
-                    },
-                    "Polygon.html#intersect": {
-                      "ref": "Polygon.html#intersect",
-                      "tf": 8.333333333333332
-                    },
-                    "Polygon.html#difference": {
-                      "ref": "Polygon.html#difference",
-                      "tf": 8.333333333333332
-                    },
-                    "Polygon.html#union": {
-                      "ref": "Polygon.html#union",
-                      "tf": 8.333333333333332
-                    },
-                    "Polygon.html#xor": {
-                      "ref": "Polygon.html#xor",
-                      "tf": 8.333333333333332
                     }
                   }
                 }
@@ -3811,16 +3835,16 @@ window.lunrData = {
                       "ref": "Line.html",
                       "tf": 135
                     },
+                    "Polygon.html": {
+                      "ref": "Polygon.html",
+                      "tf": 135
+                    },
                     "Circle.html": {
                       "ref": "Circle.html",
                       "tf": 135
                     },
                     "Rect.html": {
                       "ref": "Rect.html",
-                      "tf": 135
-                    },
-                    "Polygon.html": {
-                      "ref": "Polygon.html",
                       "tf": 135
                     },
                     "Vector2.html": {
@@ -3840,6 +3864,225 @@ window.lunrData = {
                     "Vector2.html#clone": {
                       "ref": "Vector2.html#clone",
                       "tf": 708.3333333333334
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "h": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "c": {
+                "docs": {},
+                "k": {
+                  "docs": {
+                    "Polygon.html#pointIsInside": {
+                      "ref": "Polygon.html#pointIsInside",
+                      "tf": 10
+                    },
+                    "Polygon.html#pointIsInsidePolygon": {
+                      "ref": "Polygon.html#pointIsInsidePolygon",
+                      "tf": 12.5
+                    },
+                    "Circle.html#pointIsInside": {
+                      "ref": "Circle.html#pointIsInside",
+                      "tf": 10
+                    },
+                    "Circle.html#pointIsInsidePolygon": {
+                      "ref": "Circle.html#pointIsInsidePolygon",
+                      "tf": 12.5
+                    },
+                    "Circle.html#pointIsInsideCircle": {
+                      "ref": "Circle.html#pointIsInsideCircle",
+                      "tf": 12.5
+                    },
+                    "Rect.html#pointIsInside": {
+                      "ref": "Rect.html#pointIsInside",
+                      "tf": 10
+                    },
+                    "Rect.html#pointIsInsideRect": {
+                      "ref": "Rect.html#pointIsInsideRect",
+                      "tf": 12.5
+                    },
+                    "Rect.html#pointIsInsidePolygon": {
+                      "ref": "Rect.html#pointIsInsidePolygon",
+                      "tf": 12.5
+                    }
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "d": {
+                  "docs": {
+                    "Polygon.html#addChild": {
+                      "ref": "Polygon.html#addChild",
+                      "tf": 12.5
+                    },
+                    "Circle.html#addChild": {
+                      "ref": "Circle.html#addChild",
+                      "tf": 12.5
+                    },
+                    "Rect.html#addChild": {
+                      "ref": "Rect.html#addChild",
+                      "tf": 12.5
+                    }
+                  },
+                  "r": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {
+                          "Polygon.html#setChildren": {
+                            "ref": "Polygon.html#setChildren",
+                            "tf": 12.5
+                          },
+                          "Circle.html#setChildren": {
+                            "ref": "Circle.html#setChildren",
+                            "tf": 12.5
+                          },
+                          "Rect.html#setChildren": {
+                            "ref": "Rect.html#setChildren",
+                            "tf": 12.5
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "Polygon.html#colliding": {
+                        "ref": "Polygon.html#colliding",
+                        "tf": 693.3333333333334
+                      },
+                      "Polygon.html#.Colliding": {
+                        "ref": "Polygon.html#.Colliding",
+                        "tf": 680
+                      },
+                      "Circle.html#colliding": {
+                        "ref": "Circle.html#colliding",
+                        "tf": 693.3333333333334
+                      },
+                      "Rect.html#colliding": {
+                        "ref": "Rect.html#colliding",
+                        "tf": 693.3333333333334
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "n": {
+              "docs": {},
+              "v": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Polygon.html#.FromRegion": {
+                          "ref": "Polygon.html#.FromRegion",
+                          "tf": 16.666666666666664
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "u": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "Circle.html#sides": {
+                      "ref": "Circle.html#sides",
+                      "tf": 16.666666666666664
+                    }
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "p": {
+                      "docs": {},
+                      "o": {
+                        "docs": {},
+                        "n": {
+                          "docs": {},
+                          "d": {
+                            "docs": {
+                              "Vector2.html#.IsVector2Like": {
+                                "ref": "Vector2.html#.IsVector2Like",
+                                "tf": 6.25
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Polygon.html#colliding": {
+                          "ref": "Polygon.html#colliding",
+                          "tf": 10
+                        },
+                        "Circle.html#colliding": {
+                          "ref": "Circle.html#colliding",
+                          "tf": 10
+                        },
+                        "Rect.html#colliding": {
+                          "ref": "Rect.html#colliding",
+                          "tf": 10
+                        },
+                        "Vector2.html#isInside": {
+                          "ref": "Vector2.html#isInside",
+                          "tf": 10
+                        }
+                      }
                     }
                   }
                 }
@@ -4302,101 +4545,6 @@ window.lunrData = {
               }
             }
           },
-          "o": {
-            "docs": {},
-            "u": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "Circle.html#sides": {
-                      "ref": "Circle.html#sides",
-                      "tf": 16.666666666666664
-                    }
-                  }
-                }
-              }
-            },
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "Circle.html#colliding": {
-                        "ref": "Circle.html#colliding",
-                        "tf": 693.3333333333334
-                      },
-                      "Rect.html#colliding": {
-                        "ref": "Rect.html#colliding",
-                        "tf": 693.3333333333334
-                      },
-                      "Polygon.html#colliding": {
-                        "ref": "Polygon.html#colliding",
-                        "tf": 693.3333333333334
-                      },
-                      "Polygon.html#.Colliding": {
-                        "ref": "Polygon.html#.Colliding",
-                        "tf": 680
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "n": {
-              "docs": {},
-              "v": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Polygon.html#.FromRegion": {
-                          "ref": "Polygon.html#.FromRegion",
-                          "tf": 16.666666666666664
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "r": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "p": {
-                      "docs": {},
-                      "o": {
-                        "docs": {},
-                        "n": {
-                          "docs": {},
-                          "d": {
-                            "docs": {
-                              "Vector2.html#.IsVector2Like": {
-                                "ref": "Vector2.html#.IsVector2Like",
-                                "tf": 6.25
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
           "e": {
             "docs": {},
             "n": {
@@ -4446,130 +4594,6 @@ window.lunrData = {
                     "Vector2.html#ceilY": {
                       "ref": "Vector2.html#ceilY",
                       "tf": 683.3333333333334
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "h": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "c": {
-                "docs": {},
-                "k": {
-                  "docs": {
-                    "Circle.html#pointIsInside": {
-                      "ref": "Circle.html#pointIsInside",
-                      "tf": 10
-                    },
-                    "Circle.html#pointIsInsidePolygon": {
-                      "ref": "Circle.html#pointIsInsidePolygon",
-                      "tf": 12.5
-                    },
-                    "Circle.html#pointIsInsideCircle": {
-                      "ref": "Circle.html#pointIsInsideCircle",
-                      "tf": 12.5
-                    },
-                    "Rect.html#pointIsInside": {
-                      "ref": "Rect.html#pointIsInside",
-                      "tf": 10
-                    },
-                    "Rect.html#pointIsInsideRect": {
-                      "ref": "Rect.html#pointIsInsideRect",
-                      "tf": 12.5
-                    },
-                    "Rect.html#pointIsInsidePolygon": {
-                      "ref": "Rect.html#pointIsInsidePolygon",
-                      "tf": 12.5
-                    },
-                    "Polygon.html#pointIsInside": {
-                      "ref": "Polygon.html#pointIsInside",
-                      "tf": 10
-                    },
-                    "Polygon.html#pointIsInsidePolygon": {
-                      "ref": "Polygon.html#pointIsInsidePolygon",
-                      "tf": 12.5
-                    }
-                  }
-                }
-              }
-            },
-            "i": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "d": {
-                  "docs": {
-                    "Circle.html#addChild": {
-                      "ref": "Circle.html#addChild",
-                      "tf": 12.5
-                    },
-                    "Rect.html#addChild": {
-                      "ref": "Rect.html#addChild",
-                      "tf": 12.5
-                    },
-                    "Polygon.html#addChild": {
-                      "ref": "Polygon.html#addChild",
-                      "tf": 12.5
-                    }
-                  },
-                  "r": {
-                    "docs": {},
-                    "e": {
-                      "docs": {},
-                      "n": {
-                        "docs": {
-                          "Circle.html#setChildren": {
-                            "ref": "Circle.html#setChildren",
-                            "tf": 12.5
-                          },
-                          "Rect.html#setChildren": {
-                            "ref": "Rect.html#setChildren",
-                            "tf": 12.5
-                          },
-                          "Polygon.html#setChildren": {
-                            "ref": "Polygon.html#setChildren",
-                            "tf": 12.5
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "u": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Circle.html#colliding": {
-                          "ref": "Circle.html#colliding",
-                          "tf": 10
-                        },
-                        "Rect.html#colliding": {
-                          "ref": "Rect.html#colliding",
-                          "tf": 10
-                        },
-                        "Polygon.html#colliding": {
-                          "ref": "Polygon.html#colliding",
-                          "tf": 10
-                        },
-                        "Vector2.html#isInside": {
-                          "ref": "Vector2.html#isInside",
-                          "tf": 10
-                        }
-                      }
                     }
                   }
                 }
@@ -4647,17 +4671,17 @@ window.lunrData = {
                     "ref": "Line.html#.Intersect",
                     "tf": 14.285714285714285
                   },
+                  "Polygon.html#lines": {
+                    "ref": "Polygon.html#lines",
+                    "tf": 708.3333333333334
+                  },
                   "Circle.html#lines": {
                     "ref": "Circle.html#lines",
-                    "tf": 775
+                    "tf": 708.3333333333334
                   },
                   "Rect.html#lines": {
                     "ref": "Rect.html#lines",
-                    "tf": 775
-                  },
-                  "Polygon.html#lines": {
-                    "ref": "Polygon.html#lines",
-                    "tf": 775
+                    "tf": 708.3333333333334
                   }
                 },
                 "#": {
@@ -4781,16 +4805,16 @@ window.lunrData = {
                 "docs": {},
                 "l": {
                   "docs": {
+                    "Polygon.html#region": {
+                      "ref": "Polygon.html#region",
+                      "tf": 3.8461538461538463
+                    },
                     "Circle.html#region": {
                       "ref": "Circle.html#region",
                       "tf": 3.8461538461538463
                     },
                     "Rect.html#region": {
                       "ref": "Rect.html#region",
-                      "tf": 3.8461538461538463
-                    },
-                    "Polygon.html#region": {
-                      "ref": "Polygon.html#region",
                       "tf": 3.8461538461538463
                     }
                   }
@@ -4880,6 +4904,54 @@ window.lunrData = {
                                         "ref": "Line.html#length",
                                         "tf": 33.33333333333333
                                       },
+                                      "Polygon.html#region": {
+                                        "ref": "Polygon.html#region",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Polygon.html#points": {
+                                        "ref": "Polygon.html#points",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Polygon.html#lines": {
+                                        "ref": "Polygon.html#lines",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Polygon.html#area": {
+                                        "ref": "Polygon.html#area",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Circle.html#region": {
+                                        "ref": "Circle.html#region",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Circle.html#points": {
+                                        "ref": "Circle.html#points",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Circle.html#lines": {
+                                        "ref": "Circle.html#lines",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Circle.html#area": {
+                                        "ref": "Circle.html#area",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Rect.html#region": {
+                                        "ref": "Rect.html#region",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Rect.html#points": {
+                                        "ref": "Rect.html#points",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Rect.html#lines": {
+                                        "ref": "Rect.html#lines",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Rect.html#area": {
+                                        "ref": "Rect.html#area",
+                                        "tf": 33.33333333333333
+                                      },
                                       "Vector2.html#approximated": {
                                         "ref": "Vector2.html#approximated",
                                         "tf": 33.33333333333333
@@ -4934,10 +5006,6 @@ window.lunrData = {
                                     "ref": "Line.html#.Intersect",
                                     "tf": 25
                                   },
-                                  "Rect.html#.Box": {
-                                    "ref": "Rect.html#.Box",
-                                    "tf": 25
-                                  },
                                   "Polygon.html#.Colliding": {
                                     "ref": "Polygon.html#.Colliding",
                                     "tf": 20
@@ -4961,6 +5029,10 @@ window.lunrData = {
                                   "Polygon.html#.Xor": {
                                     "ref": "Polygon.html#.Xor",
                                     "tf": 20
+                                  },
+                                  "Rect.html#.Box": {
+                                    "ref": "Rect.html#.Box",
+                                    "tf": 25
                                   },
                                   "Vector2.html#.Distance": {
                                     "ref": "Vector2.html#.Distance",
@@ -5035,6 +5107,22 @@ window.lunrData = {
                         "ref": "Line.html#length",
                         "tf": 110
                       },
+                      "Polygon.html#region": {
+                        "ref": "Polygon.html#region",
+                        "tf": 110
+                      },
+                      "Polygon.html#points": {
+                        "ref": "Polygon.html#points",
+                        "tf": 110
+                      },
+                      "Polygon.html#lines": {
+                        "ref": "Polygon.html#lines",
+                        "tf": 110
+                      },
+                      "Polygon.html#area": {
+                        "ref": "Polygon.html#area",
+                        "tf": 110
+                      },
                       "Circle.html#sides": {
                         "ref": "Circle.html#sides",
                         "tf": 110
@@ -5085,22 +5173,6 @@ window.lunrData = {
                       },
                       "Rect.html#area": {
                         "ref": "Rect.html#area",
-                        "tf": 110
-                      },
-                      "Polygon.html#region": {
-                        "ref": "Polygon.html#region",
-                        "tf": 110
-                      },
-                      "Polygon.html#points": {
-                        "ref": "Polygon.html#points",
-                        "tf": 110
-                      },
-                      "Polygon.html#lines": {
-                        "ref": "Polygon.html#lines",
-                        "tf": 110
-                      },
-                      "Polygon.html#area": {
-                        "ref": "Polygon.html#area",
                         "tf": 110
                       },
                       "Vector2.html#approximated": {
@@ -5244,6 +5316,10 @@ window.lunrData = {
                         "ref": "Line.html#length",
                         "tf": 33.33333333333333
                       },
+                      "Polygon.html#area": {
+                        "ref": "Polygon.html#area",
+                        "tf": 33.33333333333333
+                      },
                       "Circle.html#sides": {
                         "ref": "Circle.html#sides",
                         "tf": 50
@@ -5251,6 +5327,14 @@ window.lunrData = {
                       "Circle.html#radius": {
                         "ref": "Circle.html#radius",
                         "tf": 50
+                      },
+                      "Circle.html#area": {
+                        "ref": "Circle.html#area",
+                        "tf": 33.33333333333333
+                      },
+                      "Rect.html#area": {
+                        "ref": "Rect.html#area",
+                        "tf": 33.33333333333333
                       },
                       "Vector2.html#magnitude": {
                         "ref": "Vector2.html#magnitude",
@@ -5270,16 +5354,16 @@ window.lunrData = {
             "docs": {},
             "w": {
               "docs": {
+                "Polygon.html#addVertex": {
+                  "ref": "Polygon.html#addVertex",
+                  "tf": 12.5
+                },
                 "Circle.html#addVertex": {
                   "ref": "Circle.html#addVertex",
                   "tf": 12.5
                 },
                 "Rect.html#addVertex": {
                   "ref": "Rect.html#addVertex",
-                  "tf": 12.5
-                },
-                "Polygon.html#addVertex": {
-                  "ref": "Polygon.html#addVertex",
                   "tf": 12.5
                 }
               }
@@ -5361,6 +5445,74 @@ window.lunrData = {
                             "ref": "Line.html#.Intersect",
                             "tf": 110
                           },
+                          "Polygon.html#pointIsInside": {
+                            "ref": "Polygon.html#pointIsInside",
+                            "tf": 110
+                          },
+                          "Polygon.html#pointIsInsidePolygon": {
+                            "ref": "Polygon.html#pointIsInsidePolygon",
+                            "tf": 110
+                          },
+                          "Polygon.html#setChildren": {
+                            "ref": "Polygon.html#setChildren",
+                            "tf": 110
+                          },
+                          "Polygon.html#addChild": {
+                            "ref": "Polygon.html#addChild",
+                            "tf": 110
+                          },
+                          "Polygon.html#setVertexes": {
+                            "ref": "Polygon.html#setVertexes",
+                            "tf": 110
+                          },
+                          "Polygon.html#addVertex": {
+                            "ref": "Polygon.html#addVertex",
+                            "tf": 110
+                          },
+                          "Polygon.html#colliding": {
+                            "ref": "Polygon.html#colliding",
+                            "tf": 110
+                          },
+                          "Polygon.html#intersect": {
+                            "ref": "Polygon.html#intersect",
+                            "tf": 110
+                          },
+                          "Polygon.html#difference": {
+                            "ref": "Polygon.html#difference",
+                            "tf": 110
+                          },
+                          "Polygon.html#union": {
+                            "ref": "Polygon.html#union",
+                            "tf": 110
+                          },
+                          "Polygon.html#xor": {
+                            "ref": "Polygon.html#xor",
+                            "tf": 110
+                          },
+                          "Polygon.html#.Colliding": {
+                            "ref": "Polygon.html#.Colliding",
+                            "tf": 110
+                          },
+                          "Polygon.html#.FromRegion": {
+                            "ref": "Polygon.html#.FromRegion",
+                            "tf": 110
+                          },
+                          "Polygon.html#.Intersect": {
+                            "ref": "Polygon.html#.Intersect",
+                            "tf": 110
+                          },
+                          "Polygon.html#.Union": {
+                            "ref": "Polygon.html#.Union",
+                            "tf": 110
+                          },
+                          "Polygon.html#.Difference": {
+                            "ref": "Polygon.html#.Difference",
+                            "tf": 110
+                          },
+                          "Polygon.html#.Xor": {
+                            "ref": "Polygon.html#.Xor",
+                            "tf": 110
+                          },
                           "Circle.html#pointIsInside": {
                             "ref": "Circle.html#pointIsInside",
                             "tf": 110
@@ -5437,12 +5589,12 @@ window.lunrData = {
                             "ref": "Rect.html#addVertex",
                             "tf": 110
                           },
-                          "Rect.html#.Box": {
-                            "ref": "Rect.html#.Box",
-                            "tf": 110
-                          },
                           "Rect.html#colliding": {
                             "ref": "Rect.html#colliding",
+                            "tf": 110
+                          },
+                          "Rect.html#.Box": {
+                            "ref": "Rect.html#.Box",
                             "tf": 110
                           },
                           "Rect.html#intersect": {
@@ -5459,74 +5611,6 @@ window.lunrData = {
                           },
                           "Rect.html#xor": {
                             "ref": "Rect.html#xor",
-                            "tf": 110
-                          },
-                          "Polygon.html#pointIsInside": {
-                            "ref": "Polygon.html#pointIsInside",
-                            "tf": 110
-                          },
-                          "Polygon.html#pointIsInsidePolygon": {
-                            "ref": "Polygon.html#pointIsInsidePolygon",
-                            "tf": 110
-                          },
-                          "Polygon.html#setChildren": {
-                            "ref": "Polygon.html#setChildren",
-                            "tf": 110
-                          },
-                          "Polygon.html#addChild": {
-                            "ref": "Polygon.html#addChild",
-                            "tf": 110
-                          },
-                          "Polygon.html#setVertexes": {
-                            "ref": "Polygon.html#setVertexes",
-                            "tf": 110
-                          },
-                          "Polygon.html#addVertex": {
-                            "ref": "Polygon.html#addVertex",
-                            "tf": 110
-                          },
-                          "Polygon.html#colliding": {
-                            "ref": "Polygon.html#colliding",
-                            "tf": 110
-                          },
-                          "Polygon.html#intersect": {
-                            "ref": "Polygon.html#intersect",
-                            "tf": 110
-                          },
-                          "Polygon.html#difference": {
-                            "ref": "Polygon.html#difference",
-                            "tf": 110
-                          },
-                          "Polygon.html#union": {
-                            "ref": "Polygon.html#union",
-                            "tf": 110
-                          },
-                          "Polygon.html#xor": {
-                            "ref": "Polygon.html#xor",
-                            "tf": 110
-                          },
-                          "Polygon.html#.Colliding": {
-                            "ref": "Polygon.html#.Colliding",
-                            "tf": 110
-                          },
-                          "Polygon.html#.FromRegion": {
-                            "ref": "Polygon.html#.FromRegion",
-                            "tf": 110
-                          },
-                          "Polygon.html#.Intersect": {
-                            "ref": "Polygon.html#.Intersect",
-                            "tf": 110
-                          },
-                          "Polygon.html#.Union": {
-                            "ref": "Polygon.html#.Union",
-                            "tf": 110
-                          },
-                          "Polygon.html#.Difference": {
-                            "ref": "Polygon.html#.Difference",
-                            "tf": 110
-                          },
-                          "Polygon.html#.Xor": {
-                            "ref": "Polygon.html#.Xor",
                             "tf": 110
                           },
                           "Vector2.html#equalsX": {
@@ -5899,6 +5983,968 @@ window.lunrData = {
             }
           }
         },
+        "a": {
+          "docs": {},
+          "r": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "a": {
+                "docs": {},
+                "y": {
+                  "docs": {
+                    "Polygon.html#region": {
+                      "ref": "Polygon.html#region",
+                      "tf": 3.8461538461538463
+                    },
+                    "Circle.html#region": {
+                      "ref": "Circle.html#region",
+                      "tf": 3.8461538461538463
+                    },
+                    "Rect.html#region": {
+                      "ref": "Rect.html#region",
+                      "tf": 3.8461538461538463
+                    }
+                  },
+                  ".": {
+                    "docs": {},
+                    "&": {
+                      "docs": {},
+                      "l": {
+                        "docs": {},
+                        "t": {
+                          "docs": {},
+                          ";": {
+                            "docs": {},
+                            "a": {
+                              "docs": {},
+                              "r": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "a": {
+                                    "docs": {},
+                                    "y": {
+                                      "docs": {},
+                                      "&": {
+                                        "docs": {},
+                                        "g": {
+                                          "docs": {},
+                                          "t": {
+                                            "docs": {
+                                              "Polygon.html#region": {
+                                                "ref": "Polygon.html#region",
+                                                "tf": 33.33333333333333
+                                              },
+                                              "Circle.html#region": {
+                                                "ref": "Circle.html#region",
+                                                "tf": 33.33333333333333
+                                              },
+                                              "Rect.html#region": {
+                                                "ref": "Rect.html#region",
+                                                "tf": 33.33333333333333
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "v": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "c": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {},
+                                    "o": {
+                                      "docs": {},
+                                      "r": {
+                                        "2": {
+                                          "docs": {},
+                                          "&": {
+                                            "docs": {},
+                                            "g": {
+                                              "docs": {},
+                                              "t": {
+                                                "docs": {
+                                                  "Polygon.html#points": {
+                                                    "ref": "Polygon.html#points",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Circle.html#points": {
+                                                    "ref": "Circle.html#points",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#points": {
+                                                    "ref": "Rect.html#points",
+                                                    "tf": 33.33333333333333
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "docs": {}
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "l": {
+                              "docs": {},
+                              "i": {
+                                "docs": {},
+                                "n": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    "&": {
+                                      "docs": {},
+                                      "g": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {
+                                            "Polygon.html#lines": {
+                                              "ref": "Polygon.html#lines",
+                                              "tf": 33.33333333333333
+                                            },
+                                            "Circle.html#lines": {
+                                              "ref": "Circle.html#lines",
+                                              "tf": 33.33333333333333
+                                            },
+                                            "Rect.html#lines": {
+                                              "ref": "Rect.html#lines",
+                                              "tf": 33.33333333333333
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "p": {
+                              "docs": {},
+                              "o": {
+                                "docs": {},
+                                "l": {
+                                  "docs": {},
+                                  "y": {
+                                    "docs": {},
+                                    "g": {
+                                      "docs": {},
+                                      "o": {
+                                        "docs": {},
+                                        "n": {
+                                          "docs": {},
+                                          "&": {
+                                            "docs": {},
+                                            "g": {
+                                              "docs": {},
+                                              "t": {
+                                                "docs": {
+                                                  "Polygon.html#intersect": {
+                                                    "ref": "Polygon.html#intersect",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Polygon.html#difference": {
+                                                    "ref": "Polygon.html#difference",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Polygon.html#union": {
+                                                    "ref": "Polygon.html#union",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Polygon.html#xor": {
+                                                    "ref": "Polygon.html#xor",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Polygon.html#.Intersect": {
+                                                    "ref": "Polygon.html#.Intersect",
+                                                    "tf": 20
+                                                  },
+                                                  "Polygon.html#.Union": {
+                                                    "ref": "Polygon.html#.Union",
+                                                    "tf": 20
+                                                  },
+                                                  "Polygon.html#.Difference": {
+                                                    "ref": "Polygon.html#.Difference",
+                                                    "tf": 20
+                                                  },
+                                                  "Polygon.html#.Xor": {
+                                                    "ref": "Polygon.html#.Xor",
+                                                    "tf": 20
+                                                  },
+                                                  "Circle.html#intersect": {
+                                                    "ref": "Circle.html#intersect",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Circle.html#difference": {
+                                                    "ref": "Circle.html#difference",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Circle.html#union": {
+                                                    "ref": "Circle.html#union",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Circle.html#xor": {
+                                                    "ref": "Circle.html#xor",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#intersect": {
+                                                    "ref": "Rect.html#intersect",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#difference": {
+                                                    "ref": "Rect.html#difference",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#union": {
+                                                    "ref": "Rect.html#union",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#xor": {
+                                                    "ref": "Rect.html#xor",
+                                                    "tf": 33.33333333333333
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "o": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "d": {
+                      "docs": {
+                        "Vector2.html#rotate": {
+                          "ref": "Vector2.html#rotate",
+                          "tf": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "a": {
+                "docs": {
+                  "Polygon.html#area": {
+                    "ref": "Polygon.html#area",
+                    "tf": 708.3333333333334
+                  },
+                  "Circle.html#area": {
+                    "ref": "Circle.html#area",
+                    "tf": 708.3333333333334
+                  },
+                  "Rect.html#area": {
+                    "ref": "Rect.html#area",
+                    "tf": 708.3333333333334
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "Rect.html#.Box": {
+                        "ref": "Rect.html#.Box",
+                        "tf": 16.666666666666664
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "d": {
+            "docs": {
+              "Polygon.html#addChild": {
+                "ref": "Polygon.html#addChild",
+                "tf": 12.5
+              },
+              "Circle.html#addChild": {
+                "ref": "Circle.html#addChild",
+                "tf": 12.5
+              },
+              "Rect.html#addChild": {
+                "ref": "Rect.html#addChild",
+                "tf": 12.5
+              },
+              "Vector2.html#add": {
+                "ref": "Vector2.html#add",
+                "tf": 16.666666666666664
+              },
+              "Vector2.html#addX": {
+                "ref": "Vector2.html#addX",
+                "tf": 10
+              },
+              "Vector2.html#addY": {
+                "ref": "Vector2.html#addY",
+                "tf": 10
+              }
+            },
+            "d": {
+              "docs": {
+                "Polygon.html#addVertex": {
+                  "ref": "Polygon.html#addVertex",
+                  "tf": 12.5
+                },
+                "Circle.html#addVertex": {
+                  "ref": "Circle.html#addVertex",
+                  "tf": 12.5
+                },
+                "Rect.html#addVertex": {
+                  "ref": "Rect.html#addVertex",
+                  "tf": 12.5
+                },
+                "Vector2.html#add": {
+                  "ref": "Vector2.html#add",
+                  "tf": 675
+                }
+              },
+              "c": {
+                "docs": {},
+                "h": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "d": {
+                        "docs": {
+                          "Polygon.html#addChild": {
+                            "ref": "Polygon.html#addChild",
+                            "tf": 683.3333333333334
+                          },
+                          "Circle.html#addChild": {
+                            "ref": "Circle.html#addChild",
+                            "tf": 683.3333333333334
+                          },
+                          "Rect.html#addChild": {
+                            "ref": "Rect.html#addChild",
+                            "tf": 683.3333333333334
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "v": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "x": {
+                          "docs": {
+                            "Polygon.html#addVertex": {
+                              "ref": "Polygon.html#addVertex",
+                              "tf": 683.3333333333334
+                            },
+                            "Circle.html#addVertex": {
+                              "ref": "Circle.html#addVertex",
+                              "tf": 683.3333333333334
+                            },
+                            "Rect.html#addVertex": {
+                              "ref": "Rect.html#addVertex",
+                              "tf": 683.3333333333334
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "x": {
+                "docs": {
+                  "Vector2.html#addX": {
+                    "ref": "Vector2.html#addX",
+                    "tf": 683.3333333333334
+                  }
+                }
+              },
+              "i": {
+                "docs": {
+                  "Vector2.html#addY": {
+                    "ref": "Vector2.html#addY",
+                    "tf": 683.3333333333334
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "x": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "m": {
+                        "docs": {
+                          "Vector2.html#approximated": {
+                            "ref": "Vector2.html#approximated",
+                            "tf": 691.6666666666667
+                          },
+                          "Vector2.html#approximate": {
+                            "ref": "Vector2.html#approximate",
+                            "tf": 750
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "l": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "a": {
+                "docs": {
+                  "Vector2.html#norm": {
+                    "ref": "Vector2.html#norm",
+                    "tf": 25
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "Vector2.html#rotate": {
+                    "ref": "Vector2.html#rotate",
+                    "tf": 43.33333333333333
+                  }
+                }
+              }
+            }
+          }
+        },
+        "u": {
+          "docs": {},
+          "s": {
+            "docs": {
+              "Polygon.html#region": {
+                "ref": "Polygon.html#region",
+                "tf": 3.8461538461538463
+              },
+              "Circle.html#region": {
+                "ref": "Circle.html#region",
+                "tf": 3.8461538461538463
+              },
+              "Rect.html#region": {
+                "ref": "Rect.html#region",
+                "tf": 3.8461538461538463
+              },
+              "Vector2.html#approximated": {
+                "ref": "Vector2.html#approximated",
+                "tf": 8.333333333333332
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "i": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "Polygon.html#union": {
+                      "ref": "Polygon.html#union",
+                      "tf": 691.6666666666667
+                    },
+                    "Polygon.html#.Union": {
+                      "ref": "Polygon.html#.Union",
+                      "tf": 677.1428571428571
+                    },
+                    "Circle.html#union": {
+                      "ref": "Circle.html#union",
+                      "tf": 691.6666666666667
+                    },
+                    "Rect.html#union": {
+                      "ref": "Rect.html#union",
+                      "tf": 691.6666666666667
+                    }
+                  }
+                }
+              }
+            },
+            "c": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "p": {
+                      "docs": {
+                        "Vector2.html#.LerpUnclamped": {
+                          "ref": "Vector2.html#.LerpUnclamped",
+                          "tf": 5.555555555555555
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x": {
+          "docs": {
+            "Polygon.html#region": {
+              "ref": "Polygon.html#region",
+              "tf": 7.6923076923076925
+            },
+            "Circle.html#region": {
+              "ref": "Circle.html#region",
+              "tf": 7.6923076923076925
+            },
+            "Rect.html#region": {
+              "ref": "Rect.html#region",
+              "tf": 7.6923076923076925
+            },
+            "Vector2.html#equalsX": {
+              "ref": "Vector2.html#equalsX",
+              "tf": 10
+            },
+            "Vector2.html#floorX": {
+              "ref": "Vector2.html#floorX",
+              "tf": 12.5
+            },
+            "Vector2.html#ceilX": {
+              "ref": "Vector2.html#ceilX",
+              "tf": 12.5
+            },
+            "Vector2.html#roundX": {
+              "ref": "Vector2.html#roundX",
+              "tf": 12.5
+            },
+            "Vector2.html#setX": {
+              "ref": "Vector2.html#setX",
+              "tf": 12.5
+            },
+            "Vector2.html#addX": {
+              "ref": "Vector2.html#addX",
+              "tf": 10
+            },
+            "Vector2.html#substractX": {
+              "ref": "Vector2.html#substractX",
+              "tf": 10
+            },
+            "Vector2.html#substractY": {
+              "ref": "Vector2.html#substractY",
+              "tf": 10
+            },
+            "Vector2.html#multiplyX": {
+              "ref": "Vector2.html#multiplyX",
+              "tf": 10
+            },
+            "Vector2.html#divideX": {
+              "ref": "Vector2.html#divideX",
+              "tf": 10
+            },
+            "Vector2.html#divideY": {
+              "ref": "Vector2.html#divideY",
+              "tf": 10
+            },
+            "Vector2.html#invertX": {
+              "ref": "Vector2.html#invertX",
+              "tf": 12.5
+            }
+          },
+          "o": {
+            "docs": {},
+            "r": {
+              "docs": {
+                "Polygon.html#xor": {
+                  "ref": "Polygon.html#xor",
+                  "tf": 691.6666666666667
+                },
+                "Polygon.html#.Xor": {
+                  "ref": "Polygon.html#.Xor",
+                  "tf": 677.1428571428571
+                },
+                "Circle.html#xor": {
+                  "ref": "Circle.html#xor",
+                  "tf": 691.6666666666667
+                },
+                "Rect.html#xor": {
+                  "ref": "Rect.html#xor",
+                  "tf": 691.6666666666667
+                }
+              }
+            }
+          }
+        },
+        "y": {
+          "docs": {
+            "Polygon.html#region": {
+              "ref": "Polygon.html#region",
+              "tf": 7.6923076923076925
+            },
+            "Circle.html#region": {
+              "ref": "Circle.html#region",
+              "tf": 7.6923076923076925
+            },
+            "Rect.html#region": {
+              "ref": "Rect.html#region",
+              "tf": 7.6923076923076925
+            },
+            "Vector2.html#equalsY": {
+              "ref": "Vector2.html#equalsY",
+              "tf": 10
+            },
+            "Vector2.html#floorY": {
+              "ref": "Vector2.html#floorY",
+              "tf": 12.5
+            },
+            "Vector2.html#ceilY": {
+              "ref": "Vector2.html#ceilY",
+              "tf": 12.5
+            },
+            "Vector2.html#roundY": {
+              "ref": "Vector2.html#roundY",
+              "tf": 12.5
+            },
+            "Vector2.html#setY": {
+              "ref": "Vector2.html#setY",
+              "tf": 12.5
+            },
+            "Vector2.html#addY": {
+              "ref": "Vector2.html#addY",
+              "tf": 10
+            },
+            "Vector2.html#multiplyY": {
+              "ref": "Vector2.html#multiplyY",
+              "tf": 10
+            },
+            "Vector2.html#invertY": {
+              "ref": "Vector2.html#invertY",
+              "tf": 12.5
+            }
+          }
+        },
+        "b": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "Polygon.html#pointIsInside": {
+                          "ref": "Polygon.html#pointIsInside",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#pointIsInsidePolygon": {
+                          "ref": "Polygon.html#pointIsInsidePolygon",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#colliding": {
+                          "ref": "Polygon.html#colliding",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#intersect": {
+                          "ref": "Polygon.html#intersect",
+                          "tf": 8.333333333333332
+                        },
+                        "Polygon.html#difference": {
+                          "ref": "Polygon.html#difference",
+                          "tf": 8.333333333333332
+                        },
+                        "Polygon.html#union": {
+                          "ref": "Polygon.html#union",
+                          "tf": 8.333333333333332
+                        },
+                        "Polygon.html#xor": {
+                          "ref": "Polygon.html#xor",
+                          "tf": 8.333333333333332
+                        },
+                        "Polygon.html#.Colliding": {
+                          "ref": "Polygon.html#.Colliding",
+                          "tf": 20
+                        },
+                        "Polygon.html#.Intersect": {
+                          "ref": "Polygon.html#.Intersect",
+                          "tf": 7.142857142857142
+                        },
+                        "Polygon.html#.Union": {
+                          "ref": "Polygon.html#.Union",
+                          "tf": 7.142857142857142
+                        },
+                        "Polygon.html#.Difference": {
+                          "ref": "Polygon.html#.Difference",
+                          "tf": 7.142857142857142
+                        },
+                        "Polygon.html#.Xor": {
+                          "ref": "Polygon.html#.Xor",
+                          "tf": 7.142857142857142
+                        },
+                        "Circle.html#pointIsInside": {
+                          "ref": "Circle.html#pointIsInside",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#pointIsInsidePolygon": {
+                          "ref": "Circle.html#pointIsInsidePolygon",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#pointIsInsideCircle": {
+                          "ref": "Circle.html#pointIsInsideCircle",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#colliding": {
+                          "ref": "Circle.html#colliding",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#intersect": {
+                          "ref": "Circle.html#intersect",
+                          "tf": 8.333333333333332
+                        },
+                        "Circle.html#difference": {
+                          "ref": "Circle.html#difference",
+                          "tf": 8.333333333333332
+                        },
+                        "Circle.html#union": {
+                          "ref": "Circle.html#union",
+                          "tf": 8.333333333333332
+                        },
+                        "Circle.html#xor": {
+                          "ref": "Circle.html#xor",
+                          "tf": 8.333333333333332
+                        },
+                        "Rect.html#pointIsInside": {
+                          "ref": "Rect.html#pointIsInside",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#pointIsInsideRect": {
+                          "ref": "Rect.html#pointIsInsideRect",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#pointIsInsidePolygon": {
+                          "ref": "Rect.html#pointIsInsidePolygon",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#colliding": {
+                          "ref": "Rect.html#colliding",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#intersect": {
+                          "ref": "Rect.html#intersect",
+                          "tf": 8.333333333333332
+                        },
+                        "Rect.html#difference": {
+                          "ref": "Rect.html#difference",
+                          "tf": 8.333333333333332
+                        },
+                        "Rect.html#union": {
+                          "ref": "Rect.html#union",
+                          "tf": 8.333333333333332
+                        },
+                        "Rect.html#xor": {
+                          "ref": "Rect.html#xor",
+                          "tf": 8.333333333333332
+                        },
+                        "Vector2.html#equalsX": {
+                          "ref": "Vector2.html#equalsX",
+                          "tf": 33.33333333333333
+                        },
+                        "Vector2.html#equalsY": {
+                          "ref": "Vector2.html#equalsY",
+                          "tf": 33.33333333333333
+                        },
+                        "Vector2.html#isInside": {
+                          "ref": "Vector2.html#isInside",
+                          "tf": 33.33333333333333
+                        },
+                        "Vector2.html#equals": {
+                          "ref": "Vector2.html#equals",
+                          "tf": 25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "x": {
+              "docs": {
+                "Rect.html#.Box": {
+                  "ref": "Rect.html#.Box",
+                  "tf": 691.6666666666666
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "m": {
+                    "docs": {
+                      "Vector2.html#.Bottom": {
+                        "ref": "Vector2.html#.Bottom",
+                        "tf": 708.3333333333334
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "e": {
+            "docs": {},
+            "t": {
+              "docs": {},
+              "w": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "Vector2.html#.Distance": {
+                          "ref": "Vector2.html#.Distance",
+                          "tf": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "p": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "Polygon.html#pointIsInside": {
+                          "ref": "Polygon.html#pointIsInside",
+                          "tf": 10
+                        },
+                        "Circle.html#pointIsInside": {
+                          "ref": "Circle.html#pointIsInside",
+                          "tf": 10
+                        },
+                        "Rect.html#pointIsInside": {
+                          "ref": "Rect.html#pointIsInside",
+                          "tf": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "h": {
+          "docs": {},
+          "o": {
+            "docs": {},
+            "l": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Polygon.html#setChildren": {
+                    "ref": "Polygon.html#setChildren",
+                    "tf": 12.5
+                  },
+                  "Polygon.html#addChild": {
+                    "ref": "Polygon.html#addChild",
+                    "tf": 12.5
+                  },
+                  "Circle.html#setChildren": {
+                    "ref": "Circle.html#setChildren",
+                    "tf": 12.5
+                  },
+                  "Circle.html#addChild": {
+                    "ref": "Circle.html#addChild",
+                    "tf": 12.5
+                  },
+                  "Rect.html#setChildren": {
+                    "ref": "Rect.html#setChildren",
+                    "tf": 12.5
+                  },
+                  "Rect.html#addChild": {
+                    "ref": "Rect.html#addChild",
+                    "tf": 12.5
+                  }
+                }
+              }
+            }
+          }
+        },
         "v": {
           "1": {
             "docs": {
@@ -6036,6 +7082,64 @@ window.lunrData = {
           },
           "e": {
             "docs": {},
+            "r": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "c": {
+                    "docs": {
+                      "Polygon.html#setVertexes": {
+                        "ref": "Polygon.html#setVertexes",
+                        "tf": 49.99999999999999
+                      },
+                      "Polygon.html#addVertex": {
+                        "ref": "Polygon.html#addVertex",
+                        "tf": 45.83333333333333
+                      },
+                      "Circle.html#setVertexes": {
+                        "ref": "Circle.html#setVertexes",
+                        "tf": 49.99999999999999
+                      },
+                      "Circle.html#addVertex": {
+                        "ref": "Circle.html#addVertex",
+                        "tf": 45.83333333333333
+                      },
+                      "Rect.html#setVertexes": {
+                        "ref": "Rect.html#setVertexes",
+                        "tf": 49.99999999999999
+                      },
+                      "Rect.html#addVertex": {
+                        "ref": "Rect.html#addVertex",
+                        "tf": 45.83333333333333
+                      }
+                    }
+                  }
+                }
+              },
+              "s": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "o": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "Vector2.html#toString": {
+                          "ref": "Vector2.html#toString",
+                          "tf": 10
+                        },
+                        "Vector2.html#.LerpUnclamped": {
+                          "ref": "Vector2.html#.LerpUnclamped",
+                          "tf": 5.555555555555555
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "c": {
               "docs": {},
               "t": {
@@ -7017,64 +8121,6 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "r": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "c": {
-                    "docs": {
-                      "Circle.html#setVertexes": {
-                        "ref": "Circle.html#setVertexes",
-                        "tf": 49.99999999999999
-                      },
-                      "Circle.html#addVertex": {
-                        "ref": "Circle.html#addVertex",
-                        "tf": 45.83333333333333
-                      },
-                      "Rect.html#setVertexes": {
-                        "ref": "Rect.html#setVertexes",
-                        "tf": 49.99999999999999
-                      },
-                      "Rect.html#addVertex": {
-                        "ref": "Rect.html#addVertex",
-                        "tf": 45.83333333333333
-                      },
-                      "Polygon.html#setVertexes": {
-                        "ref": "Polygon.html#setVertexes",
-                        "tf": 49.99999999999999
-                      },
-                      "Polygon.html#addVertex": {
-                        "ref": "Polygon.html#addVertex",
-                        "tf": 45.83333333333333
-                      }
-                    }
-                  }
-                }
-              },
-              "s": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "o": {
-                    "docs": {},
-                    "n": {
-                      "docs": {
-                        "Vector2.html#toString": {
-                          "ref": "Vector2.html#toString",
-                          "tf": 10
-                        },
-                        "Vector2.html#.LerpUnclamped": {
-                          "ref": "Vector2.html#.LerpUnclamped",
-                          "tf": 5.555555555555555
-                        }
-                      }
-                    }
-                  }
-                }
-              }
             }
           },
           "a": {
@@ -7200,870 +8246,22 @@ window.lunrData = {
             }
           }
         },
-        "a": {
-          "docs": {},
-          "r": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "y": {
-                  "docs": {
-                    "Circle.html#region": {
-                      "ref": "Circle.html#region",
-                      "tf": 3.8461538461538463
-                    },
-                    "Rect.html#region": {
-                      "ref": "Rect.html#region",
-                      "tf": 3.8461538461538463
-                    },
-                    "Polygon.html#region": {
-                      "ref": "Polygon.html#region",
-                      "tf": 3.8461538461538463
-                    }
-                  },
-                  ".": {
-                    "docs": {},
-                    "&": {
-                      "docs": {},
-                      "l": {
-                        "docs": {},
-                        "t": {
-                          "docs": {},
-                          ";": {
-                            "docs": {},
-                            "p": {
-                              "docs": {},
-                              "o": {
-                                "docs": {},
-                                "l": {
-                                  "docs": {},
-                                  "y": {
-                                    "docs": {},
-                                    "g": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "n": {
-                                          "docs": {},
-                                          "&": {
-                                            "docs": {},
-                                            "g": {
-                                              "docs": {},
-                                              "t": {
-                                                "docs": {
-                                                  "Circle.html#intersect": {
-                                                    "ref": "Circle.html#intersect",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Circle.html#difference": {
-                                                    "ref": "Circle.html#difference",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Circle.html#union": {
-                                                    "ref": "Circle.html#union",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Circle.html#xor": {
-                                                    "ref": "Circle.html#xor",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Rect.html#intersect": {
-                                                    "ref": "Rect.html#intersect",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Rect.html#difference": {
-                                                    "ref": "Rect.html#difference",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Rect.html#union": {
-                                                    "ref": "Rect.html#union",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Rect.html#xor": {
-                                                    "ref": "Rect.html#xor",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Polygon.html#intersect": {
-                                                    "ref": "Polygon.html#intersect",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Polygon.html#difference": {
-                                                    "ref": "Polygon.html#difference",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Polygon.html#union": {
-                                                    "ref": "Polygon.html#union",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Polygon.html#xor": {
-                                                    "ref": "Polygon.html#xor",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Polygon.html#.Intersect": {
-                                                    "ref": "Polygon.html#.Intersect",
-                                                    "tf": 20
-                                                  },
-                                                  "Polygon.html#.Union": {
-                                                    "ref": "Polygon.html#.Union",
-                                                    "tf": 20
-                                                  },
-                                                  "Polygon.html#.Difference": {
-                                                    "ref": "Polygon.html#.Difference",
-                                                    "tf": 20
-                                                  },
-                                                  "Polygon.html#.Xor": {
-                                                    "ref": "Polygon.html#.Xor",
-                                                    "tf": 20
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "o": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "d": {
-                      "docs": {
-                        "Vector2.html#rotate": {
-                          "ref": "Vector2.html#rotate",
-                          "tf": 10
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "a": {
-                "docs": {
-                  "Circle.html#area": {
-                    "ref": "Circle.html#area",
-                    "tf": 775
-                  },
-                  "Rect.html#area": {
-                    "ref": "Rect.html#area",
-                    "tf": 775
-                  },
-                  "Polygon.html#area": {
-                    "ref": "Polygon.html#area",
-                    "tf": 775
-                  }
-                }
-              }
-            },
-            "o": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "n": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "Rect.html#.Box": {
-                        "ref": "Rect.html#.Box",
-                        "tf": 16.666666666666664
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "d": {
-            "docs": {
-              "Circle.html#addChild": {
-                "ref": "Circle.html#addChild",
-                "tf": 12.5
-              },
-              "Rect.html#addChild": {
-                "ref": "Rect.html#addChild",
-                "tf": 12.5
-              },
-              "Polygon.html#addChild": {
-                "ref": "Polygon.html#addChild",
-                "tf": 12.5
-              },
-              "Vector2.html#add": {
-                "ref": "Vector2.html#add",
-                "tf": 16.666666666666664
-              },
-              "Vector2.html#addX": {
-                "ref": "Vector2.html#addX",
-                "tf": 10
-              },
-              "Vector2.html#addY": {
-                "ref": "Vector2.html#addY",
-                "tf": 10
-              }
-            },
-            "d": {
-              "docs": {
-                "Circle.html#addVertex": {
-                  "ref": "Circle.html#addVertex",
-                  "tf": 12.5
-                },
-                "Rect.html#addVertex": {
-                  "ref": "Rect.html#addVertex",
-                  "tf": 12.5
-                },
-                "Polygon.html#addVertex": {
-                  "ref": "Polygon.html#addVertex",
-                  "tf": 12.5
-                },
-                "Vector2.html#add": {
-                  "ref": "Vector2.html#add",
-                  "tf": 675
-                }
-              },
-              "c": {
-                "docs": {},
-                "h": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "l": {
-                      "docs": {},
-                      "d": {
-                        "docs": {
-                          "Circle.html#addChild": {
-                            "ref": "Circle.html#addChild",
-                            "tf": 683.3333333333334
-                          },
-                          "Rect.html#addChild": {
-                            "ref": "Rect.html#addChild",
-                            "tf": 683.3333333333334
-                          },
-                          "Polygon.html#addChild": {
-                            "ref": "Polygon.html#addChild",
-                            "tf": 683.3333333333334
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "v": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "t": {
-                      "docs": {},
-                      "e": {
-                        "docs": {},
-                        "x": {
-                          "docs": {
-                            "Circle.html#addVertex": {
-                              "ref": "Circle.html#addVertex",
-                              "tf": 683.3333333333334
-                            },
-                            "Rect.html#addVertex": {
-                              "ref": "Rect.html#addVertex",
-                              "tf": 683.3333333333334
-                            },
-                            "Polygon.html#addVertex": {
-                              "ref": "Polygon.html#addVertex",
-                              "tf": 683.3333333333334
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "x": {
-                "docs": {
-                  "Vector2.html#addX": {
-                    "ref": "Vector2.html#addX",
-                    "tf": 683.3333333333334
-                  }
-                }
-              },
-              "i": {
-                "docs": {
-                  "Vector2.html#addY": {
-                    "ref": "Vector2.html#addY",
-                    "tf": 683.3333333333334
-                  }
-                }
-              }
-            }
-          },
-          "p": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "x": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "m": {
-                        "docs": {
-                          "Vector2.html#approximated": {
-                            "ref": "Vector2.html#approximated",
-                            "tf": 691.6666666666667
-                          },
-                          "Vector2.html#approximate": {
-                            "ref": "Vector2.html#approximate",
-                            "tf": 750
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "l": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "a": {
-                "docs": {
-                  "Vector2.html#norm": {
-                    "ref": "Vector2.html#norm",
-                    "tf": 25
-                  }
-                }
-              }
-            }
-          },
-          "n": {
-            "docs": {},
-            "g": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "Vector2.html#rotate": {
-                    "ref": "Vector2.html#rotate",
-                    "tf": 43.33333333333333
-                  }
-                }
-              }
-            }
-          }
-        },
-        "u": {
-          "docs": {},
-          "s": {
-            "docs": {
-              "Circle.html#region": {
-                "ref": "Circle.html#region",
-                "tf": 3.8461538461538463
-              },
-              "Rect.html#region": {
-                "ref": "Rect.html#region",
-                "tf": 3.8461538461538463
-              },
-              "Polygon.html#region": {
-                "ref": "Polygon.html#region",
-                "tf": 3.8461538461538463
-              },
-              "Vector2.html#approximated": {
-                "ref": "Vector2.html#approximated",
-                "tf": 8.333333333333332
-              }
-            }
-          },
-          "n": {
-            "docs": {},
-            "i": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "n": {
-                  "docs": {
-                    "Circle.html#union": {
-                      "ref": "Circle.html#union",
-                      "tf": 691.6666666666667
-                    },
-                    "Rect.html#union": {
-                      "ref": "Rect.html#union",
-                      "tf": 691.6666666666667
-                    },
-                    "Polygon.html#union": {
-                      "ref": "Polygon.html#union",
-                      "tf": 691.6666666666667
-                    },
-                    "Polygon.html#.Union": {
-                      "ref": "Polygon.html#.Union",
-                      "tf": 677.1428571428571
-                    }
-                  }
-                }
-              }
-            },
-            "c": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "m": {
-                    "docs": {},
-                    "p": {
-                      "docs": {
-                        "Vector2.html#.LerpUnclamped": {
-                          "ref": "Vector2.html#.LerpUnclamped",
-                          "tf": 5.555555555555555
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "x": {
-          "docs": {
-            "Circle.html#region": {
-              "ref": "Circle.html#region",
-              "tf": 7.6923076923076925
-            },
-            "Rect.html#region": {
-              "ref": "Rect.html#region",
-              "tf": 7.6923076923076925
-            },
-            "Polygon.html#region": {
-              "ref": "Polygon.html#region",
-              "tf": 7.6923076923076925
-            },
-            "Vector2.html#equalsX": {
-              "ref": "Vector2.html#equalsX",
-              "tf": 10
-            },
-            "Vector2.html#floorX": {
-              "ref": "Vector2.html#floorX",
-              "tf": 12.5
-            },
-            "Vector2.html#ceilX": {
-              "ref": "Vector2.html#ceilX",
-              "tf": 12.5
-            },
-            "Vector2.html#roundX": {
-              "ref": "Vector2.html#roundX",
-              "tf": 12.5
-            },
-            "Vector2.html#setX": {
-              "ref": "Vector2.html#setX",
-              "tf": 12.5
-            },
-            "Vector2.html#addX": {
-              "ref": "Vector2.html#addX",
-              "tf": 10
-            },
-            "Vector2.html#substractX": {
-              "ref": "Vector2.html#substractX",
-              "tf": 10
-            },
-            "Vector2.html#substractY": {
-              "ref": "Vector2.html#substractY",
-              "tf": 10
-            },
-            "Vector2.html#multiplyX": {
-              "ref": "Vector2.html#multiplyX",
-              "tf": 10
-            },
-            "Vector2.html#divideX": {
-              "ref": "Vector2.html#divideX",
-              "tf": 10
-            },
-            "Vector2.html#divideY": {
-              "ref": "Vector2.html#divideY",
-              "tf": 10
-            },
-            "Vector2.html#invertX": {
-              "ref": "Vector2.html#invertX",
-              "tf": 12.5
-            }
-          },
-          "o": {
-            "docs": {},
-            "r": {
-              "docs": {
-                "Circle.html#xor": {
-                  "ref": "Circle.html#xor",
-                  "tf": 691.6666666666667
-                },
-                "Rect.html#xor": {
-                  "ref": "Rect.html#xor",
-                  "tf": 691.6666666666667
-                },
-                "Polygon.html#xor": {
-                  "ref": "Polygon.html#xor",
-                  "tf": 691.6666666666667
-                },
-                "Polygon.html#.Xor": {
-                  "ref": "Polygon.html#.Xor",
-                  "tf": 677.1428571428571
-                }
-              }
-            }
-          }
-        },
-        "y": {
-          "docs": {
-            "Circle.html#region": {
-              "ref": "Circle.html#region",
-              "tf": 7.6923076923076925
-            },
-            "Rect.html#region": {
-              "ref": "Rect.html#region",
-              "tf": 7.6923076923076925
-            },
-            "Polygon.html#region": {
-              "ref": "Polygon.html#region",
-              "tf": 7.6923076923076925
-            },
-            "Vector2.html#equalsY": {
-              "ref": "Vector2.html#equalsY",
-              "tf": 10
-            },
-            "Vector2.html#floorY": {
-              "ref": "Vector2.html#floorY",
-              "tf": 12.5
-            },
-            "Vector2.html#ceilY": {
-              "ref": "Vector2.html#ceilY",
-              "tf": 12.5
-            },
-            "Vector2.html#roundY": {
-              "ref": "Vector2.html#roundY",
-              "tf": 12.5
-            },
-            "Vector2.html#setY": {
-              "ref": "Vector2.html#setY",
-              "tf": 12.5
-            },
-            "Vector2.html#addY": {
-              "ref": "Vector2.html#addY",
-              "tf": 10
-            },
-            "Vector2.html#multiplyY": {
-              "ref": "Vector2.html#multiplyY",
-              "tf": 10
-            },
-            "Vector2.html#invertY": {
-              "ref": "Vector2.html#invertY",
-              "tf": 12.5
-            }
-          }
-        },
-        "b": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "n": {
-                      "docs": {
-                        "Circle.html#pointIsInside": {
-                          "ref": "Circle.html#pointIsInside",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#pointIsInsidePolygon": {
-                          "ref": "Circle.html#pointIsInsidePolygon",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#pointIsInsideCircle": {
-                          "ref": "Circle.html#pointIsInsideCircle",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#colliding": {
-                          "ref": "Circle.html#colliding",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#intersect": {
-                          "ref": "Circle.html#intersect",
-                          "tf": 8.333333333333332
-                        },
-                        "Circle.html#difference": {
-                          "ref": "Circle.html#difference",
-                          "tf": 8.333333333333332
-                        },
-                        "Circle.html#union": {
-                          "ref": "Circle.html#union",
-                          "tf": 8.333333333333332
-                        },
-                        "Circle.html#xor": {
-                          "ref": "Circle.html#xor",
-                          "tf": 8.333333333333332
-                        },
-                        "Rect.html#pointIsInside": {
-                          "ref": "Rect.html#pointIsInside",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#pointIsInsideRect": {
-                          "ref": "Rect.html#pointIsInsideRect",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#pointIsInsidePolygon": {
-                          "ref": "Rect.html#pointIsInsidePolygon",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#colliding": {
-                          "ref": "Rect.html#colliding",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#intersect": {
-                          "ref": "Rect.html#intersect",
-                          "tf": 8.333333333333332
-                        },
-                        "Rect.html#difference": {
-                          "ref": "Rect.html#difference",
-                          "tf": 8.333333333333332
-                        },
-                        "Rect.html#union": {
-                          "ref": "Rect.html#union",
-                          "tf": 8.333333333333332
-                        },
-                        "Rect.html#xor": {
-                          "ref": "Rect.html#xor",
-                          "tf": 8.333333333333332
-                        },
-                        "Polygon.html#pointIsInside": {
-                          "ref": "Polygon.html#pointIsInside",
-                          "tf": 33.33333333333333
-                        },
-                        "Polygon.html#pointIsInsidePolygon": {
-                          "ref": "Polygon.html#pointIsInsidePolygon",
-                          "tf": 33.33333333333333
-                        },
-                        "Polygon.html#colliding": {
-                          "ref": "Polygon.html#colliding",
-                          "tf": 33.33333333333333
-                        },
-                        "Polygon.html#intersect": {
-                          "ref": "Polygon.html#intersect",
-                          "tf": 8.333333333333332
-                        },
-                        "Polygon.html#difference": {
-                          "ref": "Polygon.html#difference",
-                          "tf": 8.333333333333332
-                        },
-                        "Polygon.html#union": {
-                          "ref": "Polygon.html#union",
-                          "tf": 8.333333333333332
-                        },
-                        "Polygon.html#xor": {
-                          "ref": "Polygon.html#xor",
-                          "tf": 8.333333333333332
-                        },
-                        "Polygon.html#.Colliding": {
-                          "ref": "Polygon.html#.Colliding",
-                          "tf": 20
-                        },
-                        "Polygon.html#.Intersect": {
-                          "ref": "Polygon.html#.Intersect",
-                          "tf": 7.142857142857142
-                        },
-                        "Polygon.html#.Union": {
-                          "ref": "Polygon.html#.Union",
-                          "tf": 7.142857142857142
-                        },
-                        "Polygon.html#.Difference": {
-                          "ref": "Polygon.html#.Difference",
-                          "tf": 7.142857142857142
-                        },
-                        "Polygon.html#.Xor": {
-                          "ref": "Polygon.html#.Xor",
-                          "tf": 7.142857142857142
-                        },
-                        "Vector2.html#equalsX": {
-                          "ref": "Vector2.html#equalsX",
-                          "tf": 33.33333333333333
-                        },
-                        "Vector2.html#equalsY": {
-                          "ref": "Vector2.html#equalsY",
-                          "tf": 33.33333333333333
-                        },
-                        "Vector2.html#isInside": {
-                          "ref": "Vector2.html#isInside",
-                          "tf": 33.33333333333333
-                        },
-                        "Vector2.html#equals": {
-                          "ref": "Vector2.html#equals",
-                          "tf": 25
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "x": {
-              "docs": {
-                "Rect.html#.Box": {
-                  "ref": "Rect.html#.Box",
-                  "tf": 691.6666666666666
-                }
-              }
-            },
-            "t": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "m": {
-                    "docs": {
-                      "Vector2.html#.Bottom": {
-                        "ref": "Vector2.html#.Bottom",
-                        "tf": 708.3333333333334
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "e": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "w": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "n": {
-                      "docs": {
-                        "Vector2.html#.Distance": {
-                          "ref": "Vector2.html#.Distance",
-                          "tf": 10
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "w": {
-          "docs": {},
-          "r": {
-            "docs": {},
-            "a": {
-              "docs": {},
-              "p": {
-                "docs": {},
-                "p": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "r": {
-                      "docs": {
-                        "Circle.html#pointIsInside": {
-                          "ref": "Circle.html#pointIsInside",
-                          "tf": 10
-                        },
-                        "Rect.html#pointIsInside": {
-                          "ref": "Rect.html#pointIsInside",
-                          "tf": 10
-                        },
-                        "Polygon.html#pointIsInside": {
-                          "ref": "Polygon.html#pointIsInside",
-                          "tf": 10
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "h": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "e": {
-                "docs": {
-                  "Circle.html#setChildren": {
-                    "ref": "Circle.html#setChildren",
-                    "tf": 12.5
-                  },
-                  "Circle.html#addChild": {
-                    "ref": "Circle.html#addChild",
-                    "tf": 12.5
-                  },
-                  "Rect.html#setChildren": {
-                    "ref": "Rect.html#setChildren",
-                    "tf": 12.5
-                  },
-                  "Rect.html#addChild": {
-                    "ref": "Rect.html#addChild",
-                    "tf": 12.5
-                  },
-                  "Polygon.html#setChildren": {
-                    "ref": "Polygon.html#setChildren",
-                    "tf": 12.5
-                  },
-                  "Polygon.html#addChild": {
-                    "ref": "Polygon.html#addChild",
-                    "tf": 12.5
-                  }
-                }
-              }
-            }
-          }
-        },
         "e": {
           "docs": {},
           "n": {
             "docs": {},
             "d": {
               "docs": {
+                "Polygon.html#addVertex": {
+                  "ref": "Polygon.html#addVertex",
+                  "tf": 12.5
+                },
                 "Circle.html#addVertex": {
                   "ref": "Circle.html#addVertex",
                   "tf": 12.5
                 },
                 "Rect.html#addVertex": {
                   "ref": "Rect.html#addVertex",
-                  "tf": 12.5
-                },
-                "Polygon.html#addVertex": {
-                  "ref": "Polygon.html#addVertex",
                   "tf": 12.5
                 }
               }
@@ -8159,7 +8357,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 853
+      "length": 877
     },
     "corpusTokens": [
       "ad",
@@ -8174,7 +8372,10 @@ window.lunrData = {
       "area",
       "around",
       "array",
+      "array.&lt;array&gt",
+      "array.&lt;line&gt",
       "array.&lt;polygon&gt",
+      "array.&lt;vector2&gt",
       "arround",
       "between",
       "boolean",
@@ -8507,408 +8708,6 @@ window.lunrData = {
       "summary": "",
       "description": "Get the intersection of two lines Return false if lines does not intersect"
     },
-    "Circle.html": {
-      "id": "Circle.html",
-      "kind": "class",
-      "title": "Circle",
-      "longname": "Circle",
-      "name": "Circle",
-      "tags": "Circle",
-      "summary": "",
-      "description": "Circle Class",
-      "body": ""
-    },
-    "Circle.html#sides": {
-      "id": "Circle.html#sides",
-      "kind": "member",
-      "title": "sides :Number",
-      "longname": "Circle#sides",
-      "name": "sides",
-      "tags": "Circle#sides sides",
-      "summary": "",
-      "description": "Sides count of the circle"
-    },
-    "Circle.html#center": {
-      "id": "Circle.html#center",
-      "kind": "member",
-      "title": "center :Vector2",
-      "longname": "Circle#center",
-      "name": "center",
-      "tags": "Circle#center center",
-      "summary": "",
-      "description": "Center of the circle"
-    },
-    "Circle.html#radius": {
-      "id": "Circle.html#radius",
-      "kind": "member",
-      "title": "radius :Number",
-      "longname": "Circle#radius",
-      "name": "radius",
-      "tags": "Circle#radius radius",
-      "summary": "",
-      "description": "Radius of the circle"
-    },
-    "Circle.html#region": {
-      "id": "Circle.html#region",
-      "kind": "member",
-      "title": "region",
-      "longname": "Circle#region",
-      "name": "region",
-      "tags": "Circle#region region",
-      "summary": "",
-      "description": "Get region for polybooljs plugin, can be also be used for GeoJson Return a double level array ([[x, y], [x, y], ...])"
-    },
-    "Circle.html#points": {
-      "id": "Circle.html#points",
-      "kind": "member",
-      "title": "points",
-      "longname": "Circle#points",
-      "name": "points",
-      "tags": "Circle#points points",
-      "summary": "",
-      "description": "Get points of the Polygon"
-    },
-    "Circle.html#lines": {
-      "id": "Circle.html#lines",
-      "kind": "member",
-      "title": "lines",
-      "longname": "Circle#lines",
-      "name": "lines",
-      "tags": "Circle#lines lines",
-      "summary": "",
-      "description": "Get lines of the Polygon"
-    },
-    "Circle.html#area": {
-      "id": "Circle.html#area",
-      "kind": "member",
-      "title": "area",
-      "longname": "Circle#area",
-      "name": "area",
-      "tags": "Circle#area area",
-      "summary": "",
-      "description": "Get area of the Polygon"
-    },
-    "Circle.html#pointIsInside": {
-      "id": "Circle.html#pointIsInside",
-      "kind": "function",
-      "title": "pointIsInside( point ) → {boolean}",
-      "longname": "Circle#pointIsInside",
-      "name": "pointIsInside",
-      "tags": "Circle#pointIsInside pointIsInside",
-      "summary": "",
-      "description": "Wrapper for checking if point is inside a circle"
-    },
-    "Circle.html#pointIsInsidePolygon": {
-      "id": "Circle.html#pointIsInsidePolygon",
-      "kind": "function",
-      "title": "pointIsInsidePolygon( point ) → {boolean}",
-      "longname": "Circle#pointIsInsidePolygon",
-      "name": "pointIsInsidePolygon",
-      "tags": "Circle#pointIsInsidePolygon pointIsInsidePolygon",
-      "summary": "",
-      "description": "Checking if point is inside a polygon"
-    },
-    "Circle.html#pointIsInsideCircle": {
-      "id": "Circle.html#pointIsInsideCircle",
-      "kind": "function",
-      "title": "pointIsInsideCircle( point ) → {Boolean}",
-      "longname": "Circle#pointIsInsideCircle",
-      "name": "pointIsInsideCircle",
-      "tags": "Circle#pointIsInsideCircle pointIsInsideCircle",
-      "summary": "",
-      "description": "Check if a point is inside a Circle"
-    },
-    "Circle.html#setChildren": {
-      "id": "Circle.html#setChildren",
-      "kind": "function",
-      "title": "setChildren( polygons ) → {Polygon}",
-      "longname": "Circle#setChildren",
-      "name": "setChildren",
-      "tags": "Circle#setChildren setChildren",
-      "summary": "",
-      "description": "Setting all children polygons (for holes)"
-    },
-    "Circle.html#addChild": {
-      "id": "Circle.html#addChild",
-      "kind": "function",
-      "title": "addChild( polygon ) → {Polygon}",
-      "longname": "Circle#addChild",
-      "name": "addChild",
-      "tags": "Circle#addChild addChild",
-      "summary": "",
-      "description": "Adding a child polygon (for hole)"
-    },
-    "Circle.html#setVertexes": {
-      "id": "Circle.html#setVertexes",
-      "kind": "function",
-      "title": "setVertexes( vertices ) → {Polygon}",
-      "longname": "Circle#setVertexes",
-      "name": "setVertexes",
-      "tags": "Circle#setVertexes setVertexes",
-      "summary": "",
-      "description": "Setting vertices of the polygon"
-    },
-    "Circle.html#addVertex": {
-      "id": "Circle.html#addVertex",
-      "kind": "function",
-      "title": "addVertex( vertice ) → {Polygon}",
-      "longname": "Circle#addVertex",
-      "name": "addVertex",
-      "tags": "Circle#addVertex addVertex",
-      "summary": "",
-      "description": "Add a new vertices to the end"
-    },
-    "Circle.html#colliding": {
-      "id": "Circle.html#colliding",
-      "kind": "function",
-      "title": "colliding( polygon ) → {Boolean}",
-      "longname": "Circle#colliding",
-      "name": "colliding",
-      "tags": "Circle#colliding colliding",
-      "summary": "",
-      "description": "Is the current polygon colliding with the given polygon"
-    },
-    "Circle.html#intersect": {
-      "id": "Circle.html#intersect",
-      "kind": "function",
-      "title": "intersect( polygon ) → {Array.&lt;Polygon&gt;}",
-      "longname": "Circle#intersect",
-      "name": "intersect",
-      "tags": "Circle#intersect intersect",
-      "summary": "",
-      "description": "Intersect boolean operation on this polygon with the given polygon"
-    },
-    "Circle.html#difference": {
-      "id": "Circle.html#difference",
-      "kind": "function",
-      "title": "difference( polygon ) → {Array.&lt;Polygon&gt;}",
-      "longname": "Circle#difference",
-      "name": "difference",
-      "tags": "Circle#difference difference",
-      "summary": "",
-      "description": "Difference boolean operation on this polygon with the given polygon"
-    },
-    "Circle.html#union": {
-      "id": "Circle.html#union",
-      "kind": "function",
-      "title": "union( polygon ) → {Array.&lt;Polygon&gt;}",
-      "longname": "Circle#union",
-      "name": "union",
-      "tags": "Circle#union union",
-      "summary": "",
-      "description": "Union boolean operation on this polygon with the given polygon"
-    },
-    "Circle.html#xor": {
-      "id": "Circle.html#xor",
-      "kind": "function",
-      "title": "xor( polygon ) → {Array.&lt;Polygon&gt;}",
-      "longname": "Circle#xor",
-      "name": "xor",
-      "tags": "Circle#xor xor",
-      "summary": "",
-      "description": "Xor boolean operation on this polygon with the given polygon"
-    },
-    "Rect.html": {
-      "id": "Rect.html",
-      "kind": "class",
-      "title": "Rect",
-      "longname": "Rect",
-      "name": "Rect",
-      "tags": "Rect",
-      "summary": "",
-      "description": "Rect Class",
-      "body": ""
-    },
-    "Rect.html#position": {
-      "id": "Rect.html#position",
-      "kind": "member",
-      "title": "position :Vector2",
-      "longname": "Rect#position",
-      "name": "position",
-      "tags": "Rect#position position",
-      "summary": "",
-      "description": "The start position of the rect"
-    },
-    "Rect.html#size": {
-      "id": "Rect.html#size",
-      "kind": "member",
-      "title": "size :Vector2",
-      "longname": "Rect#size",
-      "name": "size",
-      "tags": "Rect#size size",
-      "summary": "",
-      "description": "The size of the rect"
-    },
-    "Rect.html#region": {
-      "id": "Rect.html#region",
-      "kind": "member",
-      "title": "region",
-      "longname": "Rect#region",
-      "name": "region",
-      "tags": "Rect#region region",
-      "summary": "",
-      "description": "Get region for polybooljs plugin, can be also be used for GeoJson Return a double level array ([[x, y], [x, y], ...])"
-    },
-    "Rect.html#points": {
-      "id": "Rect.html#points",
-      "kind": "member",
-      "title": "points",
-      "longname": "Rect#points",
-      "name": "points",
-      "tags": "Rect#points points",
-      "summary": "",
-      "description": "Get points of the Polygon"
-    },
-    "Rect.html#lines": {
-      "id": "Rect.html#lines",
-      "kind": "member",
-      "title": "lines",
-      "longname": "Rect#lines",
-      "name": "lines",
-      "tags": "Rect#lines lines",
-      "summary": "",
-      "description": "Get lines of the Polygon"
-    },
-    "Rect.html#area": {
-      "id": "Rect.html#area",
-      "kind": "member",
-      "title": "area",
-      "longname": "Rect#area",
-      "name": "area",
-      "tags": "Rect#area area",
-      "summary": "",
-      "description": "Get area of the Polygon"
-    },
-    "Rect.html#pointIsInside": {
-      "id": "Rect.html#pointIsInside",
-      "kind": "function",
-      "title": "pointIsInside( point ) → {boolean}",
-      "longname": "Rect#pointIsInside",
-      "name": "pointIsInside",
-      "tags": "Rect#pointIsInside pointIsInside",
-      "summary": "",
-      "description": "Wrapper for checking if point is inside a rect"
-    },
-    "Rect.html#pointIsInsideRect": {
-      "id": "Rect.html#pointIsInsideRect",
-      "kind": "function",
-      "title": "pointIsInsideRect( point ) → {Boolean}",
-      "longname": "Rect#pointIsInsideRect",
-      "name": "pointIsInsideRect",
-      "tags": "Rect#pointIsInsideRect pointIsInsideRect",
-      "summary": "",
-      "description": "Check if a point is inside a Rect"
-    },
-    "Rect.html#pointIsInsidePolygon": {
-      "id": "Rect.html#pointIsInsidePolygon",
-      "kind": "function",
-      "title": "pointIsInsidePolygon( point ) → {boolean}",
-      "longname": "Rect#pointIsInsidePolygon",
-      "name": "pointIsInsidePolygon",
-      "tags": "Rect#pointIsInsidePolygon pointIsInsidePolygon",
-      "summary": "",
-      "description": "Checking if point is inside a polygon"
-    },
-    "Rect.html#setChildren": {
-      "id": "Rect.html#setChildren",
-      "kind": "function",
-      "title": "setChildren( polygons ) → {Polygon}",
-      "longname": "Rect#setChildren",
-      "name": "setChildren",
-      "tags": "Rect#setChildren setChildren",
-      "summary": "",
-      "description": "Setting all children polygons (for holes)"
-    },
-    "Rect.html#addChild": {
-      "id": "Rect.html#addChild",
-      "kind": "function",
-      "title": "addChild( polygon ) → {Polygon}",
-      "longname": "Rect#addChild",
-      "name": "addChild",
-      "tags": "Rect#addChild addChild",
-      "summary": "",
-      "description": "Adding a child polygon (for hole)"
-    },
-    "Rect.html#setVertexes": {
-      "id": "Rect.html#setVertexes",
-      "kind": "function",
-      "title": "setVertexes( vertices ) → {Polygon}",
-      "longname": "Rect#setVertexes",
-      "name": "setVertexes",
-      "tags": "Rect#setVertexes setVertexes",
-      "summary": "",
-      "description": "Setting vertices of the polygon"
-    },
-    "Rect.html#addVertex": {
-      "id": "Rect.html#addVertex",
-      "kind": "function",
-      "title": "addVertex( vertice ) → {Polygon}",
-      "longname": "Rect#addVertex",
-      "name": "addVertex",
-      "tags": "Rect#addVertex addVertex",
-      "summary": "",
-      "description": "Add a new vertices to the end"
-    },
-    "Rect.html#.Box": {
-      "id": "Rect.html#.Box",
-      "kind": "function",
-      "title": "&lt;static&gt; Box( p ) → {Rect}",
-      "longname": "Rect.Box",
-      "name": "Box",
-      "tags": "Rect.Box Box",
-      "summary": "",
-      "description": "Get the box around a polygon"
-    },
-    "Rect.html#colliding": {
-      "id": "Rect.html#colliding",
-      "kind": "function",
-      "title": "colliding( polygon ) → {Boolean}",
-      "longname": "Rect#colliding",
-      "name": "colliding",
-      "tags": "Rect#colliding colliding",
-      "summary": "",
-      "description": "Is the current polygon colliding with the given polygon"
-    },
-    "Rect.html#intersect": {
-      "id": "Rect.html#intersect",
-      "kind": "function",
-      "title": "intersect( polygon ) → {Array.&lt;Polygon&gt;}",
-      "longname": "Rect#intersect",
-      "name": "intersect",
-      "tags": "Rect#intersect intersect",
-      "summary": "",
-      "description": "Intersect boolean operation on this polygon with the given polygon"
-    },
-    "Rect.html#difference": {
-      "id": "Rect.html#difference",
-      "kind": "function",
-      "title": "difference( polygon ) → {Array.&lt;Polygon&gt;}",
-      "longname": "Rect#difference",
-      "name": "difference",
-      "tags": "Rect#difference difference",
-      "summary": "",
-      "description": "Difference boolean operation on this polygon with the given polygon"
-    },
-    "Rect.html#union": {
-      "id": "Rect.html#union",
-      "kind": "function",
-      "title": "union( polygon ) → {Array.&lt;Polygon&gt;}",
-      "longname": "Rect#union",
-      "name": "union",
-      "tags": "Rect#union union",
-      "summary": "",
-      "description": "Union boolean operation on this polygon with the given polygon"
-    },
-    "Rect.html#xor": {
-      "id": "Rect.html#xor",
-      "kind": "function",
-      "title": "xor( polygon ) → {Array.&lt;Polygon&gt;}",
-      "longname": "Rect#xor",
-      "name": "xor",
-      "tags": "Rect#xor xor",
-      "summary": "",
-      "description": "Xor boolean operation on this polygon with the given polygon"
-    },
     "Polygon.html": {
       "id": "Polygon.html",
       "kind": "class",
@@ -8923,17 +8722,17 @@ window.lunrData = {
     "Polygon.html#region": {
       "id": "Polygon.html#region",
       "kind": "member",
-      "title": "region",
+      "title": "&lt;readonly&gt; region :Array.&lt;Array&gt;",
       "longname": "Polygon#region",
       "name": "region",
       "tags": "Polygon#region region",
       "summary": "",
-      "description": "Get region for polybooljs plugin, can be also be used for GeoJson Return a double level array ([[x, y], [x, y], ...])"
+      "description": "Get region for polybooljs plugin, can be also be used for GeoJson. Return a double level array ([[x, y], [x, y], ...])"
     },
     "Polygon.html#points": {
       "id": "Polygon.html#points",
       "kind": "member",
-      "title": "points",
+      "title": "&lt;readonly&gt; points :Array.&lt;Vector2&gt;",
       "longname": "Polygon#points",
       "name": "points",
       "tags": "Polygon#points points",
@@ -8943,7 +8742,7 @@ window.lunrData = {
     "Polygon.html#lines": {
       "id": "Polygon.html#lines",
       "kind": "member",
-      "title": "lines",
+      "title": "&lt;readonly&gt; lines :Array.&lt;Line&gt;",
       "longname": "Polygon#lines",
       "name": "lines",
       "tags": "Polygon#lines lines",
@@ -8953,7 +8752,7 @@ window.lunrData = {
     "Polygon.html#area": {
       "id": "Polygon.html#area",
       "kind": "member",
-      "title": "area",
+      "title": "&lt;readonly&gt; area :Number",
       "longname": "Polygon#area",
       "name": "area",
       "tags": "Polygon#area area",
@@ -9129,6 +8928,408 @@ window.lunrData = {
       "tags": "Polygon.Xor Xor",
       "summary": "",
       "description": "Xor boolean operation on the p1 polygon with the p2 polygon"
+    },
+    "Circle.html": {
+      "id": "Circle.html",
+      "kind": "class",
+      "title": "Circle",
+      "longname": "Circle",
+      "name": "Circle",
+      "tags": "Circle",
+      "summary": "",
+      "description": "Circle Class",
+      "body": ""
+    },
+    "Circle.html#sides": {
+      "id": "Circle.html#sides",
+      "kind": "member",
+      "title": "sides :Number",
+      "longname": "Circle#sides",
+      "name": "sides",
+      "tags": "Circle#sides sides",
+      "summary": "",
+      "description": "Sides count of the circle"
+    },
+    "Circle.html#center": {
+      "id": "Circle.html#center",
+      "kind": "member",
+      "title": "center :Vector2",
+      "longname": "Circle#center",
+      "name": "center",
+      "tags": "Circle#center center",
+      "summary": "",
+      "description": "Center of the circle"
+    },
+    "Circle.html#radius": {
+      "id": "Circle.html#radius",
+      "kind": "member",
+      "title": "radius :Number",
+      "longname": "Circle#radius",
+      "name": "radius",
+      "tags": "Circle#radius radius",
+      "summary": "",
+      "description": "Radius of the circle"
+    },
+    "Circle.html#region": {
+      "id": "Circle.html#region",
+      "kind": "member",
+      "title": "&lt;readonly&gt; region :Array.&lt;Array&gt;",
+      "longname": "Circle#region",
+      "name": "region",
+      "tags": "Circle#region region",
+      "summary": "",
+      "description": "Get region for polybooljs plugin, can be also be used for GeoJson. Return a double level array ([[x, y], [x, y], ...])"
+    },
+    "Circle.html#points": {
+      "id": "Circle.html#points",
+      "kind": "member",
+      "title": "&lt;readonly&gt; points :Array.&lt;Vector2&gt;",
+      "longname": "Circle#points",
+      "name": "points",
+      "tags": "Circle#points points",
+      "summary": "",
+      "description": "Get points of the Polygon"
+    },
+    "Circle.html#lines": {
+      "id": "Circle.html#lines",
+      "kind": "member",
+      "title": "&lt;readonly&gt; lines :Array.&lt;Line&gt;",
+      "longname": "Circle#lines",
+      "name": "lines",
+      "tags": "Circle#lines lines",
+      "summary": "",
+      "description": "Get lines of the Polygon"
+    },
+    "Circle.html#area": {
+      "id": "Circle.html#area",
+      "kind": "member",
+      "title": "&lt;readonly&gt; area :Number",
+      "longname": "Circle#area",
+      "name": "area",
+      "tags": "Circle#area area",
+      "summary": "",
+      "description": "Get area of the Polygon"
+    },
+    "Circle.html#pointIsInside": {
+      "id": "Circle.html#pointIsInside",
+      "kind": "function",
+      "title": "pointIsInside( point ) → {boolean}",
+      "longname": "Circle#pointIsInside",
+      "name": "pointIsInside",
+      "tags": "Circle#pointIsInside pointIsInside",
+      "summary": "",
+      "description": "Wrapper for checking if point is inside a circle"
+    },
+    "Circle.html#pointIsInsidePolygon": {
+      "id": "Circle.html#pointIsInsidePolygon",
+      "kind": "function",
+      "title": "pointIsInsidePolygon( point ) → {boolean}",
+      "longname": "Circle#pointIsInsidePolygon",
+      "name": "pointIsInsidePolygon",
+      "tags": "Circle#pointIsInsidePolygon pointIsInsidePolygon",
+      "summary": "",
+      "description": "Checking if point is inside a polygon"
+    },
+    "Circle.html#pointIsInsideCircle": {
+      "id": "Circle.html#pointIsInsideCircle",
+      "kind": "function",
+      "title": "pointIsInsideCircle( point ) → {Boolean}",
+      "longname": "Circle#pointIsInsideCircle",
+      "name": "pointIsInsideCircle",
+      "tags": "Circle#pointIsInsideCircle pointIsInsideCircle",
+      "summary": "",
+      "description": "Check if a point is inside a Circle"
+    },
+    "Circle.html#setChildren": {
+      "id": "Circle.html#setChildren",
+      "kind": "function",
+      "title": "setChildren( polygons ) → {Polygon}",
+      "longname": "Circle#setChildren",
+      "name": "setChildren",
+      "tags": "Circle#setChildren setChildren",
+      "summary": "",
+      "description": "Setting all children polygons (for holes)"
+    },
+    "Circle.html#addChild": {
+      "id": "Circle.html#addChild",
+      "kind": "function",
+      "title": "addChild( polygon ) → {Polygon}",
+      "longname": "Circle#addChild",
+      "name": "addChild",
+      "tags": "Circle#addChild addChild",
+      "summary": "",
+      "description": "Adding a child polygon (for hole)"
+    },
+    "Circle.html#setVertexes": {
+      "id": "Circle.html#setVertexes",
+      "kind": "function",
+      "title": "setVertexes( vertices ) → {Polygon}",
+      "longname": "Circle#setVertexes",
+      "name": "setVertexes",
+      "tags": "Circle#setVertexes setVertexes",
+      "summary": "",
+      "description": "Setting vertices of the polygon"
+    },
+    "Circle.html#addVertex": {
+      "id": "Circle.html#addVertex",
+      "kind": "function",
+      "title": "addVertex( vertice ) → {Polygon}",
+      "longname": "Circle#addVertex",
+      "name": "addVertex",
+      "tags": "Circle#addVertex addVertex",
+      "summary": "",
+      "description": "Add a new vertices to the end"
+    },
+    "Circle.html#colliding": {
+      "id": "Circle.html#colliding",
+      "kind": "function",
+      "title": "colliding( polygon ) → {Boolean}",
+      "longname": "Circle#colliding",
+      "name": "colliding",
+      "tags": "Circle#colliding colliding",
+      "summary": "",
+      "description": "Is the current polygon colliding with the given polygon"
+    },
+    "Circle.html#intersect": {
+      "id": "Circle.html#intersect",
+      "kind": "function",
+      "title": "intersect( polygon ) → {Array.&lt;Polygon&gt;}",
+      "longname": "Circle#intersect",
+      "name": "intersect",
+      "tags": "Circle#intersect intersect",
+      "summary": "",
+      "description": "Intersect boolean operation on this polygon with the given polygon"
+    },
+    "Circle.html#difference": {
+      "id": "Circle.html#difference",
+      "kind": "function",
+      "title": "difference( polygon ) → {Array.&lt;Polygon&gt;}",
+      "longname": "Circle#difference",
+      "name": "difference",
+      "tags": "Circle#difference difference",
+      "summary": "",
+      "description": "Difference boolean operation on this polygon with the given polygon"
+    },
+    "Circle.html#union": {
+      "id": "Circle.html#union",
+      "kind": "function",
+      "title": "union( polygon ) → {Array.&lt;Polygon&gt;}",
+      "longname": "Circle#union",
+      "name": "union",
+      "tags": "Circle#union union",
+      "summary": "",
+      "description": "Union boolean operation on this polygon with the given polygon"
+    },
+    "Circle.html#xor": {
+      "id": "Circle.html#xor",
+      "kind": "function",
+      "title": "xor( polygon ) → {Array.&lt;Polygon&gt;}",
+      "longname": "Circle#xor",
+      "name": "xor",
+      "tags": "Circle#xor xor",
+      "summary": "",
+      "description": "Xor boolean operation on this polygon with the given polygon"
+    },
+    "Rect.html": {
+      "id": "Rect.html",
+      "kind": "class",
+      "title": "Rect",
+      "longname": "Rect",
+      "name": "Rect",
+      "tags": "Rect",
+      "summary": "",
+      "description": "Rect Class",
+      "body": ""
+    },
+    "Rect.html#position": {
+      "id": "Rect.html#position",
+      "kind": "member",
+      "title": "position :Vector2",
+      "longname": "Rect#position",
+      "name": "position",
+      "tags": "Rect#position position",
+      "summary": "",
+      "description": "The start position of the rect"
+    },
+    "Rect.html#size": {
+      "id": "Rect.html#size",
+      "kind": "member",
+      "title": "size :Vector2",
+      "longname": "Rect#size",
+      "name": "size",
+      "tags": "Rect#size size",
+      "summary": "",
+      "description": "The size of the rect"
+    },
+    "Rect.html#region": {
+      "id": "Rect.html#region",
+      "kind": "member",
+      "title": "&lt;readonly&gt; region :Array.&lt;Array&gt;",
+      "longname": "Rect#region",
+      "name": "region",
+      "tags": "Rect#region region",
+      "summary": "",
+      "description": "Get region for polybooljs plugin, can be also be used for GeoJson. Return a double level array ([[x, y], [x, y], ...])"
+    },
+    "Rect.html#points": {
+      "id": "Rect.html#points",
+      "kind": "member",
+      "title": "&lt;readonly&gt; points :Array.&lt;Vector2&gt;",
+      "longname": "Rect#points",
+      "name": "points",
+      "tags": "Rect#points points",
+      "summary": "",
+      "description": "Get points of the Polygon"
+    },
+    "Rect.html#lines": {
+      "id": "Rect.html#lines",
+      "kind": "member",
+      "title": "&lt;readonly&gt; lines :Array.&lt;Line&gt;",
+      "longname": "Rect#lines",
+      "name": "lines",
+      "tags": "Rect#lines lines",
+      "summary": "",
+      "description": "Get lines of the Polygon"
+    },
+    "Rect.html#area": {
+      "id": "Rect.html#area",
+      "kind": "member",
+      "title": "&lt;readonly&gt; area :Number",
+      "longname": "Rect#area",
+      "name": "area",
+      "tags": "Rect#area area",
+      "summary": "",
+      "description": "Get area of the Polygon"
+    },
+    "Rect.html#pointIsInside": {
+      "id": "Rect.html#pointIsInside",
+      "kind": "function",
+      "title": "pointIsInside( point ) → {boolean}",
+      "longname": "Rect#pointIsInside",
+      "name": "pointIsInside",
+      "tags": "Rect#pointIsInside pointIsInside",
+      "summary": "",
+      "description": "Wrapper for checking if point is inside a rect"
+    },
+    "Rect.html#pointIsInsideRect": {
+      "id": "Rect.html#pointIsInsideRect",
+      "kind": "function",
+      "title": "pointIsInsideRect( point ) → {Boolean}",
+      "longname": "Rect#pointIsInsideRect",
+      "name": "pointIsInsideRect",
+      "tags": "Rect#pointIsInsideRect pointIsInsideRect",
+      "summary": "",
+      "description": "Check if a point is inside a Rect"
+    },
+    "Rect.html#pointIsInsidePolygon": {
+      "id": "Rect.html#pointIsInsidePolygon",
+      "kind": "function",
+      "title": "pointIsInsidePolygon( point ) → {boolean}",
+      "longname": "Rect#pointIsInsidePolygon",
+      "name": "pointIsInsidePolygon",
+      "tags": "Rect#pointIsInsidePolygon pointIsInsidePolygon",
+      "summary": "",
+      "description": "Checking if point is inside a polygon"
+    },
+    "Rect.html#setChildren": {
+      "id": "Rect.html#setChildren",
+      "kind": "function",
+      "title": "setChildren( polygons ) → {Polygon}",
+      "longname": "Rect#setChildren",
+      "name": "setChildren",
+      "tags": "Rect#setChildren setChildren",
+      "summary": "",
+      "description": "Setting all children polygons (for holes)"
+    },
+    "Rect.html#addChild": {
+      "id": "Rect.html#addChild",
+      "kind": "function",
+      "title": "addChild( polygon ) → {Polygon}",
+      "longname": "Rect#addChild",
+      "name": "addChild",
+      "tags": "Rect#addChild addChild",
+      "summary": "",
+      "description": "Adding a child polygon (for hole)"
+    },
+    "Rect.html#setVertexes": {
+      "id": "Rect.html#setVertexes",
+      "kind": "function",
+      "title": "setVertexes( vertices ) → {Polygon}",
+      "longname": "Rect#setVertexes",
+      "name": "setVertexes",
+      "tags": "Rect#setVertexes setVertexes",
+      "summary": "",
+      "description": "Setting vertices of the polygon"
+    },
+    "Rect.html#addVertex": {
+      "id": "Rect.html#addVertex",
+      "kind": "function",
+      "title": "addVertex( vertice ) → {Polygon}",
+      "longname": "Rect#addVertex",
+      "name": "addVertex",
+      "tags": "Rect#addVertex addVertex",
+      "summary": "",
+      "description": "Add a new vertices to the end"
+    },
+    "Rect.html#colliding": {
+      "id": "Rect.html#colliding",
+      "kind": "function",
+      "title": "colliding( polygon ) → {Boolean}",
+      "longname": "Rect#colliding",
+      "name": "colliding",
+      "tags": "Rect#colliding colliding",
+      "summary": "",
+      "description": "Is the current polygon colliding with the given polygon"
+    },
+    "Rect.html#.Box": {
+      "id": "Rect.html#.Box",
+      "kind": "function",
+      "title": "&lt;static&gt; Box( p ) → {Rect}",
+      "longname": "Rect.Box",
+      "name": "Box",
+      "tags": "Rect.Box Box",
+      "summary": "",
+      "description": "Get the box around a polygon"
+    },
+    "Rect.html#intersect": {
+      "id": "Rect.html#intersect",
+      "kind": "function",
+      "title": "intersect( polygon ) → {Array.&lt;Polygon&gt;}",
+      "longname": "Rect#intersect",
+      "name": "intersect",
+      "tags": "Rect#intersect intersect",
+      "summary": "",
+      "description": "Intersect boolean operation on this polygon with the given polygon"
+    },
+    "Rect.html#difference": {
+      "id": "Rect.html#difference",
+      "kind": "function",
+      "title": "difference( polygon ) → {Array.&lt;Polygon&gt;}",
+      "longname": "Rect#difference",
+      "name": "difference",
+      "tags": "Rect#difference difference",
+      "summary": "",
+      "description": "Difference boolean operation on this polygon with the given polygon"
+    },
+    "Rect.html#union": {
+      "id": "Rect.html#union",
+      "kind": "function",
+      "title": "union( polygon ) → {Array.&lt;Polygon&gt;}",
+      "longname": "Rect#union",
+      "name": "union",
+      "tags": "Rect#union union",
+      "summary": "",
+      "description": "Union boolean operation on this polygon with the given polygon"
+    },
+    "Rect.html#xor": {
+      "id": "Rect.html#xor",
+      "kind": "function",
+      "title": "xor( polygon ) → {Array.&lt;Polygon&gt;}",
+      "longname": "Rect#xor",
+      "name": "xor",
+      "tags": "Rect#xor xor",
+      "summary": "",
+      "description": "Xor boolean operation on this polygon with the given polygon"
     },
     "Vector2.html": {
       "id": "Vector2.html",

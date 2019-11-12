@@ -7,10 +7,6 @@ const Vector2 = require('./vector2');
 /**
  * Polygon Class
  * @property {Vector2} first The first point of the polygon, follow next on first to iterate
- * @property {Array[]} region
- * @property {Vector2[]} points
- * @property {Line[]} points
- * @property {Number} area
  */
 class Polygon {
 	/**
@@ -168,8 +164,10 @@ class Polygon {
 
 	/* GETTERS */
 	/**
-	 * Get region for polybooljs plugin, can be also be used for GeoJson
+	 * Get region for polybooljs plugin, can be also be used for GeoJson.
 	 * Return a double level array ([[x, y], [x, y], ...])
+	 * @type {Array[]}
+	 * @readonly
 	 */
 	get region() {
 		return this.points.map((p) => {
@@ -179,6 +177,8 @@ class Polygon {
 
 	/**
 	 * Get points of the Polygon
+	 * @type {Vector2[]}
+	 * @readonly
 	 */
 	get points() {
 		const points = [];
@@ -193,6 +193,8 @@ class Polygon {
 
 	/**
 	 * Get lines of the Polygon
+	 * @type {Line[]}
+	 * @readonly
 	 */
 	get lines() {
 		const lines = [];
@@ -210,6 +212,8 @@ class Polygon {
 
 	/**
 	 * Get area of the Polygon
+	 * @type {Number}
+	 * @readonly
 	 */
 	get area() {
 		let total = 0;
