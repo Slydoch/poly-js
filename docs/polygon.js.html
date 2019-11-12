@@ -101,11 +101,20 @@ class Polygon {
 	}
 
 	/**
-	 * Check if a point is inside a polygon
+	 * Wrapper for checking if point is inside a polygon
 	 * @param {Vector2} point Point to check
 	 * @returns {boolean}
 	 */
 	pointIsInside(point) {
+		return this.pointIsInsidePolygon(point);
+	}
+
+	/**
+	 * Checking if point is inside a polygon
+	 * @param {Vector2} point Point to check
+	 * @returns {boolean}
+	 */
+	pointIsInsidePolygon(point) {
 		let oddNodes = false;
 		let vertex = this.first;
 		let next = vertex.next;

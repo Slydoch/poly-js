@@ -96,6 +96,16 @@ class Rect extends Polygon {
 	}
 
 	/**
+	 * Wrapper for checking if point is inside a rect
+	 * @param {Vector2} point Point to check
+	 * @returns {boolean}
+	 * @override
+	 */
+	pointIsInside(point) {
+		return this.pointIsInsideRect(point);
+	}
+
+	/**
      * Check if a point is inside a Rect
      * @param {Vector2} point The Vector2 like object
      * @returns {Boolean}

@@ -29,6 +29,25 @@ class Circle extends Polygon {
 	}
 
 	/**
+	 * Wrapper for checking if point is inside a circle
+	 * @param {Vector2} point Point to check
+	 * @returns {boolean}
+	 * @override
+	 */
+	pointIsInside(point) {
+		return this.pointIsInsideCircle(point);
+	}
+
+	/**
+     * Check if a point is inside a Circle
+     * @param {Vector2} point The Vector2 like object
+     * @returns {Boolean}
+     */
+	pointIsInsideCircle(point) {
+		return (Vector2.Distance(this._center, point) <= this._radius);
+	}
+
+	/**
 	 * Sides count of the circle
 	 * @type {Number}
 	 */

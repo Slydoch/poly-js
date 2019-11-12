@@ -151,12 +151,33 @@ window.lunrData = {
         "Circle.html#pointIsInside": [
           "boolean",
           "check",
+          "circl",
           "circle#pointisinsid",
           "function",
           "insid",
           "point",
           "pointisinsid",
+          "wrapper"
+        ],
+        "Circle.html#pointIsInsidePolygon": [
+          "boolean",
+          "check",
+          "circle#pointisinsidepolygon",
+          "function",
+          "insid",
+          "point",
+          "pointisinsidepolygon",
           "polygon"
+        ],
+        "Circle.html#pointIsInsideCircle": [
+          "boolean",
+          "check",
+          "circl",
+          "circle#pointisinsidecircl",
+          "function",
+          "insid",
+          "point",
+          "pointisinsidecircl"
         ],
         "Circle.html#setChildren": [
           "children",
@@ -295,6 +316,17 @@ window.lunrData = {
           "polygon",
           "rect#area"
         ],
+        "Rect.html#pointIsInside": [
+          "boolean",
+          "check",
+          "function",
+          "insid",
+          "point",
+          "pointisinsid",
+          "rect",
+          "rect#pointisinsid",
+          "wrapper"
+        ],
         "Rect.html#pointIsInsideRect": [
           "boolean",
           "check",
@@ -305,15 +337,15 @@ window.lunrData = {
           "rect",
           "rect#pointisinsiderect"
         ],
-        "Rect.html#pointIsInside": [
+        "Rect.html#pointIsInsidePolygon": [
           "boolean",
           "check",
           "function",
           "insid",
           "point",
-          "pointisinsid",
+          "pointisinsidepolygon",
           "polygon",
-          "rect#pointisinsid"
+          "rect#pointisinsidepolygon"
         ],
         "Rect.html#setChildren": [
           "children",
@@ -455,7 +487,18 @@ window.lunrData = {
           "point",
           "pointisinsid",
           "polygon",
-          "polygon#pointisinsid"
+          "polygon#pointisinsid",
+          "wrapper"
+        ],
+        "Polygon.html#pointIsInsidePolygon": [
+          "boolean",
+          "check",
+          "function",
+          "insid",
+          "point",
+          "pointisinsidepolygon",
+          "polygon",
+          "polygon#pointisinsidepolygon"
         ],
         "Polygon.html#setChildren": [
           "children",
@@ -1090,7 +1133,7 @@ window.lunrData = {
           "vector2#equ"
         ]
       },
-      "length": 116
+      "length": 120
     },
     "tokenStore": {
       "root": {
@@ -1167,18 +1210,34 @@ window.lunrData = {
                   "docs": {
                     "Circle.html#pointIsInside": {
                       "ref": "Circle.html#pointIsInside",
+                      "tf": 10
+                    },
+                    "Circle.html#pointIsInsidePolygon": {
+                      "ref": "Circle.html#pointIsInsidePolygon",
                       "tf": 12.5
+                    },
+                    "Circle.html#pointIsInsideCircle": {
+                      "ref": "Circle.html#pointIsInsideCircle",
+                      "tf": 12.5
+                    },
+                    "Rect.html#pointIsInside": {
+                      "ref": "Rect.html#pointIsInside",
+                      "tf": 10
                     },
                     "Rect.html#pointIsInsideRect": {
                       "ref": "Rect.html#pointIsInsideRect",
                       "tf": 12.5
                     },
-                    "Rect.html#pointIsInside": {
-                      "ref": "Rect.html#pointIsInside",
+                    "Rect.html#pointIsInsidePolygon": {
+                      "ref": "Rect.html#pointIsInsidePolygon",
                       "tf": 12.5
                     },
                     "Polygon.html#pointIsInside": {
                       "ref": "Polygon.html#pointIsInside",
+                      "tf": 10
+                    },
+                    "Polygon.html#pointIsInsidePolygon": {
+                      "ref": "Polygon.html#pointIsInsidePolygon",
                       "tf": 12.5
                     },
                     "Vector2.html#isInside": {
@@ -1532,8 +1591,8 @@ window.lunrData = {
                           "ref": "Circle.html#area",
                           "tf": 25
                         },
-                        "Circle.html#pointIsInside": {
-                          "ref": "Circle.html#pointIsInside",
+                        "Circle.html#pointIsInsidePolygon": {
+                          "ref": "Circle.html#pointIsInsidePolygon",
                           "tf": 12.5
                         },
                         "Circle.html#setChildren": {
@@ -1584,8 +1643,8 @@ window.lunrData = {
                           "ref": "Rect.html#area",
                           "tf": 25
                         },
-                        "Rect.html#pointIsInside": {
-                          "ref": "Rect.html#pointIsInside",
+                        "Rect.html#pointIsInsidePolygon": {
+                          "ref": "Rect.html#pointIsInsidePolygon",
                           "tf": 12.5
                         },
                         "Rect.html#setChildren": {
@@ -1646,6 +1705,10 @@ window.lunrData = {
                         },
                         "Polygon.html#pointIsInside": {
                           "ref": "Polygon.html#pointIsInside",
+                          "tf": 10
+                        },
+                        "Polygon.html#pointIsInsidePolygon": {
+                          "ref": "Polygon.html#pointIsInsidePolygon",
                           "tf": 12.5
                         },
                         "Polygon.html#setChildren": {
@@ -1770,6 +1833,35 @@ window.lunrData = {
                                                   "Polygon.html#pointIsInside": {
                                                     "ref": "Polygon.html#pointIsInside",
                                                     "tf": 1150
+                                                  }
+                                                },
+                                                "e": {
+                                                  "docs": {},
+                                                  "p": {
+                                                    "docs": {},
+                                                    "o": {
+                                                      "docs": {},
+                                                      "l": {
+                                                        "docs": {},
+                                                        "y": {
+                                                          "docs": {},
+                                                          "g": {
+                                                            "docs": {},
+                                                            "o": {
+                                                              "docs": {},
+                                                              "n": {
+                                                                "docs": {
+                                                                  "Polygon.html#pointIsInsidePolygon": {
+                                                                    "ref": "Polygon.html#pointIsInsidePolygon",
+                                                                    "tf": 1150
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
                                                   }
                                                 }
                                               }
@@ -2233,18 +2325,30 @@ window.lunrData = {
                     },
                     "Circle.html#pointIsInside": {
                       "ref": "Circle.html#pointIsInside",
+                      "tf": 43.33333333333333
+                    },
+                    "Circle.html#pointIsInsidePolygon": {
+                      "ref": "Circle.html#pointIsInsidePolygon",
+                      "tf": 45.83333333333333
+                    },
+                    "Circle.html#pointIsInsideCircle": {
+                      "ref": "Circle.html#pointIsInsideCircle",
                       "tf": 45.83333333333333
                     },
                     "Rect.html#points": {
                       "ref": "Rect.html#points",
                       "tf": 775
                     },
+                    "Rect.html#pointIsInside": {
+                      "ref": "Rect.html#pointIsInside",
+                      "tf": 43.33333333333333
+                    },
                     "Rect.html#pointIsInsideRect": {
                       "ref": "Rect.html#pointIsInsideRect",
                       "tf": 45.83333333333333
                     },
-                    "Rect.html#pointIsInside": {
-                      "ref": "Rect.html#pointIsInside",
+                    "Rect.html#pointIsInsidePolygon": {
+                      "ref": "Rect.html#pointIsInsidePolygon",
                       "tf": 45.83333333333333
                     },
                     "Polygon.html#points": {
@@ -2253,6 +2357,10 @@ window.lunrData = {
                     },
                     "Polygon.html#pointIsInside": {
                       "ref": "Polygon.html#pointIsInside",
+                      "tf": 43.33333333333333
+                    },
+                    "Polygon.html#pointIsInsidePolygon": {
+                      "ref": "Polygon.html#pointIsInsidePolygon",
                       "tf": 45.83333333333333
                     }
                   },
@@ -2285,6 +2393,60 @@ window.lunrData = {
                                 },
                                 "e": {
                                   "docs": {},
+                                  "p": {
+                                    "docs": {},
+                                    "o": {
+                                      "docs": {},
+                                      "l": {
+                                        "docs": {},
+                                        "y": {
+                                          "docs": {},
+                                          "g": {
+                                            "docs": {},
+                                            "o": {
+                                              "docs": {},
+                                              "n": {
+                                                "docs": {
+                                                  "Circle.html#pointIsInsidePolygon": {
+                                                    "ref": "Circle.html#pointIsInsidePolygon",
+                                                    "tf": 683.3333333333334
+                                                  },
+                                                  "Rect.html#pointIsInsidePolygon": {
+                                                    "ref": "Rect.html#pointIsInsidePolygon",
+                                                    "tf": 683.3333333333334
+                                                  },
+                                                  "Polygon.html#pointIsInsidePolygon": {
+                                                    "ref": "Polygon.html#pointIsInsidePolygon",
+                                                    "tf": 683.3333333333334
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "c": {
+                                    "docs": {},
+                                    "i": {
+                                      "docs": {},
+                                      "r": {
+                                        "docs": {},
+                                        "c": {
+                                          "docs": {},
+                                          "l": {
+                                            "docs": {
+                                              "Circle.html#pointIsInsideCircle": {
+                                                "ref": "Circle.html#pointIsInsideCircle",
+                                                "tf": 683.3333333333334
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
                                   "r": {
                                     "docs": {},
                                     "e": {
@@ -2471,6 +2633,10 @@ window.lunrData = {
                     "ref": "Rect.html#size",
                     "tf": 25
                   },
+                  "Rect.html#pointIsInside": {
+                    "ref": "Rect.html#pointIsInside",
+                    "tf": 10
+                  },
                   "Rect.html#pointIsInsideRect": {
                     "ref": "Rect.html#pointIsInsideRect",
                     "tf": 12.5
@@ -2543,6 +2709,32 @@ window.lunrData = {
                                                       "Rect.html#pointIsInsideRect": {
                                                         "ref": "Rect.html#pointIsInsideRect",
                                                         "tf": 1150
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "p": {
+                                              "docs": {},
+                                              "o": {
+                                                "docs": {},
+                                                "l": {
+                                                  "docs": {},
+                                                  "y": {
+                                                    "docs": {},
+                                                    "g": {
+                                                      "docs": {},
+                                                      "o": {
+                                                        "docs": {},
+                                                        "n": {
+                                                          "docs": {
+                                                            "Rect.html#pointIsInsidePolygon": {
+                                                              "ref": "Rect.html#pointIsInsidePolygon",
+                                                              "tf": 1150
+                                                            }
+                                                          }
+                                                        }
                                                       }
                                                     }
                                                   }
@@ -3677,6 +3869,14 @@ window.lunrData = {
                     "Circle.html#radius": {
                       "ref": "Circle.html#radius",
                       "tf": 25
+                    },
+                    "Circle.html#pointIsInside": {
+                      "ref": "Circle.html#pointIsInside",
+                      "tf": 10
+                    },
+                    "Circle.html#pointIsInsideCircle": {
+                      "ref": "Circle.html#pointIsInsideCircle",
+                      "tf": 12.5
                     }
                   },
                   "e": {
@@ -3864,6 +4064,55 @@ window.lunrData = {
                                                 "Circle.html#pointIsInside": {
                                                   "ref": "Circle.html#pointIsInside",
                                                   "tf": 1150
+                                                }
+                                              },
+                                              "e": {
+                                                "docs": {},
+                                                "p": {
+                                                  "docs": {},
+                                                  "o": {
+                                                    "docs": {},
+                                                    "l": {
+                                                      "docs": {},
+                                                      "y": {
+                                                        "docs": {},
+                                                        "g": {
+                                                          "docs": {},
+                                                          "o": {
+                                                            "docs": {},
+                                                            "n": {
+                                                              "docs": {
+                                                                "Circle.html#pointIsInsidePolygon": {
+                                                                  "ref": "Circle.html#pointIsInsidePolygon",
+                                                                  "tf": 1150
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "c": {
+                                                  "docs": {},
+                                                  "i": {
+                                                    "docs": {},
+                                                    "r": {
+                                                      "docs": {},
+                                                      "c": {
+                                                        "docs": {},
+                                                        "l": {
+                                                          "docs": {
+                                                            "Circle.html#pointIsInsideCircle": {
+                                                              "ref": "Circle.html#pointIsInsideCircle",
+                                                              "tf": 1150
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
                                                 }
                                               }
                                             }
@@ -4213,18 +4462,34 @@ window.lunrData = {
                   "docs": {
                     "Circle.html#pointIsInside": {
                       "ref": "Circle.html#pointIsInside",
+                      "tf": 10
+                    },
+                    "Circle.html#pointIsInsidePolygon": {
+                      "ref": "Circle.html#pointIsInsidePolygon",
                       "tf": 12.5
+                    },
+                    "Circle.html#pointIsInsideCircle": {
+                      "ref": "Circle.html#pointIsInsideCircle",
+                      "tf": 12.5
+                    },
+                    "Rect.html#pointIsInside": {
+                      "ref": "Rect.html#pointIsInside",
+                      "tf": 10
                     },
                     "Rect.html#pointIsInsideRect": {
                       "ref": "Rect.html#pointIsInsideRect",
                       "tf": 12.5
                     },
-                    "Rect.html#pointIsInside": {
-                      "ref": "Rect.html#pointIsInside",
+                    "Rect.html#pointIsInsidePolygon": {
+                      "ref": "Rect.html#pointIsInsidePolygon",
                       "tf": 12.5
                     },
                     "Polygon.html#pointIsInside": {
                       "ref": "Polygon.html#pointIsInside",
+                      "tf": 10
+                    },
+                    "Polygon.html#pointIsInsidePolygon": {
+                      "ref": "Polygon.html#pointIsInsidePolygon",
                       "tf": 12.5
                     }
                   }
@@ -5100,6 +5365,14 @@ window.lunrData = {
                             "ref": "Circle.html#pointIsInside",
                             "tf": 110
                           },
+                          "Circle.html#pointIsInsidePolygon": {
+                            "ref": "Circle.html#pointIsInsidePolygon",
+                            "tf": 110
+                          },
+                          "Circle.html#pointIsInsideCircle": {
+                            "ref": "Circle.html#pointIsInsideCircle",
+                            "tf": 110
+                          },
                           "Circle.html#setChildren": {
                             "ref": "Circle.html#setChildren",
                             "tf": 110
@@ -5136,12 +5409,16 @@ window.lunrData = {
                             "ref": "Circle.html#xor",
                             "tf": 110
                           },
+                          "Rect.html#pointIsInside": {
+                            "ref": "Rect.html#pointIsInside",
+                            "tf": 110
+                          },
                           "Rect.html#pointIsInsideRect": {
                             "ref": "Rect.html#pointIsInsideRect",
                             "tf": 110
                           },
-                          "Rect.html#pointIsInside": {
-                            "ref": "Rect.html#pointIsInside",
+                          "Rect.html#pointIsInsidePolygon": {
+                            "ref": "Rect.html#pointIsInsidePolygon",
                             "tf": 110
                           },
                           "Rect.html#setChildren": {
@@ -5186,6 +5463,10 @@ window.lunrData = {
                           },
                           "Polygon.html#pointIsInside": {
                             "ref": "Polygon.html#pointIsInside",
+                            "tf": 110
+                          },
+                          "Polygon.html#pointIsInsidePolygon": {
+                            "ref": "Polygon.html#pointIsInsidePolygon",
                             "tf": 110
                           },
                           "Polygon.html#setChildren": {
@@ -7516,6 +7797,14 @@ window.lunrData = {
                           "ref": "Circle.html#pointIsInside",
                           "tf": 33.33333333333333
                         },
+                        "Circle.html#pointIsInsidePolygon": {
+                          "ref": "Circle.html#pointIsInsidePolygon",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#pointIsInsideCircle": {
+                          "ref": "Circle.html#pointIsInsideCircle",
+                          "tf": 33.33333333333333
+                        },
                         "Circle.html#colliding": {
                           "ref": "Circle.html#colliding",
                           "tf": 33.33333333333333
@@ -7536,12 +7825,16 @@ window.lunrData = {
                           "ref": "Circle.html#xor",
                           "tf": 8.333333333333332
                         },
+                        "Rect.html#pointIsInside": {
+                          "ref": "Rect.html#pointIsInside",
+                          "tf": 33.33333333333333
+                        },
                         "Rect.html#pointIsInsideRect": {
                           "ref": "Rect.html#pointIsInsideRect",
                           "tf": 33.33333333333333
                         },
-                        "Rect.html#pointIsInside": {
-                          "ref": "Rect.html#pointIsInside",
+                        "Rect.html#pointIsInsidePolygon": {
+                          "ref": "Rect.html#pointIsInsidePolygon",
                           "tf": 33.33333333333333
                         },
                         "Rect.html#colliding": {
@@ -7566,6 +7859,10 @@ window.lunrData = {
                         },
                         "Polygon.html#pointIsInside": {
                           "ref": "Polygon.html#pointIsInside",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#pointIsInsidePolygon": {
+                          "ref": "Polygon.html#pointIsInsidePolygon",
                           "tf": 33.33333333333333
                         },
                         "Polygon.html#colliding": {
@@ -7670,6 +7967,40 @@ window.lunrData = {
                       "docs": {
                         "Vector2.html#.Distance": {
                           "ref": "Vector2.html#.Distance",
+                          "tf": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "w": {
+          "docs": {},
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "p": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "Circle.html#pointIsInside": {
+                          "ref": "Circle.html#pointIsInside",
+                          "tf": 10
+                        },
+                        "Rect.html#pointIsInside": {
+                          "ref": "Rect.html#pointIsInside",
+                          "tf": 10
+                        },
+                        "Polygon.html#pointIsInside": {
+                          "ref": "Polygon.html#pointIsInside",
                           "tf": 10
                         }
                       }
@@ -7828,7 +8159,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 818
+      "length": 853
     },
     "corpusTokens": [
       "ad",
@@ -7867,6 +8198,8 @@ window.lunrData = {
       "circle#lin",
       "circle#point",
       "circle#pointisinsid",
+      "circle#pointisinsidecircl",
+      "circle#pointisinsidepolygon",
       "circle#radiu",
       "circle#region",
       "circle#setchildren",
@@ -7951,6 +8284,8 @@ window.lunrData = {
       "plugin",
       "point",
       "pointisinsid",
+      "pointisinsidecircl",
+      "pointisinsidepolygon",
       "pointisinsiderect",
       "polyboolj",
       "polygon",
@@ -7963,6 +8298,7 @@ window.lunrData = {
       "polygon#lin",
       "polygon#point",
       "polygon#pointisinsid",
+      "polygon#pointisinsidepolygon",
       "polygon#region",
       "polygon#setchildren",
       "polygon#setvertex",
@@ -7987,6 +8323,7 @@ window.lunrData = {
       "rect#lin",
       "rect#point",
       "rect#pointisinsid",
+      "rect#pointisinsidepolygon",
       "rect#pointisinsiderect",
       "rect#posit",
       "rect#region",
@@ -8083,6 +8420,7 @@ window.lunrData = {
       "vector2|fals",
       "version",
       "vertic",
+      "wrapper",
       "x",
       "xor",
       "y",
@@ -8258,7 +8596,27 @@ window.lunrData = {
       "name": "pointIsInside",
       "tags": "Circle#pointIsInside pointIsInside",
       "summary": "",
-      "description": "Check if a point is inside a polygon"
+      "description": "Wrapper for checking if point is inside a circle"
+    },
+    "Circle.html#pointIsInsidePolygon": {
+      "id": "Circle.html#pointIsInsidePolygon",
+      "kind": "function",
+      "title": "pointIsInsidePolygon( point ) → {boolean}",
+      "longname": "Circle#pointIsInsidePolygon",
+      "name": "pointIsInsidePolygon",
+      "tags": "Circle#pointIsInsidePolygon pointIsInsidePolygon",
+      "summary": "",
+      "description": "Checking if point is inside a polygon"
+    },
+    "Circle.html#pointIsInsideCircle": {
+      "id": "Circle.html#pointIsInsideCircle",
+      "kind": "function",
+      "title": "pointIsInsideCircle( point ) → {Boolean}",
+      "longname": "Circle#pointIsInsideCircle",
+      "name": "pointIsInsideCircle",
+      "tags": "Circle#pointIsInsideCircle pointIsInsideCircle",
+      "summary": "",
+      "description": "Check if a point is inside a Circle"
     },
     "Circle.html#setChildren": {
       "id": "Circle.html#setChildren",
@@ -8421,6 +8779,16 @@ window.lunrData = {
       "summary": "",
       "description": "Get area of the Polygon"
     },
+    "Rect.html#pointIsInside": {
+      "id": "Rect.html#pointIsInside",
+      "kind": "function",
+      "title": "pointIsInside( point ) → {boolean}",
+      "longname": "Rect#pointIsInside",
+      "name": "pointIsInside",
+      "tags": "Rect#pointIsInside pointIsInside",
+      "summary": "",
+      "description": "Wrapper for checking if point is inside a rect"
+    },
     "Rect.html#pointIsInsideRect": {
       "id": "Rect.html#pointIsInsideRect",
       "kind": "function",
@@ -8431,15 +8799,15 @@ window.lunrData = {
       "summary": "",
       "description": "Check if a point is inside a Rect"
     },
-    "Rect.html#pointIsInside": {
-      "id": "Rect.html#pointIsInside",
+    "Rect.html#pointIsInsidePolygon": {
+      "id": "Rect.html#pointIsInsidePolygon",
       "kind": "function",
-      "title": "pointIsInside( point ) → {boolean}",
-      "longname": "Rect#pointIsInside",
-      "name": "pointIsInside",
-      "tags": "Rect#pointIsInside pointIsInside",
+      "title": "pointIsInsidePolygon( point ) → {boolean}",
+      "longname": "Rect#pointIsInsidePolygon",
+      "name": "pointIsInsidePolygon",
+      "tags": "Rect#pointIsInsidePolygon pointIsInsidePolygon",
       "summary": "",
-      "description": "Check if a point is inside a polygon"
+      "description": "Checking if point is inside a polygon"
     },
     "Rect.html#setChildren": {
       "id": "Rect.html#setChildren",
@@ -8600,7 +8968,17 @@ window.lunrData = {
       "name": "pointIsInside",
       "tags": "Polygon#pointIsInside pointIsInside",
       "summary": "",
-      "description": "Check if a point is inside a polygon"
+      "description": "Wrapper for checking if point is inside a polygon"
+    },
+    "Polygon.html#pointIsInsidePolygon": {
+      "id": "Polygon.html#pointIsInsidePolygon",
+      "kind": "function",
+      "title": "pointIsInsidePolygon( point ) → {boolean}",
+      "longname": "Polygon#pointIsInsidePolygon",
+      "name": "pointIsInsidePolygon",
+      "tags": "Polygon#pointIsInsidePolygon pointIsInsidePolygon",
+      "summary": "",
+      "description": "Checking if point is inside a polygon"
     },
     "Polygon.html#setChildren": {
       "id": "Polygon.html#setChildren",
