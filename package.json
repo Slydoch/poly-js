@@ -21,6 +21,11 @@
     "xor",
     "collision"
   ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
   "author": "Slydoch",
   "private": false,
   "license": "ISC",
@@ -29,13 +34,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Slydoch/polyjs.git"
+    "url": "https://github.com/Slydoch/poly-js.git"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
     "eslint": "^6.6.0",
     "foodoc": "0.0.9",
     "jsdoc": "^3.6.3",
     "jsdoc-to-markdown": "^5.0.2",
-    "mocha": "^6.2.2"
+    "mocha": "^6.2.2",
+    "webpack": "^4.41.2"
   }
 }
