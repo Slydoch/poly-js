@@ -1,5 +1,5 @@
 # Poly-JS
-Poly-JS is a library for manipulating 2D polygons, shapes, points...
+Poly-JS is a library for manipulating 2D polygons and vertices
 
 # Features
 
@@ -22,7 +22,7 @@ const {
 	Polygon,
 	Rect,
 	Circle
-} =  require('@slydock/poly-js');
+} = require('@slydock/poly-js');
 ```
 
 # Documentation
