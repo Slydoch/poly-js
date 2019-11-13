@@ -1,6 +1,6 @@
 {
   "name": "@slydock/poly-js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Library for polygons operations",
   "main": "index.js",
   "scripts": {
