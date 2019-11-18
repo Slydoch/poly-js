@@ -253,7 +253,7 @@ class Polygon {
 	 * @type {Boolean}
 	 */
 	get isConvex() {
-		return !this.isConcave();
+		return !this.isConcave;
 	}
 
 	/**

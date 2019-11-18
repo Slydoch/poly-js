@@ -1,10 +1,10 @@
-<!-- start:readme.hbs -->
+<!-- start:source.tmpl.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>@slydock/poly-js</title>
+		<title>bezierCurve.js</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -14,7 +14,7 @@
 		<link type="text/css" rel="stylesheet" href="css/template.min.css">
 		<script type="text/javascript">
 			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"@slydock/poly-js","systemSummary":"Polygon operations","systemLogo":"","systemColor":"","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"FooDoc Copyright © 2016 The contributors to the JSDoc3 and FooDoc projects.","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
-			window.DOCLET_TOC_ENABLED = true;
+			window.DOCLET_TOC_ENABLED = false;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
 </head>
@@ -63,43 +63,123 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">readme</span>
-				<h1><span class="name">@slydock/poly-js</span></h1>
-				<div class="summary"><p>Polygon operations</p></div>			</div>
+				<span class="kind">source</span>
+				<h1><span class="name">bezierCurve.js</span></h1>
+			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
-			<div class="col-md-9 main-content">
-		<section class="readme-section">
-			<article><h1>Poly-JS</h1>
-<p>Poly-JS is a library for manipulating 2D polygons and vertices</p>
-<h1>Features</h1>
-<ol>
-<li>2D vertices operations</li>
-<li>2D lines operations</li>
-<li>2D polygons operations</li>
-<li>2D rect operations</li>
-<li>2D circle operations</li>
-</ol>
-<h1>Installation</h1>
-<p><code>npm i @slydock/poly-js</code></p>
-<h1>Basic Usage</h1>
-<p>For any component need, you'll need to import the plugin</p>
-<pre class="prettyprint source lang-javascript"><code>const {
-	Vector2,
-	Line,
-	Polygon,
-	Rect,
-	Circle
-} = require('@slydock/poly-js');
+			<div class="col-md-12 main-content">
+		<section class="source-section">
+			<article></article>
+			<pre class="prettyprint source language-javascript line-numbers"><code class="language-javascript">'use strict';
+
+const Vector2 = require('./vector2');
+/**
+ * BezierCurve Class
+ */
+class BezierCurve {
+	/**
+     * Create a bezier curve
+	 * @param {Vector2} first The first point of the curve
+	 * @param {Vector2} last The last point of the curve
+	 * @param {Vector2[]} [controllers] Controllers points of the curve
+	 * @param {Number} [segmentsCount] Segment count for polygon conversion and drawing
+	 */
+	constructor(first, last, controllers = [], segmentsCount = 100) {
+		this._first = first;
+		this._last = last;
+		this._controllers = controllers;
+		this._segmentsCount = parseInt(segmentsCount) || 1;
+		this._points = [];
+		this._calc();
+	}
+
+	/**
+	 * The first point of the curve
+	 * @type {Vector2}
+	 */
+	get first() {
+		return this._first;
+	}
+
+	/**
+	 * The last point of the curve
+	 * @type {Vector2}
+	 */
+	get last() {
+		return this._last;
+	}
+
+	/**
+	 * Controllers of the curve
+	 * @type {Vector2[]}
+	 */
+	get controllers() {
+		return this._controllers;
+	}
+
+	/**
+	 * Segment count for the curve calc (for line display)
+	 * @type {Number}
+	 */
+	get segmentsCount() {
+		return this._segmentsCount;
+	}
+
+	/**
+	 * Points along the curves, count depending on segmentsCount
+	 * @type {Vector2[]}
+	 */
+	get points() {
+		return this._points;
+	}
+
+	set first(value) {
+		this._first = value;
+		this._calc();
+	}
+
+	set last(value) {
+		this._last = value;
+		this._calc();
+	}
+
+	set controllers(value) {
+		this._controllers = value;
+		this._calc();
+	}
+
+	set segmentsCount(value) {
+		this._segmentsCount = value;
+		this._calc();
+	}
+
+	_calc() {
+		this._points = [];
+		for (let si = 0; si &lt;= this.segmentsCount; si++) {
+			const t = si / this.segmentsCount;
+			let pts = [this.first, ...this.controllers, this.last];
+			do {
+				const tmpPts = [];
+				let prev = null;
+				for (const pt of pts) {
+					if (prev) {
+						tmpPts.push(Vector2.Lerp(prev, pt, t));
+					}
+					prev = pt;
+				}
+				pts = tmpPts;
+			} while (pts.length > 1);
+			this._points.push(pts.shift());
+		}
+	}
+}
+
+module.exports = BezierCurve;
 </code></pre>
-<h1>Documentation</h1>
-<p>https://slydoch.github.io/poly-js/</p></article>
 		</section>
 			</div>
-				<div class="col-md-3 side-content">
-					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
-				</div>
 		</div>
 	</div>
 	<footer>
@@ -131,4 +211,4 @@
 	
 </body>
 </html>
-<!-- end:readme.hbs -->
+<!-- end:source.tmpl.hbs -->

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>Line</title>
+		<title>BezierCurve</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -63,7 +63,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">Line</span></h1>
+				<h1><span class="name">BezierCurve</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -72,16 +72,16 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">Line</li>
+							<li class="active">BezierCurve</li>
 						</ol>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class collapsible-symbol expanded">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">Line</span><span class="signature-params">( [&nbsp;<span class="signature-param">p1</span> [,&nbsp;<span class="signature-param">p2</span>&nbsp;]&nbsp;]&nbsp;)</span><span class="signature-type"></span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">BezierCurve</span><span class="signature-params">( <span class="signature-param">first</span>, <span class="signature-param">last</span> [,&nbsp;<span class="signature-param">controllers</span> [,&nbsp;<span class="signature-param">segmentsCount</span>&nbsp;]&nbsp;]&nbsp;)</span><span class="signature-type"></span></h2>
 </dt>
 <dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc">Line Class</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc">BezierCurve Class</div>
 			</div>			<div class="callout callout-info">
 				<h5>Parameters</h5>
 				<table class="params table table-striped">
@@ -90,52 +90,45 @@
 							<th>Name</th>
 						<th>Type</th>
 							<th>Attributes</th>
+							<th>Default</th>
 						<th class="last">Description</th>
 					</tr>
 					</thead>
 					<tbody>
 						<tr>
-								<td><code>p1</code></td>
-							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span> | <span class="param-type">Object</span></td>
-								<td class="attributes">&lt;optional&gt;<br/></td>
-							<td class="last">
-									Vector2 like object of the start position
-							</td>
-						</tr>
-						<tr>
-								<td><code>p2</code></td>
-							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span> | <span class="param-type">Object</span></td>
-								<td class="attributes">&lt;optional&gt;<br/></td>
-							<td class="last">
-									Vector2 like object of the end position
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-info">
-				<h5>Properties</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>start</code></td>
+								<td><code>first</code></td>
 							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span></td>
+								<td class="attributes"></td>
+								<td></td>
 							<td class="last">
-									The start position of the line
+									The first point of the curve
 							</td>
 						</tr>
 						<tr>
-								<td><code>end</code></td>
+								<td><code>last</code></td>
 							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span></td>
+								<td class="attributes"></td>
+								<td></td>
 							<td class="last">
-									The end position of the line
+									The last point of the curve
+							</td>
+						</tr>
+						<tr>
+								<td><code>controllers</code></td>
+							<td><span class="param-type">Array.&lt;<a href="Vector2.html">Vector2</a>></span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td></td>
+							<td class="last">
+									Controllers points of the curve
+							</td>
+						</tr>
+						<tr>
+								<td><code>segmentsCount</code></td>
+							<td><span class="param-type">Number</span></td>
+								<td class="attributes">&lt;optional&gt;<br/></td>
+								<td>100</td>
+							<td class="last">
+									Segment count for polygon conversion and drawing
 							</td>
 						</tr>
 					</tbody>
@@ -161,7 +154,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="line.js.html">line.js</a>, <a href="line.js.html#line-15">line 15</a></p>
+									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-15">line 15</a></p>
 								</div>
 							</div>
 			
@@ -177,11 +170,144 @@
 									<dl class="symbol">
 											<hr/>
 											<dt class="symbol-title member public collapsible-symbol">
-			<h4 id="length" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">length</span><span class="signature-type"> :Number</span></h4>
+			<h4 id="first" class="member public"><span class="name">first</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
 		</dt>
 <dd class="symbol-details member public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">The first point of the curve</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Vector2.html">Vector2</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-28">line 28</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="last" class="member public"><span class="name">last</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">The last point of the curve</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Vector2.html">Vector2</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-36">line 36</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="controllers" class="member public"><span class="name">controllers</span><span class="signature-type"> :Array.&lt;<a href="Vector2.html">Vector2</a>></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Controllers of the curve</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;<a href="Vector2.html">Vector2</a>></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-44">line 44</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="segmentsCount" class="member public"><span class="name">segmentsCount</span><span class="signature-type"> :Number</span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Segment count for the curve calc (for line display)</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
 							<div class="form-group">
@@ -208,7 +334,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="line.js.html">line.js</a>, <a href="line.js.html#line-25">line 25</a></p>
+									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-52">line 52</a></p>
 								</div>
 							</div>
 			
@@ -218,48 +344,22 @@
 					</form>
 			</div>	</div>
 </dd>
-									</dl>
-									<h3>Methods</h3>
-									<dl class="symbol">
 											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id="intersect" class="function public"><span class="name">intersect</span><span class="signature-params">( <span class="signature-param">line</span>&nbsp;)</span><span class="signature-type"></span></h4>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="points" class="member public"><span class="name">points</span><span class="signature-type"> :Array.&lt;<a href="Vector2.html">Vector2</a>></span></h4>
 		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
+<dd class="symbol-details member public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Get the intersection of this line with an other one
-			Return false if lines does not intersect</div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>line</code></td>
-							<td><span class="param-type"><a href="Line.html">Line</a></span></td>
-							<td class="last">
-									Second line
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description">boolean|Vector2</div>
-								</div>
-							</div>
-					</form>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Points along the curves, count depending on segmentsCount</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type">Array.&lt;<a href="Vector2.html">Vector2</a>></span></div>
+								</div>
+							</div>
 			
 			
 			
@@ -278,213 +378,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="line.js.html">line.js</a>, <a href="line.js.html#line-35">line 35</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id="alongPoint" class="function public"><span class="name">alongPoint</span><span class="signature-params">( <span class="signature-param">lerpValue</span>&nbsp;)</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Get a point on the line from start to end at lerpValue</div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>lerpValue</code></td>
-							<td><span class="param-type">Number</span></td>
-							<td class="last">
-									The lerp value, should be between 0 and 1, and it will be clamped
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description">Vector2</div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="line.js.html">line.js</a>, <a href="line.js.html#line-44">line 44</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id="alongPointUnclamped" class="function public"><span class="name">alongPointUnclamped</span><span class="signature-params">( <span class="signature-param">lerpValue</span>&nbsp;)</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Get a point on the line from start to end at lerpValue (Unclamped version)</div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>lerpValue</code></td>
-							<td><span class="param-type">Number</span></td>
-							<td class="last">
-									The lerp value, should be between 0 and 1, but can be out of bound
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description">Vector2</div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="line.js.html">line.js</a>, <a href="line.js.html#line-53">line 53</a></p>
-								</div>
-							</div>
-			
-			
-			
-			
-					</form>
-			</div>	</div>
-</dd>
-											<hr/>
-											<dt class="symbol-title function public collapsible-symbol">
-			<h4 id=".Intersect" class="function public"><span class="signature-attribs">&lt;static> </span><span class="name">Intersect</span><span class="signature-params">( <span class="signature-param">l1</span>, <span class="signature-param">l2</span>&nbsp;)</span><span class="signature-type"></span></h4>
-		</dt>
-<dd class="symbol-details function public  collapsible-symbol">
-	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Get the intersection of two lines
-			Return false if lines does not intersect</div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>l1</code></td>
-							<td><span class="param-type"><a href="Line.html">Line</a></span></td>
-							<td class="last">
-									First line
-							</td>
-						</tr>
-						<tr>
-								<td><code>l2</code></td>
-							<td><span class="param-type"><a href="Line.html">Line</a></span></td>
-							<td class="last">
-									Second line
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-success"><h5>Returns</h5>		<form class="form-horizontal returns">
-							<div class="form-group">
-								<label class="col-sm-3 control-label returns-type"></label>
-								<div class="col-sm-9">
-									<div class="form-control-static returns-description">boolean|Vector2</div>
-								</div>
-							</div>
-					</form>
-			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-							<!-- source -->
-							<div class="form-group">
-								<label class="col-sm-3 control-label">Source</label>
-								<div class="col-sm-9">
-									<p class="form-control-static"><a href="line.js.html">line.js</a>, <a href="line.js.html#line-64">line 64</a></p>
+									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-60">line 60</a></p>
 								</div>
 							</div>
 			
