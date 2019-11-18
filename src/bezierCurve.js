@@ -83,6 +83,7 @@ class BezierCurve {
 
 	_calc() {
 		this._points = [];
+		let prevPt = null;
 		for (let si = 0; si <= this.segmentsCount; si++) {
 			const t = si / this.segmentsCount;
 			let pts = [this.first, ...this.controllers, this.last];
@@ -97,8 +98,20 @@ class BezierCurve {
 				}
 				pts = tmpPts;
 			} while (pts.length > 1);
-			this._points.push(pts.shift());
+			const nextPt = pts.shift();
+			if (nextPt) {
+				if (prevPt) {
+					nextPt.prev = prevPt;
+					prevPt.next = nextPt;
+				}
+				this._points.push(nextPt);
+				prevPt = nextPt;
+			}
 		}
+	}
+
+	get isCurve() {
+		return true;
 	}
 }
 

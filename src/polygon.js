@@ -11,14 +11,20 @@ const Vector2 = require('./vector2');
 class Polygon {
 	/**
 	 * Create a new Polygon
-	 * @param {Vector2[]} [vertices] Vertices of the polygon
+	 * @param {*[]} [constructs] Vertices, Curves of the polygon
 	 */
-	constructor(vertices = []) {
+	constructor(constructs = []) {
 		this.children = [];
 		this.first = null;
-		if (vertices && vertices.length) {
-			for (const vertice of vertices) {
-				this.addVertex(vertice);
+		if (constructs && constructs.length) {
+			for (const construct of constructs) {
+				if (construct.isCurve) {
+					for (const pt of construct.points) {
+						this.addVertex(pt);
+					}
+				} else {
+					this.addVertex(construct);
+				}
 			}
 		}
 	}

@@ -8,6 +8,7 @@
 		"doc": "jsdoc index.js -c jsdoc.json -R README.md"
 	},
 	"keywords": [
+		"geometry",
 		"shape",
 		"polygon",
 		"point",
