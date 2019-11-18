@@ -1,50 +1,50 @@
 {
-  "name": "@slydock/poly-js",
-  "version": "0.1.5",
-  "description": "Library for polygons operations",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha",
-    "doc": "jsdoc index.js -c jsdoc.json -R README.md"
-  },
-  "keywords": [
-    "shape",
-    "polygon",
-    "point",
-    "vector2",
-    "vertice",
-    "2d",
-    "boolean",
-    "intersect",
-    "union",
-    "difference",
-    "xor",
-    "collision"
-  ],
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
-  "author": "Slydoch",
-  "private": false,
-  "license": "MIT",
-  "dependencies": {
-    "polybooljs": "^1.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Slydoch/poly-js.git"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
-    "babel-loader": "^8.0.6",
-    "eslint": "^6.6.0",
-    "foodoc": "0.0.9",
-    "jsdoc": "^3.6.3",
-    "jsdoc-to-markdown": "^5.0.2",
-    "mocha": "^6.2.2",
-    "webpack": "^4.41.2"
-  }
+	"name": "@slydock/poly-js",
+	"version": "0.1.5",
+	"description": "Library for polygons operations",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha",
+		"doc": "jsdoc index.js -c jsdoc.json -R README.md"
+	},
+	"keywords": [
+		"shape",
+		"polygon",
+		"point",
+		"vector2",
+		"vertice",
+		"2d",
+		"boolean",
+		"intersect",
+		"union",
+		"difference",
+		"xor",
+		"collision"
+	],
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
+	"author": "Slydoch",
+	"private": false,
+	"license": "MIT",
+	"dependencies": {
+		"polybooljs": "^1.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Slydoch/poly-js.git"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.7.2",
+		"@babel/preset-env": "^7.7.1",
+		"babel-loader": "^8.0.6",
+		"eslint": "^6.6.0",
+		"foodoc": "0.0.9",
+		"jsdoc": "^3.6.3",
+		"jsdoc-to-markdown": "^5.0.2",
+		"mocha": "^6.2.2",
+		"webpack": "^4.41.2"
+	}
 }

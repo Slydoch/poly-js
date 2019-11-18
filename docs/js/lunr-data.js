@@ -156,6 +156,54 @@ window.lunrData = {
           "polygon",
           "polygon#area"
         ],
+        "Polygon.html#isConvex": [
+          "boolean",
+          "convex",
+          "isconvex",
+          "lt;readonly&gt",
+          "member",
+          "polygon",
+          "polygon#isconvex"
+        ],
+        "Polygon.html#isConcave": [
+          "boolean",
+          "concav",
+          "isconcav",
+          "lt;readonly&gt",
+          "member",
+          "polygon",
+          "polygon#isconcav"
+        ],
+        "Polygon.html#hull": [
+          "convert",
+          "convex",
+          "current",
+          "hull",
+          "lt;readonly&gt",
+          "member",
+          "polygon",
+          "polygon#hul"
+        ],
+        "Polygon.html#convex": [
+          "alia",
+          "convex",
+          "hull",
+          "lt;readonly&gt",
+          "member",
+          "polygon",
+          "polygon#convex"
+        ],
+        "Polygon.html#clone": [
+          "clon",
+          "clone",
+          "current",
+          "lt;readonly&gt",
+          "member",
+          "modifi",
+          "polygon",
+          "polygon#clon",
+          "useful"
+        ],
         "Polygon.html#pointIsInside": [
           "boolean",
           "check",
@@ -261,6 +309,16 @@ window.lunrData = {
           "polygon",
           "polygon#xor",
           "xor"
+        ],
+        "Polygon.html#moveBy": [
+          "function",
+          "move",
+          "movebi",
+          "polygon",
+          "polygon#movebi",
+          "valu",
+          "vector2",
+          "vertic"
         ],
         "Polygon.html#.Colliding": [
           "boolean",
@@ -396,6 +454,54 @@ window.lunrData = {
           "number",
           "polygon"
         ],
+        "Circle.html#isConvex": [
+          "boolean",
+          "circle#isconvex",
+          "convex",
+          "isconvex",
+          "lt;readonly&gt",
+          "member",
+          "polygon"
+        ],
+        "Circle.html#isConcave": [
+          "boolean",
+          "circle#isconcav",
+          "concav",
+          "isconcav",
+          "lt;readonly&gt",
+          "member",
+          "polygon"
+        ],
+        "Circle.html#hull": [
+          "circle#hul",
+          "convert",
+          "convex",
+          "current",
+          "hull",
+          "lt;readonly&gt",
+          "member",
+          "polygon"
+        ],
+        "Circle.html#convex": [
+          "alia",
+          "circle#convex",
+          "convex",
+          "hull",
+          "lt;readonly&gt",
+          "member",
+          "polygon"
+        ],
+        "Circle.html#clone": [
+          "circle#clon",
+          "clon",
+          "clone",
+          "current",
+          "lt;readonly&gt",
+          "member",
+          "modifi",
+          "polygon",
+          "useful"
+        ],
         "Circle.html#pointIsInside": [
           "boolean",
           "check",
@@ -512,6 +618,16 @@ window.lunrData = {
           "polygon",
           "xor"
         ],
+        "Circle.html#moveBy": [
+          "circle#movebi",
+          "function",
+          "move",
+          "movebi",
+          "polygon",
+          "valu",
+          "vector2",
+          "vertic"
+        ],
         "Rect.html": [
           "class",
           "rect"
@@ -571,6 +687,54 @@ window.lunrData = {
           "number",
           "polygon",
           "rect#area"
+        ],
+        "Rect.html#isConvex": [
+          "boolean",
+          "convex",
+          "isconvex",
+          "lt;readonly&gt",
+          "member",
+          "polygon",
+          "rect#isconvex"
+        ],
+        "Rect.html#isConcave": [
+          "boolean",
+          "concav",
+          "isconcav",
+          "lt;readonly&gt",
+          "member",
+          "polygon",
+          "rect#isconcav"
+        ],
+        "Rect.html#hull": [
+          "convert",
+          "convex",
+          "current",
+          "hull",
+          "lt;readonly&gt",
+          "member",
+          "polygon",
+          "rect#hul"
+        ],
+        "Rect.html#convex": [
+          "alia",
+          "convex",
+          "hull",
+          "lt;readonly&gt",
+          "member",
+          "polygon",
+          "rect#convex"
+        ],
+        "Rect.html#clone": [
+          "clon",
+          "clone",
+          "current",
+          "lt;readonly&gt",
+          "member",
+          "modifi",
+          "polygon",
+          "rect#clon",
+          "useful"
         ],
         "Rect.html#pointIsInside": [
           "boolean",
@@ -699,6 +863,16 @@ window.lunrData = {
           "rect#xor",
           "xor"
         ],
+        "Rect.html#moveBy": [
+          "function",
+          "move",
+          "movebi",
+          "polygon",
+          "rect#movebi",
+          "valu",
+          "vector2",
+          "vertic"
+        ],
         "Vector2.html": [
           "class",
           "vector2"
@@ -744,30 +918,6 @@ window.lunrData = {
           "member",
           "vector2",
           "vector2#clon"
-        ],
-        "Vector2.html#equalsX": [
-          "boolean",
-          "equal",
-          "equalsx",
-          "function",
-          "test",
-          "v",
-          "valu",
-          "vector2",
-          "vector2#equalsx",
-          "x"
-        ],
-        "Vector2.html#equalsY": [
-          "boolean",
-          "equal",
-          "equalsi",
-          "function",
-          "test",
-          "v",
-          "valu",
-          "vector2",
-          "vector2#equalsi",
-          "y"
         ],
         "Vector2.html#isInside": [
           "boolean",
@@ -1178,9 +1328,33 @@ window.lunrData = {
           "test",
           "vector2",
           "vector2#equ"
+        ],
+        "Vector2.html#equalsX": [
+          "boolean",
+          "equal",
+          "equalsx",
+          "function",
+          "test",
+          "v",
+          "valu",
+          "vector2",
+          "vector2#equalsx",
+          "x"
+        ],
+        "Vector2.html#equalsY": [
+          "boolean",
+          "equal",
+          "equalsi",
+          "function",
+          "test",
+          "v",
+          "valu",
+          "vector2",
+          "vector2#equalsi",
+          "y"
         ]
       },
-      "length": 122
+      "length": 140
     },
     "tokenStore": {
       "root": {
@@ -1339,6 +1513,59 @@ window.lunrData = {
           },
           "s": {
             "docs": {},
+            "c": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "v": {
+                    "docs": {},
+                    "e": {
+                      "docs": {},
+                      "x": {
+                        "docs": {
+                          "Polygon.html#isConvex": {
+                            "ref": "Polygon.html#isConvex",
+                            "tf": 683.3333333333334
+                          },
+                          "Circle.html#isConvex": {
+                            "ref": "Circle.html#isConvex",
+                            "tf": 683.3333333333334
+                          },
+                          "Rect.html#isConvex": {
+                            "ref": "Rect.html#isConvex",
+                            "tf": 683.3333333333334
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "c": {
+                    "docs": {},
+                    "a": {
+                      "docs": {},
+                      "v": {
+                        "docs": {
+                          "Polygon.html#isConcave": {
+                            "ref": "Polygon.html#isConcave",
+                            "tf": 683.3333333333334
+                          },
+                          "Circle.html#isConcave": {
+                            "ref": "Circle.html#isConcave",
+                            "tf": 683.3333333333334
+                          },
+                          "Rect.html#isConcave": {
+                            "ref": "Rect.html#isConcave",
+                            "tf": 683.3333333333334
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "i": {
               "docs": {},
               "n": {
@@ -1642,6 +1869,26 @@ window.lunrData = {
                           "ref": "Polygon.html#area",
                           "tf": 25
                         },
+                        "Polygon.html#isConvex": {
+                          "ref": "Polygon.html#isConvex",
+                          "tf": 25
+                        },
+                        "Polygon.html#isConcave": {
+                          "ref": "Polygon.html#isConcave",
+                          "tf": 25
+                        },
+                        "Polygon.html#hull": {
+                          "ref": "Polygon.html#hull",
+                          "tf": 47.61904761904761
+                        },
+                        "Polygon.html#convex": {
+                          "ref": "Polygon.html#convex",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#clone": {
+                          "ref": "Polygon.html#clone",
+                          "tf": 47.61904761904761
+                        },
                         "Polygon.html#pointIsInside": {
                           "ref": "Polygon.html#pointIsInside",
                           "tf": 10
@@ -1686,6 +1933,10 @@ window.lunrData = {
                           "ref": "Polygon.html#xor",
                           "tf": 49.99999999999999
                         },
+                        "Polygon.html#moveBy": {
+                          "ref": "Polygon.html#moveBy",
+                          "tf": 12.5
+                        },
                         "Polygon.html#.Colliding": {
                           "ref": "Polygon.html#.Colliding",
                           "tf": 20
@@ -1721,6 +1972,26 @@ window.lunrData = {
                         "Circle.html#area": {
                           "ref": "Circle.html#area",
                           "tf": 25
+                        },
+                        "Circle.html#isConvex": {
+                          "ref": "Circle.html#isConvex",
+                          "tf": 25
+                        },
+                        "Circle.html#isConcave": {
+                          "ref": "Circle.html#isConcave",
+                          "tf": 25
+                        },
+                        "Circle.html#hull": {
+                          "ref": "Circle.html#hull",
+                          "tf": 47.61904761904761
+                        },
+                        "Circle.html#convex": {
+                          "ref": "Circle.html#convex",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#clone": {
+                          "ref": "Circle.html#clone",
+                          "tf": 47.61904761904761
                         },
                         "Circle.html#pointIsInsidePolygon": {
                           "ref": "Circle.html#pointIsInsidePolygon",
@@ -1762,6 +2033,10 @@ window.lunrData = {
                           "ref": "Circle.html#xor",
                           "tf": 49.99999999999999
                         },
+                        "Circle.html#moveBy": {
+                          "ref": "Circle.html#moveBy",
+                          "tf": 12.5
+                        },
                         "Rect.html#points": {
                           "ref": "Rect.html#points",
                           "tf": 25
@@ -1773,6 +2048,26 @@ window.lunrData = {
                         "Rect.html#area": {
                           "ref": "Rect.html#area",
                           "tf": 25
+                        },
+                        "Rect.html#isConvex": {
+                          "ref": "Rect.html#isConvex",
+                          "tf": 25
+                        },
+                        "Rect.html#isConcave": {
+                          "ref": "Rect.html#isConcave",
+                          "tf": 25
+                        },
+                        "Rect.html#hull": {
+                          "ref": "Rect.html#hull",
+                          "tf": 47.61904761904761
+                        },
+                        "Rect.html#convex": {
+                          "ref": "Rect.html#convex",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#clone": {
+                          "ref": "Rect.html#clone",
+                          "tf": 47.61904761904761
                         },
                         "Rect.html#pointIsInsidePolygon": {
                           "ref": "Rect.html#pointIsInsidePolygon",
@@ -1817,6 +2112,10 @@ window.lunrData = {
                         "Rect.html#xor": {
                           "ref": "Rect.html#xor",
                           "tf": 49.99999999999999
+                        },
+                        "Rect.html#moveBy": {
+                          "ref": "Rect.html#moveBy",
+                          "tf": 12.5
                         },
                         "Vector2.html#isInside": {
                           "ref": "Vector2.html#isInside",
@@ -2003,6 +2302,146 @@ window.lunrData = {
                             }
                           }
                         },
+                        "i": {
+                          "docs": {},
+                          "s": {
+                            "docs": {},
+                            "c": {
+                              "docs": {},
+                              "o": {
+                                "docs": {},
+                                "n": {
+                                  "docs": {},
+                                  "v": {
+                                    "docs": {},
+                                    "e": {
+                                      "docs": {},
+                                      "x": {
+                                        "docs": {
+                                          "Polygon.html#isConvex": {
+                                            "ref": "Polygon.html#isConvex",
+                                            "tf": 1150
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "c": {
+                                    "docs": {},
+                                    "a": {
+                                      "docs": {},
+                                      "v": {
+                                        "docs": {
+                                          "Polygon.html#isConcave": {
+                                            "ref": "Polygon.html#isConcave",
+                                            "tf": 1150
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "n": {
+                            "docs": {},
+                            "t": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "s": {
+                                    "docs": {},
+                                    "e": {
+                                      "docs": {},
+                                      "c": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {
+                                            "Polygon.html#intersect": {
+                                              "ref": "Polygon.html#intersect",
+                                              "tf": 1150
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "h": {
+                          "docs": {},
+                          "u": {
+                            "docs": {},
+                            "l": {
+                              "docs": {
+                                "Polygon.html#hull": {
+                                  "ref": "Polygon.html#hull",
+                                  "tf": 1150
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "c": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "n": {
+                              "docs": {},
+                              "v": {
+                                "docs": {},
+                                "e": {
+                                  "docs": {},
+                                  "x": {
+                                    "docs": {
+                                      "Polygon.html#convex": {
+                                        "ref": "Polygon.html#convex",
+                                        "tf": 1150
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "l": {
+                              "docs": {},
+                              "l": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {},
+                                  "d": {
+                                    "docs": {
+                                      "Polygon.html#colliding": {
+                                        "ref": "Polygon.html#colliding",
+                                        "tf": 1150
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "l": {
+                            "docs": {},
+                            "o": {
+                              "docs": {},
+                              "n": {
+                                "docs": {
+                                  "Polygon.html#clone": {
+                                    "ref": "Polygon.html#clone",
+                                    "tf": 1150
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
                         "s": {
                           "docs": {},
                           "e": {
@@ -2052,61 +2491,6 @@ window.lunrData = {
                                           "docs": {
                                             "Polygon.html#setVertexes": {
                                               "ref": "Polygon.html#setVertexes",
-                                              "tf": 1150
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        },
-                        "c": {
-                          "docs": {},
-                          "o": {
-                            "docs": {},
-                            "l": {
-                              "docs": {},
-                              "l": {
-                                "docs": {},
-                                "i": {
-                                  "docs": {},
-                                  "d": {
-                                    "docs": {
-                                      "Polygon.html#colliding": {
-                                        "ref": "Polygon.html#colliding",
-                                        "tf": 1150
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        },
-                        "i": {
-                          "docs": {},
-                          "n": {
-                            "docs": {},
-                            "t": {
-                              "docs": {},
-                              "e": {
-                                "docs": {},
-                                "r": {
-                                  "docs": {},
-                                  "s": {
-                                    "docs": {},
-                                    "e": {
-                                      "docs": {},
-                                      "c": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {
-                                            "Polygon.html#intersect": {
-                                              "ref": "Polygon.html#intersect",
                                               "tf": 1150
                                             }
                                           }
@@ -2171,6 +2555,29 @@ window.lunrData = {
                                 "Polygon.html#xor": {
                                   "ref": "Polygon.html#xor",
                                   "tf": 1150
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "m": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "v": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "b": {
+                                  "docs": {},
+                                  "i": {
+                                    "docs": {
+                                      "Polygon.html#moveBy": {
+                                        "ref": "Polygon.html#moveBy",
+                                        "tf": 1150
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             }
@@ -2988,31 +3395,48 @@ window.lunrData = {
                       }
                     }
                   },
-                  "c": {
+                  "i": {
                     "docs": {},
-                    "o": {
+                    "s": {
                       "docs": {},
-                      "l": {
+                      "c": {
                         "docs": {},
-                        "l": {
+                        "o": {
                           "docs": {},
-                          "i": {
+                          "n": {
                             "docs": {},
-                            "d": {
-                              "docs": {
-                                "Rect.html#colliding": {
-                                  "ref": "Rect.html#colliding",
-                                  "tf": 1150
+                            "v": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "x": {
+                                  "docs": {
+                                    "Rect.html#isConvex": {
+                                      "ref": "Rect.html#isConvex",
+                                      "tf": 1150
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "c": {
+                              "docs": {},
+                              "a": {
+                                "docs": {},
+                                "v": {
+                                  "docs": {
+                                    "Rect.html#isConcave": {
+                                      "ref": "Rect.html#isConcave",
+                                      "tf": 1150
+                                    }
+                                  }
                                 }
                               }
                             }
                           }
                         }
                       }
-                    }
-                  },
-                  "i": {
-                    "docs": {},
+                    },
                     "n": {
                       "docs": {},
                       "t": {
@@ -3037,6 +3461,74 @@ window.lunrData = {
                                   }
                                 }
                               }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "h": {
+                    "docs": {},
+                    "u": {
+                      "docs": {},
+                      "l": {
+                        "docs": {
+                          "Rect.html#hull": {
+                            "ref": "Rect.html#hull",
+                            "tf": 1150
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "c": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "v": {
+                          "docs": {},
+                          "e": {
+                            "docs": {},
+                            "x": {
+                              "docs": {
+                                "Rect.html#convex": {
+                                  "ref": "Rect.html#convex",
+                                  "tf": 1150
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "l": {
+                        "docs": {},
+                        "l": {
+                          "docs": {},
+                          "i": {
+                            "docs": {},
+                            "d": {
+                              "docs": {
+                                "Rect.html#colliding": {
+                                  "ref": "Rect.html#colliding",
+                                  "tf": 1150
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "l": {
+                      "docs": {},
+                      "o": {
+                        "docs": {},
+                        "n": {
+                          "docs": {
+                            "Rect.html#clone": {
+                              "ref": "Rect.html#clone",
+                              "tf": 1150
                             }
                           }
                         }
@@ -3095,6 +3587,29 @@ window.lunrData = {
                           "Rect.html#xor": {
                             "ref": "Rect.html#xor",
                             "tf": 1150
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "m": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "v": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "b": {
+                            "docs": {},
+                            "i": {
+                              "docs": {
+                                "Rect.html#moveBy": {
+                                  "ref": "Rect.html#moveBy",
+                                  "tf": 1150
+                                }
+                              }
+                            }
                           }
                         }
                       }
@@ -3901,12 +4416,265 @@ window.lunrData = {
             "o": {
               "docs": {},
               "n": {
-                "docs": {},
+                "docs": {
+                  "Polygon.html#clone": {
+                    "ref": "Polygon.html#clone",
+                    "tf": 7.142857142857142
+                  },
+                  "Circle.html#clone": {
+                    "ref": "Circle.html#clone",
+                    "tf": 7.142857142857142
+                  },
+                  "Rect.html#clone": {
+                    "ref": "Rect.html#clone",
+                    "tf": 7.142857142857142
+                  }
+                },
                 "e": {
                   "docs": {
+                    "Polygon.html#clone": {
+                      "ref": "Polygon.html#clone",
+                      "tf": 683.3333333333334
+                    },
+                    "Circle.html#clone": {
+                      "ref": "Circle.html#clone",
+                      "tf": 683.3333333333334
+                    },
+                    "Rect.html#clone": {
+                      "ref": "Rect.html#clone",
+                      "tf": 683.3333333333334
+                    },
                     "Vector2.html#clone": {
                       "ref": "Vector2.html#clone",
                       "tf": 708.3333333333334
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "v": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "x": {
+                    "docs": {
+                      "Polygon.html#isConvex": {
+                        "ref": "Polygon.html#isConvex",
+                        "tf": 25
+                      },
+                      "Polygon.html#hull": {
+                        "ref": "Polygon.html#hull",
+                        "tf": 7.142857142857142
+                      },
+                      "Polygon.html#convex": {
+                        "ref": "Polygon.html#convex",
+                        "tf": 683.3333333333334
+                      },
+                      "Circle.html#isConvex": {
+                        "ref": "Circle.html#isConvex",
+                        "tf": 25
+                      },
+                      "Circle.html#hull": {
+                        "ref": "Circle.html#hull",
+                        "tf": 7.142857142857142
+                      },
+                      "Circle.html#convex": {
+                        "ref": "Circle.html#convex",
+                        "tf": 683.3333333333334
+                      },
+                      "Rect.html#isConvex": {
+                        "ref": "Rect.html#isConvex",
+                        "tf": 25
+                      },
+                      "Rect.html#hull": {
+                        "ref": "Rect.html#hull",
+                        "tf": 7.142857142857142
+                      },
+                      "Rect.html#convex": {
+                        "ref": "Rect.html#convex",
+                        "tf": 683.3333333333334
+                      }
+                    }
+                  },
+                  "r": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Polygon.html#hull": {
+                          "ref": "Polygon.html#hull",
+                          "tf": 14.285714285714285
+                        },
+                        "Polygon.html#.FromRegion": {
+                          "ref": "Polygon.html#.FromRegion",
+                          "tf": 16.666666666666664
+                        },
+                        "Circle.html#hull": {
+                          "ref": "Circle.html#hull",
+                          "tf": 14.285714285714285
+                        },
+                        "Rect.html#hull": {
+                          "ref": "Rect.html#hull",
+                          "tf": 14.285714285714285
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "c": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "v": {
+                    "docs": {
+                      "Polygon.html#isConcave": {
+                        "ref": "Polygon.html#isConcave",
+                        "tf": 25
+                      },
+                      "Circle.html#isConcave": {
+                        "ref": "Circle.html#isConcave",
+                        "tf": 25
+                      },
+                      "Rect.html#isConcave": {
+                        "ref": "Rect.html#isConcave",
+                        "tf": 25
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "l": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "i": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "Polygon.html#colliding": {
+                        "ref": "Polygon.html#colliding",
+                        "tf": 693.3333333333334
+                      },
+                      "Polygon.html#.Colliding": {
+                        "ref": "Polygon.html#.Colliding",
+                        "tf": 680
+                      },
+                      "Circle.html#colliding": {
+                        "ref": "Circle.html#colliding",
+                        "tf": 693.3333333333334
+                      },
+                      "Rect.html#colliding": {
+                        "ref": "Rect.html#colliding",
+                        "tf": 693.3333333333334
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "u": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "Circle.html#sides": {
+                      "ref": "Circle.html#sides",
+                      "tf": 16.666666666666664
+                    }
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "s": {
+                    "docs": {},
+                    "p": {
+                      "docs": {},
+                      "o": {
+                        "docs": {},
+                        "n": {
+                          "docs": {},
+                          "d": {
+                            "docs": {
+                              "Vector2.html#.IsVector2Like": {
+                                "ref": "Vector2.html#.IsVector2Like",
+                                "tf": 6.25
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "u": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Polygon.html#hull": {
+                          "ref": "Polygon.html#hull",
+                          "tf": 7.142857142857142
+                        },
+                        "Polygon.html#clone": {
+                          "ref": "Polygon.html#clone",
+                          "tf": 14.285714285714285
+                        },
+                        "Polygon.html#colliding": {
+                          "ref": "Polygon.html#colliding",
+                          "tf": 10
+                        },
+                        "Circle.html#hull": {
+                          "ref": "Circle.html#hull",
+                          "tf": 7.142857142857142
+                        },
+                        "Circle.html#clone": {
+                          "ref": "Circle.html#clone",
+                          "tf": 14.285714285714285
+                        },
+                        "Circle.html#colliding": {
+                          "ref": "Circle.html#colliding",
+                          "tf": 10
+                        },
+                        "Rect.html#hull": {
+                          "ref": "Rect.html#hull",
+                          "tf": 7.142857142857142
+                        },
+                        "Rect.html#clone": {
+                          "ref": "Rect.html#clone",
+                          "tf": 14.285714285714285
+                        },
+                        "Rect.html#colliding": {
+                          "ref": "Rect.html#colliding",
+                          "tf": 10
+                        },
+                        "Vector2.html#isInside": {
+                          "ref": "Vector2.html#isInside",
+                          "tf": 10
+                        }
+                      }
                     }
                   }
                 }
@@ -3994,136 +4762,6 @@ window.lunrData = {
                             "ref": "Rect.html#setChildren",
                             "tf": 12.5
                           }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "o": {
-            "docs": {},
-            "l": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "i": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "Polygon.html#colliding": {
-                        "ref": "Polygon.html#colliding",
-                        "tf": 693.3333333333334
-                      },
-                      "Polygon.html#.Colliding": {
-                        "ref": "Polygon.html#.Colliding",
-                        "tf": 680
-                      },
-                      "Circle.html#colliding": {
-                        "ref": "Circle.html#colliding",
-                        "tf": 693.3333333333334
-                      },
-                      "Rect.html#colliding": {
-                        "ref": "Rect.html#colliding",
-                        "tf": 693.3333333333334
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "n": {
-              "docs": {},
-              "v": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Polygon.html#.FromRegion": {
-                          "ref": "Polygon.html#.FromRegion",
-                          "tf": 16.666666666666664
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "u": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "Circle.html#sides": {
-                      "ref": "Circle.html#sides",
-                      "tf": 16.666666666666664
-                    }
-                  }
-                }
-              }
-            },
-            "r": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "s": {
-                    "docs": {},
-                    "p": {
-                      "docs": {},
-                      "o": {
-                        "docs": {},
-                        "n": {
-                          "docs": {},
-                          "d": {
-                            "docs": {
-                              "Vector2.html#.IsVector2Like": {
-                                "ref": "Vector2.html#.IsVector2Like",
-                                "tf": 6.25
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "u": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Polygon.html#colliding": {
-                          "ref": "Polygon.html#colliding",
-                          "tf": 10
-                        },
-                        "Circle.html#colliding": {
-                          "ref": "Circle.html#colliding",
-                          "tf": 10
-                        },
-                        "Rect.html#colliding": {
-                          "ref": "Rect.html#colliding",
-                          "tf": 10
-                        },
-                        "Vector2.html#isInside": {
-                          "ref": "Vector2.html#isInside",
-                          "tf": 10
                         }
                       }
                     }
@@ -4259,6 +4897,23 @@ window.lunrData = {
                         },
                         "o": {
                           "docs": {},
+                          "n": {
+                            "docs": {},
+                            "v": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "x": {
+                                  "docs": {
+                                    "Circle.html#convex": {
+                                      "ref": "Circle.html#convex",
+                                      "tf": 1150
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
                           "l": {
                             "docs": {},
                             "l": {
@@ -4272,6 +4927,20 @@ window.lunrData = {
                                       "tf": 1150
                                     }
                                   }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "l": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "n": {
+                              "docs": {
+                                "Circle.html#clone": {
+                                  "ref": "Circle.html#clone",
+                                  "tf": 1150
                                 }
                               }
                             }
@@ -4495,6 +5164,46 @@ window.lunrData = {
                       },
                       "i": {
                         "docs": {},
+                        "s": {
+                          "docs": {},
+                          "c": {
+                            "docs": {},
+                            "o": {
+                              "docs": {},
+                              "n": {
+                                "docs": {},
+                                "v": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    "x": {
+                                      "docs": {
+                                        "Circle.html#isConvex": {
+                                          "ref": "Circle.html#isConvex",
+                                          "tf": 1150
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "c": {
+                                  "docs": {},
+                                  "a": {
+                                    "docs": {},
+                                    "v": {
+                                      "docs": {
+                                        "Circle.html#isConcave": {
+                                          "ref": "Circle.html#isConcave",
+                                          "tf": 1150
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
                         "n": {
                           "docs": {},
                           "t": {
@@ -4520,6 +5229,20 @@ window.lunrData = {
                                     }
                                   }
                                 }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "h": {
+                        "docs": {},
+                        "u": {
+                          "docs": {},
+                          "l": {
+                            "docs": {
+                              "Circle.html#hull": {
+                                "ref": "Circle.html#hull",
+                                "tf": 1150
                               }
                             }
                           }
@@ -4577,6 +5300,29 @@ window.lunrData = {
                               "Circle.html#xor": {
                                 "ref": "Circle.html#xor",
                                 "tf": 1150
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "m": {
+                        "docs": {},
+                        "o": {
+                          "docs": {},
+                          "v": {
+                            "docs": {},
+                            "e": {
+                              "docs": {},
+                              "b": {
+                                "docs": {},
+                                "i": {
+                                  "docs": {
+                                    "Circle.html#moveBy": {
+                                      "ref": "Circle.html#moveBy",
+                                      "tf": 1150
+                                    }
+                                  }
+                                }
                               }
                             }
                           }
@@ -5053,6 +5799,26 @@ window.lunrData = {
                                         "ref": "Polygon.html#area",
                                         "tf": 33.33333333333333
                                       },
+                                      "Polygon.html#isConvex": {
+                                        "ref": "Polygon.html#isConvex",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Polygon.html#isConcave": {
+                                        "ref": "Polygon.html#isConcave",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Polygon.html#hull": {
+                                        "ref": "Polygon.html#hull",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Polygon.html#convex": {
+                                        "ref": "Polygon.html#convex",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Polygon.html#clone": {
+                                        "ref": "Polygon.html#clone",
+                                        "tf": 33.33333333333333
+                                      },
                                       "Circle.html#region": {
                                         "ref": "Circle.html#region",
                                         "tf": 33.33333333333333
@@ -5069,6 +5835,26 @@ window.lunrData = {
                                         "ref": "Circle.html#area",
                                         "tf": 33.33333333333333
                                       },
+                                      "Circle.html#isConvex": {
+                                        "ref": "Circle.html#isConvex",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Circle.html#isConcave": {
+                                        "ref": "Circle.html#isConcave",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Circle.html#hull": {
+                                        "ref": "Circle.html#hull",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Circle.html#convex": {
+                                        "ref": "Circle.html#convex",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Circle.html#clone": {
+                                        "ref": "Circle.html#clone",
+                                        "tf": 33.33333333333333
+                                      },
                                       "Rect.html#region": {
                                         "ref": "Rect.html#region",
                                         "tf": 33.33333333333333
@@ -5083,6 +5869,26 @@ window.lunrData = {
                                       },
                                       "Rect.html#area": {
                                         "ref": "Rect.html#area",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Rect.html#isConvex": {
+                                        "ref": "Rect.html#isConvex",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Rect.html#isConcave": {
+                                        "ref": "Rect.html#isConcave",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Rect.html#hull": {
+                                        "ref": "Rect.html#hull",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Rect.html#convex": {
+                                        "ref": "Rect.html#convex",
+                                        "tf": 33.33333333333333
+                                      },
+                                      "Rect.html#clone": {
+                                        "ref": "Rect.html#clone",
                                         "tf": 33.33333333333333
                                       },
                                       "Vector2.html#approximated": {
@@ -5256,6 +6062,26 @@ window.lunrData = {
                         "ref": "Polygon.html#area",
                         "tf": 110
                       },
+                      "Polygon.html#isConvex": {
+                        "ref": "Polygon.html#isConvex",
+                        "tf": 110
+                      },
+                      "Polygon.html#isConcave": {
+                        "ref": "Polygon.html#isConcave",
+                        "tf": 110
+                      },
+                      "Polygon.html#hull": {
+                        "ref": "Polygon.html#hull",
+                        "tf": 110
+                      },
+                      "Polygon.html#convex": {
+                        "ref": "Polygon.html#convex",
+                        "tf": 110
+                      },
+                      "Polygon.html#clone": {
+                        "ref": "Polygon.html#clone",
+                        "tf": 110
+                      },
                       "Circle.html#sides": {
                         "ref": "Circle.html#sides",
                         "tf": 110
@@ -5284,6 +6110,26 @@ window.lunrData = {
                         "ref": "Circle.html#area",
                         "tf": 110
                       },
+                      "Circle.html#isConvex": {
+                        "ref": "Circle.html#isConvex",
+                        "tf": 110
+                      },
+                      "Circle.html#isConcave": {
+                        "ref": "Circle.html#isConcave",
+                        "tf": 110
+                      },
+                      "Circle.html#hull": {
+                        "ref": "Circle.html#hull",
+                        "tf": 110
+                      },
+                      "Circle.html#convex": {
+                        "ref": "Circle.html#convex",
+                        "tf": 110
+                      },
+                      "Circle.html#clone": {
+                        "ref": "Circle.html#clone",
+                        "tf": 110
+                      },
                       "Rect.html#position": {
                         "ref": "Rect.html#position",
                         "tf": 110
@@ -5308,6 +6154,26 @@ window.lunrData = {
                         "ref": "Rect.html#area",
                         "tf": 110
                       },
+                      "Rect.html#isConvex": {
+                        "ref": "Rect.html#isConvex",
+                        "tf": 110
+                      },
+                      "Rect.html#isConcave": {
+                        "ref": "Rect.html#isConcave",
+                        "tf": 110
+                      },
+                      "Rect.html#hull": {
+                        "ref": "Rect.html#hull",
+                        "tf": 110
+                      },
+                      "Rect.html#convex": {
+                        "ref": "Rect.html#convex",
+                        "tf": 110
+                      },
+                      "Rect.html#clone": {
+                        "ref": "Rect.html#clone",
+                        "tf": 110
+                      },
                       "Vector2.html#approximated": {
                         "ref": "Vector2.html#approximated",
                         "tf": 110
@@ -5327,6 +6193,72 @@ window.lunrData = {
                       "Vector2.html#clone": {
                         "ref": "Vector2.html#clone",
                         "tf": 110
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "d": {
+              "docs": {},
+              "i": {
+                "docs": {},
+                "f": {
+                  "docs": {},
+                  "i": {
+                    "docs": {
+                      "Polygon.html#clone": {
+                        "ref": "Polygon.html#clone",
+                        "tf": 7.142857142857142
+                      },
+                      "Circle.html#clone": {
+                        "ref": "Circle.html#clone",
+                        "tf": 7.142857142857142
+                      },
+                      "Rect.html#clone": {
+                        "ref": "Rect.html#clone",
+                        "tf": 7.142857142857142
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "v": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Polygon.html#moveBy": {
+                    "ref": "Polygon.html#moveBy",
+                    "tf": 12.5
+                  },
+                  "Circle.html#moveBy": {
+                    "ref": "Circle.html#moveBy",
+                    "tf": 12.5
+                  },
+                  "Rect.html#moveBy": {
+                    "ref": "Rect.html#moveBy",
+                    "tf": 12.5
+                  }
+                },
+                "b": {
+                  "docs": {},
+                  "i": {
+                    "docs": {
+                      "Polygon.html#moveBy": {
+                        "ref": "Polygon.html#moveBy",
+                        "tf": 683.3333333333334
+                      },
+                      "Circle.html#moveBy": {
+                        "ref": "Circle.html#moveBy",
+                        "tf": 683.3333333333334
+                      },
+                      "Rect.html#moveBy": {
+                        "ref": "Rect.html#moveBy",
+                        "tf": 683.3333333333334
                       }
                     }
                   }
@@ -5630,6 +6562,10 @@ window.lunrData = {
                             "ref": "Polygon.html#xor",
                             "tf": 110
                           },
+                          "Polygon.html#moveBy": {
+                            "ref": "Polygon.html#moveBy",
+                            "tf": 110
+                          },
                           "Polygon.html#.Colliding": {
                             "ref": "Polygon.html#.Colliding",
                             "tf": 110
@@ -5702,6 +6638,10 @@ window.lunrData = {
                             "ref": "Circle.html#xor",
                             "tf": 110
                           },
+                          "Circle.html#moveBy": {
+                            "ref": "Circle.html#moveBy",
+                            "tf": 110
+                          },
                           "Rect.html#pointIsInside": {
                             "ref": "Rect.html#pointIsInside",
                             "tf": 110
@@ -5754,12 +6694,8 @@ window.lunrData = {
                             "ref": "Rect.html#xor",
                             "tf": 110
                           },
-                          "Vector2.html#equalsX": {
-                            "ref": "Vector2.html#equalsX",
-                            "tf": 110
-                          },
-                          "Vector2.html#equalsY": {
-                            "ref": "Vector2.html#equalsY",
+                          "Rect.html#moveBy": {
+                            "ref": "Rect.html#moveBy",
                             "tf": 110
                           },
                           "Vector2.html#isInside": {
@@ -5933,6 +6869,14 @@ window.lunrData = {
                           "Vector2.html#equals": {
                             "ref": "Vector2.html#equals",
                             "tf": 110
+                          },
+                          "Vector2.html#equalsX": {
+                            "ref": "Vector2.html#equalsX",
+                            "tf": 110
+                          },
+                          "Vector2.html#equalsY": {
+                            "ref": "Vector2.html#equalsY",
+                            "tf": 110
                           }
                         }
                       }
@@ -6079,6 +7023,18 @@ window.lunrData = {
               "docs": {},
               "a": {
                 "docs": {
+                  "Polygon.html#convex": {
+                    "ref": "Polygon.html#convex",
+                    "tf": 25
+                  },
+                  "Circle.html#convex": {
+                    "ref": "Circle.html#convex",
+                    "tf": 25
+                  },
+                  "Rect.html#convex": {
+                    "ref": "Rect.html#convex",
+                    "tf": 25
+                  },
                   "Vector2.html#norm": {
                     "ref": "Vector2.html#norm",
                     "tf": 25
@@ -6586,6 +7542,29 @@ window.lunrData = {
               }
             }
           },
+          "l": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "m": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "t": {
+                      "docs": {
+                        "Vector2.html#.IsVector2Like": {
+                          "ref": "Vector2.html#.IsVector2Like",
+                          "tf": 6.25
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "q": {
             "docs": {},
             "u": {
@@ -6594,6 +7573,10 @@ window.lunrData = {
                 "docs": {},
                 "l": {
                   "docs": {
+                    "Vector2.html#equals": {
+                      "ref": "Vector2.html#equals",
+                      "tf": 691.6666666666666
+                    },
                     "Vector2.html#equalsX": {
                       "ref": "Vector2.html#equalsX",
                       "tf": 10
@@ -6601,10 +7584,6 @@ window.lunrData = {
                     "Vector2.html#equalsY": {
                       "ref": "Vector2.html#equalsY",
                       "tf": 10
-                    },
-                    "Vector2.html#equals": {
-                      "ref": "Vector2.html#equals",
-                      "tf": 691.6666666666666
                     }
                   },
                   "s": {
@@ -6622,29 +7601,6 @@ window.lunrData = {
                         "Vector2.html#equalsY": {
                           "ref": "Vector2.html#equalsY",
                           "tf": 683.3333333333334
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "l": {
-            "docs": {},
-            "e": {
-              "docs": {},
-              "m": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "Vector2.html#.IsVector2Like": {
-                          "ref": "Vector2.html#.IsVector2Like",
-                          "tf": 6.25
                         }
                       }
                     }
@@ -6727,6 +7683,31 @@ window.lunrData = {
                 "ref": "Vector2.html#approximated",
                 "tf": 8.333333333333332
               }
+            },
+            "e": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "Polygon.html#clone": {
+                        "ref": "Polygon.html#clone",
+                        "tf": 7.142857142857142
+                      },
+                      "Circle.html#clone": {
+                        "ref": "Circle.html#clone",
+                        "tf": 7.142857142857142
+                      },
+                      "Rect.html#clone": {
+                        "ref": "Rect.html#clone",
+                        "tf": 7.142857142857142
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         },
@@ -6780,14 +7761,6 @@ window.lunrData = {
             }
           },
           "docs": {
-            "Vector2.html#equalsX": {
-              "ref": "Vector2.html#equalsX",
-              "tf": 33.33333333333333
-            },
-            "Vector2.html#equalsY": {
-              "ref": "Vector2.html#equalsY",
-              "tf": 33.33333333333333
-            },
             "Vector2.html#floor": {
               "ref": "Vector2.html#floor",
               "tf": 33.33333333333333
@@ -6863,6 +7836,14 @@ window.lunrData = {
             "Vector2.html#divideY": {
               "ref": "Vector2.html#divideY",
               "tf": 43.33333333333333
+            },
+            "Vector2.html#equalsX": {
+              "ref": "Vector2.html#equalsX",
+              "tf": 33.33333333333333
+            },
+            "Vector2.html#equalsY": {
+              "ref": "Vector2.html#equalsY",
+              "tf": 33.33333333333333
             }
           },
           "e": {
@@ -6908,6 +7889,10 @@ window.lunrData = {
                         "ref": "Polygon.html#addVertex",
                         "tf": 45.83333333333333
                       },
+                      "Polygon.html#moveBy": {
+                        "ref": "Polygon.html#moveBy",
+                        "tf": 12.5
+                      },
                       "Circle.html#setVertexes": {
                         "ref": "Circle.html#setVertexes",
                         "tf": 49.99999999999999
@@ -6916,6 +7901,10 @@ window.lunrData = {
                         "ref": "Circle.html#addVertex",
                         "tf": 45.83333333333333
                       },
+                      "Circle.html#moveBy": {
+                        "ref": "Circle.html#moveBy",
+                        "tf": 12.5
+                      },
                       "Rect.html#setVertexes": {
                         "ref": "Rect.html#setVertexes",
                         "tf": 49.99999999999999
@@ -6923,6 +7912,10 @@ window.lunrData = {
                       "Rect.html#addVertex": {
                         "ref": "Rect.html#addVertex",
                         "tf": 45.83333333333333
+                      },
+                      "Rect.html#moveBy": {
+                        "ref": "Rect.html#moveBy",
+                        "tf": 12.5
                       }
                     }
                   }
@@ -6938,9 +7931,17 @@ window.lunrData = {
                   "r": {
                     "2": {
                       "docs": {
+                        "Polygon.html#moveBy": {
+                          "ref": "Polygon.html#moveBy",
+                          "tf": 45.83333333333333
+                        },
                         "Circle.html#center": {
                           "ref": "Circle.html#center",
                           "tf": 50
+                        },
+                        "Circle.html#moveBy": {
+                          "ref": "Circle.html#moveBy",
+                          "tf": 45.83333333333333
                         },
                         "Rect.html#position": {
                           "ref": "Rect.html#position",
@@ -6949,6 +7950,10 @@ window.lunrData = {
                         "Rect.html#size": {
                           "ref": "Rect.html#size",
                           "tf": 50
+                        },
+                        "Rect.html#moveBy": {
+                          "ref": "Rect.html#moveBy",
+                          "tf": 45.83333333333333
                         },
                         "Vector2.html": {
                           "ref": "Vector2.html",
@@ -6973,14 +7978,6 @@ window.lunrData = {
                         "Vector2.html#clone": {
                           "ref": "Vector2.html#clone",
                           "tf": 58.33333333333333
-                        },
-                        "Vector2.html#equalsX": {
-                          "ref": "Vector2.html#equalsX",
-                          "tf": 10
-                        },
-                        "Vector2.html#equalsY": {
-                          "ref": "Vector2.html#equalsY",
-                          "tf": 10
                         },
                         "Vector2.html#isInside": {
                           "ref": "Vector2.html#isInside",
@@ -7149,6 +8146,14 @@ window.lunrData = {
                         "Vector2.html#equals": {
                           "ref": "Vector2.html#equals",
                           "tf": 16.666666666666664
+                        },
+                        "Vector2.html#equalsX": {
+                          "ref": "Vector2.html#equalsX",
+                          "tf": 10
+                        },
+                        "Vector2.html#equalsY": {
+                          "ref": "Vector2.html#equalsY",
+                          "tf": 10
                         }
                       },
                       "#": {
@@ -7348,45 +8353,6 @@ window.lunrData = {
                                     "Vector2.html#ceilY": {
                                       "ref": "Vector2.html#ceilY",
                                       "tf": 1150
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        },
-                        "e": {
-                          "docs": {},
-                          "q": {
-                            "docs": {},
-                            "u": {
-                              "docs": {
-                                "Vector2.html#equals": {
-                                  "ref": "Vector2.html#equals",
-                                  "tf": 1150
-                                }
-                              },
-                              "a": {
-                                "docs": {},
-                                "l": {
-                                  "docs": {},
-                                  "s": {
-                                    "docs": {},
-                                    "x": {
-                                      "docs": {
-                                        "Vector2.html#equalsX": {
-                                          "ref": "Vector2.html#equalsX",
-                                          "tf": 1150
-                                        }
-                                      }
-                                    },
-                                    "i": {
-                                      "docs": {
-                                        "Vector2.html#equalsY": {
-                                          "ref": "Vector2.html#equalsY",
-                                          "tf": 1150
-                                        }
-                                      }
                                     }
                                   }
                                 }
@@ -7669,6 +8635,45 @@ window.lunrData = {
                               }
                             }
                           }
+                        },
+                        "e": {
+                          "docs": {},
+                          "q": {
+                            "docs": {},
+                            "u": {
+                              "docs": {
+                                "Vector2.html#equals": {
+                                  "ref": "Vector2.html#equals",
+                                  "tf": 1150
+                                }
+                              },
+                              "a": {
+                                "docs": {},
+                                "l": {
+                                  "docs": {},
+                                  "s": {
+                                    "docs": {},
+                                    "x": {
+                                      "docs": {
+                                        "Vector2.html#equalsX": {
+                                          "ref": "Vector2.html#equalsX",
+                                          "tf": 1150
+                                        }
+                                      }
+                                    },
+                                    "i": {
+                                      "docs": {
+                                        "Vector2.html#equalsY": {
+                                          "ref": "Vector2.html#equalsY",
+                                          "tf": 1150
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
                         }
                       },
                       ".": {
@@ -7918,17 +8923,21 @@ window.lunrData = {
               "docs": {},
               "u": {
                 "docs": {
+                  "Polygon.html#moveBy": {
+                    "ref": "Polygon.html#moveBy",
+                    "tf": 33.33333333333333
+                  },
+                  "Circle.html#moveBy": {
+                    "ref": "Circle.html#moveBy",
+                    "tf": 33.33333333333333
+                  },
+                  "Rect.html#moveBy": {
+                    "ref": "Rect.html#moveBy",
+                    "tf": 33.33333333333333
+                  },
                   "Vector2.html#approximated": {
                     "ref": "Vector2.html#approximated",
                     "tf": 8.333333333333332
-                  },
-                  "Vector2.html#equalsX": {
-                    "ref": "Vector2.html#equalsX",
-                    "tf": 10
-                  },
-                  "Vector2.html#equalsY": {
-                    "ref": "Vector2.html#equalsY",
-                    "tf": 10
                   },
                   "Vector2.html#.Max": {
                     "ref": "Vector2.html#.Max",
@@ -8029,6 +9038,14 @@ window.lunrData = {
                   "Vector2.html#invertY": {
                     "ref": "Vector2.html#invertY",
                     "tf": 12.5
+                  },
+                  "Vector2.html#equalsX": {
+                    "ref": "Vector2.html#equalsX",
+                    "tf": 10
+                  },
+                  "Vector2.html#equalsY": {
+                    "ref": "Vector2.html#equalsY",
+                    "tf": 10
                   }
                 }
               }
@@ -8075,14 +9092,6 @@ window.lunrData = {
               "docs": {},
               "t": {
                 "docs": {
-                  "Vector2.html#equalsX": {
-                    "ref": "Vector2.html#equalsX",
-                    "tf": 10
-                  },
-                  "Vector2.html#equalsY": {
-                    "ref": "Vector2.html#equalsY",
-                    "tf": 10
-                  },
                   "Vector2.html#isInside": {
                     "ref": "Vector2.html#isInside",
                     "tf": 10
@@ -8094,6 +9103,14 @@ window.lunrData = {
                   "Vector2.html#equals": {
                     "ref": "Vector2.html#equals",
                     "tf": 16.666666666666664
+                  },
+                  "Vector2.html#equalsX": {
+                    "ref": "Vector2.html#equalsX",
+                    "tf": 10
+                  },
+                  "Vector2.html#equalsY": {
+                    "ref": "Vector2.html#equalsY",
+                    "tf": 10
                   }
                 }
               }
@@ -8157,10 +9174,6 @@ window.lunrData = {
               "ref": "Rect.html#region",
               "tf": 7.6923076923076925
             },
-            "Vector2.html#equalsX": {
-              "ref": "Vector2.html#equalsX",
-              "tf": 10
-            },
             "Vector2.html#floorX": {
               "ref": "Vector2.html#floorX",
               "tf": 12.5
@@ -8204,6 +9217,10 @@ window.lunrData = {
             "Vector2.html#invertX": {
               "ref": "Vector2.html#invertX",
               "tf": 12.5
+            },
+            "Vector2.html#equalsX": {
+              "ref": "Vector2.html#equalsX",
+              "tf": 10
             }
           },
           "o": {
@@ -8244,10 +9261,6 @@ window.lunrData = {
               "ref": "Rect.html#region",
               "tf": 7.6923076923076925
             },
-            "Vector2.html#equalsY": {
-              "ref": "Vector2.html#equalsY",
-              "tf": 10
-            },
             "Vector2.html#floorY": {
               "ref": "Vector2.html#floorY",
               "tf": 12.5
@@ -8275,6 +9288,10 @@ window.lunrData = {
             "Vector2.html#invertY": {
               "ref": "Vector2.html#invertY",
               "tf": 12.5
+            },
+            "Vector2.html#equalsY": {
+              "ref": "Vector2.html#equalsY",
+              "tf": 10
             }
           }
         },
@@ -8292,6 +9309,14 @@ window.lunrData = {
                     "docs": {},
                     "n": {
                       "docs": {
+                        "Polygon.html#isConvex": {
+                          "ref": "Polygon.html#isConvex",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#isConcave": {
+                          "ref": "Polygon.html#isConcave",
+                          "tf": 33.33333333333333
+                        },
                         "Polygon.html#pointIsInside": {
                           "ref": "Polygon.html#pointIsInside",
                           "tf": 33.33333333333333
@@ -8340,6 +9365,14 @@ window.lunrData = {
                           "ref": "Polygon.html#.Xor",
                           "tf": 7.142857142857142
                         },
+                        "Circle.html#isConvex": {
+                          "ref": "Circle.html#isConvex",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#isConcave": {
+                          "ref": "Circle.html#isConcave",
+                          "tf": 33.33333333333333
+                        },
                         "Circle.html#pointIsInside": {
                           "ref": "Circle.html#pointIsInside",
                           "tf": 33.33333333333333
@@ -8371,6 +9404,14 @@ window.lunrData = {
                         "Circle.html#xor": {
                           "ref": "Circle.html#xor",
                           "tf": 8.333333333333332
+                        },
+                        "Rect.html#isConvex": {
+                          "ref": "Rect.html#isConvex",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#isConcave": {
+                          "ref": "Rect.html#isConcave",
+                          "tf": 33.33333333333333
                         },
                         "Rect.html#pointIsInside": {
                           "ref": "Rect.html#pointIsInside",
@@ -8404,14 +9445,6 @@ window.lunrData = {
                           "ref": "Rect.html#xor",
                           "tf": 8.333333333333332
                         },
-                        "Vector2.html#equalsX": {
-                          "ref": "Vector2.html#equalsX",
-                          "tf": 33.33333333333333
-                        },
-                        "Vector2.html#equalsY": {
-                          "ref": "Vector2.html#equalsY",
-                          "tf": 33.33333333333333
-                        },
                         "Vector2.html#isInside": {
                           "ref": "Vector2.html#isInside",
                           "tf": 33.33333333333333
@@ -8419,6 +9452,14 @@ window.lunrData = {
                         "Vector2.html#equals": {
                           "ref": "Vector2.html#equals",
                           "tf": 25
+                        },
+                        "Vector2.html#equalsX": {
+                          "ref": "Vector2.html#equalsX",
+                          "tf": 33.33333333333333
+                        },
+                        "Vector2.html#equalsY": {
+                          "ref": "Vector2.html#equalsY",
+                          "tf": 33.33333333333333
                         }
                       }
                     }
@@ -8476,42 +9517,42 @@ window.lunrData = {
             }
           }
         },
-        "w": {
+        "h": {
           "docs": {},
-          "r": {
+          "u": {
             "docs": {},
-            "a": {
+            "l": {
               "docs": {},
-              "p": {
-                "docs": {},
-                "p": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "r": {
-                      "docs": {
-                        "Polygon.html#pointIsInside": {
-                          "ref": "Polygon.html#pointIsInside",
-                          "tf": 10
-                        },
-                        "Circle.html#pointIsInside": {
-                          "ref": "Circle.html#pointIsInside",
-                          "tf": 10
-                        },
-                        "Rect.html#pointIsInside": {
-                          "ref": "Rect.html#pointIsInside",
-                          "tf": 10
-                        }
-                      }
-                    }
+              "l": {
+                "docs": {
+                  "Polygon.html#hull": {
+                    "ref": "Polygon.html#hull",
+                    "tf": 690.4761904761905
+                  },
+                  "Polygon.html#convex": {
+                    "ref": "Polygon.html#convex",
+                    "tf": 25
+                  },
+                  "Circle.html#hull": {
+                    "ref": "Circle.html#hull",
+                    "tf": 690.4761904761905
+                  },
+                  "Circle.html#convex": {
+                    "ref": "Circle.html#convex",
+                    "tf": 25
+                  },
+                  "Rect.html#hull": {
+                    "ref": "Rect.html#hull",
+                    "tf": 690.4761904761905
+                  },
+                  "Rect.html#convex": {
+                    "ref": "Rect.html#convex",
+                    "tf": 25
                   }
                 }
               }
             }
-          }
-        },
-        "h": {
-          "docs": {},
+          },
           "o": {
             "docs": {},
             "l": {
@@ -8547,6 +9588,40 @@ window.lunrData = {
             }
           }
         },
+        "w": {
+          "docs": {},
+          "r": {
+            "docs": {},
+            "a": {
+              "docs": {},
+              "p": {
+                "docs": {},
+                "p": {
+                  "docs": {},
+                  "e": {
+                    "docs": {},
+                    "r": {
+                      "docs": {
+                        "Polygon.html#pointIsInside": {
+                          "ref": "Polygon.html#pointIsInside",
+                          "tf": 10
+                        },
+                        "Circle.html#pointIsInside": {
+                          "ref": "Circle.html#pointIsInside",
+                          "tf": 10
+                        },
+                        "Rect.html#pointIsInside": {
+                          "ref": "Rect.html#pointIsInside",
+                          "tf": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "z": {
           "docs": {},
           "e": {
@@ -8569,7 +9644,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 896
+      "length": 1034
     },
     "corpusTokens": [
       "ad",
@@ -8607,10 +9682,16 @@ window.lunrData = {
       "circle#addvertex",
       "circle#area",
       "circle#cent",
+      "circle#clon",
       "circle#collid",
+      "circle#convex",
       "circle#differ",
+      "circle#hul",
       "circle#intersect",
+      "circle#isconcav",
+      "circle#isconvex",
       "circle#lin",
+      "circle#movebi",
       "circle#point",
       "circle#pointisinsid",
       "circle#pointisinsidecircl",
@@ -8623,9 +9704,12 @@ window.lunrData = {
       "circle#union",
       "circle#xor",
       "class",
+      "clon",
       "clone",
       "collid",
+      "concav",
       "convert",
+      "convex",
       "correspond",
       "count",
       "current",
@@ -8654,12 +9738,15 @@ window.lunrData = {
       "given",
       "global",
       "hole",
+      "hull",
       "index",
       "insid",
       "intersect",
       "invert",
       "inverti",
       "invertx",
+      "isconcav",
+      "isconvex",
       "isinsid",
       "isvector2lik",
       "js",
@@ -8686,6 +9773,9 @@ window.lunrData = {
       "max",
       "member",
       "min",
+      "modifi",
+      "move",
+      "movebi",
       "multipli",
       "multiplyi",
       "multiplyx",
@@ -8710,10 +9800,16 @@ window.lunrData = {
       "polygon#addchild",
       "polygon#addvertex",
       "polygon#area",
+      "polygon#clon",
       "polygon#collid",
+      "polygon#convex",
       "polygon#differ",
+      "polygon#hul",
       "polygon#intersect",
+      "polygon#isconcav",
+      "polygon#isconvex",
       "polygon#lin",
+      "polygon#movebi",
       "polygon#point",
       "polygon#pointisinsid",
       "polygon#pointisinsidepolygon",
@@ -8735,10 +9831,16 @@ window.lunrData = {
       "rect#addchild",
       "rect#addvertex",
       "rect#area",
+      "rect#clon",
       "rect#collid",
+      "rect#convex",
       "rect#differ",
+      "rect#hul",
       "rect#intersect",
+      "rect#isconcav",
+      "rect#isconvex",
       "rect#lin",
+      "rect#movebi",
       "rect#point",
       "rect#pointisinsid",
       "rect#pointisinsidepolygon",
@@ -8782,6 +9884,7 @@ window.lunrData = {
       "unclamp",
       "union",
       "us",
+      "useful",
       "v",
       "v1",
       "v2",
@@ -8996,6 +10099,56 @@ window.lunrData = {
       "summary": "",
       "description": "Get area of the Polygon"
     },
+    "Polygon.html#isConvex": {
+      "id": "Polygon.html#isConvex",
+      "kind": "member",
+      "title": "&lt;readonly&gt; isConvex :Boolean",
+      "longname": "Polygon#isConvex",
+      "name": "isConvex",
+      "tags": "Polygon#isConvex isConvex",
+      "summary": "",
+      "description": "Did the polygon is convex"
+    },
+    "Polygon.html#isConcave": {
+      "id": "Polygon.html#isConcave",
+      "kind": "member",
+      "title": "&lt;readonly&gt; isConcave :Boolean",
+      "longname": "Polygon#isConcave",
+      "name": "isConcave",
+      "tags": "Polygon#isConcave isConcave",
+      "summary": "",
+      "description": "Did the polygon is concave"
+    },
+    "Polygon.html#hull": {
+      "id": "Polygon.html#hull",
+      "kind": "member",
+      "title": "&lt;readonly&gt; hull :Polygon",
+      "longname": "Polygon#hull",
+      "name": "hull",
+      "tags": "Polygon#hull hull",
+      "summary": "",
+      "description": "Convert the current polygon to a hull polygon (convert to convex)"
+    },
+    "Polygon.html#convex": {
+      "id": "Polygon.html#convex",
+      "kind": "member",
+      "title": "&lt;readonly&gt; convex :Polygon",
+      "longname": "Polygon#convex",
+      "name": "convex",
+      "tags": "Polygon#convex convex",
+      "summary": "",
+      "description": "Alias of hull"
+    },
+    "Polygon.html#clone": {
+      "id": "Polygon.html#clone",
+      "kind": "member",
+      "title": "&lt;readonly&gt; clone :Polygon",
+      "longname": "Polygon#clone",
+      "name": "clone",
+      "tags": "Polygon#clone clone",
+      "summary": "",
+      "description": "Clonning the current polygon, usefull to not modify the current polygon"
+    },
     "Polygon.html#pointIsInside": {
       "id": "Polygon.html#pointIsInside",
       "kind": "function",
@@ -9105,6 +10258,16 @@ window.lunrData = {
       "tags": "Polygon#xor xor",
       "summary": "",
       "description": "Xor boolean operation on this polygon with the given polygon"
+    },
+    "Polygon.html#moveBy": {
+      "id": "Polygon.html#moveBy",
+      "kind": "function",
+      "title": "moveBy( value ) → {Vector2}",
+      "longname": "Polygon#moveBy",
+      "name": "moveBy",
+      "tags": "Polygon#moveBy moveBy",
+      "summary": "",
+      "description": "Move all vertices of the polygon by a Vector2"
     },
     "Polygon.html#.Colliding": {
       "id": "Polygon.html#.Colliding",
@@ -9247,6 +10410,56 @@ window.lunrData = {
       "summary": "",
       "description": "Get area of the Polygon"
     },
+    "Circle.html#isConvex": {
+      "id": "Circle.html#isConvex",
+      "kind": "member",
+      "title": "&lt;readonly&gt; isConvex :Boolean",
+      "longname": "Circle#isConvex",
+      "name": "isConvex",
+      "tags": "Circle#isConvex isConvex",
+      "summary": "",
+      "description": "Did the polygon is convex"
+    },
+    "Circle.html#isConcave": {
+      "id": "Circle.html#isConcave",
+      "kind": "member",
+      "title": "&lt;readonly&gt; isConcave :Boolean",
+      "longname": "Circle#isConcave",
+      "name": "isConcave",
+      "tags": "Circle#isConcave isConcave",
+      "summary": "",
+      "description": "Did the polygon is concave"
+    },
+    "Circle.html#hull": {
+      "id": "Circle.html#hull",
+      "kind": "member",
+      "title": "&lt;readonly&gt; hull :Polygon",
+      "longname": "Circle#hull",
+      "name": "hull",
+      "tags": "Circle#hull hull",
+      "summary": "",
+      "description": "Convert the current polygon to a hull polygon (convert to convex)"
+    },
+    "Circle.html#convex": {
+      "id": "Circle.html#convex",
+      "kind": "member",
+      "title": "&lt;readonly&gt; convex :Polygon",
+      "longname": "Circle#convex",
+      "name": "convex",
+      "tags": "Circle#convex convex",
+      "summary": "",
+      "description": "Alias of hull"
+    },
+    "Circle.html#clone": {
+      "id": "Circle.html#clone",
+      "kind": "member",
+      "title": "&lt;readonly&gt; clone :Polygon",
+      "longname": "Circle#clone",
+      "name": "clone",
+      "tags": "Circle#clone clone",
+      "summary": "",
+      "description": "Clonning the current polygon, usefull to not modify the current polygon"
+    },
     "Circle.html#pointIsInside": {
       "id": "Circle.html#pointIsInside",
       "kind": "function",
@@ -9367,6 +10580,16 @@ window.lunrData = {
       "summary": "",
       "description": "Xor boolean operation on this polygon with the given polygon"
     },
+    "Circle.html#moveBy": {
+      "id": "Circle.html#moveBy",
+      "kind": "function",
+      "title": "moveBy( value ) → {Vector2}",
+      "longname": "Circle#moveBy",
+      "name": "moveBy",
+      "tags": "Circle#moveBy moveBy",
+      "summary": "",
+      "description": "Move all vertices of the polygon by a Vector2"
+    },
     "Rect.html": {
       "id": "Rect.html",
       "kind": "class",
@@ -9437,6 +10660,56 @@ window.lunrData = {
       "tags": "Rect#area area",
       "summary": "",
       "description": "Get area of the Polygon"
+    },
+    "Rect.html#isConvex": {
+      "id": "Rect.html#isConvex",
+      "kind": "member",
+      "title": "&lt;readonly&gt; isConvex :Boolean",
+      "longname": "Rect#isConvex",
+      "name": "isConvex",
+      "tags": "Rect#isConvex isConvex",
+      "summary": "",
+      "description": "Did the polygon is convex"
+    },
+    "Rect.html#isConcave": {
+      "id": "Rect.html#isConcave",
+      "kind": "member",
+      "title": "&lt;readonly&gt; isConcave :Boolean",
+      "longname": "Rect#isConcave",
+      "name": "isConcave",
+      "tags": "Rect#isConcave isConcave",
+      "summary": "",
+      "description": "Did the polygon is concave"
+    },
+    "Rect.html#hull": {
+      "id": "Rect.html#hull",
+      "kind": "member",
+      "title": "&lt;readonly&gt; hull :Polygon",
+      "longname": "Rect#hull",
+      "name": "hull",
+      "tags": "Rect#hull hull",
+      "summary": "",
+      "description": "Convert the current polygon to a hull polygon (convert to convex)"
+    },
+    "Rect.html#convex": {
+      "id": "Rect.html#convex",
+      "kind": "member",
+      "title": "&lt;readonly&gt; convex :Polygon",
+      "longname": "Rect#convex",
+      "name": "convex",
+      "tags": "Rect#convex convex",
+      "summary": "",
+      "description": "Alias of hull"
+    },
+    "Rect.html#clone": {
+      "id": "Rect.html#clone",
+      "kind": "member",
+      "title": "&lt;readonly&gt; clone :Polygon",
+      "longname": "Rect#clone",
+      "name": "clone",
+      "tags": "Rect#clone clone",
+      "summary": "",
+      "description": "Clonning the current polygon, usefull to not modify the current polygon"
     },
     "Rect.html#pointIsInside": {
       "id": "Rect.html#pointIsInside",
@@ -9568,6 +10841,16 @@ window.lunrData = {
       "summary": "",
       "description": "Xor boolean operation on this polygon with the given polygon"
     },
+    "Rect.html#moveBy": {
+      "id": "Rect.html#moveBy",
+      "kind": "function",
+      "title": "moveBy( value ) → {Vector2}",
+      "longname": "Rect#moveBy",
+      "name": "moveBy",
+      "tags": "Rect#moveBy moveBy",
+      "summary": "",
+      "description": "Move all vertices of the polygon by a Vector2"
+    },
     "Vector2.html": {
       "id": "Vector2.html",
       "kind": "class",
@@ -9628,26 +10911,6 @@ window.lunrData = {
       "tags": "Vector2#clone clone",
       "summary": "",
       "description": "A clone of the Vector2"
-    },
-    "Vector2.html#equalsX": {
-      "id": "Vector2.html#equalsX",
-      "kind": "function",
-      "title": "equalsX( v ) → {Boolean}",
-      "longname": "Vector2#equalsX",
-      "name": "equalsX",
-      "tags": "Vector2#equalsX equalsX",
-      "summary": "",
-      "description": "Test if the x value of the Vector2 is equal to an other"
-    },
-    "Vector2.html#equalsY": {
-      "id": "Vector2.html#equalsY",
-      "kind": "function",
-      "title": "equalsY( v ) → {Boolean}",
-      "longname": "Vector2#equalsY",
-      "name": "equalsY",
-      "tags": "Vector2#equalsY equalsY",
-      "summary": "",
-      "description": "Test if the y value of the Vector2 is equal to an other"
     },
     "Vector2.html#isInside": {
       "id": "Vector2.html#isInside",
@@ -10078,6 +11341,26 @@ window.lunrData = {
       "tags": "Vector2#equals equals",
       "summary": "",
       "description": "Test if the Vector2 is equal to an other"
+    },
+    "Vector2.html#equalsX": {
+      "id": "Vector2.html#equalsX",
+      "kind": "function",
+      "title": "equalsX( v ) → {Boolean}",
+      "longname": "Vector2#equalsX",
+      "name": "equalsX",
+      "tags": "Vector2#equalsX equalsX",
+      "summary": "",
+      "description": "Test if the x value of the Vector2 is equal to an other"
+    },
+    "Vector2.html#equalsY": {
+      "id": "Vector2.html#equalsY",
+      "kind": "function",
+      "title": "equalsY( v ) → {Boolean}",
+      "longname": "Vector2#equalsY",
+      "name": "equalsY",
+      "tags": "Vector2#equalsY equalsY",
+      "summary": "",
+      "description": "Test if the y value of the Vector2 is equal to an other"
     }
   }
 };

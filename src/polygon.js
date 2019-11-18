@@ -247,6 +247,76 @@ class Polygon {
 	}
 
 	/**
+	 * Did the polygon is convex
+	 * @readonly
+	 * @see isConcave
+	 * @type {Boolean}
+	 */
+	get isConvex() {
+		return !this.isConcave();
+	}
+
+	/**
+	 * Did the polygon is concave
+	 * @readonly
+	 * @see isConvex
+	 * @type {Boolean}
+	 */
+	get isConcave() {
+		let v = this.first;
+		do {
+			const line = new Line(v, v.next);
+			if (this.pointIsInsidePolygon(line.alongPointUnclamped(1.01))) {
+				return true;
+			}
+			v = v.next;
+		} while (!v.equals(this.first));
+		return false;
+	}
+
+	/**
+	 * Convert the current polygon to a hull polygon (convert to convex)
+	 * @readonly
+	 * @type {Polygon}
+	 */
+	get hull() {
+		if (this.isConvex) {
+			return this;
+		}
+		let v = this.first;
+		do {
+			const line = new Line(v, v.next);
+			if (this.pointIsInsidePolygon(line.alongPointUnclamped(1.01))) {
+				if (v.next.equals(this.first)) {
+					this.first = v.next.next;
+				}
+				v.next = v.next.next;
+			}
+			v = v.next;
+		} while (!v.equals(this.first));
+		return this;
+	}
+
+	/**
+	 * Alias of hull
+	 * @see {@link hull}
+	 * @readonly
+	 * @type {Polygon}
+	 */
+	get convex() {
+		return this.hull;
+	}
+
+	/**
+	 * Clonning the current polygon, usefull to not modify the current polygon
+	 * @readonly
+	 * @type {Polygon}
+	 */
+	get clone() {
+		return new Polygon(this.points);
+	}
+
+	/**
 	 * Is the p1 polygon colliding with the p2 polygon
 	 * @param {Polygon} p1 the first polygon for the collision
 	 * @param {Polygon} p2 the second polygon for the collision
