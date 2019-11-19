@@ -11,20 +11,14 @@ const Vector2 = require('./vector2');
 class Polygon {
 	/**
 	 * Create a new Polygon
-	 * @param {*[]} [constructs] Vertices, Curves of the polygon
+	 * @param {*[]} [elements] Vertices, Curves of the polygon
 	 */
-	constructor(constructs = []) {
+	constructor(elements = []) {
 		this.children = [];
 		this.first = null;
-		if (constructs && constructs.length) {
-			for (const construct of constructs) {
-				if (construct.isCurve) {
-					for (const pt of construct.points) {
-						this.addVertex(pt);
-					}
-				} else {
-					this.addVertex(construct);
-				}
+		if (elements && elements.length) {
+			for (const element of elements) {
+				this.addElement(element);
 			}
 		}
 	}
@@ -46,7 +40,13 @@ class Polygon {
 	pointIsInsidePolygon(point) {
 		let oddNodes = false;
 		let vertex = this.first;
+		if (vertex.isCurve) {
+			vertex = vertex.next;
+		}
 		let next = vertex.next;
+		if (next.isCurve) {
+			next = next.next;
+		}
 		const x = point.x;
 		const y = point.y;
 		do {
@@ -61,7 +61,13 @@ class Polygon {
 					(next.y - vertex.y) * (next.x - vertex.x)) < x);
 			}
 			vertex = vertex.next;
+			if (vertex.isCurve) {
+				vertex = vertex.next;
+			}
 			next = vertex.next || this.first;
+			if (next.isCurve) {
+				next = next.next;
+			}
 		} while (!vertex.equals(this.first));
 		return oddNodes;
 	}
@@ -89,12 +95,22 @@ class Polygon {
 	/**
 	 * Setting vertices of the polygon
 	 * @param {Vector2[]} vertices Vertices to set
+	 * @deprecated
 	 * @returns {Polygon}
 	 */
 	setVertexes(vertices) {
+		return this.setElements(vertices);
+	}
+
+	/**
+	 * Setting elements of the polygon
+	 * @param {Vector2[]} vertices Vertices to set
+	 * @returns {Polygon}
+	 */
+	setElements(elements) {
 		this.first = null;
-		for (const v of vertices) {
-			this.addVertex(v);
+		for (const v of elements) {
+			this.addElement(v);
 		}
 		return this;
 	}
@@ -103,21 +119,32 @@ class Polygon {
 	/**
 	 * Add a new vertices to the end
 	 * @param {Vector2} vertice the vertice to add
+	 * @deprecated
 	 * @returns {Polygon}
 	 */
 	addVertex(vertice) {
+		return this.addElement(vertice);
+	}
+
+
+	/**
+	 * Add a new vertices to the end
+	 * @param {Vector2|BezierCurve} element the vertice or curve to add
+	 * @returns {Polygon}
+	 */
+	addElement(element) {
 		if (this.first === null) {
-			this.first = vertice;
-			this.first.next = vertice;
-			this.first.prev = vertice;
+			this.first = element;
+			this.first.next = element;
+			this.first.prev = element;
 		} else {
 			const next = this.first;
 			const prev = next.prev;
 
-			next.prev = vertice;
-			vertice.next = next;
-			vertice.prev = prev;
-			prev.next = vertice;
+			next.prev = element;
+			element.next = next;
+			element.prev = prev;
+			prev.next = element;
 		}
 		return this;
 	}
@@ -174,9 +201,19 @@ class Polygon {
 	 */
 	moveBy(value) {
 		let v = this.first;
+		if (v.isCurve) {
+			v = v.next;
+		}
+		if (v.isCurve) {
+			v = v.next;
+		}
 		do {
 			v.add(value);
-			v = v.next;
+			let next = v.next;
+			if (next.isCurve) {
+				next = next.next;
+			}
+			v = next;
 		} while (!v.equals(this.first));
 		return this;
 	}
@@ -203,10 +240,16 @@ class Polygon {
 	get points() {
 		const points = [];
 		let v = this.first;
-
-		do {
-			points.push(v);
+		if (v.isCurve) {
 			v = v.next;
+		}
+		do {
+			let next = v.next;
+			if (next.isCurve) {
+				next = next.next;
+			}
+			points.push(v);
+			v = next;
 		} while (!v.equals(this.first));
 		return points;
 	}
@@ -220,12 +263,19 @@ class Polygon {
 		const lines = [];
 		let prev = null;
 		let cur = this.first;
+		if (cur.isCurve) {
+			cur = cur.next;
+		}
 		do {
+			let next = cur.next;
+			if (next.isCurve) {
+				next = next.next;
+			}
 			if (prev !== null) {
 				lines.push(new Line(prev, cur));
 			}
 			prev = cur;
-			cur = cur.next;
+			cur = next;
 		} while (!cur.equals(this.first));
 		return lines;
 	}
@@ -238,9 +288,16 @@ class Polygon {
 	get area() {
 		let total = 0;
 		let v = this.first;
-		do {
-			total += (v.x * v.next.y) - (v.y * v.next.x);
+		if (v.isCurve) {
 			v = v.next;
+		}
+		do {
+			let next = v.next;
+			if (next.isCurve) {
+				next = next.next;
+			}
+			total += (v.x * next.y) - (v.y * next.x);
+			v = next;
 		} while (!v.equals(this.first));
 
 		let area = total / 2;
@@ -270,12 +327,19 @@ class Polygon {
 	 */
 	get isConcave() {
 		let v = this.first;
+		if (v.isCurve) {
+			v = v.next;
+		}
 		do {
-			const line = new Line(v, v.next);
+			let next = v.next;
+			if (next.isCurve) {
+				next = next.next;
+			}
+			const line = new Line(v, next);
 			if (this.pointIsInsidePolygon(line.alongPointUnclamped(1.01))) {
 				return true;
 			}
-			v = v.next;
+			v = next;
 		} while (!v.equals(this.first));
 		return false;
 	}
@@ -290,15 +354,25 @@ class Polygon {
 			return this;
 		}
 		let v = this.first;
-		do {
-			const line = new Line(v, v.next);
-			if (this.pointIsInsidePolygon(line.alongPointUnclamped(1.01))) {
-				if (v.next.equals(this.first)) {
-					this.first = v.next.next;
-				}
-				v.next = v.next.next;
-			}
+		if (v.isCurve) {
 			v = v.next;
+		}
+		do {
+			let next = v.next;
+			if (next.isCurve) {
+				next = next.next;
+			}
+			const line = new Line(v, next);
+			if (this.pointIsInsidePolygon(line.alongPointUnclamped(1.01))) {
+				if (next.equals(this.first)) {
+					this.first = next.next;
+				}
+				next = next.next;
+			}
+			v = next;
+			if (v.isCurve) {
+				v = next;
+			}
 		} while (!v.equals(this.first));
 		return this;
 	}
