@@ -11,7 +11,7 @@ const Vector2 = require('./vector2');
 class Polygon {
 	/**
 	 * Create a new Polygon
-	 * @param {*[]} [elements] Vertices, Curves of the polygon
+	 * @param {Array<Vector2|BezierCurve>} [elements] Vertices, Curves of the polygon
 	 */
 	constructor(elements = []) {
 		this.children = [];
@@ -104,7 +104,7 @@ class Polygon {
 
 	/**
 	 * Setting elements of the polygon
-	 * @param {Vector2[]} vertices Vertices to set
+	 * @param {Array<Vector2|BezierCurve>} vertices Vertices to set
 	 * @returns {Polygon}
 	 */
 	setElements(elements) {
