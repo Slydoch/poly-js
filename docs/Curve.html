@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>BezierCurve</title>
+		<title>&amp;lt;abstract&amp;gt; Curve</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -64,7 +64,7 @@
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
 				<span class="kind">class</span>
-				<h1><span class="name">BezierCurve</span></h1>
+				<h1><span class="signature-attribs">&lt;abstract> </span><span class="name">Curve</span></h1>
 			</div>
 		</div>
 	<div class="container content">
@@ -73,69 +73,17 @@
 						<ol class="breadcrumb">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="list_class.html">Classes</a></li>
-							<li class="active">BezierCurve</li>
+							<li class="active">Curve</li>
 						</ol>
 					<section>
 							<dl class="symbol primary">
 								<dt class="symbol-title class collapsible-symbol expanded">
-			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">BezierCurve</span><span class="signature-params">( <span class="signature-param">first</span>, <span class="signature-param">last</span> [,&nbsp;<span class="signature-param">controllers</span> [,&nbsp;<span class="signature-param">segmentsCount</span>&nbsp;]&nbsp;]&nbsp;)</span><span class="signature-type"></span></h2>
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="signature-attribs">&lt;abstract> </span><span class="name">Curve</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
 </dt>
 <dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc">BezierCurve Class</div>
-			</div>			<div class="callout callout-info">
-				<h5>Parameters</h5>
-				<table class="params table table-striped">
-					<thead>
-					<tr>
-							<th>Name</th>
-						<th>Type</th>
-							<th>Attributes</th>
-							<th>Default</th>
-						<th class="last">Description</th>
-					</tr>
-					</thead>
-					<tbody>
-						<tr>
-								<td><code>first</code></td>
-							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span></td>
-								<td class="attributes"></td>
-								<td></td>
-							<td class="last">
-									The first point of the curve
-							</td>
-						</tr>
-						<tr>
-								<td><code>last</code></td>
-							<td><span class="param-type"><a href="Vector2.html">Vector2</a></span></td>
-								<td class="attributes"></td>
-								<td></td>
-							<td class="last">
-									The last point of the curve
-							</td>
-						</tr>
-						<tr>
-								<td><code>controllers</code></td>
-							<td><span class="param-type">Array.&lt;<a href="Vector2.html">Vector2</a>></span></td>
-								<td class="attributes">&lt;optional&gt;<br/></td>
-								<td></td>
-							<td class="last">
-									Controllers points of the curve
-							</td>
-						</tr>
-						<tr>
-								<td><code>segmentsCount</code></td>
-							<td><span class="param-type">Number</span></td>
-								<td class="attributes">&lt;optional&gt;<br/></td>
-								<td>100</td>
-							<td class="last">
-									Segment count for polygon conversion and drawing
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description classdesc">Curve class, base of all curves</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 			
 			
@@ -155,7 +103,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-16">line 16</a></p>
+									<p class="form-control-static"><a href="curve.js.html">curve.js</a>, <a href="curve.js.html#line-8">line 8</a></p>
 								</div>
 							</div>
 			
@@ -171,11 +119,11 @@
 									<dl class="symbol">
 											<hr/>
 											<dt class="symbol-title member public collapsible-symbol">
-			<h4 id="first" class="member public"><span class="name">first</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
+			<h4 id="next" class="member public"><span class="name">next</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
 		</dt>
 <dd class="symbol-details member public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">The first point of the curve</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Get the next point</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -203,7 +151,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-29">line 29</a></p>
+									<p class="form-control-static"><a href="curve.js.html">curve.js</a>, <a href="curve.js.html#line-18">line 18</a></p>
 								</div>
 							</div>
 			
@@ -215,11 +163,11 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title member public collapsible-symbol">
-			<h4 id="last" class="member public"><span class="name">last</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
+			<h4 id="prev" class="member public"><span class="name">prev</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
 		</dt>
 <dd class="symbol-details member public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">The last point of the curve</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Get the previous point</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -247,7 +195,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-37">line 37</a></p>
+									<p class="form-control-static"><a href="curve.js.html">curve.js</a>, <a href="curve.js.html#line-26">line 26</a></p>
 								</div>
 							</div>
 			
@@ -259,11 +207,99 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title member public collapsible-symbol">
-			<h4 id="controllers" class="member public"><span class="name">controllers</span><span class="signature-type"> :Array.&lt;<a href="Vector2.html">Vector2</a>></span></h4>
+			<h4 id="prev" class="member public"><span class="name">prev</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
 		</dt>
 <dd class="symbol-details member public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Controllers of the curve</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Set the previous element</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Vector2.html">Vector2</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="curve.js.html">curve.js</a>, <a href="curve.js.html#line-34">line 34</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="next" class="member public"><span class="name">next</span><span class="signature-type"> :<a href="Vector2.html">Vector2</a></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Set the next element</div>
+			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
+			
+							<!-- type -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Type</label>
+								<div class="col-sm-9">
+									<div class="form-control-static type-names"><span class="param-type"><a href="Vector2.html">Vector2</a></span></div>
+								</div>
+							</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							<!-- source -->
+							<div class="form-group">
+								<label class="col-sm-3 control-label">Source</label>
+								<div class="col-sm-9">
+									<p class="form-control-static"><a href="curve.js.html">curve.js</a>, <a href="curve.js.html#line-43">line 43</a></p>
+								</div>
+							</div>
+			
+			
+			
+			
+					</form>
+			</div>	</div>
+</dd>
+											<hr/>
+											<dt class="symbol-title member public collapsible-symbol">
+			<h4 id="points" class="member public"><span class="name">points</span><span class="signature-type"> :Array.&lt;<a href="Vector2.html">Vector2</a>></span></h4>
+		</dt>
+<dd class="symbol-details member public  collapsible-symbol">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Points along the curves, count depending on segmentsCount</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
@@ -291,7 +327,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-45">line 45</a></p>
+									<p class="form-control-static"><a href="curve.js.html">curve.js</a>, <a href="curve.js.html#line-52">line 52</a></p>
 								</div>
 							</div>
 			
@@ -303,18 +339,18 @@
 </dd>
 											<hr/>
 											<dt class="symbol-title member public collapsible-symbol">
-			<h4 id="segmentsCount" class="member public"><span class="name">segmentsCount</span><span class="signature-type"> :Number</span></h4>
+			<h4 id="isCurve" class="member public"><span class="signature-attribs">&lt;readonly> </span><span class="name">isCurve</span><span class="signature-type"> :Boolean</span></h4>
 		</dt>
 <dd class="symbol-details member public  collapsible-symbol">
 	<div class="symbol-details-inner">
-			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Segment count for the curve calc (for line display)</div>
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">Is a curve ? Use by the system to differenciate Vector2 over curve</div>
 			</div>			<div class="callout callout-default"><h5>Details</h5>		<form class="form-horizontal details">
 			
 							<!-- type -->
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Type</label>
 								<div class="col-sm-9">
-									<div class="form-control-static type-names"><span class="param-type">Number</span></div>
+									<div class="form-control-static type-names"><span class="param-type">Boolean</span></div>
 								</div>
 							</div>
 			
@@ -335,7 +371,7 @@
 							<div class="form-group">
 								<label class="col-sm-3 control-label">Source</label>
 								<div class="col-sm-9">
-									<p class="form-control-static"><a href="bezierCurve.js.html">bezierCurve.js</a>, <a href="bezierCurve.js.html#line-53">line 53</a></p>
+									<p class="form-control-static"><a href="curve.js.html">curve.js</a>, <a href="curve.js.html#line-61">line 61</a></p>
 								</div>
 							</div>
 			

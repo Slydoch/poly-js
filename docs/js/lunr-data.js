@@ -57,20 +57,22 @@ window.lunrData = {
           "list",
           "list:class"
         ],
-        "BezierCurve.html": [
-          "beziercurv",
-          "class"
+        "Curve.html": [
+          "base",
+          "class",
+          "curv",
+          "lt;abstract&gt"
         ],
-        "BezierCurve.html#next": [
-          "beziercurve#next",
+        "Curve.html#next": [
+          "curve#next",
           "element",
           "member",
           "next",
           "set",
           "vector2"
         ],
-        "BezierCurve.html#prev": [
-          "beziercurve#prev",
+        "Curve.html#prev": [
+          "curve#prev",
           "element",
           "member",
           "prev",
@@ -78,51 +80,29 @@ window.lunrData = {
           "set",
           "vector2"
         ],
-        "BezierCurve.html#first": [
-          "beziercurve#first",
-          "curv",
-          "first",
-          "member",
-          "point",
-          "vector2"
-        ],
-        "BezierCurve.html#last": [
-          "beziercurve#last",
-          "curv",
-          "last",
-          "member",
-          "point",
-          "vector2"
-        ],
-        "BezierCurve.html#controllers": [
-          "array.&lt;vector2&gt",
-          "beziercurve#control",
-          "control",
-          "curv",
-          "member"
-        ],
-        "BezierCurve.html#segmentsCount": [
-          "beziercurve#segmentscount",
-          "calc",
-          "count",
-          "curv",
-          "display",
-          "line",
-          "member",
-          "number",
-          "segment",
-          "segmentscount"
-        ],
-        "BezierCurve.html#points": [
+        "Curve.html#points": [
           "along",
           "array.&lt;vector2&gt",
-          "beziercurve#point",
           "count",
           "curv",
+          "curve#point",
           "depend",
           "member",
           "point",
           "segmentscount"
+        ],
+        "Curve.html#isCurve": [
+          "boolean",
+          "curv",
+          "curve#iscurv",
+          "differenci",
+          "iscurv",
+          "lt;readonly&gt",
+          "member",
+          "over",
+          "system",
+          "us",
+          "vector2"
         ],
         "Line.html": [
           "class",
@@ -177,6 +157,45 @@ window.lunrData = {
           "lt;static&gt",
           "return",
           "two"
+        ],
+        "BezierCurve.html": [
+          "beziercurv",
+          "class"
+        ],
+        "BezierCurve.html#first": [
+          "beziercurve#first",
+          "curv",
+          "first",
+          "member",
+          "point",
+          "vector2"
+        ],
+        "BezierCurve.html#last": [
+          "beziercurve#last",
+          "curv",
+          "last",
+          "member",
+          "point",
+          "vector2"
+        ],
+        "BezierCurve.html#controllers": [
+          "array.&lt;vector2&gt",
+          "beziercurve#control",
+          "control",
+          "curv",
+          "member"
+        ],
+        "BezierCurve.html#segmentsCount": [
+          "beziercurve#segmentscount",
+          "calc",
+          "count",
+          "curv",
+          "display",
+          "line",
+          "member",
+          "number",
+          "segment",
+          "segmentscount"
         ],
         "Polygon.html": [
           "class",
@@ -1046,6 +1065,25 @@ window.lunrData = {
           "vector2",
           "vector2#clon"
         ],
+        "Vector2.html#rotate": [
+          "angl",
+          "arround",
+          "function",
+          "rotat",
+          "vector2",
+          "vector2#rot",
+          "zero"
+        ],
+        "Vector2.html#equals": [
+          "boolean",
+          "equal",
+          "function",
+          "p1",
+          "p2",
+          "test",
+          "vector2",
+          "vector2#equ"
+        ],
         "Vector2.html#equalsX": [
           "boolean",
           "equal",
@@ -1460,28 +1498,9 @@ window.lunrData = {
           "vector2",
           "vector2#inverti",
           "y"
-        ],
-        "Vector2.html#rotate": [
-          "angl",
-          "arround",
-          "function",
-          "rotat",
-          "vector2",
-          "vector2#rot",
-          "zero"
-        ],
-        "Vector2.html#equals": [
-          "boolean",
-          "equal",
-          "function",
-          "p1",
-          "p2",
-          "test",
-          "vector2",
-          "vector2#equ"
         ]
       },
-      "length": 154
+      "length": 156
     },
     "tokenStore": {
       "root": {
@@ -1642,6 +1661,20 @@ window.lunrData = {
             "docs": {},
             "c": {
               "docs": {},
+              "u": {
+                "docs": {},
+                "r": {
+                  "docs": {},
+                  "v": {
+                    "docs": {
+                      "Curve.html#isCurve": {
+                        "ref": "Curve.html#isCurve",
+                        "tf": 683.3333333333334
+                      }
+                    }
+                  }
+                }
+              },
               "o": {
                 "docs": {},
                 "n": {
@@ -1852,6 +1885,20 @@ window.lunrData = {
               }
             }
           },
+          "v": {
+            "docs": {},
+            "e": {
+              "docs": {},
+              "r": {
+                "docs": {
+                  "Curve.html#isCurve": {
+                    "ref": "Curve.html#isCurve",
+                    "tf": 7.142857142857142
+                  }
+                }
+              }
+            }
+          },
           "n": {
             "docs": {
               "Line.html#intersect": {
@@ -1884,6 +1931,10 @@ window.lunrData = {
                 "ref": "Polygon.html#.Xor",
                 "tf": 7.142857142857142
               },
+              "Vector2.html#equals": {
+                "ref": "Vector2.html#equals",
+                "tf": 25
+              },
               "Vector2.html#set": {
                 "ref": "Vector2.html#set",
                 "tf": 25
@@ -1902,10 +1953,6 @@ window.lunrData = {
               },
               "Vector2.html#divide": {
                 "ref": "Vector2.html#divide",
-                "tf": 25
-              },
-              "Vector2.html#equals": {
-                "ref": "Vector2.html#equals",
                 "tf": 25
               }
             }
@@ -1932,6 +1979,10 @@ window.lunrData = {
                 "ref": "Polygon.html#.Xor",
                 "tf": 7.142857142857142
               },
+              "Vector2.html#equals": {
+                "ref": "Vector2.html#equals",
+                "tf": 25
+              },
               "Vector2.html#set": {
                 "ref": "Vector2.html#set",
                 "tf": 25
@@ -1950,10 +2001,6 @@ window.lunrData = {
               },
               "Vector2.html#divide": {
                 "ref": "Vector2.html#divide",
-                "tf": 25
-              },
-              "Vector2.html#equals": {
-                "ref": "Vector2.html#equals",
                 "tf": 25
               }
             }
@@ -2946,24 +2993,16 @@ window.lunrData = {
                 "docs": {},
                 "t": {
                   "docs": {
-                    "BezierCurve.html#next": {
-                      "ref": "BezierCurve.html#next",
+                    "Curve.html#next": {
+                      "ref": "Curve.html#next",
                       "tf": 25
                     },
-                    "BezierCurve.html#prev": {
-                      "ref": "BezierCurve.html#prev",
+                    "Curve.html#prev": {
+                      "ref": "Curve.html#prev",
                       "tf": 25
                     },
-                    "BezierCurve.html#first": {
-                      "ref": "BezierCurve.html#first",
-                      "tf": 16.666666666666664
-                    },
-                    "BezierCurve.html#last": {
-                      "ref": "BezierCurve.html#last",
-                      "tf": 16.666666666666664
-                    },
-                    "BezierCurve.html#points": {
-                      "ref": "BezierCurve.html#points",
+                    "Curve.html#points": {
+                      "ref": "Curve.html#points",
                       "tf": 708.3333333333334
                     },
                     "Line.html#alongPoint": {
@@ -2973,6 +3012,14 @@ window.lunrData = {
                     "Line.html#alongPointUnclamped": {
                       "ref": "Line.html#alongPointUnclamped",
                       "tf": 7.142857142857142
+                    },
+                    "BezierCurve.html#first": {
+                      "ref": "BezierCurve.html#first",
+                      "tf": 16.666666666666664
+                    },
+                    "BezierCurve.html#last": {
+                      "ref": "BezierCurve.html#last",
+                      "tf": 16.666666666666664
                     },
                     "Polygon.html#points": {
                       "ref": "Polygon.html#points",
@@ -3155,8 +3202,8 @@ window.lunrData = {
               "docs": {},
               "v": {
                 "docs": {
-                  "BezierCurve.html#prev": {
-                    "ref": "BezierCurve.html#prev",
+                  "Curve.html#prev": {
+                    "ref": "Curve.html#prev",
                     "tf": 700
                   }
                 },
@@ -3166,8 +3213,8 @@ window.lunrData = {
                     "docs": {},
                     "u": {
                       "docs": {
-                        "BezierCurve.html#prev": {
-                          "ref": "BezierCurve.html#prev",
+                        "Curve.html#prev": {
+                          "ref": "Curve.html#prev",
                           "tf": 16.666666666666664
                         }
                       }
@@ -3910,25 +3957,22 @@ window.lunrData = {
               }
             }
           },
-          "i": {
+          "o": {
             "docs": {},
-            "g": {
+            "t": {
               "docs": {},
-              "h": {
+              "a": {
                 "docs": {},
                 "t": {
                   "docs": {
-                    "Vector2.html#.Right": {
-                      "ref": "Vector2.html#.Right",
-                      "tf": 708.3333333333334
+                    "Vector2.html#rotate": {
+                      "ref": "Vector2.html#rotate",
+                      "tf": 693.3333333333334
                     }
                   }
                 }
               }
-            }
-          },
-          "o": {
-            "docs": {},
+            },
             "u": {
               "docs": {},
               "n": {
@@ -3966,16 +4010,19 @@ window.lunrData = {
                   }
                 }
               }
-            },
-            "t": {
+            }
+          },
+          "i": {
+            "docs": {},
+            "g": {
               "docs": {},
-              "a": {
+              "h": {
                 "docs": {},
                 "t": {
                   "docs": {
-                    "Vector2.html#rotate": {
-                      "ref": "Vector2.html#rotate",
-                      "tf": 693.3333333333334
+                    "Vector2.html#.Right": {
+                      "ref": "Vector2.html#.Right",
+                      "tf": 708.3333333333334
                     }
                   }
                 }
@@ -4027,12 +4074,12 @@ window.lunrData = {
             "docs": {},
             "t": {
               "docs": {
-                "BezierCurve.html#prev": {
-                  "ref": "BezierCurve.html#prev",
+                "Curve.html#prev": {
+                  "ref": "Curve.html#prev",
                   "tf": 16.666666666666664
                 },
-                "BezierCurve.html#next": {
-                  "ref": "BezierCurve.html#next",
+                "Curve.html#next": {
+                  "ref": "Curve.html#next",
                   "tf": 16.666666666666664
                 },
                 "Polygon.html#setChildren": {
@@ -4215,13 +4262,13 @@ window.lunrData = {
                                 "docs": {},
                                 "t": {
                                   "docs": {
+                                    "Curve.html#points": {
+                                      "ref": "Curve.html#points",
+                                      "tf": 8.333333333333332
+                                    },
                                     "BezierCurve.html#segmentsCount": {
                                       "ref": "BezierCurve.html#segmentsCount",
                                       "tf": 700
-                                    },
-                                    "BezierCurve.html#points": {
-                                      "ref": "BezierCurve.html#points",
-                                      "tf": 8.333333333333332
                                     }
                                   }
                                 }
@@ -4229,6 +4276,26 @@ window.lunrData = {
                             }
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "y": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "m": {
+                    "docs": {
+                      "Curve.html#isCurve": {
+                        "ref": "Curve.html#isCurve",
+                        "tf": 7.142857142857142
                       }
                     }
                   }
@@ -4428,8 +4495,74 @@ window.lunrData = {
               }
             }
           },
+          "e": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "Curve.html#points": {
+                        "ref": "Curve.html#points",
+                        "tf": 8.333333333333332
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "i": {
             "docs": {},
+            "f": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {
+                      "Polygon.html#difference": {
+                        "ref": "Polygon.html#difference",
+                        "tf": 691.6666666666667
+                      },
+                      "Polygon.html#.Difference": {
+                        "ref": "Polygon.html#.Difference",
+                        "tf": 677.1428571428571
+                      },
+                      "Circle.html#difference": {
+                        "ref": "Circle.html#difference",
+                        "tf": 691.6666666666667
+                      },
+                      "Rect.html#difference": {
+                        "ref": "Rect.html#difference",
+                        "tf": 691.6666666666667
+                      }
+                    },
+                    "e": {
+                      "docs": {},
+                      "n": {
+                        "docs": {},
+                        "c": {
+                          "docs": {},
+                          "i": {
+                            "docs": {
+                              "Curve.html#isCurve": {
+                                "ref": "Curve.html#isCurve",
+                                "tf": 7.142857142857142
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
             "s": {
               "docs": {},
               "p": {
@@ -4461,35 +4594,6 @@ window.lunrData = {
                           "ref": "Vector2.html#.Distance",
                           "tf": 680
                         }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "f": {
-              "docs": {},
-              "f": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {
-                      "Polygon.html#difference": {
-                        "ref": "Polygon.html#difference",
-                        "tf": 691.6666666666667
-                      },
-                      "Polygon.html#.Difference": {
-                        "ref": "Polygon.html#.Difference",
-                        "tf": 677.1428571428571
-                      },
-                      "Circle.html#difference": {
-                        "ref": "Circle.html#difference",
-                        "tf": 691.6666666666667
-                      },
-                      "Rect.html#difference": {
-                        "ref": "Rect.html#difference",
-                        "tf": 691.6666666666667
                       }
                     }
                   }
@@ -4538,26 +4642,6 @@ window.lunrData = {
                       "Vector2.html#divideY": {
                         "ref": "Vector2.html#divideY",
                         "tf": 10
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "e": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "n": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "BezierCurve.html#points": {
-                        "ref": "BezierCurve.html#points",
-                        "tf": 8.333333333333332
                       }
                     }
                   }
@@ -4755,12 +4839,16 @@ window.lunrData = {
                       "ref": "list_class.html",
                       "tf": 635
                     },
-                    "BezierCurve.html": {
-                      "ref": "BezierCurve.html",
-                      "tf": 135
+                    "Curve.html": {
+                      "ref": "Curve.html",
+                      "tf": 122.5
                     },
                     "Line.html": {
                       "ref": "Line.html",
+                      "tf": 135
+                    },
+                    "BezierCurve.html": {
+                      "ref": "BezierCurve.html",
                       "tf": 135
                     },
                     "Polygon.html": {
@@ -4829,6 +4917,18 @@ window.lunrData = {
               "docs": {},
               "v": {
                 "docs": {
+                  "Curve.html": {
+                    "ref": "Curve.html",
+                    "tf": 1875
+                  },
+                  "Curve.html#points": {
+                    "ref": "Curve.html#points",
+                    "tf": 8.333333333333332
+                  },
+                  "Curve.html#isCurve": {
+                    "ref": "Curve.html#isCurve",
+                    "tf": 14.285714285714285
+                  },
                   "BezierCurve.html#first": {
                     "ref": "BezierCurve.html#first",
                     "tf": 16.666666666666664
@@ -4844,10 +4944,86 @@ window.lunrData = {
                   "BezierCurve.html#segmentsCount": {
                     "ref": "BezierCurve.html#segmentsCount",
                     "tf": 8.333333333333332
-                  },
-                  "BezierCurve.html#points": {
-                    "ref": "BezierCurve.html#points",
-                    "tf": 8.333333333333332
+                  }
+                },
+                "e": {
+                  "docs": {},
+                  "#": {
+                    "docs": {},
+                    "n": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "x": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "Curve.html#next": {
+                                "ref": "Curve.html#next",
+                                "tf": 1150
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "p": {
+                      "docs": {},
+                      "r": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "v": {
+                            "docs": {
+                              "Curve.html#prev": {
+                                "ref": "Curve.html#prev",
+                                "tf": 1150
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "o": {
+                        "docs": {},
+                        "i": {
+                          "docs": {},
+                          "n": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "Curve.html#points": {
+                                  "ref": "Curve.html#points",
+                                  "tf": 1150
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "i": {
+                      "docs": {},
+                      "s": {
+                        "docs": {},
+                        "c": {
+                          "docs": {},
+                          "u": {
+                            "docs": {},
+                            "r": {
+                              "docs": {},
+                              "v": {
+                                "docs": {
+                                  "Curve.html#isCurve": {
+                                    "ref": "Curve.html#isCurve",
+                                    "tf": 1150
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               },
@@ -4908,6 +5084,28 @@ window.lunrData = {
           },
           "o": {
             "docs": {},
+            "u": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "Curve.html#points": {
+                      "ref": "Curve.html#points",
+                      "tf": 8.333333333333332
+                    },
+                    "BezierCurve.html#segmentsCount": {
+                      "ref": "BezierCurve.html#segmentsCount",
+                      "tf": 8.333333333333332
+                    },
+                    "Circle.html#sides": {
+                      "ref": "Circle.html#sides",
+                      "tf": 16.666666666666664
+                    }
+                  }
+                }
+              }
+            },
             "n": {
               "docs": {},
               "t": {
@@ -5014,28 +5212,6 @@ window.lunrData = {
                         "ref": "Rect.html#isConcave",
                         "tf": 25
                       }
-                    }
-                  }
-                }
-              }
-            },
-            "u": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "t": {
-                  "docs": {
-                    "BezierCurve.html#segmentsCount": {
-                      "ref": "BezierCurve.html#segmentsCount",
-                      "tf": 8.333333333333332
-                    },
-                    "BezierCurve.html#points": {
-                      "ref": "BezierCurve.html#points",
-                      "tf": 8.333333333333332
-                    },
-                    "Circle.html#sides": {
-                      "ref": "Circle.html#sides",
-                      "tf": 16.666666666666664
                     }
                   }
                 }
@@ -5903,10 +6079,6 @@ window.lunrData = {
               "docs": {},
               "e": {
                 "docs": {
-                  "BezierCurve.html#segmentsCount": {
-                    "ref": "BezierCurve.html#segmentsCount",
-                    "tf": 8.333333333333332
-                  },
                   "Line.html": {
                     "ref": "Line.html",
                     "tf": 1925
@@ -5926,6 +6098,10 @@ window.lunrData = {
                   "Line.html#.Intersect": {
                     "ref": "Line.html#.Intersect",
                     "tf": 14.285714285714285
+                  },
+                  "BezierCurve.html#segmentsCount": {
+                    "ref": "BezierCurve.html#segmentsCount",
+                    "tf": 8.333333333333332
                   },
                   "Polygon.html#lines": {
                     "ref": "Polygon.html#lines",
@@ -6097,90 +6273,38 @@ window.lunrData = {
               }
             }
           },
-          "a": {
+          "t": {
             "docs": {},
-            "s": {
+            ";": {
               "docs": {},
-              "t": {
-                "docs": {
-                  "BezierCurve.html#last": {
-                    "ref": "BezierCurve.html#last",
-                    "tf": 716.6666666666666
-                  }
-                }
-              }
-            }
-          },
-          "e": {
-            "docs": {},
-            "n": {
-              "docs": {},
-              "g": {
+              "a": {
                 "docs": {},
-                "t": {
+                "b": {
                   "docs": {},
-                  "h": {
-                    "docs": {
-                      "Line.html#length": {
-                        "ref": "Line.html#length",
-                        "tf": 683.3333333333334
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "r": {
-              "docs": {},
-              "p": {
-                "docs": {
-                  "Vector2.html#.Lerp": {
-                    "ref": "Vector2.html#.Lerp",
-                    "tf": 673.8095238095237
-                  },
-                  "Vector2.html#.LerpUnclamped": {
-                    "ref": "Vector2.html#.LerpUnclamped",
-                    "tf": 5.555555555555555
-                  }
-                },
-                "v": {
-                  "docs": {},
-                  "a": {
+                  "s": {
                     "docs": {},
-                    "l": {
+                    "t": {
                       "docs": {},
-                      "u": {
-                        "docs": {
-                          "Line.html#alongPoint": {
-                            "ref": "Line.html#alongPoint",
-                            "tf": 60
-                          },
-                          "Line.html#alongPointUnclamped": {
-                            "ref": "Line.html#alongPointUnclamped",
-                            "tf": 57.14285714285714
-                          }
-                        }
-                      }
-                    }
-                  }
-                },
-                "u": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "c": {
-                      "docs": {},
-                      "l": {
+                      "r": {
                         "docs": {},
                         "a": {
                           "docs": {},
-                          "m": {
+                          "c": {
                             "docs": {},
-                            "p": {
-                              "docs": {
-                                "Vector2.html#.LerpUnclamped": {
-                                  "ref": "Vector2.html#.LerpUnclamped",
-                                  "tf": 666.6666666666666
+                            "t": {
+                              "docs": {},
+                              "&": {
+                                "docs": {},
+                                "g": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {
+                                      "Curve.html": {
+                                        "ref": "Curve.html",
+                                        "tf": 50
+                                      }
+                                    }
+                                  }
                                 }
                               }
                             }
@@ -6190,46 +6314,7 @@ window.lunrData = {
                     }
                   }
                 }
-              }
-            },
-            "v": {
-              "docs": {},
-              "e": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "Polygon.html#region": {
-                      "ref": "Polygon.html#region",
-                      "tf": 3.8461538461538463
-                    },
-                    "Circle.html#region": {
-                      "ref": "Circle.html#region",
-                      "tf": 3.8461538461538463
-                    },
-                    "Rect.html#region": {
-                      "ref": "Rect.html#region",
-                      "tf": 3.8461538461538463
-                    }
-                  }
-                }
-              }
-            },
-            "f": {
-              "docs": {},
-              "t": {
-                "docs": {
-                  "Vector2.html#.Left": {
-                    "ref": "Vector2.html#.Left",
-                    "tf": 708.3333333333334
-                  }
-                }
-              }
-            }
-          },
-          "t": {
-            "docs": {},
-            ";": {
-              "docs": {},
+              },
               "r": {
                 "docs": {},
                 "e": {
@@ -6252,6 +6337,10 @@ window.lunrData = {
                                   "docs": {},
                                   "t": {
                                     "docs": {
+                                      "Curve.html#isCurve": {
+                                        "ref": "Curve.html#isCurve",
+                                        "tf": 33.33333333333333
+                                      },
                                       "Line.html#length": {
                                         "ref": "Line.html#length",
                                         "tf": 33.33333333333333
@@ -6501,10 +6590,353 @@ window.lunrData = {
                 }
               }
             }
+          },
+          "e": {
+            "docs": {},
+            "n": {
+              "docs": {},
+              "g": {
+                "docs": {},
+                "t": {
+                  "docs": {},
+                  "h": {
+                    "docs": {
+                      "Line.html#length": {
+                        "ref": "Line.html#length",
+                        "tf": 683.3333333333334
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "r": {
+              "docs": {},
+              "p": {
+                "docs": {
+                  "Vector2.html#.Lerp": {
+                    "ref": "Vector2.html#.Lerp",
+                    "tf": 673.8095238095237
+                  },
+                  "Vector2.html#.LerpUnclamped": {
+                    "ref": "Vector2.html#.LerpUnclamped",
+                    "tf": 5.555555555555555
+                  }
+                },
+                "v": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "u": {
+                        "docs": {
+                          "Line.html#alongPoint": {
+                            "ref": "Line.html#alongPoint",
+                            "tf": 60
+                          },
+                          "Line.html#alongPointUnclamped": {
+                            "ref": "Line.html#alongPointUnclamped",
+                            "tf": 57.14285714285714
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "u": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "c": {
+                      "docs": {},
+                      "l": {
+                        "docs": {},
+                        "a": {
+                          "docs": {},
+                          "m": {
+                            "docs": {},
+                            "p": {
+                              "docs": {
+                                "Vector2.html#.LerpUnclamped": {
+                                  "ref": "Vector2.html#.LerpUnclamped",
+                                  "tf": 666.6666666666666
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "v": {
+              "docs": {},
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Polygon.html#region": {
+                      "ref": "Polygon.html#region",
+                      "tf": 3.8461538461538463
+                    },
+                    "Circle.html#region": {
+                      "ref": "Circle.html#region",
+                      "tf": 3.8461538461538463
+                    },
+                    "Rect.html#region": {
+                      "ref": "Rect.html#region",
+                      "tf": 3.8461538461538463
+                    }
+                  }
+                }
+              }
+            },
+            "f": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "Vector2.html#.Left": {
+                    "ref": "Vector2.html#.Left",
+                    "tf": 708.3333333333334
+                  }
+                }
+              }
+            }
+          },
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "t": {
+                "docs": {
+                  "BezierCurve.html#last": {
+                    "ref": "BezierCurve.html#last",
+                    "tf": 716.6666666666666
+                  }
+                }
+              }
+            }
           }
         },
         "b": {
           "docs": {},
+          "a": {
+            "docs": {},
+            "s": {
+              "docs": {},
+              "e": {
+                "docs": {
+                  "Curve.html": {
+                    "ref": "Curve.html",
+                    "tf": 12.5
+                  }
+                }
+              }
+            }
+          },
+          "o": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "a": {
+                    "docs": {},
+                    "n": {
+                      "docs": {
+                        "Curve.html#isCurve": {
+                          "ref": "Curve.html#isCurve",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#isConvex": {
+                          "ref": "Polygon.html#isConvex",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#isConcave": {
+                          "ref": "Polygon.html#isConcave",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#pointIsInside": {
+                          "ref": "Polygon.html#pointIsInside",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#pointIsInsidePolygon": {
+                          "ref": "Polygon.html#pointIsInsidePolygon",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#colliding": {
+                          "ref": "Polygon.html#colliding",
+                          "tf": 33.33333333333333
+                        },
+                        "Polygon.html#intersect": {
+                          "ref": "Polygon.html#intersect",
+                          "tf": 8.333333333333332
+                        },
+                        "Polygon.html#difference": {
+                          "ref": "Polygon.html#difference",
+                          "tf": 8.333333333333332
+                        },
+                        "Polygon.html#union": {
+                          "ref": "Polygon.html#union",
+                          "tf": 8.333333333333332
+                        },
+                        "Polygon.html#xor": {
+                          "ref": "Polygon.html#xor",
+                          "tf": 8.333333333333332
+                        },
+                        "Polygon.html#.Colliding": {
+                          "ref": "Polygon.html#.Colliding",
+                          "tf": 20
+                        },
+                        "Polygon.html#.Intersect": {
+                          "ref": "Polygon.html#.Intersect",
+                          "tf": 7.142857142857142
+                        },
+                        "Polygon.html#.Union": {
+                          "ref": "Polygon.html#.Union",
+                          "tf": 7.142857142857142
+                        },
+                        "Polygon.html#.Difference": {
+                          "ref": "Polygon.html#.Difference",
+                          "tf": 7.142857142857142
+                        },
+                        "Polygon.html#.Xor": {
+                          "ref": "Polygon.html#.Xor",
+                          "tf": 7.142857142857142
+                        },
+                        "Circle.html#isConvex": {
+                          "ref": "Circle.html#isConvex",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#isConcave": {
+                          "ref": "Circle.html#isConcave",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#pointIsInside": {
+                          "ref": "Circle.html#pointIsInside",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#pointIsInsidePolygon": {
+                          "ref": "Circle.html#pointIsInsidePolygon",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#pointIsInsideCircle": {
+                          "ref": "Circle.html#pointIsInsideCircle",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#colliding": {
+                          "ref": "Circle.html#colliding",
+                          "tf": 33.33333333333333
+                        },
+                        "Circle.html#intersect": {
+                          "ref": "Circle.html#intersect",
+                          "tf": 8.333333333333332
+                        },
+                        "Circle.html#difference": {
+                          "ref": "Circle.html#difference",
+                          "tf": 8.333333333333332
+                        },
+                        "Circle.html#union": {
+                          "ref": "Circle.html#union",
+                          "tf": 8.333333333333332
+                        },
+                        "Circle.html#xor": {
+                          "ref": "Circle.html#xor",
+                          "tf": 8.333333333333332
+                        },
+                        "Rect.html#isConvex": {
+                          "ref": "Rect.html#isConvex",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#isConcave": {
+                          "ref": "Rect.html#isConcave",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#pointIsInside": {
+                          "ref": "Rect.html#pointIsInside",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#pointIsInsideRect": {
+                          "ref": "Rect.html#pointIsInsideRect",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#pointIsInsidePolygon": {
+                          "ref": "Rect.html#pointIsInsidePolygon",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#colliding": {
+                          "ref": "Rect.html#colliding",
+                          "tf": 33.33333333333333
+                        },
+                        "Rect.html#intersect": {
+                          "ref": "Rect.html#intersect",
+                          "tf": 8.333333333333332
+                        },
+                        "Rect.html#difference": {
+                          "ref": "Rect.html#difference",
+                          "tf": 8.333333333333332
+                        },
+                        "Rect.html#union": {
+                          "ref": "Rect.html#union",
+                          "tf": 8.333333333333332
+                        },
+                        "Rect.html#xor": {
+                          "ref": "Rect.html#xor",
+                          "tf": 8.333333333333332
+                        },
+                        "Vector2.html#equals": {
+                          "ref": "Vector2.html#equals",
+                          "tf": 25
+                        },
+                        "Vector2.html#equalsX": {
+                          "ref": "Vector2.html#equalsX",
+                          "tf": 33.33333333333333
+                        },
+                        "Vector2.html#equalsY": {
+                          "ref": "Vector2.html#equalsY",
+                          "tf": 33.33333333333333
+                        },
+                        "Vector2.html#isInside": {
+                          "ref": "Vector2.html#isInside",
+                          "tf": 33.33333333333333
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "x": {
+              "docs": {
+                "Rect.html#.Box": {
+                  "ref": "Rect.html#.Box",
+                  "tf": 685
+                }
+              }
+            },
+            "t": {
+              "docs": {},
+              "t": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "m": {
+                    "docs": {
+                      "Vector2.html#.Bottom": {
+                        "ref": "Vector2.html#.Bottom",
+                        "tf": 708.3333333333334
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
           "e": {
             "docs": {},
             "z": {
@@ -6532,57 +6964,6 @@ window.lunrData = {
                               "docs": {},
                               "#": {
                                 "docs": {},
-                                "n": {
-                                  "docs": {},
-                                  "e": {
-                                    "docs": {},
-                                    "x": {
-                                      "docs": {},
-                                      "t": {
-                                        "docs": {
-                                          "BezierCurve.html#next": {
-                                            "ref": "BezierCurve.html#next",
-                                            "tf": 1150
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
-                                "p": {
-                                  "docs": {},
-                                  "r": {
-                                    "docs": {},
-                                    "e": {
-                                      "docs": {},
-                                      "v": {
-                                        "docs": {
-                                          "BezierCurve.html#prev": {
-                                            "ref": "BezierCurve.html#prev",
-                                            "tf": 1150
-                                          }
-                                        }
-                                      }
-                                    }
-                                  },
-                                  "o": {
-                                    "docs": {},
-                                    "i": {
-                                      "docs": {},
-                                      "n": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {
-                                            "BezierCurve.html#points": {
-                                              "ref": "BezierCurve.html#points",
-                                              "tf": 1150
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                },
                                 "f": {
                                   "docs": {},
                                   "i": {
@@ -6720,202 +7101,6 @@ window.lunrData = {
                 }
               }
             }
-          },
-          "o": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "n": {
-                      "docs": {
-                        "Polygon.html#isConvex": {
-                          "ref": "Polygon.html#isConvex",
-                          "tf": 33.33333333333333
-                        },
-                        "Polygon.html#isConcave": {
-                          "ref": "Polygon.html#isConcave",
-                          "tf": 33.33333333333333
-                        },
-                        "Polygon.html#pointIsInside": {
-                          "ref": "Polygon.html#pointIsInside",
-                          "tf": 33.33333333333333
-                        },
-                        "Polygon.html#pointIsInsidePolygon": {
-                          "ref": "Polygon.html#pointIsInsidePolygon",
-                          "tf": 33.33333333333333
-                        },
-                        "Polygon.html#colliding": {
-                          "ref": "Polygon.html#colliding",
-                          "tf": 33.33333333333333
-                        },
-                        "Polygon.html#intersect": {
-                          "ref": "Polygon.html#intersect",
-                          "tf": 8.333333333333332
-                        },
-                        "Polygon.html#difference": {
-                          "ref": "Polygon.html#difference",
-                          "tf": 8.333333333333332
-                        },
-                        "Polygon.html#union": {
-                          "ref": "Polygon.html#union",
-                          "tf": 8.333333333333332
-                        },
-                        "Polygon.html#xor": {
-                          "ref": "Polygon.html#xor",
-                          "tf": 8.333333333333332
-                        },
-                        "Polygon.html#.Colliding": {
-                          "ref": "Polygon.html#.Colliding",
-                          "tf": 20
-                        },
-                        "Polygon.html#.Intersect": {
-                          "ref": "Polygon.html#.Intersect",
-                          "tf": 7.142857142857142
-                        },
-                        "Polygon.html#.Union": {
-                          "ref": "Polygon.html#.Union",
-                          "tf": 7.142857142857142
-                        },
-                        "Polygon.html#.Difference": {
-                          "ref": "Polygon.html#.Difference",
-                          "tf": 7.142857142857142
-                        },
-                        "Polygon.html#.Xor": {
-                          "ref": "Polygon.html#.Xor",
-                          "tf": 7.142857142857142
-                        },
-                        "Circle.html#isConvex": {
-                          "ref": "Circle.html#isConvex",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#isConcave": {
-                          "ref": "Circle.html#isConcave",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#pointIsInside": {
-                          "ref": "Circle.html#pointIsInside",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#pointIsInsidePolygon": {
-                          "ref": "Circle.html#pointIsInsidePolygon",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#pointIsInsideCircle": {
-                          "ref": "Circle.html#pointIsInsideCircle",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#colliding": {
-                          "ref": "Circle.html#colliding",
-                          "tf": 33.33333333333333
-                        },
-                        "Circle.html#intersect": {
-                          "ref": "Circle.html#intersect",
-                          "tf": 8.333333333333332
-                        },
-                        "Circle.html#difference": {
-                          "ref": "Circle.html#difference",
-                          "tf": 8.333333333333332
-                        },
-                        "Circle.html#union": {
-                          "ref": "Circle.html#union",
-                          "tf": 8.333333333333332
-                        },
-                        "Circle.html#xor": {
-                          "ref": "Circle.html#xor",
-                          "tf": 8.333333333333332
-                        },
-                        "Rect.html#isConvex": {
-                          "ref": "Rect.html#isConvex",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#isConcave": {
-                          "ref": "Rect.html#isConcave",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#pointIsInside": {
-                          "ref": "Rect.html#pointIsInside",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#pointIsInsideRect": {
-                          "ref": "Rect.html#pointIsInsideRect",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#pointIsInsidePolygon": {
-                          "ref": "Rect.html#pointIsInsidePolygon",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#colliding": {
-                          "ref": "Rect.html#colliding",
-                          "tf": 33.33333333333333
-                        },
-                        "Rect.html#intersect": {
-                          "ref": "Rect.html#intersect",
-                          "tf": 8.333333333333332
-                        },
-                        "Rect.html#difference": {
-                          "ref": "Rect.html#difference",
-                          "tf": 8.333333333333332
-                        },
-                        "Rect.html#union": {
-                          "ref": "Rect.html#union",
-                          "tf": 8.333333333333332
-                        },
-                        "Rect.html#xor": {
-                          "ref": "Rect.html#xor",
-                          "tf": 8.333333333333332
-                        },
-                        "Vector2.html#equalsX": {
-                          "ref": "Vector2.html#equalsX",
-                          "tf": 33.33333333333333
-                        },
-                        "Vector2.html#equalsY": {
-                          "ref": "Vector2.html#equalsY",
-                          "tf": 33.33333333333333
-                        },
-                        "Vector2.html#isInside": {
-                          "ref": "Vector2.html#isInside",
-                          "tf": 33.33333333333333
-                        },
-                        "Vector2.html#equals": {
-                          "ref": "Vector2.html#equals",
-                          "tf": 25
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "x": {
-              "docs": {
-                "Rect.html#.Box": {
-                  "ref": "Rect.html#.Box",
-                  "tf": 685
-                }
-              }
-            },
-            "t": {
-              "docs": {},
-              "t": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "m": {
-                    "docs": {
-                      "Vector2.html#.Bottom": {
-                        "ref": "Vector2.html#.Bottom",
-                        "tf": 708.3333333333334
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
         },
         "m": {
@@ -6930,12 +7115,24 @@ window.lunrData = {
                   "docs": {},
                   "r": {
                     "docs": {
-                      "BezierCurve.html#next": {
-                        "ref": "BezierCurve.html#next",
+                      "Curve.html#next": {
+                        "ref": "Curve.html#next",
                         "tf": 110
                       },
-                      "BezierCurve.html#prev": {
-                        "ref": "BezierCurve.html#prev",
+                      "Curve.html#prev": {
+                        "ref": "Curve.html#prev",
+                        "tf": 110
+                      },
+                      "Curve.html#points": {
+                        "ref": "Curve.html#points",
+                        "tf": 110
+                      },
+                      "Curve.html#isCurve": {
+                        "ref": "Curve.html#isCurve",
+                        "tf": 110
+                      },
+                      "Line.html#length": {
+                        "ref": "Line.html#length",
                         "tf": 110
                       },
                       "BezierCurve.html#first": {
@@ -6952,14 +7149,6 @@ window.lunrData = {
                       },
                       "BezierCurve.html#segmentsCount": {
                         "ref": "BezierCurve.html#segmentsCount",
-                        "tf": 110
-                      },
-                      "BezierCurve.html#points": {
-                        "ref": "BezierCurve.html#points",
-                        "tf": 110
-                      },
-                      "Line.html#length": {
-                        "ref": "Line.html#length",
                         "tf": 110
                       },
                       "Polygon.html#region": {
@@ -7289,8 +7478,8 @@ window.lunrData = {
               "docs": {},
               "t": {
                 "docs": {
-                  "BezierCurve.html#next": {
-                    "ref": "BezierCurve.html#next",
+                  "Curve.html#next": {
+                    "ref": "Curve.html#next",
                     "tf": 716.6666666666666
                   }
                 }
@@ -7335,13 +7524,13 @@ window.lunrData = {
                   "docs": {},
                   "r": {
                     "docs": {
-                      "BezierCurve.html#segmentsCount": {
-                        "ref": "BezierCurve.html#segmentsCount",
-                        "tf": 50
-                      },
                       "Line.html#length": {
                         "ref": "Line.html#length",
                         "tf": 33.33333333333333
+                      },
+                      "BezierCurve.html#segmentsCount": {
+                        "ref": "BezierCurve.html#segmentsCount",
+                        "tf": 50
                       },
                       "Polygon.html#area": {
                         "ref": "Polygon.html#area",
@@ -7553,13 +7742,17 @@ window.lunrData = {
                   "r": {
                     "2": {
                       "docs": {
-                        "BezierCurve.html#next": {
-                          "ref": "BezierCurve.html#next",
+                        "Curve.html#next": {
+                          "ref": "Curve.html#next",
                           "tf": 50
                         },
-                        "BezierCurve.html#prev": {
-                          "ref": "BezierCurve.html#prev",
+                        "Curve.html#prev": {
+                          "ref": "Curve.html#prev",
                           "tf": 50
+                        },
+                        "Curve.html#isCurve": {
+                          "ref": "Curve.html#isCurve",
+                          "tf": 7.142857142857142
                         },
                         "BezierCurve.html#first": {
                           "ref": "BezierCurve.html#first",
@@ -7616,6 +7809,14 @@ window.lunrData = {
                         "Vector2.html#clone": {
                           "ref": "Vector2.html#clone",
                           "tf": 58.33333333333333
+                        },
+                        "Vector2.html#rotate": {
+                          "ref": "Vector2.html#rotate",
+                          "tf": 43.33333333333333
+                        },
+                        "Vector2.html#equals": {
+                          "ref": "Vector2.html#equals",
+                          "tf": 16.666666666666664
                         },
                         "Vector2.html#equalsX": {
                           "ref": "Vector2.html#equalsX",
@@ -7784,14 +7985,6 @@ window.lunrData = {
                         "Vector2.html#invertY": {
                           "ref": "Vector2.html#invertY",
                           "tf": 62.5
-                        },
-                        "Vector2.html#rotate": {
-                          "ref": "Vector2.html#rotate",
-                          "tf": 43.33333333333333
-                        },
-                        "Vector2.html#equals": {
-                          "ref": "Vector2.html#equals",
-                          "tf": 16.666666666666664
                         }
                       },
                       "#": {
@@ -7998,6 +8191,50 @@ window.lunrData = {
                             }
                           }
                         },
+                        "r": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "t": {
+                              "docs": {
+                                "Vector2.html#rotate": {
+                                  "ref": "Vector2.html#rotate",
+                                  "tf": 1150
+                                }
+                              }
+                            },
+                            "u": {
+                              "docs": {},
+                              "n": {
+                                "docs": {},
+                                "d": {
+                                  "docs": {
+                                    "Vector2.html#round": {
+                                      "ref": "Vector2.html#round",
+                                      "tf": 1150
+                                    }
+                                  },
+                                  "x": {
+                                    "docs": {
+                                      "Vector2.html#roundX": {
+                                        "ref": "Vector2.html#roundX",
+                                        "tf": 1150
+                                      }
+                                    }
+                                  },
+                                  "i": {
+                                    "docs": {
+                                      "Vector2.html#roundY": {
+                                        "ref": "Vector2.html#roundY",
+                                        "tf": 1150
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
                         "e": {
                           "docs": {},
                           "q": {
@@ -8150,50 +8387,6 @@ window.lunrData = {
                                       }
                                     }
                                   }
-                                }
-                              }
-                            }
-                          }
-                        },
-                        "r": {
-                          "docs": {},
-                          "o": {
-                            "docs": {},
-                            "u": {
-                              "docs": {},
-                              "n": {
-                                "docs": {},
-                                "d": {
-                                  "docs": {
-                                    "Vector2.html#round": {
-                                      "ref": "Vector2.html#round",
-                                      "tf": 1150
-                                    }
-                                  },
-                                  "x": {
-                                    "docs": {
-                                      "Vector2.html#roundX": {
-                                        "ref": "Vector2.html#roundX",
-                                        "tf": 1150
-                                      }
-                                    }
-                                  },
-                                  "i": {
-                                    "docs": {
-                                      "Vector2.html#roundY": {
-                                        "ref": "Vector2.html#roundY",
-                                        "tf": 1150
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            },
-                            "t": {
-                              "docs": {
-                                "Vector2.html#rotate": {
-                                  "ref": "Vector2.html#rotate",
-                                  "tf": 1150
                                 }
                               }
                             }
@@ -8802,12 +8995,12 @@ window.lunrData = {
                     "docs": {},
                     "t": {
                       "docs": {
-                        "BezierCurve.html#prev": {
-                          "ref": "BezierCurve.html#prev",
+                        "Curve.html#prev": {
+                          "ref": "Curve.html#prev",
                           "tf": 16.666666666666664
                         },
-                        "BezierCurve.html#next": {
-                          "ref": "BezierCurve.html#next",
+                        "Curve.html#next": {
+                          "ref": "Curve.html#next",
                           "tf": 16.666666666666664
                         },
                         "Polygon.html#setElements": {
@@ -8892,6 +9085,10 @@ window.lunrData = {
                 "docs": {},
                 "l": {
                   "docs": {
+                    "Vector2.html#equals": {
+                      "ref": "Vector2.html#equals",
+                      "tf": 691.6666666666666
+                    },
                     "Vector2.html#equalsX": {
                       "ref": "Vector2.html#equalsX",
                       "tf": 10
@@ -8899,10 +9096,6 @@ window.lunrData = {
                     "Vector2.html#equalsY": {
                       "ref": "Vector2.html#equalsY",
                       "tf": 10
-                    },
-                    "Vector2.html#equals": {
-                      "ref": "Vector2.html#equals",
-                      "tf": 691.6666666666666
                     }
                   },
                   "s": {
@@ -8929,25 +9122,710 @@ window.lunrData = {
             }
           }
         },
-        "f": {
+        "a": {
           "docs": {},
-          "i": {
+          "l": {
+            "docs": {},
+            "o": {
+              "docs": {},
+              "n": {
+                "docs": {},
+                "g": {
+                  "docs": {
+                    "Curve.html#points": {
+                      "ref": "Curve.html#points",
+                      "tf": 8.333333333333332
+                    }
+                  },
+                  "p": {
+                    "docs": {},
+                    "o": {
+                      "docs": {},
+                      "i": {
+                        "docs": {},
+                        "n": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "Line.html#alongPoint": {
+                                "ref": "Line.html#alongPoint",
+                                "tf": 700
+                              }
+                            },
+                            "u": {
+                              "docs": {},
+                              "n": {
+                                "docs": {},
+                                "c": {
+                                  "docs": {},
+                                  "l": {
+                                    "docs": {},
+                                    "a": {
+                                      "docs": {},
+                                      "m": {
+                                        "docs": {},
+                                        "p": {
+                                          "docs": {
+                                            "Line.html#alongPointUnclamped": {
+                                              "ref": "Line.html#alongPointUnclamped",
+                                              "tf": 700
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "a": {
+                "docs": {
+                  "Polygon.html#convex": {
+                    "ref": "Polygon.html#convex",
+                    "tf": 25
+                  },
+                  "Circle.html#convex": {
+                    "ref": "Circle.html#convex",
+                    "tf": 25
+                  },
+                  "Rect.html#convex": {
+                    "ref": "Rect.html#convex",
+                    "tf": 25
+                  },
+                  "Vector2.html#norm": {
+                    "ref": "Vector2.html#norm",
+                    "tf": 25
+                  }
+                }
+              }
+            }
+          },
+          "r": {
             "docs": {},
             "r": {
               "docs": {},
-              "s": {
+              "a": {
                 "docs": {},
-                "t": {
+                "y": {
                   "docs": {
-                    "BezierCurve.html#first": {
-                      "ref": "BezierCurve.html#first",
-                      "tf": 716.6666666666666
+                    "Polygon.html#region": {
+                      "ref": "Polygon.html#region",
+                      "tf": 3.8461538461538463
+                    },
+                    "Circle.html#region": {
+                      "ref": "Circle.html#region",
+                      "tf": 3.8461538461538463
+                    },
+                    "Rect.html#region": {
+                      "ref": "Rect.html#region",
+                      "tf": 3.8461538461538463
+                    }
+                  },
+                  ".": {
+                    "docs": {},
+                    "&": {
+                      "docs": {},
+                      "l": {
+                        "docs": {},
+                        "t": {
+                          "docs": {},
+                          ";": {
+                            "docs": {},
+                            "v": {
+                              "docs": {},
+                              "e": {
+                                "docs": {},
+                                "c": {
+                                  "docs": {},
+                                  "t": {
+                                    "docs": {},
+                                    "o": {
+                                      "docs": {},
+                                      "r": {
+                                        "2": {
+                                          "docs": {},
+                                          "&": {
+                                            "docs": {},
+                                            "g": {
+                                              "docs": {},
+                                              "t": {
+                                                "docs": {
+                                                  "Curve.html#points": {
+                                                    "ref": "Curve.html#points",
+                                                    "tf": 50
+                                                  },
+                                                  "BezierCurve.html#controllers": {
+                                                    "ref": "BezierCurve.html#controllers",
+                                                    "tf": 50
+                                                  },
+                                                  "Polygon.html#points": {
+                                                    "ref": "Polygon.html#points",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Circle.html#points": {
+                                                    "ref": "Circle.html#points",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#points": {
+                                                    "ref": "Rect.html#points",
+                                                    "tf": 33.33333333333333
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "docs": {}
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "a": {
+                              "docs": {},
+                              "r": {
+                                "docs": {},
+                                "r": {
+                                  "docs": {},
+                                  "a": {
+                                    "docs": {},
+                                    "y": {
+                                      "docs": {},
+                                      "&": {
+                                        "docs": {},
+                                        "g": {
+                                          "docs": {},
+                                          "t": {
+                                            "docs": {
+                                              "Polygon.html#region": {
+                                                "ref": "Polygon.html#region",
+                                                "tf": 33.33333333333333
+                                              },
+                                              "Circle.html#region": {
+                                                "ref": "Circle.html#region",
+                                                "tf": 33.33333333333333
+                                              },
+                                              "Rect.html#region": {
+                                                "ref": "Rect.html#region",
+                                                "tf": 33.33333333333333
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "l": {
+                              "docs": {},
+                              "i": {
+                                "docs": {},
+                                "n": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    "&": {
+                                      "docs": {},
+                                      "g": {
+                                        "docs": {},
+                                        "t": {
+                                          "docs": {
+                                            "Polygon.html#lines": {
+                                              "ref": "Polygon.html#lines",
+                                              "tf": 33.33333333333333
+                                            },
+                                            "Circle.html#lines": {
+                                              "ref": "Circle.html#lines",
+                                              "tf": 33.33333333333333
+                                            },
+                                            "Rect.html#lines": {
+                                              "ref": "Rect.html#lines",
+                                              "tf": 33.33333333333333
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "p": {
+                              "docs": {},
+                              "o": {
+                                "docs": {},
+                                "l": {
+                                  "docs": {},
+                                  "y": {
+                                    "docs": {},
+                                    "g": {
+                                      "docs": {},
+                                      "o": {
+                                        "docs": {},
+                                        "n": {
+                                          "docs": {},
+                                          "&": {
+                                            "docs": {},
+                                            "g": {
+                                              "docs": {},
+                                              "t": {
+                                                "docs": {
+                                                  "Polygon.html#intersect": {
+                                                    "ref": "Polygon.html#intersect",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Polygon.html#difference": {
+                                                    "ref": "Polygon.html#difference",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Polygon.html#union": {
+                                                    "ref": "Polygon.html#union",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Polygon.html#xor": {
+                                                    "ref": "Polygon.html#xor",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Polygon.html#.Intersect": {
+                                                    "ref": "Polygon.html#.Intersect",
+                                                    "tf": 20
+                                                  },
+                                                  "Polygon.html#.Union": {
+                                                    "ref": "Polygon.html#.Union",
+                                                    "tf": 20
+                                                  },
+                                                  "Polygon.html#.Difference": {
+                                                    "ref": "Polygon.html#.Difference",
+                                                    "tf": 20
+                                                  },
+                                                  "Polygon.html#.Xor": {
+                                                    "ref": "Polygon.html#.Xor",
+                                                    "tf": 20
+                                                  },
+                                                  "Circle.html#intersect": {
+                                                    "ref": "Circle.html#intersect",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Circle.html#difference": {
+                                                    "ref": "Circle.html#difference",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Circle.html#union": {
+                                                    "ref": "Circle.html#union",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Circle.html#xor": {
+                                                    "ref": "Circle.html#xor",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#intersect": {
+                                                    "ref": "Rect.html#intersect",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#difference": {
+                                                    "ref": "Rect.html#difference",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#union": {
+                                                    "ref": "Rect.html#union",
+                                                    "tf": 33.33333333333333
+                                                  },
+                                                  "Rect.html#xor": {
+                                                    "ref": "Rect.html#xor",
+                                                    "tf": 33.33333333333333
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "o": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "n": {
+                    "docs": {},
+                    "d": {
+                      "docs": {
+                        "Vector2.html#rotate": {
+                          "ref": "Vector2.html#rotate",
+                          "tf": 10
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "e": {
+              "docs": {},
+              "a": {
+                "docs": {
+                  "Polygon.html#area": {
+                    "ref": "Polygon.html#area",
+                    "tf": 708.3333333333334
+                  },
+                  "Circle.html#area": {
+                    "ref": "Circle.html#area",
+                    "tf": 708.3333333333334
+                  },
+                  "Rect.html#area": {
+                    "ref": "Rect.html#area",
+                    "tf": 708.3333333333334
+                  }
+                }
+              }
+            },
+            "o": {
+              "docs": {},
+              "u": {
+                "docs": {},
+                "n": {
+                  "docs": {},
+                  "d": {
+                    "docs": {
+                      "Rect.html#.Box": {
+                        "ref": "Rect.html#.Box",
+                        "tf": 20
+                      }
                     }
                   }
                 }
               }
             }
           },
+          "d": {
+            "docs": {
+              "Polygon.html#addChild": {
+                "ref": "Polygon.html#addChild",
+                "tf": 12.5
+              },
+              "Circle.html#addChild": {
+                "ref": "Circle.html#addChild",
+                "tf": 12.5
+              },
+              "Rect.html#addChild": {
+                "ref": "Rect.html#addChild",
+                "tf": 12.5
+              },
+              "Vector2.html#add": {
+                "ref": "Vector2.html#add",
+                "tf": 16.666666666666664
+              },
+              "Vector2.html#addX": {
+                "ref": "Vector2.html#addX",
+                "tf": 10
+              },
+              "Vector2.html#addY": {
+                "ref": "Vector2.html#addY",
+                "tf": 10
+              }
+            },
+            "d": {
+              "docs": {
+                "Polygon.html#addVertex": {
+                  "ref": "Polygon.html#addVertex",
+                  "tf": 12.5
+                },
+                "Polygon.html#addElement": {
+                  "ref": "Polygon.html#addElement",
+                  "tf": 12.5
+                },
+                "Circle.html#addVertex": {
+                  "ref": "Circle.html#addVertex",
+                  "tf": 12.5
+                },
+                "Circle.html#addElement": {
+                  "ref": "Circle.html#addElement",
+                  "tf": 12.5
+                },
+                "Rect.html#addVertex": {
+                  "ref": "Rect.html#addVertex",
+                  "tf": 12.5
+                },
+                "Rect.html#addElement": {
+                  "ref": "Rect.html#addElement",
+                  "tf": 12.5
+                },
+                "Vector2.html#add": {
+                  "ref": "Vector2.html#add",
+                  "tf": 675
+                }
+              },
+              "c": {
+                "docs": {},
+                "h": {
+                  "docs": {},
+                  "i": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "d": {
+                        "docs": {
+                          "Polygon.html#addChild": {
+                            "ref": "Polygon.html#addChild",
+                            "tf": 683.3333333333334
+                          },
+                          "Circle.html#addChild": {
+                            "ref": "Circle.html#addChild",
+                            "tf": 683.3333333333334
+                          },
+                          "Rect.html#addChild": {
+                            "ref": "Rect.html#addChild",
+                            "tf": 683.3333333333334
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "v": {
+                "docs": {},
+                "e": {
+                  "docs": {},
+                  "r": {
+                    "docs": {},
+                    "t": {
+                      "docs": {},
+                      "e": {
+                        "docs": {},
+                        "x": {
+                          "docs": {
+                            "Polygon.html#addVertex": {
+                              "ref": "Polygon.html#addVertex",
+                              "tf": 683.3333333333334
+                            },
+                            "Circle.html#addVertex": {
+                              "ref": "Circle.html#addVertex",
+                              "tf": 683.3333333333334
+                            },
+                            "Rect.html#addVertex": {
+                              "ref": "Rect.html#addVertex",
+                              "tf": 683.3333333333334
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "e": {
+                "docs": {},
+                "l": {
+                  "docs": {
+                    "Polygon.html#addElement": {
+                      "ref": "Polygon.html#addElement",
+                      "tf": 683.3333333333334
+                    },
+                    "Circle.html#addElement": {
+                      "ref": "Circle.html#addElement",
+                      "tf": 683.3333333333334
+                    },
+                    "Rect.html#addElement": {
+                      "ref": "Rect.html#addElement",
+                      "tf": 683.3333333333334
+                    }
+                  }
+                }
+              },
+              "x": {
+                "docs": {
+                  "Vector2.html#addX": {
+                    "ref": "Vector2.html#addX",
+                    "tf": 683.3333333333334
+                  }
+                }
+              },
+              "i": {
+                "docs": {
+                  "Vector2.html#addY": {
+                    "ref": "Vector2.html#addY",
+                    "tf": 683.3333333333334
+                  }
+                }
+              }
+            }
+          },
+          "p": {
+            "docs": {},
+            "p": {
+              "docs": {},
+              "r": {
+                "docs": {},
+                "o": {
+                  "docs": {},
+                  "x": {
+                    "docs": {},
+                    "i": {
+                      "docs": {},
+                      "m": {
+                        "docs": {
+                          "Vector2.html#approximated": {
+                            "ref": "Vector2.html#approximated",
+                            "tf": 691.6666666666667
+                          },
+                          "Vector2.html#approximate": {
+                            "ref": "Vector2.html#approximate",
+                            "tf": 750
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "l": {
+                "docs": {
+                  "Vector2.html#rotate": {
+                    "ref": "Vector2.html#rotate",
+                    "tf": 43.33333333333333
+                  }
+                }
+              }
+            }
+          }
+        },
+        "u": {
+          "docs": {},
+          "s": {
+            "docs": {
+              "Curve.html#isCurve": {
+                "ref": "Curve.html#isCurve",
+                "tf": 7.142857142857142
+              },
+              "Polygon.html#region": {
+                "ref": "Polygon.html#region",
+                "tf": 3.8461538461538463
+              },
+              "Circle.html#region": {
+                "ref": "Circle.html#region",
+                "tf": 3.8461538461538463
+              },
+              "Rect.html#region": {
+                "ref": "Rect.html#region",
+                "tf": 3.8461538461538463
+              },
+              "Vector2.html#approximated": {
+                "ref": "Vector2.html#approximated",
+                "tf": 8.333333333333332
+              }
+            },
+            "e": {
+              "docs": {},
+              "f": {
+                "docs": {},
+                "u": {
+                  "docs": {},
+                  "l": {
+                    "docs": {
+                      "Polygon.html#clone": {
+                        "ref": "Polygon.html#clone",
+                        "tf": 7.142857142857142
+                      },
+                      "Circle.html#clone": {
+                        "ref": "Circle.html#clone",
+                        "tf": 7.142857142857142
+                      },
+                      "Rect.html#clone": {
+                        "ref": "Rect.html#clone",
+                        "tf": 7.142857142857142
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "n": {
+            "docs": {},
+            "c": {
+              "docs": {},
+              "l": {
+                "docs": {},
+                "a": {
+                  "docs": {},
+                  "m": {
+                    "docs": {},
+                    "p": {
+                      "docs": {
+                        "Line.html#alongPointUnclamped": {
+                          "ref": "Line.html#alongPointUnclamped",
+                          "tf": 7.142857142857142
+                        },
+                        "Vector2.html#.LerpUnclamped": {
+                          "ref": "Vector2.html#.LerpUnclamped",
+                          "tf": 5.555555555555555
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "i": {
+              "docs": {},
+              "o": {
+                "docs": {},
+                "n": {
+                  "docs": {
+                    "Polygon.html#union": {
+                      "ref": "Polygon.html#union",
+                      "tf": 691.6666666666667
+                    },
+                    "Polygon.html#.Union": {
+                      "ref": "Polygon.html#.Union",
+                      "tf": 677.1428571428571
+                    },
+                    "Circle.html#union": {
+                      "ref": "Circle.html#union",
+                      "tf": 691.6666666666667
+                    },
+                    "Rect.html#union": {
+                      "ref": "Rect.html#union",
+                      "tf": 691.6666666666667
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "f": {
+          "docs": {},
           "a": {
             "docs": {},
             "l": {
@@ -9204,6 +10082,14 @@ window.lunrData = {
                             "ref": "Rect.html#moveBy",
                             "tf": 110
                           },
+                          "Vector2.html#rotate": {
+                            "ref": "Vector2.html#rotate",
+                            "tf": 110
+                          },
+                          "Vector2.html#equals": {
+                            "ref": "Vector2.html#equals",
+                            "tf": 110
+                          },
                           "Vector2.html#equalsX": {
                             "ref": "Vector2.html#equalsX",
                             "tf": 110
@@ -9375,17 +10261,26 @@ window.lunrData = {
                           "Vector2.html#invertY": {
                             "ref": "Vector2.html#invertY",
                             "tf": 110
-                          },
-                          "Vector2.html#rotate": {
-                            "ref": "Vector2.html#rotate",
-                            "tf": 110
-                          },
-                          "Vector2.html#equals": {
-                            "ref": "Vector2.html#equals",
-                            "tf": 110
                           }
                         }
                       }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "i": {
+            "docs": {},
+            "r": {
+              "docs": {},
+              "s": {
+                "docs": {},
+                "t": {
+                  "docs": {
+                    "BezierCurve.html#first": {
+                      "ref": "BezierCurve.html#first",
+                      "tf": 716.6666666666666
                     }
                   }
                 }
@@ -9466,704 +10361,6 @@ window.lunrData = {
             }
           }
         },
-        "a": {
-          "docs": {},
-          "r": {
-            "docs": {},
-            "r": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "y": {
-                  "docs": {
-                    "Polygon.html#region": {
-                      "ref": "Polygon.html#region",
-                      "tf": 3.8461538461538463
-                    },
-                    "Circle.html#region": {
-                      "ref": "Circle.html#region",
-                      "tf": 3.8461538461538463
-                    },
-                    "Rect.html#region": {
-                      "ref": "Rect.html#region",
-                      "tf": 3.8461538461538463
-                    }
-                  },
-                  ".": {
-                    "docs": {},
-                    "&": {
-                      "docs": {},
-                      "l": {
-                        "docs": {},
-                        "t": {
-                          "docs": {},
-                          ";": {
-                            "docs": {},
-                            "v": {
-                              "docs": {},
-                              "e": {
-                                "docs": {},
-                                "c": {
-                                  "docs": {},
-                                  "t": {
-                                    "docs": {},
-                                    "o": {
-                                      "docs": {},
-                                      "r": {
-                                        "2": {
-                                          "docs": {},
-                                          "&": {
-                                            "docs": {},
-                                            "g": {
-                                              "docs": {},
-                                              "t": {
-                                                "docs": {
-                                                  "BezierCurve.html#controllers": {
-                                                    "ref": "BezierCurve.html#controllers",
-                                                    "tf": 50
-                                                  },
-                                                  "BezierCurve.html#points": {
-                                                    "ref": "BezierCurve.html#points",
-                                                    "tf": 50
-                                                  },
-                                                  "Polygon.html#points": {
-                                                    "ref": "Polygon.html#points",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Circle.html#points": {
-                                                    "ref": "Circle.html#points",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Rect.html#points": {
-                                                    "ref": "Rect.html#points",
-                                                    "tf": 33.33333333333333
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        },
-                                        "docs": {}
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            },
-                            "a": {
-                              "docs": {},
-                              "r": {
-                                "docs": {},
-                                "r": {
-                                  "docs": {},
-                                  "a": {
-                                    "docs": {},
-                                    "y": {
-                                      "docs": {},
-                                      "&": {
-                                        "docs": {},
-                                        "g": {
-                                          "docs": {},
-                                          "t": {
-                                            "docs": {
-                                              "Polygon.html#region": {
-                                                "ref": "Polygon.html#region",
-                                                "tf": 33.33333333333333
-                                              },
-                                              "Circle.html#region": {
-                                                "ref": "Circle.html#region",
-                                                "tf": 33.33333333333333
-                                              },
-                                              "Rect.html#region": {
-                                                "ref": "Rect.html#region",
-                                                "tf": 33.33333333333333
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            },
-                            "l": {
-                              "docs": {},
-                              "i": {
-                                "docs": {},
-                                "n": {
-                                  "docs": {},
-                                  "e": {
-                                    "docs": {},
-                                    "&": {
-                                      "docs": {},
-                                      "g": {
-                                        "docs": {},
-                                        "t": {
-                                          "docs": {
-                                            "Polygon.html#lines": {
-                                              "ref": "Polygon.html#lines",
-                                              "tf": 33.33333333333333
-                                            },
-                                            "Circle.html#lines": {
-                                              "ref": "Circle.html#lines",
-                                              "tf": 33.33333333333333
-                                            },
-                                            "Rect.html#lines": {
-                                              "ref": "Rect.html#lines",
-                                              "tf": 33.33333333333333
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            },
-                            "p": {
-                              "docs": {},
-                              "o": {
-                                "docs": {},
-                                "l": {
-                                  "docs": {},
-                                  "y": {
-                                    "docs": {},
-                                    "g": {
-                                      "docs": {},
-                                      "o": {
-                                        "docs": {},
-                                        "n": {
-                                          "docs": {},
-                                          "&": {
-                                            "docs": {},
-                                            "g": {
-                                              "docs": {},
-                                              "t": {
-                                                "docs": {
-                                                  "Polygon.html#intersect": {
-                                                    "ref": "Polygon.html#intersect",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Polygon.html#difference": {
-                                                    "ref": "Polygon.html#difference",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Polygon.html#union": {
-                                                    "ref": "Polygon.html#union",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Polygon.html#xor": {
-                                                    "ref": "Polygon.html#xor",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Polygon.html#.Intersect": {
-                                                    "ref": "Polygon.html#.Intersect",
-                                                    "tf": 20
-                                                  },
-                                                  "Polygon.html#.Union": {
-                                                    "ref": "Polygon.html#.Union",
-                                                    "tf": 20
-                                                  },
-                                                  "Polygon.html#.Difference": {
-                                                    "ref": "Polygon.html#.Difference",
-                                                    "tf": 20
-                                                  },
-                                                  "Polygon.html#.Xor": {
-                                                    "ref": "Polygon.html#.Xor",
-                                                    "tf": 20
-                                                  },
-                                                  "Circle.html#intersect": {
-                                                    "ref": "Circle.html#intersect",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Circle.html#difference": {
-                                                    "ref": "Circle.html#difference",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Circle.html#union": {
-                                                    "ref": "Circle.html#union",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Circle.html#xor": {
-                                                    "ref": "Circle.html#xor",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Rect.html#intersect": {
-                                                    "ref": "Rect.html#intersect",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Rect.html#difference": {
-                                                    "ref": "Rect.html#difference",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Rect.html#union": {
-                                                    "ref": "Rect.html#union",
-                                                    "tf": 33.33333333333333
-                                                  },
-                                                  "Rect.html#xor": {
-                                                    "ref": "Rect.html#xor",
-                                                    "tf": 33.33333333333333
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "o": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "n": {
-                    "docs": {},
-                    "d": {
-                      "docs": {
-                        "Vector2.html#rotate": {
-                          "ref": "Vector2.html#rotate",
-                          "tf": 10
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "e": {
-              "docs": {},
-              "a": {
-                "docs": {
-                  "Polygon.html#area": {
-                    "ref": "Polygon.html#area",
-                    "tf": 708.3333333333334
-                  },
-                  "Circle.html#area": {
-                    "ref": "Circle.html#area",
-                    "tf": 708.3333333333334
-                  },
-                  "Rect.html#area": {
-                    "ref": "Rect.html#area",
-                    "tf": 708.3333333333334
-                  }
-                }
-              }
-            },
-            "o": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "n": {
-                  "docs": {},
-                  "d": {
-                    "docs": {
-                      "Rect.html#.Box": {
-                        "ref": "Rect.html#.Box",
-                        "tf": 20
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "l": {
-            "docs": {},
-            "o": {
-              "docs": {},
-              "n": {
-                "docs": {},
-                "g": {
-                  "docs": {
-                    "BezierCurve.html#points": {
-                      "ref": "BezierCurve.html#points",
-                      "tf": 8.333333333333332
-                    }
-                  },
-                  "p": {
-                    "docs": {},
-                    "o": {
-                      "docs": {},
-                      "i": {
-                        "docs": {},
-                        "n": {
-                          "docs": {},
-                          "t": {
-                            "docs": {
-                              "Line.html#alongPoint": {
-                                "ref": "Line.html#alongPoint",
-                                "tf": 700
-                              }
-                            },
-                            "u": {
-                              "docs": {},
-                              "n": {
-                                "docs": {},
-                                "c": {
-                                  "docs": {},
-                                  "l": {
-                                    "docs": {},
-                                    "a": {
-                                      "docs": {},
-                                      "m": {
-                                        "docs": {},
-                                        "p": {
-                                          "docs": {
-                                            "Line.html#alongPointUnclamped": {
-                                              "ref": "Line.html#alongPointUnclamped",
-                                              "tf": 700
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "i": {
-              "docs": {},
-              "a": {
-                "docs": {
-                  "Polygon.html#convex": {
-                    "ref": "Polygon.html#convex",
-                    "tf": 25
-                  },
-                  "Circle.html#convex": {
-                    "ref": "Circle.html#convex",
-                    "tf": 25
-                  },
-                  "Rect.html#convex": {
-                    "ref": "Rect.html#convex",
-                    "tf": 25
-                  },
-                  "Vector2.html#norm": {
-                    "ref": "Vector2.html#norm",
-                    "tf": 25
-                  }
-                }
-              }
-            }
-          },
-          "d": {
-            "docs": {
-              "Polygon.html#addChild": {
-                "ref": "Polygon.html#addChild",
-                "tf": 12.5
-              },
-              "Circle.html#addChild": {
-                "ref": "Circle.html#addChild",
-                "tf": 12.5
-              },
-              "Rect.html#addChild": {
-                "ref": "Rect.html#addChild",
-                "tf": 12.5
-              },
-              "Vector2.html#add": {
-                "ref": "Vector2.html#add",
-                "tf": 16.666666666666664
-              },
-              "Vector2.html#addX": {
-                "ref": "Vector2.html#addX",
-                "tf": 10
-              },
-              "Vector2.html#addY": {
-                "ref": "Vector2.html#addY",
-                "tf": 10
-              }
-            },
-            "d": {
-              "docs": {
-                "Polygon.html#addVertex": {
-                  "ref": "Polygon.html#addVertex",
-                  "tf": 12.5
-                },
-                "Polygon.html#addElement": {
-                  "ref": "Polygon.html#addElement",
-                  "tf": 12.5
-                },
-                "Circle.html#addVertex": {
-                  "ref": "Circle.html#addVertex",
-                  "tf": 12.5
-                },
-                "Circle.html#addElement": {
-                  "ref": "Circle.html#addElement",
-                  "tf": 12.5
-                },
-                "Rect.html#addVertex": {
-                  "ref": "Rect.html#addVertex",
-                  "tf": 12.5
-                },
-                "Rect.html#addElement": {
-                  "ref": "Rect.html#addElement",
-                  "tf": 12.5
-                },
-                "Vector2.html#add": {
-                  "ref": "Vector2.html#add",
-                  "tf": 675
-                }
-              },
-              "c": {
-                "docs": {},
-                "h": {
-                  "docs": {},
-                  "i": {
-                    "docs": {},
-                    "l": {
-                      "docs": {},
-                      "d": {
-                        "docs": {
-                          "Polygon.html#addChild": {
-                            "ref": "Polygon.html#addChild",
-                            "tf": 683.3333333333334
-                          },
-                          "Circle.html#addChild": {
-                            "ref": "Circle.html#addChild",
-                            "tf": 683.3333333333334
-                          },
-                          "Rect.html#addChild": {
-                            "ref": "Rect.html#addChild",
-                            "tf": 683.3333333333334
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "v": {
-                "docs": {},
-                "e": {
-                  "docs": {},
-                  "r": {
-                    "docs": {},
-                    "t": {
-                      "docs": {},
-                      "e": {
-                        "docs": {},
-                        "x": {
-                          "docs": {
-                            "Polygon.html#addVertex": {
-                              "ref": "Polygon.html#addVertex",
-                              "tf": 683.3333333333334
-                            },
-                            "Circle.html#addVertex": {
-                              "ref": "Circle.html#addVertex",
-                              "tf": 683.3333333333334
-                            },
-                            "Rect.html#addVertex": {
-                              "ref": "Rect.html#addVertex",
-                              "tf": 683.3333333333334
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              },
-              "e": {
-                "docs": {},
-                "l": {
-                  "docs": {
-                    "Polygon.html#addElement": {
-                      "ref": "Polygon.html#addElement",
-                      "tf": 683.3333333333334
-                    },
-                    "Circle.html#addElement": {
-                      "ref": "Circle.html#addElement",
-                      "tf": 683.3333333333334
-                    },
-                    "Rect.html#addElement": {
-                      "ref": "Rect.html#addElement",
-                      "tf": 683.3333333333334
-                    }
-                  }
-                }
-              },
-              "x": {
-                "docs": {
-                  "Vector2.html#addX": {
-                    "ref": "Vector2.html#addX",
-                    "tf": 683.3333333333334
-                  }
-                }
-              },
-              "i": {
-                "docs": {
-                  "Vector2.html#addY": {
-                    "ref": "Vector2.html#addY",
-                    "tf": 683.3333333333334
-                  }
-                }
-              }
-            }
-          },
-          "p": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "r": {
-                "docs": {},
-                "o": {
-                  "docs": {},
-                  "x": {
-                    "docs": {},
-                    "i": {
-                      "docs": {},
-                      "m": {
-                        "docs": {
-                          "Vector2.html#approximated": {
-                            "ref": "Vector2.html#approximated",
-                            "tf": 691.6666666666667
-                          },
-                          "Vector2.html#approximate": {
-                            "ref": "Vector2.html#approximate",
-                            "tf": 750
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "n": {
-            "docs": {},
-            "g": {
-              "docs": {},
-              "l": {
-                "docs": {
-                  "Vector2.html#rotate": {
-                    "ref": "Vector2.html#rotate",
-                    "tf": 43.33333333333333
-                  }
-                }
-              }
-            }
-          }
-        },
-        "u": {
-          "docs": {},
-          "n": {
-            "docs": {},
-            "c": {
-              "docs": {},
-              "l": {
-                "docs": {},
-                "a": {
-                  "docs": {},
-                  "m": {
-                    "docs": {},
-                    "p": {
-                      "docs": {
-                        "Line.html#alongPointUnclamped": {
-                          "ref": "Line.html#alongPointUnclamped",
-                          "tf": 7.142857142857142
-                        },
-                        "Vector2.html#.LerpUnclamped": {
-                          "ref": "Vector2.html#.LerpUnclamped",
-                          "tf": 5.555555555555555
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "i": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "n": {
-                  "docs": {
-                    "Polygon.html#union": {
-                      "ref": "Polygon.html#union",
-                      "tf": 691.6666666666667
-                    },
-                    "Polygon.html#.Union": {
-                      "ref": "Polygon.html#.Union",
-                      "tf": 677.1428571428571
-                    },
-                    "Circle.html#union": {
-                      "ref": "Circle.html#union",
-                      "tf": 691.6666666666667
-                    },
-                    "Rect.html#union": {
-                      "ref": "Rect.html#union",
-                      "tf": 691.6666666666667
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "s": {
-            "docs": {
-              "Polygon.html#region": {
-                "ref": "Polygon.html#region",
-                "tf": 3.8461538461538463
-              },
-              "Circle.html#region": {
-                "ref": "Circle.html#region",
-                "tf": 3.8461538461538463
-              },
-              "Rect.html#region": {
-                "ref": "Rect.html#region",
-                "tf": 3.8461538461538463
-              },
-              "Vector2.html#approximated": {
-                "ref": "Vector2.html#approximated",
-                "tf": 8.333333333333332
-              }
-            },
-            "e": {
-              "docs": {},
-              "f": {
-                "docs": {},
-                "u": {
-                  "docs": {},
-                  "l": {
-                    "docs": {
-                      "Polygon.html#clone": {
-                        "ref": "Polygon.html#clone",
-                        "tf": 7.142857142857142
-                      },
-                      "Circle.html#clone": {
-                        "ref": "Circle.html#clone",
-                        "tf": 7.142857142857142
-                      },
-                      "Rect.html#clone": {
-                        "ref": "Rect.html#clone",
-                        "tf": 7.142857142857142
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "t": {
           "docs": {
             "Vector2.html#.Lerp": {
@@ -10204,6 +10401,10 @@ window.lunrData = {
               "docs": {},
               "t": {
                 "docs": {
+                  "Vector2.html#equals": {
+                    "ref": "Vector2.html#equals",
+                    "tf": 16.666666666666664
+                  },
                   "Vector2.html#equalsX": {
                     "ref": "Vector2.html#equalsX",
                     "tf": 10
@@ -10219,10 +10420,6 @@ window.lunrData = {
                   "Vector2.html#.IsVector2Like": {
                     "ref": "Vector2.html#.IsVector2Like",
                     "tf": 6.25
-                  },
-                  "Vector2.html#equals": {
-                    "ref": "Vector2.html#equals",
-                    "tf": 16.666666666666664
                   }
                 }
               }
@@ -10520,13 +10717,13 @@ window.lunrData = {
               "docs": {},
               "o": {
                 "docs": {
-                  "Vector2.html#.Zero": {
-                    "ref": "Vector2.html#.Zero",
-                    "tf": 708.3333333333334
-                  },
                   "Vector2.html#rotate": {
                     "ref": "Vector2.html#rotate",
                     "tf": 10
+                  },
+                  "Vector2.html#.Zero": {
+                    "ref": "Vector2.html#.Zero",
+                    "tf": 708.3333333333334
                   }
                 }
               }
@@ -10534,7 +10731,7 @@ window.lunrData = {
           }
         }
       },
-      "length": 1144
+      "length": 1159
     },
     "corpusTokens": [
       "ad",
@@ -10558,14 +10755,12 @@ window.lunrData = {
       "array.&lt;polygon&gt",
       "array.&lt;vector2&gt",
       "arround",
+      "base",
       "between",
       "beziercurv",
       "beziercurve#control",
       "beziercurve#first",
       "beziercurve#last",
-      "beziercurve#next",
-      "beziercurve#point",
-      "beziercurve#prev",
       "beziercurve#segmentscount",
       "boolean",
       "bottom",
@@ -10618,8 +10813,13 @@ window.lunrData = {
       "count",
       "current",
       "curv",
+      "curve#iscurv",
+      "curve#next",
+      "curve#point",
+      "curve#prev",
       "depend",
       "differ",
+      "differenci",
       "display",
       "distanc",
       "divid",
@@ -10655,6 +10855,7 @@ window.lunrData = {
       "invertx",
       "isconcav",
       "isconvex",
+      "iscurv",
       "isinsid",
       "isvector2lik",
       "js",
@@ -10676,6 +10877,7 @@ window.lunrData = {
       "line.intersect",
       "list",
       "list:class",
+      "lt;abstract&gt",
       "lt;readonly&gt",
       "lt;static&gt",
       "magnitud",
@@ -10695,6 +10897,7 @@ window.lunrData = {
       "number",
       "on",
       "oper",
+      "over",
       "p",
       "p1",
       "p2",
@@ -10794,6 +10997,7 @@ window.lunrData = {
       "substract",
       "substracti",
       "substractx",
+      "system",
       "t",
       "test",
       "time",
@@ -10906,86 +11110,56 @@ window.lunrData = {
       "description": "",
       "body": ""
     },
-    "BezierCurve.html": {
-      "id": "BezierCurve.html",
+    "Curve.html": {
+      "id": "Curve.html",
       "kind": "class",
-      "title": "BezierCurve",
-      "longname": "BezierCurve",
-      "name": "BezierCurve",
-      "tags": "BezierCurve",
+      "title": "&lt;abstract&gt; Curve",
+      "longname": "Curve",
+      "name": "Curve",
+      "tags": "Curve",
       "summary": "",
-      "description": "BezierCurve Class",
+      "description": "Curve class, base of all curves",
       "body": ""
     },
-    "BezierCurve.html#next": {
-      "id": "BezierCurve.html#next",
+    "Curve.html#next": {
+      "id": "Curve.html#next",
       "kind": "member",
       "title": "next :Vector2",
-      "longname": "BezierCurve#next",
+      "longname": "Curve#next",
       "name": "next",
-      "tags": "BezierCurve#next next",
+      "tags": "Curve#next next",
       "summary": "",
       "description": "Set the next element"
     },
-    "BezierCurve.html#prev": {
-      "id": "BezierCurve.html#prev",
+    "Curve.html#prev": {
+      "id": "Curve.html#prev",
       "kind": "member",
       "title": "prev :Vector2",
-      "longname": "BezierCurve#prev",
+      "longname": "Curve#prev",
       "name": "prev",
-      "tags": "BezierCurve#prev prev",
+      "tags": "Curve#prev prev",
       "summary": "",
       "description": "Set the previous element"
     },
-    "BezierCurve.html#first": {
-      "id": "BezierCurve.html#first",
-      "kind": "member",
-      "title": "first :Vector2",
-      "longname": "BezierCurve#first",
-      "name": "first",
-      "tags": "BezierCurve#first first",
-      "summary": "",
-      "description": "The first point of the curve"
-    },
-    "BezierCurve.html#last": {
-      "id": "BezierCurve.html#last",
-      "kind": "member",
-      "title": "last :Vector2",
-      "longname": "BezierCurve#last",
-      "name": "last",
-      "tags": "BezierCurve#last last",
-      "summary": "",
-      "description": "The last point of the curve"
-    },
-    "BezierCurve.html#controllers": {
-      "id": "BezierCurve.html#controllers",
-      "kind": "member",
-      "title": "controllers :Array.&lt;Vector2&gt;",
-      "longname": "BezierCurve#controllers",
-      "name": "controllers",
-      "tags": "BezierCurve#controllers controllers",
-      "summary": "",
-      "description": "Controllers of the curve"
-    },
-    "BezierCurve.html#segmentsCount": {
-      "id": "BezierCurve.html#segmentsCount",
-      "kind": "member",
-      "title": "segmentsCount :Number",
-      "longname": "BezierCurve#segmentsCount",
-      "name": "segmentsCount",
-      "tags": "BezierCurve#segmentsCount segmentsCount",
-      "summary": "",
-      "description": "Segment count for the curve calc (for line display)"
-    },
-    "BezierCurve.html#points": {
-      "id": "BezierCurve.html#points",
+    "Curve.html#points": {
+      "id": "Curve.html#points",
       "kind": "member",
       "title": "points :Array.&lt;Vector2&gt;",
-      "longname": "BezierCurve#points",
+      "longname": "Curve#points",
       "name": "points",
-      "tags": "BezierCurve#points points",
+      "tags": "Curve#points points",
       "summary": "",
       "description": "Points along the curves, count depending on segmentsCount"
+    },
+    "Curve.html#isCurve": {
+      "id": "Curve.html#isCurve",
+      "kind": "member",
+      "title": "&lt;readonly&gt; isCurve :Boolean",
+      "longname": "Curve#isCurve",
+      "name": "isCurve",
+      "tags": "Curve#isCurve isCurve",
+      "summary": "",
+      "description": "Is a curve ? Use by the system to differenciate Vector2 over curve"
     },
     "Line.html": {
       "id": "Line.html",
@@ -11047,6 +11221,57 @@ window.lunrData = {
       "tags": "Line.Intersect Intersect",
       "summary": "",
       "description": "Get the intersection of two lines Return false if lines does not intersect"
+    },
+    "BezierCurve.html": {
+      "id": "BezierCurve.html",
+      "kind": "class",
+      "title": "BezierCurve",
+      "longname": "BezierCurve",
+      "name": "BezierCurve",
+      "tags": "BezierCurve",
+      "summary": "",
+      "description": "BezierCurve Class",
+      "body": ""
+    },
+    "BezierCurve.html#first": {
+      "id": "BezierCurve.html#first",
+      "kind": "member",
+      "title": "first :Vector2",
+      "longname": "BezierCurve#first",
+      "name": "first",
+      "tags": "BezierCurve#first first",
+      "summary": "",
+      "description": "The first point of the curve"
+    },
+    "BezierCurve.html#last": {
+      "id": "BezierCurve.html#last",
+      "kind": "member",
+      "title": "last :Vector2",
+      "longname": "BezierCurve#last",
+      "name": "last",
+      "tags": "BezierCurve#last last",
+      "summary": "",
+      "description": "The last point of the curve"
+    },
+    "BezierCurve.html#controllers": {
+      "id": "BezierCurve.html#controllers",
+      "kind": "member",
+      "title": "controllers :Array.&lt;Vector2&gt;",
+      "longname": "BezierCurve#controllers",
+      "name": "controllers",
+      "tags": "BezierCurve#controllers controllers",
+      "summary": "",
+      "description": "Controllers of the curve"
+    },
+    "BezierCurve.html#segmentsCount": {
+      "id": "BezierCurve.html#segmentsCount",
+      "kind": "member",
+      "title": "segmentsCount :Number",
+      "longname": "BezierCurve#segmentsCount",
+      "name": "segmentsCount",
+      "tags": "BezierCurve#segmentsCount segmentsCount",
+      "summary": "",
+      "description": "Segment count for the curve calc (for line display)"
     },
     "Polygon.html": {
       "id": "Polygon.html",
@@ -11972,6 +12197,26 @@ window.lunrData = {
       "summary": "",
       "description": "A clone of the Vector2"
     },
+    "Vector2.html#rotate": {
+      "id": "Vector2.html#rotate",
+      "kind": "function",
+      "title": "rotate( angle ) → {Vector2}",
+      "longname": "Vector2#rotate",
+      "name": "rotate",
+      "tags": "Vector2#rotate rotate",
+      "summary": "",
+      "description": "Rotate the Vector2 arround zero by angle"
+    },
+    "Vector2.html#equals": {
+      "id": "Vector2.html#equals",
+      "kind": "function",
+      "title": "equals( [ p1 [, p2 ] ] ) → {Boolean}",
+      "longname": "Vector2#equals",
+      "name": "equals",
+      "tags": "Vector2#equals equals",
+      "summary": "",
+      "description": "Test if the Vector2 is equal to an other"
+    },
     "Vector2.html#equalsX": {
       "id": "Vector2.html#equalsX",
       "kind": "function",
@@ -12401,26 +12646,6 @@ window.lunrData = {
       "tags": "Vector2#invertY invertY",
       "summary": "",
       "description": "Inverting the y value of the Vector2"
-    },
-    "Vector2.html#rotate": {
-      "id": "Vector2.html#rotate",
-      "kind": "function",
-      "title": "rotate( angle ) → {Vector2}",
-      "longname": "Vector2#rotate",
-      "name": "rotate",
-      "tags": "Vector2#rotate rotate",
-      "summary": "",
-      "description": "Rotate the Vector2 arround zero by angle"
-    },
-    "Vector2.html#equals": {
-      "id": "Vector2.html#equals",
-      "kind": "function",
-      "title": "equals( [ p1 [, p2 ] ] ) → {Boolean}",
-      "longname": "Vector2#equals",
-      "name": "equals",
-      "tags": "Vector2#equals equals",
-      "summary": "",
-      "description": "Test if the Vector2 is equal to an other"
     }
   }
 };
