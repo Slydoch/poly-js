@@ -1,10 +1,11 @@
 'use strict';
 
+const Curve = require('./curve');
 const Vector2 = require('./vector2');
 /**
  * BezierCurve Class
  */
-class BezierCurve {
+class BezierCurve extends Curve {
 	/**
      * Create a bezier curve
 	 * @param {Vector2} first The first point of the curve
@@ -13,47 +14,11 @@ class BezierCurve {
 	 * @param {Number} [segmentsCount] Segment count for polygon conversion and drawing
 	 */
 	constructor(first, last, controllers = [], segmentsCount = 100) {
+		super();
 		this._first = first;
 		this._last = last;
-		this._prev = null;
-		this._next = null;
 		this._controllers = controllers;
 		this._segmentsCount = parseInt(segmentsCount) || 1;
-		this._points = [];
-		this._calc();
-	}
-
-	/**
-	 * Get the next point
-	 * @type {Vector2}
-	 */
-	get next() {
-		return this.points[0];
-	}
-
-	/**
-	 * Get the previous point
-	 * @type {Vector2}
-	 */
-	get prev() {
-		return this._prev;
-	}
-
-	/**
-	 * Set the previous element
-	 * @type {Vector2}
-	 */
-	set prev(value) {
-		this._prev = value;
-		this._calc();
-	}
-
-	/**
-	 * Set the next element
-	 * @type {Vector2}
-	 */
-	set next(value) {
-		this._next = value;
 		this._calc();
 	}
 
@@ -89,14 +54,6 @@ class BezierCurve {
 		return this._segmentsCount;
 	}
 
-	/**
-	 * Points along the curves, count depending on segmentsCount
-	 * @type {Vector2[]}
-	 */
-	get points() {
-		return this._points;
-	}
-
 	set first(value) {
 		this._first = value;
 		this._calc();
@@ -115,10 +72,6 @@ class BezierCurve {
 	set segmentsCount(value) {
 		this._segmentsCount = value;
 		this._calc();
-	}
-
-	equals(...args) {
-		return this.next.equals(args);
 	}
 
 	_calc() {
@@ -150,10 +103,6 @@ class BezierCurve {
 		}
 		this._points[this._points.length - 1].next = this._next;
 		this._points[0].prev = this._prev;
-	}
-
-	get isCurve() {
-		return true;
 	}
 }
 
