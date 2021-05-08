@@ -46,6 +46,8 @@
 		"jsdoc": "^3.6.3",
 		"jsdoc-to-markdown": "^5.0.2",
 		"mocha": "^8.4.0",
-		"webpack": "^4.41.2"
+		"webpack": "^4.41.2",
+		"underscore": ">=1.12.1",
+		"sanitize-html": ">=2.3.2"
 	}
 }
